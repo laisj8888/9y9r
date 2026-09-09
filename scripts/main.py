@@ -19,6 +19,23 @@ from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 SOURCE_URLS = [
+     "https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml",
+     "https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml",
+     "https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml",
+     "https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/all_configs.txt",
+     "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/V2Ray-Config-By-EbraSha.txt",
+     "https://raw.githubusercontent.com/bin1site1/V2rayFree/refs/heads/main/config.txt",
+     "https://raw.githubusercontent.com/V2RayRoot/V2RayConfig/refs/heads/main/Config/vless.txt",
+     "https://raw.githubusercontent.com/V2RayRoot/V2RayConfig/refs/heads/main/Config/vmess.txt",
+     "https://raw.githubusercontent.com/sakha1370/OpenRay/refs/heads/main/output/all_valid_proxies.txt",
+     "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
+     "https://raw.githubusercontent.com/roosterkid/openproxylist/refs/heads/main/V2RAY.txt",
+     "https://raw.githubusercontent.com/barry-far/V2ray-Config/refs/heads/main/All_Configs_base64_Sub.txt",
+     "https://raw.githubusercontent.com/a2470982985/getNode/main/clash.yaml",
+     "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/yudou66.txt",
+     "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/nodev2ray.yaml",
+     "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/ndnode.yaml",
+     "https://github.com/Epodonios/v2ray-configs/raw/main/All_Configs_base64_Sub.txt",  # ... 保持原有的链接
     "https://wild-cloud-9893.heleimail.workers.dev",
     "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-TW.txt",
     "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/all.txt",
