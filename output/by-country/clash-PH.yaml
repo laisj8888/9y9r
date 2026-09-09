@@ -5,20 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇭 PH 01 - xiaohe
-  type: vmess
-  server: 61.245.11.60
-  port: 80
-  uuid: a3e3a710-79f8-4ae0-b83c-607aab40d197
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 149.104.109.17
+  port: 2087
+  uuid: 9ed3dcb3-b71a-4ae1-8210-95e33615d7e6
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vmess/
+    path: /04461917b179
     headers:
-      Host: 61.245.11.60
+      Host: 149.104.109.17
 proxy-groups:
 - name: PROXIES
   type: select
