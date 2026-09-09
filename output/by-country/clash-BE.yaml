@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇧🇪 BE 01 - xiaohe
   type: vless
-  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-  port: 2095
-  uuid: 73796e63-0000-4000-8000-000000000008
+  server: 172.67.155.136
+  port: 2086
+  uuid: 73796e63-0000-4000-8000-000000000007
   udp: true
   tls: false
   skip-cert-verify: true
@@ -18,24 +18,21 @@ proxies:
     headers:
       Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
 - name: 🇧🇪 BE 02 - xiaohe
-  type: vmess
-  server: 192.71.249.186
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 172.67.155.136
+  port: 2086
+  uuid: 73796e63-0000-4000-8000-000000000007
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
   network: ws
   ws-opts:
-    path: /api/v1/gpu-stream/socket
+    path: /sync
     headers:
-      Host: renderer-stream-2-62.mirra.now
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
 - name: 🇧🇪 BE 03 - xiaohe
   type: vless
-  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  server: 172.67.155.136
   port: 2095
   uuid: 73796e63-0000-4000-8000-000000000008
   udp: true
@@ -49,8 +46,8 @@ proxies:
 - name: 🇧🇪 BE 04 - xiaohe
   type: vless
   server: 104.21.64.198
-  port: 2086
-  uuid: 73796e63-0000-4000-8000-000000000007
+  port: 2095
+  uuid: 73796e63-0000-4000-8000-000000000008
   udp: true
   tls: false
   skip-cert-verify: true
@@ -75,19 +72,6 @@ proxies:
 - name: 🇧🇪 BE 06 - xiaohe
   type: vless
   server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-  port: 2086
-  uuid: 73796e63-0000-4000-8000-000000000007
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-- name: 🇧🇪 BE 07 - xiaohe
-  type: vless
-  server: 104.21.64.198
   port: 2095
   uuid: 73796e63-0000-4000-8000-000000000008
   udp: true
@@ -98,6 +82,103 @@ proxies:
     path: /sync
     headers:
       Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 BE 07 - xiaohe
+  type: vless
+  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  port: 2086
+  uuid: 73796e63-0000-4000-8000-000000000007
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 BE 08 - xiaohe
+  type: vless
+  server: 104.21.64.198
+  port: 2086
+  uuid: 73796e63-0000-4000-8000-000000000007
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 BE 09 - xiaohe
+  type: vless
+  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  port: 2095
+  uuid: 73796e63-0000-4000-8000-000000000008
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 BE 10 - xiaohe
+  type: vless
+  server: 172.67.155.136
+  port: 2095
+  uuid: 73796e63-0000-4000-8000-000000000008
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 BE 11 - xiaohe
+  type: vless
+  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  port: 2086
+  uuid: 73796e63-0000-4000-8000-000000000007
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 BE 12 - xiaohe
+  type: vmess
+  server: 192.71.249.186
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇧🇪 BE 13 - xiaohe
+  type: vmess
+  server: 192.71.249.186
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
 proxy-groups:
 - name: PROXIES
   type: select
@@ -110,6 +191,12 @@ proxy-groups:
   - 🇧🇪 BE 05 - xiaohe
   - 🇧🇪 BE 06 - xiaohe
   - 🇧🇪 BE 07 - xiaohe
+  - 🇧🇪 BE 08 - xiaohe
+  - 🇧🇪 BE 09 - xiaohe
+  - 🇧🇪 BE 10 - xiaohe
+  - 🇧🇪 BE 11 - xiaohe
+  - 🇧🇪 BE 12 - xiaohe
+  - 🇧🇪 BE 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -122,5 +209,11 @@ proxy-groups:
   - 🇧🇪 BE 05 - xiaohe
   - 🇧🇪 BE 06 - xiaohe
   - 🇧🇪 BE 07 - xiaohe
+  - 🇧🇪 BE 08 - xiaohe
+  - 🇧🇪 BE 09 - xiaohe
+  - 🇧🇪 BE 10 - xiaohe
+  - 🇧🇪 BE 11 - xiaohe
+  - 🇧🇪 BE 12 - xiaohe
+  - 🇧🇪 BE 13 - xiaohe
 rules:
 - MATCH,PROXIES

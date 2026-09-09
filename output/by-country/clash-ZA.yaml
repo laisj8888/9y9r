@@ -6,39 +6,57 @@ log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - xiaohe
   type: ss
-  server: 20.164.43.105
+  server: 139.84.247.164
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: tfAcRikawhNoZAhu
+  udp: true
+- name: 🇿🇦 ZA 02 - xiaohe
+  type: ss
+  server: 20.164.211.25
   port: 443
   cipher: chacha20-ietf-poly1305
   password: BhYMkBpjAjE6ixSw
   udp: true
-- name: 🇿🇦 ZA 02 - xiaohe
+- name: 🇿🇦 ZA 03 - xiaohe
+  type: vmess
+  server: za-a-zzy.glnyhlgc.com
+  port: 443
+  uuid: 5583af50-f464-4df6-e2ef-34592311e5c6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /about/7678
+    headers:
+      Host: ''
+- name: 🇿🇦 ZA 04 - xiaohe
   type: ss
   server: 102.37.156.224
   port: 443
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
-- name: 🇿🇦 ZA 03 - xiaohe
-  type: ss
-  server: 20.164.211.25
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: BhYMkBpjAjE6ixSw
-  udp: true
-- name: 🇿🇦 ZA 04 - xiaohe
-  type: ss
-  server: 102.133.165.160
-  port: 16233
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  udp: true
 - name: 🇿🇦 ZA 05 - xiaohe
-  type: ss
-  server: 20.164.211.25
+  type: vmess
+  server: za-a-zzy.glnyhlgc.com
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: BhYMkBpjAjE6ixSw
+  uuid: 5583af50-f464-4df6-e2ef-34592311e5c6
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /about/7678
+    headers:
+      Host: ''
 - name: 🇿🇦 ZA 06 - xiaohe
   type: vmess
   server: za-a-zzy.glnyhlgc.com
@@ -49,27 +67,29 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: za-a-zzy.glnyhlgc.com
   network: ws
   ws-opts:
     path: /about/7678
     headers:
-      Host: ''
+      Host: za-a-zzy.glnyhlgc.com
 - name: 🇿🇦 ZA 07 - xiaohe
-  type: ss
-  server: 20.164.211.25
+  type: vmess
+  server: za-a-zzy.glnyhlgc.com
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: BhYMkBpjAjE6ixSw
+  uuid: 5583af50-f464-4df6-e2ef-34592311e5c6
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: za-a-zzy.glnyhlgc.com
+  network: ws
+  ws-opts:
+    path: /about/7678
+    headers:
+      Host: za-a-zzy.glnyhlgc.com
 - name: 🇿🇦 ZA 08 - xiaohe
-  type: ss
-  server: 20.164.43.105
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: BhYMkBpjAjE6ixSw
-  udp: true
-- name: 🇿🇦 ZA 09 - xiaohe
   type: vmess
   server: za-a-zzy.glnyhlgc.com
   port: 443
@@ -85,9 +105,16 @@ proxies:
     path: /about/7678
     headers:
       Host: ''
+- name: 🇿🇦 ZA 09 - xiaohe
+  type: ss
+  server: 102.133.165.160
+  port: 16233
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  udp: true
 - name: 🇿🇦 ZA 10 - xiaohe
   type: ss
-  server: 20.164.43.105
+  server: 20.164.211.25
   port: 443
   cipher: chacha20-ietf-poly1305
   password: BhYMkBpjAjE6ixSw
@@ -102,18 +129,18 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: za-a-zzy.glnyhlgc.com
+  servername: ''
   network: ws
   ws-opts:
     path: /about/7678
     headers:
-      Host: za-a-zzy.glnyhlgc.com
+      Host: ''
 - name: 🇿🇦 ZA 12 - xiaohe
   type: ss
-  server: 20.164.211.25
-  port: 443
+  server: 102.133.165.160
+  port: 16233
   cipher: chacha20-ietf-poly1305
-  password: BhYMkBpjAjE6ixSw
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 - name: 🇿🇦 ZA 13 - xiaohe
   type: vmess
@@ -125,15 +152,15 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: za-a-zzy.glnyhlgc.com
   network: ws
   ws-opts:
     path: /about/7678
     headers:
-      Host: ''
+      Host: za-a-zzy.glnyhlgc.com
 - name: 🇿🇦 ZA 14 - xiaohe
   type: ss
-  server: 20.164.43.105
+  server: 20.164.211.25
   port: 443
   cipher: chacha20-ietf-poly1305
   password: BhYMkBpjAjE6ixSw
@@ -148,27 +175,29 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /about/7678
+    headers:
+      Host: ''
+- name: 🇿🇦 ZA 16 - xiaohe
+  type: vmess
+  server: za-a-zzy.glnyhlgc.com
+  port: 443
+  uuid: 5583af50-f464-4df6-e2ef-34592311e5c6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
   servername: za-a-zzy.glnyhlgc.com
   network: ws
   ws-opts:
     path: /about/7678
     headers:
       Host: za-a-zzy.glnyhlgc.com
-- name: 🇿🇦 ZA 16 - xiaohe
-  type: ss
-  server: 20.164.43.105
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: BhYMkBpjAjE6ixSw
-  udp: true
 - name: 🇿🇦 ZA 17 - xiaohe
-  type: ss
-  server: 20.164.211.25
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: BhYMkBpjAjE6ixSw
-  udp: true
-- name: 🇿🇦 ZA 18 - xiaohe
   type: vmess
   server: za-a-zzy.glnyhlgc.com
   port: 443
@@ -184,13 +213,38 @@ proxies:
     path: /about/7678
     headers:
       Host: ''
-- name: 🇿🇦 ZA 19 - xiaohe
-  type: ss
-  server: 20.164.211.25
+- name: 🇿🇦 ZA 18 - xiaohe
+  type: vmess
+  server: za-a-zzy.glnyhlgc.com
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: BhYMkBpjAjE6ixSw
+  uuid: 5583af50-f464-4df6-e2ef-34592311e5c6
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: za-a-zzy.glnyhlgc.com
+  network: ws
+  ws-opts:
+    path: /about/7678
+    headers:
+      Host: za-a-zzy.glnyhlgc.com
+- name: 🇿🇦 ZA 19 - xiaohe
+  type: vmess
+  server: za-a-zzy.glnyhlgc.com
+  port: 443
+  uuid: 5583af50-f464-4df6-e2ef-34592311e5c6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /about/7678
+    headers:
+      Host: ''
 - name: 🇿🇦 ZA 20 - xiaohe
   type: vmess
   server: za-a-zzy.glnyhlgc.com
@@ -207,132 +261,6 @@ proxies:
     path: /about/7678
     headers:
       Host: ''
-- name: 🇿🇦 ZA 21 - xiaohe
-  type: ss
-  server: 102.133.165.160
-  port: 16233
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  udp: true
-- name: 🇿🇦 ZA 22 - xiaohe
-  type: vmess
-  server: za-a-zzy.glnyhlgc.com
-  port: 443
-  uuid: 5583af50-f464-4df6-e2ef-34592311e5c6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /about/7678
-    headers:
-      Host: ''
-- name: 🇿🇦 ZA 23 - xiaohe
-  type: vmess
-  server: za-a-zzy.glnyhlgc.com
-  port: 443
-  uuid: 5583af50-f464-4df6-e2ef-34592311e5c6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: za-a-zzy.glnyhlgc.com
-  network: ws
-  ws-opts:
-    path: /about/7678
-    headers:
-      Host: za-a-zzy.glnyhlgc.com
-- name: 🇿🇦 ZA 24 - xiaohe
-  type: ss
-  server: 20.164.211.25
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: BhYMkBpjAjE6ixSw
-  udp: true
-- name: 🇿🇦 ZA 25 - xiaohe
-  type: vmess
-  server: za-a-zzy.glnyhlgc.com
-  port: 443
-  uuid: 5583af50-f464-4df6-e2ef-34592311e5c6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /about/7678
-    headers:
-      Host: ''
-- name: 🇿🇦 ZA 26 - xiaohe
-  type: vmess
-  server: za-a-zzy.glnyhlgc.com
-  port: 443
-  uuid: 5583af50-f464-4df6-e2ef-34592311e5c6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: za-a-zzy.glnyhlgc.com
-  network: ws
-  ws-opts:
-    path: /about/7678
-    headers:
-      Host: za-a-zzy.glnyhlgc.com
-- name: 🇿🇦 ZA 27 - xiaohe
-  type: vmess
-  server: za-a-zzy.glnyhlgc.com
-  port: 443
-  uuid: 5583af50-f464-4df6-e2ef-34592311e5c6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /about/7678
-    headers:
-      Host: ''
-- name: 🇿🇦 ZA 28 - xiaohe
-  type: vmess
-  server: za-a-zzy.glnyhlgc.com
-  port: 443
-  uuid: 5583af50-f464-4df6-e2ef-34592311e5c6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: za-a-zzy.glnyhlgc.com
-  network: ws
-  ws-opts:
-    path: /about/7678
-    headers:
-      Host: za-a-zzy.glnyhlgc.com
-- name: 🇿🇦 ZA 29 - xiaohe
-  type: vmess
-  server: za-a-zzy.glnyhlgc.com
-  port: 443
-  uuid: 5583af50-f464-4df6-e2ef-34592311e5c6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: za-a-zzy.glnyhlgc.com
-  network: ws
-  ws-opts:
-    path: /about/7678
-    headers:
-      Host: za-a-zzy.glnyhlgc.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -358,15 +286,6 @@ proxy-groups:
   - 🇿🇦 ZA 18 - xiaohe
   - 🇿🇦 ZA 19 - xiaohe
   - 🇿🇦 ZA 20 - xiaohe
-  - 🇿🇦 ZA 21 - xiaohe
-  - 🇿🇦 ZA 22 - xiaohe
-  - 🇿🇦 ZA 23 - xiaohe
-  - 🇿🇦 ZA 24 - xiaohe
-  - 🇿🇦 ZA 25 - xiaohe
-  - 🇿🇦 ZA 26 - xiaohe
-  - 🇿🇦 ZA 27 - xiaohe
-  - 🇿🇦 ZA 28 - xiaohe
-  - 🇿🇦 ZA 29 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -392,14 +311,5 @@ proxy-groups:
   - 🇿🇦 ZA 18 - xiaohe
   - 🇿🇦 ZA 19 - xiaohe
   - 🇿🇦 ZA 20 - xiaohe
-  - 🇿🇦 ZA 21 - xiaohe
-  - 🇿🇦 ZA 22 - xiaohe
-  - 🇿🇦 ZA 23 - xiaohe
-  - 🇿🇦 ZA 24 - xiaohe
-  - 🇿🇦 ZA 25 - xiaohe
-  - 🇿🇦 ZA 26 - xiaohe
-  - 🇿🇦 ZA 27 - xiaohe
-  - 🇿🇦 ZA 28 - xiaohe
-  - 🇿🇦 ZA 29 - xiaohe
 rules:
 - MATCH,PROXIES
