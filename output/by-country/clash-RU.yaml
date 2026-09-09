@@ -5,41 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: af0db32b-2cb0-48c7-b04e-96003f8c2369
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: Dl2Uf-ivDezIlz3E86rK18.HHVt37Tjm2xbOSQL5HxOgn-Y.WorKerS.DEV
-  network: ws
-  ws-opts:
-    path: /vl/lIp8WbnljVYVSeQwjoRQPUGWwnVL?ed=2560
-    headers:
-      Host: dl2uf-ivdezilz3e86rk18.hhvt37tjm2xbosql5hxogn-y.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  type: vless
-  server: 45.9.15.206
-  port: 443
-  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ru05.abvpn.ru
-  network: ws
-  ws-opts:
-    path: /websocket
-    headers:
-      Host: ru05.abvpn.ru
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   type: vless
   server: ru05.abvpn.ru
   port: 443
@@ -53,19 +18,21 @@ proxies:
     path: /websocket
     headers:
       Host: ru05.abvpn.ru
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  server: ru05.abvpn.ru
+  port: 443
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-  servername: ya.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  servername: ru05.abvpn.ru
+  network: ws
+  ws-opts:
+    path: /websocket
+    headers:
+      Host: ru05.abvpn.ru
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vmess
   server: 147.45.125.231
   port: 443
@@ -81,21 +48,39 @@ proxies:
     path: /api/v1/gpu-stream/socket
     headers:
       Host: renderer-stream-2-62.mirra.now
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   type: vless
-  server: ru05.abvpn.ru
-  port: 443
-  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ru05.abvpn.ru
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  type: vless
+  server: 212.67.9.113
+  port: 2200
+  uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /websocket
+    path: /v1
     headers:
-      Host: ru05.abvpn.ru
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+      Host: 212.67.9.113
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   type: vless
   server: 45.9.15.206
   port: 443
@@ -109,6 +94,22 @@ proxies:
     path: /websocket
     headers:
       Host: 45.9.15.206
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  type: vmess
+  server: renderer-stream-2-62.mirra.now
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: ''
 - name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
   type: vless
   server: ru05.abvpn.ru
@@ -153,7 +154,20 @@ proxies:
       Host: ru05.abvpn.ru
 - name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
   type: vless
-  server: 45.9.15.206
+  server: 193.233.217.140
+  port: 2200
+  uuid: 19365fd3-d23c-4a9e-a2ef-543d230e65c4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: rzd.ru
+- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
+  type: vless
+  server: ru05.abvpn.ru
   port: 443
   uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
   udp: true
@@ -164,20 +178,7 @@ proxies:
   ws-opts:
     path: /websocket
     headers:
-      Host: 45.9.15.206
-- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
-  type: vless
-  server: 45.142.120.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime08.workers.dev
+      Host: ru05.abvpn.ru
 - name: 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
   type: vless
   server: 45.9.15.206
@@ -191,45 +192,8 @@ proxies:
   ws-opts:
     path: /websocket
     headers:
-      Host: 45.9.15.206
+      Host: ru05.abvpn.ru
 - name: 🇷🇺 俄罗斯 (Russia) 15 - xiaohe
-  type: vless
-  server: tr2.wba-pn.ru
-  port: 443
-  uuid: 1f507f26-949e-4dab-9191-0d116e2bd8aa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tr2.wba-pn.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tr2.wba-pn.ru
-- name: 🇷🇺 俄罗斯 (Russia) 16 - xiaohe
-  type: ss
-  server: 138.124.68.88
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: Y2ZlN
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 17 - xiaohe
-  type: vmess
-  server: 147.45.125.231
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-- name: 🇷🇺 俄罗斯 (Russia) 18 - xiaohe
   type: vless
   server: 45.9.15.206
   port: 443
@@ -242,33 +206,7 @@ proxies:
   ws-opts:
     path: /websocket
     headers:
-      Host: ru05.abvpn.ru
-- name: 🇷🇺 俄罗斯 (Russia) 19 - xiaohe
-  type: vless
-  server: 212.67.9.113
-  port: 2200
-  uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: 212.67.9.113
-- name: 🇷🇺 俄罗斯 (Russia) 20 - xiaohe
-  type: vless
-  server: 45.142.120.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime08.workers.dev
+      Host: 45.9.15.206
 proxy-groups:
 - name: PROXIES
   type: select
@@ -289,11 +227,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 15 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 16 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 17 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 18 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 19 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 20 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -314,10 +247,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 15 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 16 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 17 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 18 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 19 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 20 - xiaohe
 rules:
 - MATCH,PROXIES
