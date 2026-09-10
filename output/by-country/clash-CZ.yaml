@@ -5,35 +5,57 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
-  type: vmess
-  server: 95.85.233.138
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-- name: 🇨🇿 CZ 02 - xiaohe
   type: vless
   server: 188.114.97.6
-  port: 2053
-  uuid: 934f2038-17f8-4ec5-9204-8381e19fc6e3
+  port: 8880
+  uuid: 9e648bb6-25f7-4b16-9949-55ac0952d66b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: TIGHT-busH-0Bb4.BSHXYyXhDJdGGb.wOrkERS.DEV
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiVXFEMlhKZVY4dzNoTUtpZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: tight-bush-0bb4.bshxyyxhdjdggb.workers.dev
+      Host: lingering-grass-6728.131-a78.workers.dev
+- name: 🇨🇿 CZ 02 - xiaohe
+  type: vless
+  server: www.gov.ua
+  port: 8880
+  uuid: 1742863c-ce4b-4bb7-b807-80da29cbec86
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=proxyip.us.cmliussss.net
+    headers:
+      Host: icy-fog-9a41.70-a39.workers.dev
+- name: 🇨🇿 CZ 03 - xiaohe
+  type: vless
+  server: cloudflare-ech.com
+  port: 8880
+  uuid: 2d212f81-7ea2-4d0b-884c-a6497ab41143
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: hidden-union-a4b2.436.workers.dev
+- name: 🇨🇿 CZ 04 - xiaohe
+  type: vless
+  server: sparkling-shadow-481d.342-429.workers.dev
+  port: 8880
+  uuid: e431026f-d605-4a52-8b3b-0912a68dc9d1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: sparkling-shadow-481d.342-429.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +63,8 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
+  - 🇨🇿 CZ 03 - xiaohe
+  - 🇨🇿 CZ 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +72,7 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
+  - 🇨🇿 CZ 03 - xiaohe
+  - 🇨🇿 CZ 04 - xiaohe
 rules:
 - MATCH,PROXIES

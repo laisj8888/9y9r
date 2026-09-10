@@ -6,205 +6,47 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: ss
+  server: 195.133.23.200
+  port: 20111
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: ss
-  server: 194.87.196.13
-  port: 20111
-  cipher: aes-256-gcm
-  password: 4938e975724d0ed1
-  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
-  server: icook.tw
-  port: 8880
-  uuid: aa7461af-3176-42a3-8974-59930189c521
+  server: bz9.wba-pn.ru
+  port: 2053
+  uuid: 9a47a8ff-8cdd-4a35-b765-fbad6d40e0a0
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: bz9.wba-pn.ru
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /
     headers:
-      Host: round-block-e864.326.workers.dev
+      Host: bz9.wba-pn.ru
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  type: vless
-  server: 212.67.9.113
-  port: 2200
-  uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: 212.67.9.113
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  type: vmess
-  server: renderer-stream-2-62.mirra.now
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: ''
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 81b3fa7e-12b0-4c2b-9866-324edd26ef7f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: falling-lake-0b5a.192-3e2.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  type: vmess
-  server: renderer-stream-2-62.mirra.now
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: ''
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  type: vless
-  server: app-q0zc4t.user-4gfyh5.workers.dev
-  port: 443
-  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: app-q0zc4t.user-4gfyh5.workers.dev
-  network: ws
-  ws-opts:
-    path: /cmh
-    headers:
-      Host: ''
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
   type: ss
-  server: 46.17.40.234
-  port: 2011
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  type: vless
-  server: 45.142.120.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime08.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  type: ss
-  server: 46.17.42.166
-  port: 10661
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
-  type: vmess
-  server: renderer-stream-2-62.mirra.now
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-  servername: ya.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
-  type: vless
-  server: snapp.ir
-  port: 2052
-  uuid: 8619f429-1ca5-4e53-a94e-1dd36b585396
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn.pershiansport.ir
-- name: 🇷🇺 俄罗斯 (Russia) 15 - xiaohe
-  type: vless
-  server: log.bpminecraft.com
-  port: 8880
-  uuid: ed189537-41de-4abe-9f8b-bb75d457722d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lucky-cake-4f58.318-5ee.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 16 - xiaohe
-  type: vless
-  server: icook.tw
-  port: 8880
-  uuid: aa7461af-3176-42a3-8974-59930189c521
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: round-block-e864.326.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 17 - xiaohe
-  type: ss
-  server: 195.133.5.102
+  server: 195.58.48.137
   port: 20111
   cipher: aes-256-gcm
-  password: 895b4b796a357570
+  password: 8ad9d72a5571df86
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 18 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  type: ss
+  server: 217.25.90.102
+  port: 3
+  cipher: chacha20-ietf-poly1305
+  password: 816Efx8yiCSDDpvvpxXL8Q
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   type: vless
   server: 186.246.12.242
   port: 2053
@@ -218,46 +60,61 @@ proxies:
     path: /
     headers:
       Host: bz9.wba-pn.ru
-- name: 🇷🇺 俄罗斯 (Russia) 19 - xiaohe
-  type: ss
-  server: 195.133.23.200
-  port: 20111
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  type: vmess
+  server: 147.45.125.231
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 20 - xiaohe
-  type: ss
-  server: 195.58.48.137
-  port: 20111
-  cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 21 - xiaohe
-  type: vless
-  server: 88.216.67.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
   network: ws
   ws-opts:
-    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    path: /api/v1/gpu-stream/socket
     headers:
-      Host: vms.lifetime05.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 22 - xiaohe
-  type: vless
-  server: raspy-sun-3de0.338.workers.dev
-  port: 8880
-  uuid: 1113b881-179c-411c-b29b-53dae8faaf0a
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  type: vmess
+  server: 5.188.26.85
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /api/v1/gpu-stream/socket
     headers:
-      Host: raspy-sun-3de0.338.workers.dev
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
+  type: ss
+  server: 46.17.40.234
+  port: 2011
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
+  type: vmess
+  server: 147.45.125.231
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
 proxy-groups:
 - name: PROXIES
   type: select
@@ -273,18 +130,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 15 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 16 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 17 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 18 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 19 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 20 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 21 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 22 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -300,17 +145,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 15 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 16 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 17 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 18 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 19 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 20 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 21 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 22 - xiaohe
 rules:
 - MATCH,PROXIES
