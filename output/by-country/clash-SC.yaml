@@ -25,18 +25,15 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇨 SC 03 - xiaohe
-  type: vless
-  server: 162.159.156.214
-  port: 8880
-  uuid: 4f74ff26-25af-41d6-9d39-be46fe8ff1a8
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: steep-resonance-1ffb.274.workers.dev
 - name: 🇸🇨 SC 04 - xiaohe
   type: vmess
   server: 156.226.183.181
@@ -68,32 +65,25 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇨 SC 07 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: e431026f-d605-4a52-8b3b-0912a68dc9d1
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: sparkling-shadow-481d.342-429.workers.dev
 - name: 🇸🇨 SC 08 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: dark-leaf-93a1.440-02e.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: dark-leaf-93a1.440-02e.workers.dev
 - name: 🇸🇨 SC 09 - xiaohe
   type: vmess
   server: 156.226.183.181
@@ -105,16 +95,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇨 SC 10 - xiaohe
-  type: vmess
-  server: 156.226.183.181
-  port: 54321
-  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇨 SC 11 - xiaohe
   type: vmess
   server: 156.226.183.181
   port: 54321
@@ -139,7 +119,6 @@ proxy-groups:
   - 🇸🇨 SC 08 - xiaohe
   - 🇸🇨 SC 09 - xiaohe
   - 🇸🇨 SC 10 - xiaohe
-  - 🇸🇨 SC 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -155,6 +134,5 @@ proxy-groups:
   - 🇸🇨 SC 08 - xiaohe
   - 🇸🇨 SC 09 - xiaohe
   - 🇸🇨 SC 10 - xiaohe
-  - 🇸🇨 SC 11 - xiaohe
 rules:
 - MATCH,PROXIES
