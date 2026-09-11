@@ -19,19 +19,86 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  type: vmess
+  server: 132.243.22.80
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: web-socket.tgdaosheng.ggff.net
+  servername: renderer-stream-2-62.mirra.now
   network: ws
   ws-opts:
-    path: /proxyip=bpb.yousef.isegaro.com
+    path: /api/v1/gpu-stream/socket
     headers:
-      Host: web-socket.tgdaosheng.ggff.net
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
   type: vless
   server: Emirates-sgood.wopd.butnorwa.butter.whooisthebest.ir
   port: 33353
@@ -43,181 +110,6 @@ proxies:
     public-key: lrJShu6JVnQQ54hKEmKWnj5DUcwalnWBbN_HjGFOeB8
   servername: play.google.com
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-socket.tgdaosheng.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-socket.tgdaosheng.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  type: vless
-  server: 185.225.195.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime18.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
-  type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-socket.tgdaosheng.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
-- name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
-  type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-socket.tgdaosheng.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=bpb.yousef.isegaro.com
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
-- name: 🇦🇪 阿联酋 (UAE) 11 - xiaohe
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 12 - xiaohe
-  type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: 48c20f0a-c2a4-453f-8a61-ec73ea7829c5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: morning-brook-d78e.347.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 13 - xiaohe
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 14 - xiaohe
-  type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-socket.tgdaosheng.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
-- name: 🇦🇪 阿联酋 (UAE) 15 - xiaohe
-  type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-socket.tgdaosheng.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
-- name: 🇦🇪 阿联酋 (UAE) 16 - xiaohe
-  type: vless
-  server: 172.67.179.98
-  port: 8880
-  uuid: caa0f615-2598-4b78-b339-2824658a602b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: soft-dream-429a.319.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -231,14 +123,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 11 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 12 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 13 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 14 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 15 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 16 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -252,13 +136,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 11 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 12 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 13 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 14 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 15 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 16 - xiaohe
 rules:
 - MATCH,PROXIES

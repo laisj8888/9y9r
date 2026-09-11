@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - xiaohe
   type: vmess
-  server: 3h-kazakhstan1.09vpn.com
+  server: 38.107.234.57
   port: 80
   uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
   alterId: 0
@@ -18,8 +18,20 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 3h-kazakhstan1.09vpn.com
+      Host: google.com
 - name: 🇰🇿 KZ 02 - xiaohe
+  type: vless
+  server: 178.236.16.98
+  port: 35728
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 KZ 03 - xiaohe
   type: vmess
   server: 3h-kazakhstan1.09vpn.com
   port: 80
@@ -33,19 +45,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 3h-kazakhstan1.09vpn.com
-- name: 🇰🇿 KZ 03 - xiaohe
-  type: vless
-  server: 111.88.143.139
-  port: 51940
-  uuid: 03464802-b517-404b-b15c-7750ffc5e78f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: uPHvFb_vZ3DKL-8Et_e9OliZskdSV5U1NZ66tHfC-2Y
-  servername: yahoo.com
-  client-fingerprint: chrome
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: 🇰🇿 KZ 04 - xiaohe
   type: vmess
   server: 38.107.234.57
@@ -60,20 +60,53 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 38.107.234.57
+      Host: ''
 - name: 🇰🇿 KZ 05 - xiaohe
-  type: vless
-  server: 83.222.23.81
-  port: 38065
-  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  type: vmess
+  server: 38.107.234.57
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
-  servername: yahoo.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: 🇰🇿 KZ 06 - xiaohe
+  type: vmess
+  server: 38.107.234.57
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: ''
+- name: 🇰🇿 KZ 07 - xiaohe
+  type: vmess
+  server: 38.107.234.57
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 38.107.234.57
+- name: 🇰🇿 KZ 08 - xiaohe
   type: vmess
   server: 3h-kazakhstan1.09vpn.com
   port: 80
@@ -88,28 +121,9 @@ proxies:
     path: /vmess/
     headers:
       Host: ''
-- name: 🇰🇿 KZ 07 - xiaohe
-  type: ss
-  server: 94.198.220.183
-  port: 64674
-  cipher: chacha20-ietf-poly1305
-  password: s8LbJCgUiGXeCKVc63tHJP
-  udp: true
-- name: 🇰🇿 KZ 08 - xiaohe
-  type: vless
-  server: 178.236.16.98
-  port: 35728
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-  servername: yahoo.com
-  client-fingerprint: chrome
 - name: 🇰🇿 KZ 09 - xiaohe
   type: vmess
-  server: 38.107.234.57
+  server: 3h-kazakhstan1.09vpn.com
   port: 80
   uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
   alterId: 0
@@ -121,10 +135,10 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 38.107.234.57
+      Host: 3h-kazakhstan1.09vpn.com
 - name: 🇰🇿 KZ 10 - xiaohe
   type: vmess
-  server: 38.107.234.57
+  server: 3h-kazakhstan1.09vpn.com
   port: 80
   uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
   alterId: 0
@@ -136,7 +150,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 38.107.234.57
+      Host: ''
 - name: 🇰🇿 KZ 11 - xiaohe
   type: vmess
   server: 38.107.234.57
@@ -151,10 +165,10 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: ''
+      Host: 3h-kazakhstan1.09vpn.com
 - name: 🇰🇿 KZ 12 - xiaohe
   type: vmess
-  server: 3h-kazakhstan1.09vpn.com
+  server: 38.107.234.57
   port: 80
   uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
   alterId: 0
@@ -166,7 +180,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: ''
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: 🇰🇿 KZ 13 - xiaohe
   type: vmess
   server: 38.107.234.57
@@ -181,7 +195,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: viber.com
+      Host: ''
 - name: 🇰🇿 KZ 14 - xiaohe
   type: vmess
   server: 38.107.234.57
@@ -196,7 +210,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: ''
+      Host: google.com
 - name: 🇰🇿 KZ 15 - xiaohe
   type: vmess
   server: 38.107.234.57
@@ -211,35 +225,8 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: google.com
-- name: 🇰🇿 KZ 16 - xiaohe
-  type: vmess
-  server: 3h-kazakhstan1.09vpn.com
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-- name: 🇰🇿 KZ 17 - xiaohe
-  type: vless
-  server: 77.73.232.61
-  port: 19747
-  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 KZ 18 - xiaohe
+- name: 🇰🇿 KZ 16 - xiaohe
   type: vmess
   server: 38.107.234.57
   port: 80
@@ -253,7 +240,26 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: ''
+      Host: 3h-kazakhstan1.09vpn.com
+- name: 🇰🇿 KZ 17 - xiaohe
+  type: ss
+  server: 94.198.220.183
+  port: 64674
+  cipher: chacha20-ietf-poly1305
+  password: s8LbJCgUiGXeCKVc63tHJP
+  udp: true
+- name: 🇰🇿 KZ 18 - xiaohe
+  type: vless
+  server: 77.73.232.61
+  port: 19747
+  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
+  servername: yahoo.com
+  client-fingerprint: chrome
 - name: 🇰🇿 KZ 19 - xiaohe
   type: vmess
   server: 38.107.234.57
@@ -268,7 +274,148 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: 38.107.234.57
+- name: 🇰🇿 KZ 20 - xiaohe
+  type: vmess
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: ''
+- name: 🇰🇿 KZ 21 - xiaohe
+  type: vmess
+  server: 38.107.234.57
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: ''
+- name: 🇰🇿 KZ 22 - xiaohe
+  type: vless
+  server: 111.88.143.139
+  port: 51940
+  uuid: 03464802-b517-404b-b15c-7750ffc5e78f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: uPHvFb_vZ3DKL-8Et_e9OliZskdSV5U1NZ66tHfC-2Y
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 KZ 23 - xiaohe
+  type: vless
+  server: 83.222.23.81
+  port: 38065
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 KZ 24 - xiaohe
+  type: vmess
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: ''
+- name: 🇰🇿 KZ 25 - xiaohe
+  type: vmess
+  server: 38.107.234.57
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: ''
+- name: 🇰🇿 KZ 26 - xiaohe
+  type: vmess
+  server: 38.107.234.57
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: ''
+- name: 🇰🇿 KZ 27 - xiaohe
+  type: vmess
+  server: 38.107.234.57
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 38.107.234.57
+- name: 🇰🇿 KZ 28 - xiaohe
+  type: vmess
+  server: 38.107.234.57
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: viber.com
+- name: 🇰🇿 KZ 29 - xiaohe
+  type: vless
+  server: 77.73.232.61
+  port: 19747
+  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
+  servername: yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -293,6 +440,16 @@ proxy-groups:
   - 🇰🇿 KZ 17 - xiaohe
   - 🇰🇿 KZ 18 - xiaohe
   - 🇰🇿 KZ 19 - xiaohe
+  - 🇰🇿 KZ 20 - xiaohe
+  - 🇰🇿 KZ 21 - xiaohe
+  - 🇰🇿 KZ 22 - xiaohe
+  - 🇰🇿 KZ 23 - xiaohe
+  - 🇰🇿 KZ 24 - xiaohe
+  - 🇰🇿 KZ 25 - xiaohe
+  - 🇰🇿 KZ 26 - xiaohe
+  - 🇰🇿 KZ 27 - xiaohe
+  - 🇰🇿 KZ 28 - xiaohe
+  - 🇰🇿 KZ 29 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -317,5 +474,15 @@ proxy-groups:
   - 🇰🇿 KZ 17 - xiaohe
   - 🇰🇿 KZ 18 - xiaohe
   - 🇰🇿 KZ 19 - xiaohe
+  - 🇰🇿 KZ 20 - xiaohe
+  - 🇰🇿 KZ 21 - xiaohe
+  - 🇰🇿 KZ 22 - xiaohe
+  - 🇰🇿 KZ 23 - xiaohe
+  - 🇰🇿 KZ 24 - xiaohe
+  - 🇰🇿 KZ 25 - xiaohe
+  - 🇰🇿 KZ 26 - xiaohe
+  - 🇰🇿 KZ 27 - xiaohe
+  - 🇰🇿 KZ 28 - xiaohe
+  - 🇰🇿 KZ 29 - xiaohe
 rules:
 - MATCH,PROXIES

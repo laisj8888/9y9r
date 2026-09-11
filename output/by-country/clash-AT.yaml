@@ -28,6 +28,16 @@ proxies:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
   client-fingerprint: qq
+- name: 🇦🇹 AT 03 - xiaohe
+  type: vmess
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16308
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +45,7 @@ proxy-groups:
   - AUTO
   - 🇦🇹 AT 01 - xiaohe
   - 🇦🇹 AT 02 - xiaohe
+  - 🇦🇹 AT 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +53,6 @@ proxy-groups:
   proxies:
   - 🇦🇹 AT 01 - xiaohe
   - 🇦🇹 AT 02 - xiaohe
+  - 🇦🇹 AT 03 - xiaohe
 rules:
 - MATCH,PROXIES
