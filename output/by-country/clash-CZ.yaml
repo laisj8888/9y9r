@@ -5,82 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
-  type: vmess
-  server: 95.182.94.210
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-- name: 🇨🇿 CZ 02 - xiaohe
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 934f2038-17f8-4ec5-9204-8381e19fc6e3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: TIGHT-busH-0Bb4.BSHXYyXhDJdGGb.wOrkERS.DEV
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiVXFEMlhKZVY4dzNoTUtpZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: TIGHT-busH-0Bb4.BSHXYyXhDJdGGb.wOrkERS.DEV
-- name: 🇨🇿 CZ 03 - xiaohe
-  type: vless
-  server: 185.112.249.201
+  server: 188.114.97.8
   port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
+  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: web-socket.tgdaosheng.ggff.net
+  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
   network: ws
   ws-opts:
-    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
+    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: web-socket.tgdaosheng.ggff.net
-- name: 🇨🇿 CZ 04 - xiaohe
-  type: vmess
-  server: 195.85.23.225
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-2-62.mirra.now
+      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - xiaohe
-  - 🇨🇿 CZ 02 - xiaohe
-  - 🇨🇿 CZ 03 - xiaohe
-  - 🇨🇿 CZ 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - xiaohe
-  - 🇨🇿 CZ 02 - xiaohe
-  - 🇨🇿 CZ 03 - xiaohe
-  - 🇨🇿 CZ 04 - xiaohe
 rules:
 - MATCH,PROXIES
