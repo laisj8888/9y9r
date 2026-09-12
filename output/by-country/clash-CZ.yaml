@@ -5,32 +5,107 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
-  type: vmess
-  server: 95.85.233.138
+  type: vless
+  server: 172.67.174.249
   port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
+  uuid: 26b35808-f1e1-4b97-8c69-46796f058d8b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
+  servername: ezaccess-project-9138d4.5f6on.workers.dev
   network: ws
   ws-opts:
-    path: /api/v1/gpu-stream/socket
+    path: /eyJqdW5rIjoicG9pMkt4TDY2TVNtRSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: renderer-stream-2-62.mirra.now
+      Host: ezaccess-project-9138d4.5f6on.workers.dev
+- name: 🇨🇿 CZ 02 - xiaohe
+  type: vless
+  server: 188.114.97.3
+  port: 443
+  uuid: daf485ba-60fc-4166-a72c-8d2a5407cbc5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: KIeVH9yXcGg14-GY4wXqCAV0pegKd.D-0EZpK5xP5wk8ltDgb6EVLPGC-jin.WORkeRS.Dev
+  network: ws
+  ws-opts:
+    path: /vl/zM8ELyqEIYeZ3ijacV9kuK?ed
+    headers:
+      Host: kievh9yxcgg14-gy4wxqcav0pegkd.d-0ezpk5xp5wk8ltdgb6evlpgc-jin.workers.dev
+- name: 🇨🇿 CZ 03 - xiaohe
+  type: vless
+  server: 45.131.211.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime06.workers.dev
+- name: 🇨🇿 CZ 04 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: bd8c736e-cae1-43d7-b573-9672e6ca4989
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vl/zXLTmz3hE3szn64f?ed=2560
+    headers:
+      Host: l0n0qgkdttu061g57fhqzbet333s4t.ade-1004.workers.dev
+- name: 🇨🇿 CZ 05 - xiaohe
+  type: vless
+  server: medium.com
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+- name: 🇨🇿 CZ 06 - xiaohe
+  type: vless
+  server: 104.21.39.30
+  port: 80
+  uuid: 7201b2cd-0675-4c1a-9c76-07ca14ffcf08
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiTEwyZVI5T3BYZDBxTzhPRCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: 6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - xiaohe
+  - 🇨🇿 CZ 02 - xiaohe
+  - 🇨🇿 CZ 03 - xiaohe
+  - 🇨🇿 CZ 04 - xiaohe
+  - 🇨🇿 CZ 05 - xiaohe
+  - 🇨🇿 CZ 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - xiaohe
+  - 🇨🇿 CZ 02 - xiaohe
+  - 🇨🇿 CZ 03 - xiaohe
+  - 🇨🇿 CZ 04 - xiaohe
+  - 🇨🇿 CZ 05 - xiaohe
+  - 🇨🇿 CZ 06 - xiaohe
 rules:
 - MATCH,PROXIES
