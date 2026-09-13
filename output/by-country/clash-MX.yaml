@@ -33,13 +33,6 @@ proxies:
     headers:
       Host: ul-mexico1.09vpn.com
 - name: 🇲🇽 MX 03 - xiaohe
-  type: ss
-  server: 64.177.90.30
-  port: 8388
-  cipher: aes-256-gcm
-  password: BWyPPTusFKhGgzKh
-  udp: true
-- name: 🇲🇽 MX 04 - xiaohe
   type: vless
   server: 45.134.9.133
   port: 8443
@@ -53,7 +46,7 @@ proxies:
     path: /vless/
     headers:
       Host: 45.134.9.133
-- name: 🇲🇽 MX 05 - xiaohe
+- name: 🇲🇽 MX 04 - xiaohe
   type: vless
   server: ul-mexico1.09vpn.com
   port: 8443
@@ -67,6 +60,20 @@ proxies:
     path: /vless/
     headers:
       Host: ul-mexico1.09vpn.com
+- name: 🇲🇽 MX 05 - xiaohe
+  type: ss
+  server: 64.177.90.30
+  port: 8388
+  cipher: aes-256-gcm
+  password: BWyPPTusFKhGgzKh
+  udp: true
+- name: 🇲🇽 MX 06 - xiaohe
+  type: ss
+  server: 64.177.90.30
+  port: 8388
+  cipher: aes-256-gcm
+  password: BWyPPTusFKhGgzKh
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,6 +84,7 @@ proxy-groups:
   - 🇲🇽 MX 03 - xiaohe
   - 🇲🇽 MX 04 - xiaohe
   - 🇲🇽 MX 05 - xiaohe
+  - 🇲🇽 MX 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -87,5 +95,6 @@ proxy-groups:
   - 🇲🇽 MX 03 - xiaohe
   - 🇲🇽 MX 04 - xiaohe
   - 🇲🇽 MX 05 - xiaohe
+  - 🇲🇽 MX 06 - xiaohe
 rules:
 - MATCH,PROXIES
