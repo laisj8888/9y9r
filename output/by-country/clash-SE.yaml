@@ -5,12 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+  type: vless
+  server: srew.pansellic.ir
+  port: 2087
+  uuid: 0edb8deb-baee-4af4-ba7a-9567aedf0bb4
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 06ep3nkkA60Jh8rWJSz3dCpLWxUPYLN0uZnESYsoQFo
+  servername: beta.publishers.adsterra.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
