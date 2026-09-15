@@ -20,10 +20,10 @@ proxies:
   udp: true
 - name: 🇮🇪 IE 03 - xiaohe
   type: ss
-  server: 20.107.184.151
+  server: 52.236.68.0
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: zziXHDOFXc4qRjoj
+  password: tX1rVo7F8TAnyT1o
   udp: true
 - name: 🇮🇪 IE 04 - xiaohe
   type: ss
@@ -33,6 +33,20 @@ proxies:
   password: zziXHDOFXc4qRjoj
   udp: true
 - name: 🇮🇪 IE 05 - xiaohe
+  type: ss
+  server: 20.107.184.151
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: zziXHDOFXc4qRjoj
+  udp: true
+- name: 🇮🇪 IE 06 - xiaohe
+  type: ss
+  server: 20.107.184.151
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: zziXHDOFXc4qRjoj
+  udp: true
+- name: 🇮🇪 IE 07 - xiaohe
   type: ss
   server: 20.107.184.151
   port: 443
@@ -49,6 +63,8 @@ proxy-groups:
   - 🇮🇪 IE 03 - xiaohe
   - 🇮🇪 IE 04 - xiaohe
   - 🇮🇪 IE 05 - xiaohe
+  - 🇮🇪 IE 06 - xiaohe
+  - 🇮🇪 IE 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +75,7 @@ proxy-groups:
   - 🇮🇪 IE 03 - xiaohe
   - 🇮🇪 IE 04 - xiaohe
   - 🇮🇪 IE 05 - xiaohe
+  - 🇮🇪 IE 06 - xiaohe
+  - 🇮🇪 IE 07 - xiaohe
 rules:
 - MATCH,PROXIES

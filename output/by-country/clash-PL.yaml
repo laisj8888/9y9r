@@ -5,52 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
-  type: vless
-  server: 64.176.64.194
-  port: 25585
-  uuid: 6eebb521-1844-4c3c-bf54-fb0e19870f80
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 02 - xiaohe
   type: ss
   server: 194.61.121.93
   port: 7538
   cipher: chacha20-ietf-poly1305
   password: U9YAoqBgg5VyGBc6vQv1sN
   udp: true
-- name: 🇵🇱 PL 03 - xiaohe
-  type: vless
-  server: 64.176.64.194
-  port: 25585
-  uuid: 6eebb521-1844-4c3c-bf54-fb0e19870f80
+- name: 🇵🇱 PL 02 - xiaohe
+  type: vmess
+  server: 145.63.134.175
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇵🇱 PL 04 - xiaohe
-  type: vless
-  server: 64.176.64.194
-  port: 25585
-  uuid: 6eebb521-1844-4c3c-bf54-fb0e19870f80
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 05 - xiaohe
-  type: vless
-  server: 64.176.64.194
-  port: 25585
-  uuid: 6eebb521-1844-4c3c-bf54-fb0e19870f80
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 06 - xiaohe
-  type: vless
-  server: 64.176.64.194
-  port: 25585
-  uuid: 6eebb521-1844-4c3c-bf54-fb0e19870f80
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,10 +34,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 PL 01 - xiaohe
   - 🇵🇱 PL 02 - xiaohe
-  - 🇵🇱 PL 03 - xiaohe
-  - 🇵🇱 PL 04 - xiaohe
-  - 🇵🇱 PL 05 - xiaohe
-  - 🇵🇱 PL 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,9 +41,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 PL 01 - xiaohe
   - 🇵🇱 PL 02 - xiaohe
-  - 🇵🇱 PL 03 - xiaohe
-  - 🇵🇱 PL 04 - xiaohe
-  - 🇵🇱 PL 05 - xiaohe
-  - 🇵🇱 PL 06 - xiaohe
 rules:
 - MATCH,PROXIES

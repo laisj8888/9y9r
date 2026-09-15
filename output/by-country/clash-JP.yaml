@@ -5,48 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaohe
-  type: vless
-  server: 104.238.148.149
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /about?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
 - name: 🇯🇵 日本 (Japan) 02 - xiaohe
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇯🇵 日本 (Japan) 03 - xiaohe
-  type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 04 - xiaohe
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 05 - xiaohe
+- name: 🇯🇵 日本 (Japan) 03 - xiaohe
   type: vless
   server: jp-1.gsafevpnapi.com
   port: 20270
@@ -57,42 +35,48 @@ proxies:
   reality-opts:
     public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
   servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 06 - xiaohe
-  type: vless
-  server: 104.21.70.21
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 07 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: c2569d72-0ba1-44e8-986f-be445edb5f3d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: silent-union-ac36.315-33d.workers.dev
-- name: 🇯🇵 日本 (Japan) 08 - xiaohe
+  client-fingerprint: ios
+- name: 🇯🇵 日本 (Japan) 04 - xiaohe
   type: ss
   server: 149.22.87.240
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇯🇵 日本 (Japan) 09 - xiaohe
+- name: 🇯🇵 日本 (Japan) 05 - xiaohe
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 06 - xiaohe
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 07 - xiaohe
+  type: vless
+  server: 207.148.112.220
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /discuss?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 08 - xiaohe
   type: vmess
   server: 45.32.57.118
   port: 4433
@@ -102,7 +86,85 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 09 - xiaohe
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: None
 - name: 🇯🇵 日本 (Japan) 10 - xiaohe
+  type: vless
+  server: 18.182.44.185
+  port: 20270
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 11 - xiaohe
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 12 - xiaohe
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 13 - xiaohe
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e9e24ed8-b007-4e29-b54f-1ece641e60fb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 14 - xiaohe
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 15 - xiaohe
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: None
+- name: 🇯🇵 日本 (Japan) 16 - xiaohe
   type: vless
   server: jp-1.gsafevpnapi.com
   port: 20270
@@ -114,15 +176,20 @@ proxies:
     public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 11 - xiaohe
+- name: 🇯🇵 日本 (Japan) 17 - xiaohe
   type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  server: 172.111.146.64
+  port: 80
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 12 - xiaohe
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 172.111.146.64
+- name: 🇯🇵 日本 (Japan) 18 - xiaohe
   type: vless
   server: 85.121.50.16
   port: 443
@@ -136,243 +203,21 @@ proxies:
     path: /friends/go.php?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 13 - xiaohe
-  type: vmess
-  server: 172.111.146.64
-  port: 80
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 14 - xiaohe
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 15 - xiaohe
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 16 - xiaohe
-  type: vmess
-  server: 172.111.146.64
-  port: 80
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 17 - xiaohe
-  type: vmess
-  server: 172.111.146.64
-  port: 80
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 18 - xiaohe
-  type: vmess
-  server: 172.111.146.64
-  port: 80
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: ''
 - name: 🇯🇵 日本 (Japan) 19 - xiaohe
-  type: vless
-  server: 172.111.146.64
-  port: 80
-  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 20 - xiaohe
   type: ss
   server: 84.247.155.196
-  port: 443
+  port: 80
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
   udp: true
-- name: 🇯🇵 日本 (Japan) 21 - xiaohe
-  type: vmess
-  server: 172.111.146.64
-  port: 80
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 22 - xiaohe
-  type: ss
-  server: 18.182.44.185
-  port: 31870
-  cipher: aes-256-gcm
-  password: e016d072-ed97-40d4-a83f-04c00f8df2a5
-  udp: true
-- name: 🇯🇵 日本 (Japan) 23 - xiaohe
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 24 - xiaohe
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: None
-- name: 🇯🇵 日本 (Japan) 25 - xiaohe
-  type: vless
-  server: 18.182.44.185
-  port: 20270
-  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 26 - xiaohe
-  type: ss
-  server: jp-2.gsafevpnapi.com
-  port: 31870
-  cipher: aes-256-gcm
-  password: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
-  udp: true
-- name: 🇯🇵 日本 (Japan) 27 - xiaohe
+- name: 🇯🇵 日本 (Japan) 20 - xiaohe
   type: ss
   server: 149.22.87.241
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇯🇵 日本 (Japan) 28 - xiaohe
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: None
-- name: 🇯🇵 日本 (Japan) 29 - xiaohe
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 30 - xiaohe
-  type: vmess
-  server: 172.111.146.64
-  port: 80
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 31 - xiaohe
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: None
-- name: 🇯🇵 日本 (Japan) 32 - xiaohe
-  type: vless
-  server: 202.144.192.76
-  port: 13779
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-  servername: tesla.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 33 - xiaohe
+- name: 🇯🇵 日本 (Japan) 21 - xiaohe
   type: vless
   server: 137.220.221.179
   port: 443
@@ -380,74 +225,44 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 34 - xiaohe
+- name: 🇯🇵 日本 (Japan) 22 - xiaohe
   type: vmess
-  server: 172.111.146.64
-  port: 80
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  server: 168.110.60.104
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 35 - xiaohe
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 36 - xiaohe
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- name: 🇯🇵 日本 (Japan) 23 - xiaohe
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 37 - xiaohe
+- name: 🇯🇵 日本 (Japan) 24 - xiaohe
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 25 - xiaohe
   type: ss
-  server: 84.247.155.196
-  port: 80
+  server: jp-2.gsafevpnapi.com
+  port: 31870
   cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  password: 5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55
   udp: true
-- name: 🇯🇵 日本 (Japan) 38 - xiaohe
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 39 - xiaohe
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 40 - xiaohe
-  type: vmess
-  server: dog-jp.kunlun01dns.com
-  port: 21017
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 41 - xiaohe
+- name: 🇯🇵 日本 (Japan) 26 - xiaohe
   type: vmess
   server: 45.32.57.118
   port: 4433
@@ -457,31 +272,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 42 - xiaohe
-  type: vless
-  server: 172.67.156.147
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 43 - xiaohe
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 44 - xiaohe
+- name: 🇯🇵 日本 (Japan) 27 - xiaohe
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -496,21 +287,11 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: 168.138.43.75
-- name: 🇯🇵 日本 (Japan) 45 - xiaohe
+- name: 🇯🇵 日本 (Japan) 28 - xiaohe
   type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 46 - xiaohe
-  type: vmess
-  server: 172.111.146.64
+  server: 168.138.43.75
   port: 80
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
   alterId: 0
   cipher: auto
   udp: true
@@ -518,10 +299,114 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vmess/
+    path: /cctv13.m3u8
     headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 47 - xiaohe
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 29 - xiaohe
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 30 - xiaohe
+  type: vmess
+  server: 168.110.60.104
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 31 - xiaohe
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 168.138.43.75
+- name: 🇯🇵 日本 (Japan) 32 - xiaohe
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 33 - xiaohe
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 34 - xiaohe
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: safari
+- name: 🇯🇵 日本 (Japan) 35 - xiaohe
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 36 - xiaohe
+  type: vmess
+  server: 168.110.60.104
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 37 - xiaohe
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e9e24ed8-b007-4e29-b54f-1ece641e60fb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: qq
+- name: 🇯🇵 日本 (Japan) 38 - xiaohe
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 39 - xiaohe
   type: vless
   server: jp-1.gsafevpnapi.com
   port: 20270
@@ -533,6 +418,102 @@ proxies:
     public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
   servername: www.yahoo.com
   client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 40 - xiaohe
+  type: vless
+  server: 210.152.85.154
+  port: 19364
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /collect/user/products?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 41 - xiaohe
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: None
+- name: 🇯🇵 日本 (Japan) 42 - xiaohe
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 43 - xiaohe
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 44 - xiaohe
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 45 - xiaohe
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 46 - xiaohe
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: None
+- name: 🇯🇵 日本 (Japan) 47 - xiaohe
+  type: vmess
+  server: 168.110.60.104
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 48 - xiaohe
   type: vmess
   server: 45.32.57.118
@@ -545,66 +526,15 @@ proxies:
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 49 - xiaohe
   type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 50 - xiaohe
   type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 51 - xiaohe
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 52 - xiaohe
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 53 - xiaohe
-  type: vless
-  server: 172.111.146.64
-  port: 80
-  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 54 - xiaohe
-  type: vless
-  server: 207.148.112.220
+  server: 207.148.99.230
   port: 443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
@@ -613,10 +543,10 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /discuss?ed=2560
+    path: /test/company/library?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 55 - xiaohe
+- name: 🇯🇵 日本 (Japan) 51 - xiaohe
   type: vmess
   server: 172.111.146.64
   port: 80
@@ -631,6 +561,59 @@ proxies:
     path: /vmess/
     headers:
       Host: 172.111.146.64
+- name: 🇯🇵 日本 (Japan) 52 - xiaohe
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: ''
+- name: 🇯🇵 日本 (Japan) 53 - xiaohe
+  type: vless
+  server: 104.238.148.149
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /about?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 54 - xiaohe
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 55 - xiaohe
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 56 - xiaohe
   type: vmess
   server: 168.138.43.75
@@ -645,19 +628,17 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: jp01.a0a.xyz
+      Host: None
 - name: 🇯🇵 日本 (Japan) 57 - xiaohe
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: firefox
 - name: 🇯🇵 日本 (Japan) 58 - xiaohe
   type: vmess
   server: 168.138.43.75
@@ -672,63 +653,39 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: jp01.a0a.xyz
+      Host: None
 - name: 🇯🇵 日本 (Japan) 59 - xiaohe
   type: vless
-  server: 162.159.254.3
+  server: 137.220.221.179
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 60 - xiaohe
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 61 - xiaohe
-  type: vless
-  server: 210.152.85.154
-  port: 19364
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /collect/user/products?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 62 - xiaohe
   type: vmess
-  server: 172.111.146.64
-  port: 80
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 61 - xiaohe
+  type: vless
+  server: 172.111.146.64
+  port: 80
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vmess/
+    path: /vless/
     headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 63 - xiaohe
+      Host: 172.111.146.64
+- name: 🇯🇵 日本 (Japan) 62 - xiaohe
   type: vmess
   server: 45.32.57.118
   port: 4433
@@ -738,7 +695,32 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 63 - xiaohe
+  type: vmess
+  server: 168.110.60.104
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 64 - xiaohe
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: none
+- name: 🇯🇵 日本 (Japan) 65 - xiaohe
   type: vless
   server: 172.67.156.147
   port: 443
@@ -752,32 +734,80 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 65 - xiaohe
-  type: vmess
-  server: 172.111.146.64
-  port: 80
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: None
 - name: 🇯🇵 日本 (Japan) 66 - xiaohe
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 67 - xiaohe
+  type: vless
+  server: 202.144.192.76
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+  servername: tesla.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 68 - xiaohe
+  type: vless
+  server: 18.182.44.185
+  port: 20270
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 69 - xiaohe
   type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 67 - xiaohe
+- name: 🇯🇵 日本 (Japan) 70 - xiaohe
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 71 - xiaohe
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 72 - xiaohe
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 73 - xiaohe
   type: vless
   server: 137.220.221.179
   port: 443
@@ -785,7 +815,63 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 68 - xiaohe
+- name: 🇯🇵 日本 (Japan) 74 - xiaohe
+  type: vless
+  server: 207.148.99.230
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /test/company/library?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 75 - xiaohe
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 76 - xiaohe
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 77 - xiaohe
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 78 - xiaohe
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 79 - xiaohe
   type: vmess
   server: 172.111.146.64
   port: 80
@@ -799,23 +885,62 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 69 - xiaohe
+      Host: zoom.us
+- name: 🇯🇵 日本 (Japan) 80 - xiaohe
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 81 - xiaohe
   type: vmess
-  server: 172.111.146.64
-  port: 80
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 82 - xiaohe
+  type: vmess
+  server: 168.110.60.104
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 83 - xiaohe
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /vmess/
+    path: /tyxyws
     headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 70 - xiaohe
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 84 - xiaohe
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 85 - xiaohe
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -830,7 +955,52 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: None
-- name: 🇯🇵 日本 (Japan) 71 - xiaohe
+- name: 🇯🇵 日本 (Japan) 86 - xiaohe
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: None
+- name: 🇯🇵 日本 (Japan) 87 - xiaohe
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 172.111.146.64
+- name: 🇯🇵 日本 (Japan) 88 - xiaohe
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: ''
+- name: 🇯🇵 日本 (Japan) 89 - xiaohe
   type: vmess
   server: oc.imfun.fun
   port: 18112
@@ -840,16 +1010,141 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 72 - xiaohe
+- name: 🇯🇵 日本 (Japan) 90 - xiaohe
   type: vmess
-  server: zfd-jpv2.kunlun01dns.com
-  port: 16122
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  server: 168.110.60.104
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 91 - xiaohe
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 92 - xiaohe
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 93 - xiaohe
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 94 - xiaohe
+  type: vless
+  server: 207.148.99.230
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /test/company/library?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 95 - xiaohe
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 96 - xiaohe
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: None
+- name: 🇯🇵 日本 (Japan) 97 - xiaohe
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: qq
+- name: 🇯🇵 日本 (Japan) 98 - xiaohe
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 99 - xiaohe
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 100 - xiaohe
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 172.111.146.64
 proxy-groups:
 - name: PROXIES
   type: select
@@ -927,6 +1222,34 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 70 - xiaohe
   - 🇯🇵 日本 (Japan) 71 - xiaohe
   - 🇯🇵 日本 (Japan) 72 - xiaohe
+  - 🇯🇵 日本 (Japan) 73 - xiaohe
+  - 🇯🇵 日本 (Japan) 74 - xiaohe
+  - 🇯🇵 日本 (Japan) 75 - xiaohe
+  - 🇯🇵 日本 (Japan) 76 - xiaohe
+  - 🇯🇵 日本 (Japan) 77 - xiaohe
+  - 🇯🇵 日本 (Japan) 78 - xiaohe
+  - 🇯🇵 日本 (Japan) 79 - xiaohe
+  - 🇯🇵 日本 (Japan) 80 - xiaohe
+  - 🇯🇵 日本 (Japan) 81 - xiaohe
+  - 🇯🇵 日本 (Japan) 82 - xiaohe
+  - 🇯🇵 日本 (Japan) 83 - xiaohe
+  - 🇯🇵 日本 (Japan) 84 - xiaohe
+  - 🇯🇵 日本 (Japan) 85 - xiaohe
+  - 🇯🇵 日本 (Japan) 86 - xiaohe
+  - 🇯🇵 日本 (Japan) 87 - xiaohe
+  - 🇯🇵 日本 (Japan) 88 - xiaohe
+  - 🇯🇵 日本 (Japan) 89 - xiaohe
+  - 🇯🇵 日本 (Japan) 90 - xiaohe
+  - 🇯🇵 日本 (Japan) 91 - xiaohe
+  - 🇯🇵 日本 (Japan) 92 - xiaohe
+  - 🇯🇵 日本 (Japan) 93 - xiaohe
+  - 🇯🇵 日本 (Japan) 94 - xiaohe
+  - 🇯🇵 日本 (Japan) 95 - xiaohe
+  - 🇯🇵 日本 (Japan) 96 - xiaohe
+  - 🇯🇵 日本 (Japan) 97 - xiaohe
+  - 🇯🇵 日本 (Japan) 98 - xiaohe
+  - 🇯🇵 日本 (Japan) 99 - xiaohe
+  - 🇯🇵 日本 (Japan) 100 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1004,5 +1327,33 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 70 - xiaohe
   - 🇯🇵 日本 (Japan) 71 - xiaohe
   - 🇯🇵 日本 (Japan) 72 - xiaohe
+  - 🇯🇵 日本 (Japan) 73 - xiaohe
+  - 🇯🇵 日本 (Japan) 74 - xiaohe
+  - 🇯🇵 日本 (Japan) 75 - xiaohe
+  - 🇯🇵 日本 (Japan) 76 - xiaohe
+  - 🇯🇵 日本 (Japan) 77 - xiaohe
+  - 🇯🇵 日本 (Japan) 78 - xiaohe
+  - 🇯🇵 日本 (Japan) 79 - xiaohe
+  - 🇯🇵 日本 (Japan) 80 - xiaohe
+  - 🇯🇵 日本 (Japan) 81 - xiaohe
+  - 🇯🇵 日本 (Japan) 82 - xiaohe
+  - 🇯🇵 日本 (Japan) 83 - xiaohe
+  - 🇯🇵 日本 (Japan) 84 - xiaohe
+  - 🇯🇵 日本 (Japan) 85 - xiaohe
+  - 🇯🇵 日本 (Japan) 86 - xiaohe
+  - 🇯🇵 日本 (Japan) 87 - xiaohe
+  - 🇯🇵 日本 (Japan) 88 - xiaohe
+  - 🇯🇵 日本 (Japan) 89 - xiaohe
+  - 🇯🇵 日本 (Japan) 90 - xiaohe
+  - 🇯🇵 日本 (Japan) 91 - xiaohe
+  - 🇯🇵 日本 (Japan) 92 - xiaohe
+  - 🇯🇵 日本 (Japan) 93 - xiaohe
+  - 🇯🇵 日本 (Japan) 94 - xiaohe
+  - 🇯🇵 日本 (Japan) 95 - xiaohe
+  - 🇯🇵 日本 (Japan) 96 - xiaohe
+  - 🇯🇵 日本 (Japan) 97 - xiaohe
+  - 🇯🇵 日本 (Japan) 98 - xiaohe
+  - 🇯🇵 日本 (Japan) 99 - xiaohe
+  - 🇯🇵 日本 (Japan) 100 - xiaohe
 rules:
 - MATCH,PROXIES
