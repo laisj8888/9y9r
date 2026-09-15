@@ -15,7 +15,7 @@ proxies:
   servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 02 - xiaohe
   type: vless
-  server: 192.145.31.5
+  server: neth9.lunariai.ru
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -34,12 +34,16 @@ proxies:
 - name: 🇧🇬 BG 04 - xiaohe
   type: vless
   server: 192.145.31.5
-  port: 8443
+  port: 443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: neth9.lunariai.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 192.145.31.5
 - name: 🇧🇬 BG 05 - xiaohe
   type: vless
   server: 192.145.31.5
@@ -51,34 +55,25 @@ proxies:
   servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 06 - xiaohe
   type: vless
-  server: 192.145.31.5
-  port: 443
+  server: neth9.lunariai.ru
+  port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
-- name: 🇧🇬 BG 07 - xiaohe
-  type: vless
-  server: 108.165.233.223
-  port: 443
-  uuid: 2388e166-3890-33ae-f77e-efac00000003
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: netlivpn4813.ddhshhshs.workers.dev
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
-- name: 🇧🇬 BG 08 - xiaohe
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 07 - xiaohe
   type: vless
   server: neth9.lunariai.ru
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 08 - xiaohe
+  type: vless
+  server: 192.145.31.5
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -114,7 +109,7 @@ proxies:
   servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 12 - xiaohe
   type: vless
-  server: neth9.lunariai.ru
+  server: 192.145.31.5
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -141,23 +136,19 @@ proxies:
   servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 15 - xiaohe
   type: vless
-  server: 192.145.31.5
+  server: 172.66.44.124
   port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: neth9.lunariai.ru
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
 - name: 🇧🇬 BG 16 - xiaohe
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 17 - xiaohe
   type: vless
   server: neth9.lunariai.ru
   port: 8443
@@ -166,9 +157,18 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 18 - xiaohe
+- name: 🇧🇬 BG 17 - xiaohe
   type: vless
   server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 18 - xiaohe
+  type: vless
+  server: neth9.lunariai.ru
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -186,7 +186,7 @@ proxies:
   servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 20 - xiaohe
   type: vless
-  server: neth9.lunariai.ru
+  server: 192.145.31.5
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -195,18 +195,13 @@ proxies:
   servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 21 - xiaohe
   type: vless
-  server: 108.165.233.223
-  port: 443
-  uuid: 2388e166-3890-33ae-f77e-efac00000003
+  server: neth9.lunariai.ru
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: netlivpn4813.ddhshhshs.workers.dev
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
+  servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 22 - xiaohe
   type: vless
   server: neth9.lunariai.ru
@@ -219,24 +214,6 @@ proxies:
 - name: 🇧🇬 BG 23 - xiaohe
   type: vless
   server: neth9.lunariai.ru
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 24 - xiaohe
-  type: vless
-  server: neth9.lunariai.ru
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 25 - xiaohe
-  type: vless
-  server: 192.145.31.5
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -271,8 +248,6 @@ proxy-groups:
   - 🇧🇬 BG 21 - xiaohe
   - 🇧🇬 BG 22 - xiaohe
   - 🇧🇬 BG 23 - xiaohe
-  - 🇧🇬 BG 24 - xiaohe
-  - 🇧🇬 BG 25 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -301,7 +276,5 @@ proxy-groups:
   - 🇧🇬 BG 21 - xiaohe
   - 🇧🇬 BG 22 - xiaohe
   - 🇧🇬 BG 23 - xiaohe
-  - 🇧🇬 BG 24 - xiaohe
-  - 🇧🇬 BG 25 - xiaohe
 rules:
 - MATCH,PROXIES
