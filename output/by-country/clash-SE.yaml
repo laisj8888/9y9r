@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
   type: vless
+  server: trgf.tarnishedking.ir
+  port: 2087
+  uuid: 89418511-64f9-4e74-ac6b-ffc1b828106f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 06ep3nkkA60Jh8rWJSz3dCpLWxUPYLN0uZnESYsoQFo
+  servername: beta.publishers.adsterra.com
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 02 - xiaohe
+  type: vless
   server: 143.246.194.60
   port: 8081
   uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
@@ -23,11 +35,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - xiaohe
+  - 🇸🇪 SE 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - xiaohe
+  - 🇸🇪 SE 02 - xiaohe
 rules:
 - MATCH,PROXIES
