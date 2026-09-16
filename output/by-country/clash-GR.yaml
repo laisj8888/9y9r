@@ -5,6 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇷 GR 01 - xiaohe
+  type: vless
+  server: 38.54.29.210
+  port: 2053
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kkkk-xcd.pages.dev
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: kkkk-xcd.pages.dev
+- name: 🇬🇷 GR 02 - xiaohe
+  type: vless
+  server: 188.114.97.3
+  port: 443
+  uuid: d7d8af23-36cd-4c66-a42a-4469c177210f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fancy-rain-136e.thisisalee.workers.dev
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoidmJOWHUwYnBOS00zT04iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI5MS4xODYuMjE5LjgyIl19
+    headers:
+      Host: fancy-rain-136e.thisisalee.workers.dev
+- name: 🇬🇷 GR 03 - xiaohe
   type: vmess
   server: zfd-boardv2.kunlun01dns.com
   port: 16310
@@ -20,11 +48,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇬🇷 GR 01 - xiaohe
+  - 🇬🇷 GR 02 - xiaohe
+  - 🇬🇷 GR 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇬🇷 GR 01 - xiaohe
+  - 🇬🇷 GR 02 - xiaohe
+  - 🇬🇷 GR 03 - xiaohe
 rules:
 - MATCH,PROXIES
