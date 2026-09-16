@@ -6,29 +6,47 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - xiaohe
   type: vless
-  server: freev2.cloudflare.182682.xyz
-  port: 443
-  uuid: f94a04aa-a98c-4b6c-8fe2-7290d81c500a
+  server: 129.151.64.169
+  port: 31867
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: br-gru.xhs152.shop
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /announcement?ed=2048
+    path: /files
     headers:
-      Host: br-gru.xhs152.shop
+      Host: cdn8848.776676.xyz
+- name: 🇧🇷 BR 02 - xiaohe
+  type: ss
+  server: 216.128.168.190
+  port: 8388
+  cipher: aes-256-gcm
+  password: owVdNnQcdPgthSyX
+  udp: true
+- name: 🇧🇷 BR 03 - xiaohe
+  type: ss
+  server: 216.128.168.190
+  port: 8388
+  cipher: aes-256-gcm
+  password: owVdNnQcdPgthSyX
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇷 BR 01 - xiaohe
+  - 🇧🇷 BR 02 - xiaohe
+  - 🇧🇷 BR 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 BR 01 - xiaohe
+  - 🇧🇷 BR 02 - xiaohe
+  - 🇧🇷 BR 03 - xiaohe
 rules:
 - MATCH,PROXIES

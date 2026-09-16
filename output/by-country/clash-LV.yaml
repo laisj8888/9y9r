@@ -32,7 +32,7 @@ proxies:
       Host: queuev4.vk.com
 - name: 🇱🇻 LV 03 - xiaohe
   type: vmess
-  server: 85.159.228.232
+  server: 178.248.75.57
   port: 443
   uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
   alterId: 0
@@ -46,6 +46,19 @@ proxies:
     path: /api/v1/gpu-stream/socket
     headers:
       Host: renderer-stream-2-62.mirra.now
+- name: 🇱🇻 LV 04 - xiaohe
+  type: vless
+  server: atomic-prase23893.my-vm.work
+  port: 8088
+  uuid: f7c74a35-1da0-5097-9fa7-a20735610ac1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api
+    headers:
+      Host: queuev4.vk.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +67,7 @@ proxy-groups:
   - 🇱🇻 LV 01 - xiaohe
   - 🇱🇻 LV 02 - xiaohe
   - 🇱🇻 LV 03 - xiaohe
+  - 🇱🇻 LV 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +76,6 @@ proxy-groups:
   - 🇱🇻 LV 01 - xiaohe
   - 🇱🇻 LV 02 - xiaohe
   - 🇱🇻 LV 03 - xiaohe
+  - 🇱🇻 LV 04 - xiaohe
 rules:
 - MATCH,PROXIES
