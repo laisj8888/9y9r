@@ -5,6 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  type: vmess
+  server: 82259754d625.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 82259754d625.oylfmxz.cn
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 82259754d625.oylfmxz.cn
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   type: vless
   server: 60.248.219.78
   port: 443
@@ -18,13 +34,6 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 60.248.219.78
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  type: ss
-  server: r3mrcg00129437x.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-  udp: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   type: ss
   server: r3mrcg001286ek2.cybervena.com
@@ -32,14 +41,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  type: ss
-  server: r3mrcg001287h3p.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
   type: vless
   server: 172.67.217.240
   port: 443
@@ -53,36 +55,16 @@ proxies:
     path: /?ed=2560
     headers:
       Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  type: ss
+  server: r3mrcg001287h3p.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+  udp: true
 - name: 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
   type: vless
-  server: 172.64.147.104
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaohe
-  type: vless
-  server: 172.66.170.53
-  port: 8880
-  uuid: 6b6733fb-580b-411b-8bf8-51137c2aa037
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: restless-sky-eb31.438-aa8.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 08 (家宽) - xiaohe
-  type: vless
-  server: 172.64.53.194
+  server: 104.19.215.97
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -94,9 +76,37 @@ proxies:
     path: ?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaohe
+  type: vless
+  server: 172.67.217.240
+  port: 443
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 08 (家宽) - xiaohe
+  type: vless
+  server: www.shopify.com
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 09 (家宽) - xiaohe
   type: vless
-  server: 172.64.52.97
+  server: 104.18.38.47
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -105,24 +115,19 @@ proxies:
   servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: ?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇹🇼 中国台湾 (Taiwan) 10 (家宽) - xiaohe
-  type: vless
-  server: 118.167.212.163
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  type: ss
+  server: r3mrcg00129437x.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 11 (家宽) - xiaohe
   type: vless
-  server: 104.16.150.108
+  server: 104.18.42.54
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -136,7 +141,7 @@ proxies:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 12 (家宽) - xiaohe
   type: vless
-  server: 104.18.42.54
+  server: 104.18.38.47
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -151,27 +156,14 @@ proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 13 (家宽) - xiaohe
   type: vmess
   server: zfd-hkv2.kunlun01dns.com
-  port: 16115
+  port: 16112
   uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 14 (家宽) - xiaohe
-  type: vless
-  server: 172.67.179.98
-  port: 8880
-  uuid: d829cf8d-0a32-4e60-bcc3-a03fb4658ea4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: shy-wind-a26f.182-104.workers.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 15 (家宽) - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 14 (家宽) - xiaohe
   type: vmess
   server: zfd-hkv2.kunlun01dns.com
   port: 16113
@@ -181,11 +173,25 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 15 (家宽) - xiaohe
+  type: vless
+  server: 172.64.52.97
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 16 (家宽) - xiaohe
   type: vless
-  server: www.ipget.net
+  server: nameless-poetry-cc33.268-910.workers.dev
   port: 8880
-  uuid: b7300b59-7598-4997-9714-27efd75065d0
+  uuid: b1b99d33-8df1-4c74-b140-28941b43a4d2
   udp: true
   tls: false
   skip-cert-verify: true
@@ -193,49 +199,111 @@ proxies:
   ws-opts:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: mute-lab-4c55.389.workers.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 17 (家宽) - xiaohe
+      Host: nameless-poetry-cc33.268-910.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 17 (家宽) - xiaohe
+  type: vless
+  server: 172.64.147.104
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 18 (家宽) - xiaohe
+  type: vless
+  server: 172.64.147.104
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 19 (家宽) - xiaohe
   type: vmess
-  server: dog-hk.kunlun01dns.com
-  port: 21041
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16116
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇳🇱 荷兰 (Netherlands) 18 (家宽) - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 20 (家宽) - xiaohe
+  type: vmess
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16115
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 21 (家宽) - xiaohe
+  type: vmess
+  server: zfd-hkv1.kunlun01dns.com
+  port: 16114
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 22 (家宽) - xiaohe
   type: vless
-  server: medium.com
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  server: cf.9999669.xyz
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
     path: /?ed=2560
     headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-- name: 🇹🇷 土耳其 (Turkey) 19 (家宽) - xiaohe
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 23 (家宽) - xiaohe
   type: vless
-  server: 104.17.169.13
-  port: 2053
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  server: 172.64.147.104
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: inDeX.HaRMONiCA01.WORkers.DeV
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /axch1mttbxz2k55y01
+    path: /?ed=2560
     headers:
-      Host: inDeX.HaRMONiCA01.WORkers.DeV
-- name: 🇰🇷 韩国 (South Korea) 20 (家宽) - xiaohe
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 24 (家宽) - xiaohe
   type: vless
-  server: www.shopify.com
+  server: 172.64.52.97
   port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 25 (家宽) - xiaohe
+  type: vless
+  server: 172.67.217.240
+  port: 443
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
@@ -246,6 +314,66 @@ proxies:
     path: /?ed=2560
     headers:
       Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 26 (家宽) - xiaohe
+  type: vless
+  server: mfa.gov.ua
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 27 (家宽) - xiaohe
+  type: vmess
+  server: dog-hk.kunlun01dns.com
+  port: 21020
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 28 (家宽) - xiaohe
+  type: vless
+  server: 104.18.42.54
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 29 (家宽) - xiaohe
+  type: vmess
+  server: dog-hk.kunlun01dns.com
+  port: 21041
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 30 (家宽) - xiaohe
+  type: vless
+  server: 118.167.212.163
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -254,8 +382,8 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 08 (家宽) - xiaohe
@@ -264,13 +392,23 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 11 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 12 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 13 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 14 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 15 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 14 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 15 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 16 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 17 (家宽) - xiaohe
-  - 🇳🇱 荷兰 (Netherlands) 18 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 19 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 20 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 17 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 18 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 19 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 20 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 21 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 22 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 23 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 24 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 25 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 26 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 27 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 28 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 29 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 30 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -279,8 +417,8 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 08 (家宽) - xiaohe
@@ -289,12 +427,22 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 11 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 12 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 13 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 14 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 15 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 14 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 15 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 16 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 17 (家宽) - xiaohe
-  - 🇳🇱 荷兰 (Netherlands) 18 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 19 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 20 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 17 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 18 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 19 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 20 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 21 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 22 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 23 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 24 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 25 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 26 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 27 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 28 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 29 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 30 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
