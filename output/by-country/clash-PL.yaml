@@ -12,29 +12,50 @@ proxies:
   password: U9YAoqBgg5VyGBc6vQv1sN
   udp: true
 - name: 🇵🇱 PL 02 - xiaohe
-  type: ss
-  server: 178.95.176.16
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
-  udp: true
-- name: 🇵🇱 PL 03 - xiaohe
   type: vmess
-  server: 178.95.176.16
-  port: 2086
-  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  server: 145.63.134.175
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
   alterId: 0
   cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇵🇱 PL 03 - xiaohe
+  type: vmess
+  server: 145.63.134.175
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇵🇱 PL 04 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 04 - xiaohe
-  type: ss
-  server: 178.95.176.16
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
-  udp: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

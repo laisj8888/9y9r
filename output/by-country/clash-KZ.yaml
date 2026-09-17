@@ -30,6 +30,19 @@ proxies:
   client-fingerprint: chrome
 - name: 🇰🇿 KZ 03 - xiaohe
   type: vless
+  server: 154.197.64.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime36.workers.dev
+- name: 🇰🇿 KZ 04 - xiaohe
+  type: vless
   server: 83.222.23.81
   port: 38065
   uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
@@ -48,6 +61,7 @@ proxy-groups:
   - 🇰🇿 KZ 01 - xiaohe
   - 🇰🇿 KZ 02 - xiaohe
   - 🇰🇿 KZ 03 - xiaohe
+  - 🇰🇿 KZ 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,5 +70,6 @@ proxy-groups:
   - 🇰🇿 KZ 01 - xiaohe
   - 🇰🇿 KZ 02 - xiaohe
   - 🇰🇿 KZ 03 - xiaohe
+  - 🇰🇿 KZ 04 - xiaohe
 rules:
 - MATCH,PROXIES
