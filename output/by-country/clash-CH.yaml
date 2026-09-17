@@ -28,30 +28,6 @@ proxies:
     public-key: OueudVX2rTpyeEb2bNW3Jx3WtgSX4zFERs6yt8Szv0E
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇨🇭 CH 03 - xiaohe
-  type: vless
-  server: ch1.h1cloud.net
-  port: 25720
-  uuid: be83425f-74c5-4b03-9c4b-20aa16322698
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: OueudVX2rTpyeEb2bNW3Jx3WtgSX4zFERs6yt8Szv0E
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇨🇭 CH 04 - xiaohe
-  type: vless
-  server: ch1.h1cloud.net
-  port: 25720
-  uuid: be83425f-74c5-4b03-9c4b-20aa16322698
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: OueudVX2rTpyeEb2bNW3Jx3WtgSX4zFERs6yt8Szv0E
-  servername: www.samsung.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,8 +35,6 @@ proxy-groups:
   - AUTO
   - 🇨🇭 CH 01 - xiaohe
   - 🇨🇭 CH 02 - xiaohe
-  - 🇨🇭 CH 03 - xiaohe
-  - 🇨🇭 CH 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,7 +42,5 @@ proxy-groups:
   proxies:
   - 🇨🇭 CH 01 - xiaohe
   - 🇨🇭 CH 02 - xiaohe
-  - 🇨🇭 CH 03 - xiaohe
-  - 🇨🇭 CH 04 - xiaohe
 rules:
 - MATCH,PROXIES

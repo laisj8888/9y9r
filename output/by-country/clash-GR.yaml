@@ -5,17 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇷 GR 01 - xiaohe
-  type: vless
-  server: 91.186.216.100
-  port: 7005
-  uuid: ac64aec6-85ee-4fc7-b34b-60a7bcf236ec
+  type: vmess
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16310
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4
-  servername: play.googleapis.com
-  client-fingerprint: chrome
 - name: 🇬🇷 GR 02 - xiaohe
   type: vless
   server: 91.186.216.100
@@ -29,6 +27,18 @@ proxies:
   servername: play.googleapis.com
   client-fingerprint: ios
 - name: 🇬🇷 GR 03 - xiaohe
+  type: vless
+  server: 91.186.216.100
+  port: 7005
+  uuid: ac64aec6-85ee-4fc7-b34b-60a7bcf236ec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4
+  servername: play.googleapis.com
+  client-fingerprint: chrome
+- name: 🇬🇷 GR 04 - xiaohe
   type: vless
   server: newswedengrrrr.azadfug.ir
   port: 7005
@@ -48,6 +58,7 @@ proxy-groups:
   - 🇬🇷 GR 01 - xiaohe
   - 🇬🇷 GR 02 - xiaohe
   - 🇬🇷 GR 03 - xiaohe
+  - 🇬🇷 GR 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,5 +67,6 @@ proxy-groups:
   - 🇬🇷 GR 01 - xiaohe
   - 🇬🇷 GR 02 - xiaohe
   - 🇬🇷 GR 03 - xiaohe
+  - 🇬🇷 GR 04 - xiaohe
 rules:
 - MATCH,PROXIES

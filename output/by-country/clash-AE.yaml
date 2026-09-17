@@ -32,31 +32,46 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: random
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  type: vmess
+  server: 132.243.22.80
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: cdn.snobvpn.online
+  port: 80
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /snob-ws
     headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+      Host: cdn.snobvpn.online
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   type: vless
   server: 188.72.103.4
   port: 443
@@ -70,35 +85,7 @@ proxies:
     path: /apiv1/esa1-asda2jcvnbpseflkn-kjweksad
     headers:
       Host: apicdn.4subnodes.com
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  type: vmess
-  server: 132.243.22.80
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-2-62.mirra.now
 - name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -111,20 +98,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
   type: vmess
   server: 132.243.22.80
   port: 443
@@ -140,32 +114,57 @@ proxies:
     path: /api/v1/gpu-stream/socket
     headers:
       Host: renderer-stream-2-62.mirra.now
-- name: 🇦🇪 阿联酋 (UAE) 11 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
   type: vless
   server: 89.125.147.199
   port: 443
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
   servername: maps.apple.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 12 - xiaohe
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
   type: vless
-  server: apicdn.4subnodes.com
-  port: 443
-  uuid: 1f959100-a98b-47fb-84fa-359246dc458a
+  server: cdn.snobvpn.online
+  port: 80
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: apicdn.4subnodes.com
   network: ws
   ws-opts:
-    path: /apiv1/esa1-asda2jcvnbpseflkn-kjweksad
+    path: /snob-ws
     headers:
-      Host: apicdn.4subnodes.com
+      Host: cdn.snobvpn.online
+- name: 🇦🇪 阿联酋 (UAE) 11 - xiaohe
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 12 - xiaohe
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 13 - xiaohe
   type: vless
   server: 84.235.244.108
@@ -181,18 +180,31 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 14 - xiaohe
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 89.125.147.199
+  port: 443
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 15 - xiaohe
+  type: vless
+  server: apicdn.4subnodes.com
+  port: 443
+  uuid: 1f959100-a98b-47fb-84fa-359246dc458a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: apicdn.4subnodes.com
   network: ws
   ws-opts:
-    path: /
+    path: /apiv1/esa1-asda2jcvnbpseflkn-kjweksad
     headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 15 - xiaohe
+      Host: apicdn.4subnodes.com
+- name: 🇦🇪 阿联酋 (UAE) 16 - xiaohe
   type: vless
   server: cdn.snobvpn.online
   port: 80
@@ -205,7 +217,7 @@ proxies:
     path: /snob-ws
     headers:
       Host: cdn.snobvpn.online
-- name: 🇦🇪 阿联酋 (UAE) 16 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 17 - xiaohe
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -218,19 +230,78 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 17 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 18 - xiaohe
   type: vless
-  server: 89.125.147.199
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 19 - xiaohe
+  type: vmess
+  server: 132.243.22.80
   port: 443
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: random
-- name: 🇦🇪 阿联酋 (UAE) 18 - xiaohe
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇦🇪 阿联酋 (UAE) 20 - xiaohe
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 21 - xiaohe
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 22 - xiaohe
+  type: vmess
+  server: 132.243.22.80
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇦🇪 阿联酋 (UAE) 23 - xiaohe
   type: vless
   server: 89.125.147.199
   port: 443
@@ -242,34 +313,6 @@ proxies:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
   servername: maps.apple.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 19 - xiaohe
-  type: vless
-  server: 45.142.166.211
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /knowledge?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇦🇪 阿联酋 (UAE) 20 - xiaohe
-  type: vless
-  server: 210.152.85.154
-  port: 19364
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /collect/user/products?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -295,6 +338,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 18 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 19 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 20 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 21 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 22 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 23 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -320,5 +366,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 18 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 19 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 20 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 21 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 22 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 23 - xiaohe
 rules:
 - MATCH,PROXIES
