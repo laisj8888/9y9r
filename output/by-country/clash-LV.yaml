@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - xiaohe
   type: vless
-  server: atomic-prase23893.my-vm.work
+  server: 188.220.205.16
   port: 8088
-  uuid: tmp_user
+  uuid: f7c74a35-1da0-5097-9fa7-a20735610ac1
   udp: true
   tls: false
   skip-cert-verify: true
@@ -19,7 +19,7 @@ proxies:
       Host: queuev4.vk.com
 - name: 🇱🇻 LV 02 - xiaohe
   type: vless
-  server: 188.220.205.16
+  server: atomic-prase23893.my-vm.work
   port: 8088
   uuid: f7c74a35-1da0-5097-9fa7-a20735610ac1
   udp: true
@@ -43,6 +43,19 @@ proxies:
     path: /api
     headers:
       Host: queuev4.vk.com
+- name: 🇱🇻 LV 04 - xiaohe
+  type: vless
+  server: atomic-prase23893.my-vm.work
+  port: 8088
+  uuid: tmp_user
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api
+    headers:
+      Host: queuev4.vk.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +64,7 @@ proxy-groups:
   - 🇱🇻 LV 01 - xiaohe
   - 🇱🇻 LV 02 - xiaohe
   - 🇱🇻 LV 03 - xiaohe
+  - 🇱🇻 LV 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +73,6 @@ proxy-groups:
   - 🇱🇻 LV 01 - xiaohe
   - 🇱🇻 LV 02 - xiaohe
   - 🇱🇻 LV 03 - xiaohe
+  - 🇱🇻 LV 04 - xiaohe
 rules:
 - MATCH,PROXIES

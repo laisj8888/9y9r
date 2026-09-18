@@ -5,30 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  type: vmess
-  server: 139.28.240.68
-  port: 2086
-  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: helixgaming.ir
+  port: 80
+  uuid: c0e453eb-33ac-4206-8423-3e1286c2ba7a
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  type: vless
-  server: shop.neexbyte.ir
-  port: 8443
-  uuid: 464bc502-f963-45b6-81e3-e33d18427506
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shop.neexbyte.ir
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: shop.neexbyte.ir
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+      Host: play.google.com
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -40,21 +29,38 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  type: vless
+  server: 185.113.223.183
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /channels/act
+    headers:
+      Host: cdn8848.776676.xyz
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  type: vmess
-  server: 91.228.227.211
-  port: 23957
-  uuid: 92987ab8-0a53-4a16-8d6c-295d5df86404
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 89.251.8.205
+  port: 80
+  uuid: c0e453eb-33ac-4206-8423-3e1286c2ba7a
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: play.google.com
 - name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   type: vmess
-  server: 91.228.227.211
-  port: 23957
-  uuid: 92987ab8-0a53-4a16-8d6c-295d5df86404
+  server: 139.28.240.68
+  port: 2086
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
   alterId: 0
   cipher: auto
   udp: true
@@ -74,6 +80,18 @@ proxies:
     headers:
       Host: play.google.com
 - name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
   type: vmess
   server: 153.52.92.81
   port: 2086
@@ -95,6 +113,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -107,5 +126,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
 rules:
 - MATCH,PROXIES
