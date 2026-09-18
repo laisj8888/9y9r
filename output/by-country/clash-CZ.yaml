@@ -6,51 +6,33 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 195.85.23.88
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  server: 64.227.67.161
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /members/detail/gif?ed=2560fp=chrome
     headers:
-      Host: nb.lovecf.ggff.net
+      Host: cdn8848.776676.xyz
 - name: 🇨🇿 CZ 02 - xiaohe
-  type: vmess
-  server: 95.85.233.138
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 84.32.217.120
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /api/v1/gpu-stream/socket
+    path: /channels/act
     headers:
-      Host: renderer-stream-2-62.mirra.now
+      Host: cdn8848.776676.xyz
 - name: 🇨🇿 CZ 03 - xiaohe
-  type: vmess
-  server: 195.85.23.225
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-- name: 🇨🇿 CZ 04 - xiaohe
   type: vless
   server: 195.85.23.29
   port: 443
@@ -64,6 +46,34 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 04 - xiaohe
+  type: vless
+  server: 202.181.177.8
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /channels/act
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇨🇿 CZ 05 - xiaohe
+  type: vless
+  server: 202.181.177.8
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /channels/act
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,6 +83,7 @@ proxy-groups:
   - 🇨🇿 CZ 02 - xiaohe
   - 🇨🇿 CZ 03 - xiaohe
   - 🇨🇿 CZ 04 - xiaohe
+  - 🇨🇿 CZ 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -82,5 +93,6 @@ proxy-groups:
   - 🇨🇿 CZ 02 - xiaohe
   - 🇨🇿 CZ 03 - xiaohe
   - 🇨🇿 CZ 04 - xiaohe
+  - 🇨🇿 CZ 05 - xiaohe
 rules:
 - MATCH,PROXIES

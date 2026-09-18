@@ -5,17 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  type: vmess
+  server: 139.28.240.68
+  port: 2086
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   type: vless
   server: shop.neexbyte.ir
@@ -32,23 +30,21 @@ proxies:
       Host: shop.neexbyte.ir
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   type: vless
-  server: shop.neexbyte.ir
-  port: 8443
-  uuid: 464bc502-f963-45b6-81e3-e33d18427506
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shop.neexbyte.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shop.neexbyte.ir
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   type: vmess
-  server: 139.28.240.68
-  port: 2086
-  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  server: 91.228.227.211
+  port: 23957
+  uuid: 92987ab8-0a53-4a16-8d6c-295d5df86404
   alterId: 0
   cipher: auto
   udp: true
@@ -56,39 +52,15 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   type: vmess
-  server: 139.28.240.68
-  port: 2086
-  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  server: 91.228.227.211
+  port: 23957
+  uuid: 92987ab8-0a53-4a16-8d6c-295d5df86404
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  type: vmess
-  server: 139.28.240.68
-  port: 2086
-  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
-  type: vless
-  server: shop.neexbyte.ir
-  port: 8443
-  uuid: 464bc502-f963-45b6-81e3-e33d18427506
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
   type: vless
   server: helixgaming.ir
   port: 80
@@ -101,13 +73,16 @@ proxies:
     path: /
     headers:
       Host: play.google.com
-- name: 🇹🇷 土耳其 (Turkey) 09 - xiaohe
-  type: ss
+- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  type: vmess
   server: 153.52.92.81
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: IXa3ylzS_jBOAsQy071tIQ
+  port: 2086
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -120,8 +95,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -134,7 +107,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 09 - xiaohe
 rules:
 - MATCH,PROXIES

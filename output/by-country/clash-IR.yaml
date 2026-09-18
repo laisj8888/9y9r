@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇷 BR 01 - xiaohe
+- name: 🇮🇷 IR 01 - xiaohe
   type: vless
-  server: www.visa.com.hk
-  port: 443
-  uuid: 1367d3f3-a7f4-4a31-ba9a-ac2793fa0b9b
+  server: g1.haxat.bestvbest.ir
+  port: 20610
+  uuid: d65a82af-a403-405e-8b7b-27a68b830511
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: br-gru.xhs152.shop
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: br-gru.xhs152.shop
+  reality-opts:
+    public-key: lcXIrYi2o8yXrYHR321qQ--5lqVT8a6TKbaGpYTq4CI
+  servername: doctor-yab.ir
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇷 BR 01 - xiaohe
+  - 🇮🇷 IR 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 BR 01 - xiaohe
+  - 🇮🇷 IR 01 - xiaohe
 rules:
 - MATCH,PROXIES
