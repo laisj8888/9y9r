@@ -6,18 +6,16 @@ log-level: info
 proxies:
 - name: 🇬🇷 GR 01 - xiaohe
   type: vless
-  server: 91.186.218.227
-  port: 4443
-  uuid: 60dca33b-7804-41da-b158-ecf71d95ff85
+  server: newswedengrrrr.azadfug.ir
+  port: 7005
+  uuid: ac64aec6-85ee-4fc7-b34b-60a7bcf236ec
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  reality-opts:
+    public-key: 7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4
+  servername: play.googleapis.com
+  client-fingerprint: ios
 - name: 🇬🇷 GR 02 - xiaohe
   type: vless
   server: 91.186.216.100
@@ -30,30 +28,6 @@ proxies:
     public-key: 7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4
   servername: play.googleapis.com
   client-fingerprint: chrome
-- name: 🇬🇷 GR 03 - xiaohe
-  type: vless
-  server: newswedengrrrr.azadfug.ir
-  port: 7005
-  uuid: ac64aec6-85ee-4fc7-b34b-60a7bcf236ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4
-  servername: play.googleapis.com
-  client-fingerprint: ios
-- name: 🇬🇷 GR 04 - xiaohe
-  type: vless
-  server: 91.186.216.100
-  port: 7005
-  uuid: ac64aec6-85ee-4fc7-b34b-60a7bcf236ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4
-  servername: play.googleapis.com
-  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,8 +35,6 @@ proxy-groups:
   - AUTO
   - 🇬🇷 GR 01 - xiaohe
   - 🇬🇷 GR 02 - xiaohe
-  - 🇬🇷 GR 03 - xiaohe
-  - 🇬🇷 GR 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,7 +42,5 @@ proxy-groups:
   proxies:
   - 🇬🇷 GR 01 - xiaohe
   - 🇬🇷 GR 02 - xiaohe
-  - 🇬🇷 GR 03 - xiaohe
-  - 🇬🇷 GR 04 - xiaohe
 rules:
 - MATCH,PROXIES
