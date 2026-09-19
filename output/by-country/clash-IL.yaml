@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇱 CL 01 - xiaohe
+- name: 🇮🇱 IL 01 - xiaohe
   type: vless
-  server: 34.176.137.90
+  server: 34.165.244.172
   port: 443
-  uuid: ad5325f8-f0b3-41c4-a561-113529b60e70
+  uuid: 74a011a6-433f-49fa-822e-f768205e4b90
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: HnHVuSObMrldWGzq1-Eb93fwgu6QQRp6H0_8LX3ikDc
+    public-key: Tzhjg1MwcjzzVWFZiRrVwlT-TCl6HNJSTxBOUn0sdDE
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇱 CL 02 - xiaohe
+- name: 🇮🇱 IL 02 - xiaohe
   type: vless
-  server: 34.176.98.128
+  server: 34.165.251.165
   port: 443
-  uuid: 4fe7ceb2-160c-4564-89e6-8f5fd0b05cd5
+  uuid: 0c40bce9-8710-4820-8f22-0742b61df999
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 3ekBKAuIIAOjtkKJ0T-qpC7uJsqsY2fVLRB6C70A5hw
+    public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
@@ -33,14 +33,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇱 CL 01 - xiaohe
-  - 🇨🇱 CL 02 - xiaohe
+  - 🇮🇱 IL 01 - xiaohe
+  - 🇮🇱 IL 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇱 CL 01 - xiaohe
-  - 🇨🇱 CL 02 - xiaohe
+  - 🇮🇱 IL 01 - xiaohe
+  - 🇮🇱 IL 02 - xiaohe
 rules:
 - MATCH,PROXIES
