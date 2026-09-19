@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
   type: vless
-  server: 143.246.195.138
-  port: 8081
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  server: 138.124.25.250
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /vless-test
+    path: /team/index?ed=2560fp=chrome
     headers:
-      Host: 143.246.195.138
+      Host: cdn8848.776676.xyz
 - name: 🇸🇪 SE 02 - xiaohe
   type: vless
   server: 143.246.194.60
@@ -30,6 +31,32 @@ proxies:
     path: /vless-test
     headers:
       Host: 143.246.194.60
+- name: 🇸🇪 SE 03 - xiaohe
+  type: vless
+  server: 143.246.195.138
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 143.246.195.138
+- name: 🇸🇪 SE 04 - xiaohe
+  type: vless
+  server: 143.246.195.98
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 143.246.195.98
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +64,8 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - xiaohe
   - 🇸🇪 SE 02 - xiaohe
+  - 🇸🇪 SE 03 - xiaohe
+  - 🇸🇪 SE 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +73,7 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - xiaohe
   - 🇸🇪 SE 02 - xiaohe
+  - 🇸🇪 SE 03 - xiaohe
+  - 🇸🇪 SE 04 - xiaohe
 rules:
 - MATCH,PROXIES
