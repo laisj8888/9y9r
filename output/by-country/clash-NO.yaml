@@ -5,16 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇴 NO 01 - xiaohe
-  type: ss
-  server: 185.213.23.63
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  type: vless
+  server: 194.32.107.150
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
 - name: 🇳🇴 NO 02 - xiaohe
   type: vless
-  server: 185.125.171.128
-  port: 8443
+  server: 194.32.107.150
+  port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
@@ -41,6 +48,20 @@ proxies:
       Host: shuma.ccwu.cc
 - name: 🇳🇴 NO 04 - xiaohe
   type: vless
+  server: 185.125.171.128
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇳🇴 NO 05 - xiaohe
+  type: vless
   server: 46.29.238.88
   port: 40443
   uuid: db320947-adfb-400d-b60b-383b8324bffe
@@ -51,6 +72,25 @@ proxies:
     public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
   servername: deepl.com
   client-fingerprint: chrome
+- name: 🇳🇴 NO 06 - xiaohe
+  type: ss
+  server: 185.213.23.63
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  udp: true
+- name: 🇳🇴 NO 07 - xiaohe
+  type: vless
+  server: 46.29.238.88
+  port: 40443
+  uuid: db320947-adfb-400d-b60b-383b8324bffe
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
+  servername: deepl.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,6 +100,9 @@ proxy-groups:
   - 🇳🇴 NO 02 - xiaohe
   - 🇳🇴 NO 03 - xiaohe
   - 🇳🇴 NO 04 - xiaohe
+  - 🇳🇴 NO 05 - xiaohe
+  - 🇳🇴 NO 06 - xiaohe
+  - 🇳🇴 NO 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,5 +112,8 @@ proxy-groups:
   - 🇳🇴 NO 02 - xiaohe
   - 🇳🇴 NO 03 - xiaohe
   - 🇳🇴 NO 04 - xiaohe
+  - 🇳🇴 NO 05 - xiaohe
+  - 🇳🇴 NO 06 - xiaohe
+  - 🇳🇴 NO 07 - xiaohe
 rules:
 - MATCH,PROXIES

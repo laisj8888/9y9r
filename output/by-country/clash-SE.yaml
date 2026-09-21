@@ -5,26 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 02 - xiaohe
-  type: vless
-  server: 143.246.195.138
-  port: 8081
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless-test
-    headers:
-      Host: 143.246.195.138
-- name: 🇸🇪 SE 03 - xiaohe
   type: vless
   server: 143.246.194.60
   port: 8081
@@ -37,9 +17,9 @@ proxies:
     path: /vless-test
     headers:
       Host: 143.246.194.60
-- name: 🇸🇪 SE 04 - xiaohe
+- name: 🇸🇪 SE 02 - xiaohe
   type: vless
-  server: 143.246.195.98
+  server: 143.246.194.60
   port: 8081
   uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   udp: true
@@ -49,8 +29,15 @@ proxies:
   ws-opts:
     path: /vless-test
     headers:
-      Host: 143.246.195.98
-- name: 🇸🇪 SE 05 - xiaohe
+      Host: 143.246.194.60
+- name: 🇸🇪 SE 03 - xiaohe
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 04 - xiaohe
   type: vless
   server: 144.31.217.95
   port: 443
@@ -64,6 +51,32 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
+- name: 🇸🇪 SE 05 - xiaohe
+  type: vless
+  server: 143.246.195.98
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 143.246.195.98
+- name: 🇸🇪 SE 06 - xiaohe
+  type: vless
+  server: 143.246.195.138
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 143.246.195.138
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,6 +87,7 @@ proxy-groups:
   - 🇸🇪 SE 03 - xiaohe
   - 🇸🇪 SE 04 - xiaohe
   - 🇸🇪 SE 05 - xiaohe
+  - 🇸🇪 SE 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -84,5 +98,6 @@ proxy-groups:
   - 🇸🇪 SE 03 - xiaohe
   - 🇸🇪 SE 04 - xiaohe
   - 🇸🇪 SE 05 - xiaohe
+  - 🇸🇪 SE 06 - xiaohe
 rules:
 - MATCH,PROXIES

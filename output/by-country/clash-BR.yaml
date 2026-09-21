@@ -6,33 +6,19 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - xiaohe
   type: vless
-  server: 202.181.177.8
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 157.151.4.93
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /channels/act
+    path: /
     headers:
-      Host: cdn8848.776676.xyz
+      Host: shuma.ccwu.cc
 - name: 🇧🇷 BR 02 - xiaohe
-  type: vless
-  server: 144.31.28.106
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /trade
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇧🇷 BR 03 - xiaohe
   type: vless
   server: 157.151.4.93
   port: 443
@@ -46,6 +32,18 @@ proxies:
     path: /fp=chrome
     headers:
       Host: shuma.ccwu.cc
+- name: 🇧🇷 BR 03 - xiaohe
+  type: vless
+  server: 34.39.174.220
+  port: 443
+  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇧🇷 BR 04 - xiaohe
   type: vless
   server: 157.151.4.93
@@ -62,30 +60,28 @@ proxies:
       Host: shuma.ccwu.cc
 - name: 🇧🇷 BR 05 - xiaohe
   type: vless
-  server: 35.199.90.53
-  port: 443
-  uuid: e9c2ed7f-79ab-40a8-8910-24468f5da712
+  server: 132.243.203.218
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 0WXz3PJQnr-KprrwiO5BlKVRdqA4ZS6U5jGHc_aeJnw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇧🇷 BR 06 - xiaohe
-  type: vless
-  server: 157.151.4.93
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /v?ed=2560
     headers:
-      Host: shuma.ccwu.cc
+      Host: cdn8848.776676.xyz
+- name: 🇧🇷 BR 06 - xiaohe
+  type: vmess
+  server: 172.233.14.17
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
