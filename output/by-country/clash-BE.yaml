@@ -6,43 +6,32 @@ log-level: info
 proxies:
 - name: 🇧🇪 BE 01 - xiaohe
   type: vless
-  server: 104.21.64.198
-  port: 2086
-  uuid: 73796e63-0000-4000-8000-000000000007
+  server: 141.227.186.38
+  port: 2053
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /sync
+    path: /
     headers:
-      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+      Host: shuma.ccwu.cc
 - name: 🇧🇪 BE 02 - xiaohe
   type: vless
-  server: 172.67.155.136
-  port: 2095
-  uuid: 73796e63-0000-4000-8000-000000000008
+  server: 141.227.137.177
+  port: 2053
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /sync
+    path: /
     headers:
-      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-- name: 🇧🇪 BE 03 - xiaohe
-  type: vless
-  server: 104.21.64.198
-  port: 2095
-  uuid: 73796e63-0000-4000-8000-000000000008
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇧🇪 BE 01 - xiaohe
   - 🇧🇪 BE 02 - xiaohe
-  - 🇧🇪 BE 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇧🇪 BE 01 - xiaohe
   - 🇧🇪 BE 02 - xiaohe
-  - 🇧🇪 BE 03 - xiaohe
 rules:
 - MATCH,PROXIES
