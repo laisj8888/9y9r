@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - xiaohe
   type: vless
   server: 194.61.31.126
@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 03 - xiaohe
   type: ss
   server: 172.105.39.124
@@ -49,45 +49,34 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 152.67.8.205
+      Host: ''
 - name: 🇮🇳 印度 (India) 05 - xiaohe
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 06 - xiaohe
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.21.69.118
+  port: 443
+  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: odd-violet-5440.asdgrweeee13.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /sync
     headers:
-      Host: ''
+      Host: odd-violet-5440.asdgrweeee13.workers.dev
 - name: 🇮🇳 印度 (India) 07 - xiaohe
-  type: ss
-  server: 139.84.166.47
-  port: 8388
-  cipher: aes-256-gcm
-  password: GEdoeeqLZtkJRgSa
-  udp: true
-- name: 🇮🇳 印度 (India) 08 - xiaohe
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -102,18 +91,33 @@ proxies:
     path: ''
     headers:
       Host: ''
-- name: 🇮🇳 印度 (India) 09 - xiaohe
+- name: 🇮🇳 印度 (India) 08 - xiaohe
   type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  server: 34.93.188.70
+  port: 443
+  uuid: 5004e3d7-a9bd-4a7c-a6d5-58aa5e1be9ed
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: random
+    public-key: 97C6O3repofpoaJzvu1d4o7amhJGA8hF_yJls7SNIgU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 09 - xiaohe
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
 - name: 🇮🇳 印度 (India) 10 - xiaohe
   type: vmess
   server: 152.67.8.205
@@ -126,10 +130,22 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 11 - xiaohe
+  type: vless
+  server: 34.93.188.70
+  port: 443
+  uuid: 5004e3d7-a9bd-4a7c-a6d5-58aa5e1be9ed
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 97C6O3repofpoaJzvu1d4o7amhJGA8hF_yJls7SNIgU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 12 - xiaohe
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -144,42 +160,36 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇮🇳 印度 (India) 12 - xiaohe
-  type: vless
-  server: 34.93.188.70
-  port: 443
-  uuid: 5004e3d7-a9bd-4a7c-a6d5-58aa5e1be9ed
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 97C6O3repofpoaJzvu1d4o7amhJGA8hF_yJls7SNIgU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 13 - xiaohe
-  type: vless
-  server: 34.47.245.203
-  port: 443
-  uuid: 3fed34dc-2fe6-4fe0-86e7-a80213f9b7cc
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: dB68n-Vyph0_KBtBIe45b5GCB4F1IqpBF_ohlN-KpkY
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
 - name: 🇮🇳 印度 (India) 14 - xiaohe
-  type: vless
-  server: 34.93.188.70
-  port: 443
-  uuid: 5004e3d7-a9bd-4a7c-a6d5-58aa5e1be9ed
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 97C6O3repofpoaJzvu1d4o7amhJGA8hF_yJls7SNIgU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.67.8.205
 - name: 🇮🇳 印度 (India) 15 - xiaohe
   type: vmess
   server: 152.67.8.205
@@ -196,6 +206,18 @@ proxies:
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 16 - xiaohe
+  type: vless
+  server: 34.47.245.203
+  port: 443
+  uuid: 3fed34dc-2fe6-4fe0-86e7-a80213f9b7cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dB68n-Vyph0_KBtBIe45b5GCB4F1IqpBF_ohlN-KpkY
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 17 - xiaohe
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -207,21 +229,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
-- name: 🇮🇳 印度 (India) 17 - xiaohe
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 18 - xiaohe
   type: vmess
   server: 152.67.8.205
@@ -236,22 +246,21 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 152.67.8.205
+      Host: ''
 - name: 🇮🇳 印度 (India) 19 - xiaohe
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 172.67.208.1
+  port: 443
+  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: odd-violet-5440.asdgrweeee13.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /sync
     headers:
-      Host: ''
+      Host: odd-violet-5440.asdgrweeee13.workers.dev
 - name: 🇮🇳 印度 (India) 20 - xiaohe
   type: vmess
   server: 152.67.8.205
@@ -284,21 +293,35 @@ proxies:
       Host: ''
 - name: 🇮🇳 印度 (India) 22 - xiaohe
   type: vmess
-  server: 20.235.220.189
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /
     headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+      Host: ''
 - name: 🇮🇳 印度 (India) 23 - xiaohe
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 24 - xiaohe
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -313,18 +336,6 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇮🇳 印度 (India) 24 - xiaohe
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 25 - xiaohe
   type: vmess
   server: 152.67.8.205
@@ -339,22 +350,19 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: ''
+      Host: 152.67.8.205
 - name: 🇮🇳 印度 (India) 26 - xiaohe
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 27 - xiaohe
   type: vmess
   server: 152.67.8.205

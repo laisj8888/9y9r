@@ -6,30 +6,32 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 212.104.128.139
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 02 - xiaohe
-  type: vless
-  server: 109.107.155.76
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: cdn8848.776676.xyz
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 02 - xiaohe
+  type: vless
+  server: fi1.zuoai.cf
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 03 - xiaohe
   type: vless
   server: fi1.zuoai.cf
@@ -45,97 +47,37 @@ proxies:
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 04 - xiaohe
-  type: vless
-  server: 212.104.128.45
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 05 - xiaohe
-  type: vless
-  server: 212.104.128.139
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 06 - xiaohe
-  type: vless
-  server: 212.104.128.0
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 07 - xiaohe
-  type: vless
-  server: 212.104.128.68
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 08 - xiaohe
-  type: vless
-  server: 109.107.155.76
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /tv/member/auth?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇫🇮 FI 09 - xiaohe
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: ac3ef9c7-5732-4726-e7c6-3c73703987c7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 10 - xiaohe
   type: ss
   server: 87.58.148.70
   port: 443
   cipher: aes-256-gcm
   password: rg0g3xp9rk9nk9o0
   udp: true
-- name: 🇫🇮 FI 11 - xiaohe
+- name: 🇫🇮 FI 05 - xiaohe
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 06 - xiaohe
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 07 - xiaohe
   type: vless
   server: fi1.zuoai.cf
   port: 443
@@ -149,23 +91,71 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 12 - xiaohe
+- name: 🇫🇮 FI 08 - xiaohe
   type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: ac3ef9c7-5732-4726-e7c6-3c73703987c7
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ssl.fastly.com
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 09 - xiaohe
+  type: vless
+  server: 212.104.128.152
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /?RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS
+    path: /
     headers:
-      Host: c12.com
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 10 - xiaohe
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 11 - xiaohe
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 12 - xiaohe
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 13 - xiaohe
   type: vless
-  server: 212.104.128.244
+  server: 212.104.128.106
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -178,12 +168,19 @@ proxies:
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 14 - xiaohe
-  type: ss
-  server: p1tun4.greewebservices.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: 1XBgrwdW4F2sqnM52aAR1Q
+  type: vless
+  server: 172.64.52.230
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇫🇮 FI 15 - xiaohe
   type: vless
   server: 185.79.138.71
@@ -198,43 +195,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 16 - xiaohe
   type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 17 - xiaohe
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 18 - xiaohe
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 19 - xiaohe
-  type: vless
-  server: 172.64.52.230
+  server: 104.18.42.54
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -243,24 +204,102 @@ proxies:
   servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: ?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇫🇮 FI 20 - xiaohe
+- name: 🇫🇮 FI 17 - xiaohe
   type: vless
-  server: a2.arshia-nova.ir
-  port: 443
-  uuid: ac3ef9c7-5732-4726-e7c6-3c73703987c7
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ssl.fastly.com
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 18 - xiaohe
+  type: vless
+  server: 212.104.128.152
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: c12.com
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 19 - xiaohe
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 20 - xiaohe
+  type: vless
+  server: 212.104.128.0
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 21 - xiaohe
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: random
+- name: 🇫🇮 FI 22 - xiaohe
+  type: vless
+  server: 212.104.128.27
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 23 - xiaohe
+  type: vless
+  server: 212.104.128.206
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 24 - xiaohe
   type: vless
   server: 212.104.128.106
   port: 443
@@ -274,62 +313,20 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 22 - xiaohe
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: ac3ef9c7-5732-4726-e7c6-3c73703987c7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 23 - xiaohe
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: ac3ef9c7-5732-4726-e7c6-3c73703987c7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM-TOOTFFARANGI
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 24 - xiaohe
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: ac3ef9c7-5732-4726-e7c6-3c73703987c7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
 - name: 🇫🇮 FI 25 - xiaohe
   type: vless
-  server: fi1.zuoai.cf
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  server: 84.22.150.39
+  port: 7443
+  uuid: 5cc814de-2bbb-4409-ad8c-ee841ca7bad1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /@Marisa_kristi
     headers:
-      Host: xi.tbv.ccwu.cc
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
 - name: 🇫🇮 FI 26 - xiaohe
   type: vless
   server: 185.79.138.71
@@ -344,19 +341,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 27 - xiaohe
   type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 28 - xiaohe
-  type: vless
-  server: 212.104.128.217
+  server: 212.104.128.244
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -368,21 +353,19 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 29 - xiaohe
+- name: 🇫🇮 FI 28 - xiaohe
   type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: ac3ef9c7-5732-4726-e7c6-3c73703987c7
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 30 - xiaohe
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 29 - xiaohe
   type: vless
   server: 212.104.128.27
   port: 443
@@ -396,21 +379,37 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 31 - xiaohe
+- name: 🇫🇮 FI 30 - xiaohe
   type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  server: 188.114.97.6
+  port: 443
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
+  servername: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
+- name: 🇫🇮 FI 31 - xiaohe
+  type: vless
+  server: 212.104.128.45
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 32 - xiaohe
   type: vless
-  server: 212.104.128.152
+  server: 212.104.128.45
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -424,7 +423,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 33 - xiaohe
   type: vless
-  server: fi1.zuoai.cf
+  server: 212.104.128.217
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -438,21 +437,21 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 34 - xiaohe
   type: vless
-  server: 212.104.128.152
+  server: 104.16.10.185
   port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
+  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560
     headers:
-      Host: xi.tbv.ccwu.cc
+      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
 - name: 🇫🇮 FI 35 - xiaohe
   type: vless
-  server: fi1.zuoai.cf
+  server: 212.104.128.68
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -476,154 +475,6 @@ proxies:
     public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 37 - xiaohe
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 38 - xiaohe
-  type: vless
-  server: 212.104.128.206
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 39 - xiaohe
-  type: vless
-  server: 109.107.155.76
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /tv/member/auth?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇫🇮 FI 40 - xiaohe
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: ac3ef9c7-5732-4726-e7c6-3c73703987c7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 41 - xiaohe
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: ac3ef9c7-5732-4726-e7c6-3c73703987c7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 42 - xiaohe
-  type: vless
-  server: a2.arshia-nova.ir
-  port: 443
-  uuid: ac3ef9c7-5732-4726-e7c6-3c73703987c7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 43 - xiaohe
-  type: vless
-  server: 212.104.128.106
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 44 - xiaohe
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 45 - xiaohe
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 46 - xiaohe
-  type: vless
-  server: 212.104.128.27
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 47 - xiaohe
-  type: vless
-  server: 212.104.128.45
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -665,17 +516,6 @@ proxy-groups:
   - 🇫🇮 FI 34 - xiaohe
   - 🇫🇮 FI 35 - xiaohe
   - 🇫🇮 FI 36 - xiaohe
-  - 🇫🇮 FI 37 - xiaohe
-  - 🇫🇮 FI 38 - xiaohe
-  - 🇫🇮 FI 39 - xiaohe
-  - 🇫🇮 FI 40 - xiaohe
-  - 🇫🇮 FI 41 - xiaohe
-  - 🇫🇮 FI 42 - xiaohe
-  - 🇫🇮 FI 43 - xiaohe
-  - 🇫🇮 FI 44 - xiaohe
-  - 🇫🇮 FI 45 - xiaohe
-  - 🇫🇮 FI 46 - xiaohe
-  - 🇫🇮 FI 47 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -717,16 +557,5 @@ proxy-groups:
   - 🇫🇮 FI 34 - xiaohe
   - 🇫🇮 FI 35 - xiaohe
   - 🇫🇮 FI 36 - xiaohe
-  - 🇫🇮 FI 37 - xiaohe
-  - 🇫🇮 FI 38 - xiaohe
-  - 🇫🇮 FI 39 - xiaohe
-  - 🇫🇮 FI 40 - xiaohe
-  - 🇫🇮 FI 41 - xiaohe
-  - 🇫🇮 FI 42 - xiaohe
-  - 🇫🇮 FI 43 - xiaohe
-  - 🇫🇮 FI 44 - xiaohe
-  - 🇫🇮 FI 45 - xiaohe
-  - 🇫🇮 FI 46 - xiaohe
-  - 🇫🇮 FI 47 - xiaohe
 rules:
 - MATCH,PROXIES
