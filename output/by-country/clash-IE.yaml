@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - xiaohe
   type: vless
-  server: 107.150.20.112
-  port: 8443
+  server: 198.55.102.68
+  port: 2083
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
@@ -48,6 +48,20 @@ proxies:
       Host: cfvvv-ev1.pages.dev
 - name: 🇮🇪 IE 04 - xiaohe
   type: vless
+  server: 107.150.20.112
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇮🇪 IE 05 - xiaohe
+  type: vless
   server: 162.159.160.139
   port: 2083
   uuid: 44eae030-290b-4083-8102-6f8bab05701b
@@ -60,20 +74,6 @@ proxies:
     path: /
     headers:
       Host: cfvvv-ev1.pages.dev
-- name: 🇮🇪 IE 05 - xiaohe
-  type: vless
-  server: 167.160.177.68
-  port: 2096
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
 - name: 🇮🇪 IE 06 - xiaohe
   type: vless
   server: 162.159.160.139
@@ -90,8 +90,8 @@ proxies:
       Host: cfvvv-ev1.pages.dev
 - name: 🇮🇪 IE 07 - xiaohe
   type: vless
-  server: 198.55.102.68
-  port: 2083
+  server: 167.160.177.68
+  port: 2096
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
