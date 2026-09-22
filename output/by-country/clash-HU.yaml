@@ -29,7 +29,7 @@ proxies:
   servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: shuma.ccwu.cc
 - name: 🇭🇺 HU 03 - xiaohe
@@ -46,6 +46,20 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
+- name: 🇭🇺 HU 04 - xiaohe
+  type: vless
+  server: 38.180.109.174
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +68,7 @@ proxy-groups:
   - 🇭🇺 HU 01 - xiaohe
   - 🇭🇺 HU 02 - xiaohe
   - 🇭🇺 HU 03 - xiaohe
+  - 🇭🇺 HU 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +77,6 @@ proxy-groups:
   - 🇭🇺 HU 01 - xiaohe
   - 🇭🇺 HU 02 - xiaohe
   - 🇭🇺 HU 03 - xiaohe
+  - 🇭🇺 HU 04 - xiaohe
 rules:
 - MATCH,PROXIES

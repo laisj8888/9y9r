@@ -6,18 +6,33 @@ log-level: info
 proxies:
 - name: 🇦🇲 AM 01 - xiaohe
   type: vless
-  server: 45.131.211.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 2.56.204.183
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /fp=chrome
     headers:
-      Host: vms.lifetime06.workers.dev
+      Host: shuma.ccwu.cc
 - name: 🇦🇲 AM 02 - xiaohe
+  type: vless
+  server: 2.56.204.183
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇦🇲 AM 03 - xiaohe
   type: vless
   server: 77.91.68.70
   port: 55983
@@ -29,7 +44,19 @@ proxies:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇦🇲 AM 03 - xiaohe
+- name: 🇦🇲 AM 04 - xiaohe
+  type: vless
+  server: 77.91.68.70
+  port: 55983
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇦🇲 AM 05 - xiaohe
   type: vless
   server: 2.56.207.67
   port: 443
@@ -43,33 +70,6 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇦🇲 AM 04 - xiaohe
-  type: vless
-  server: 2.56.204.183
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇦🇲 AM 05 - xiaohe
-  type: vless
-  server: 50.62.195.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime38.workers.dev
 - name: 🇦🇲 AM 06 - xiaohe
   type: vless
   server: 77.91.68.70
@@ -82,44 +82,6 @@ proxies:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇦🇲 AM 07 - xiaohe
-  type: vless
-  server: 77.91.68.70
-  port: 55983
-  uuid: f667a096-5231-4cfb-8759-92bb32473139
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇦🇲 AM 08 - xiaohe
-  type: vless
-  server: 89.117.112.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime11.workers.dev
-- name: 🇦🇲 AM 09 - xiaohe
-  type: vless
-  server: 185.225.195.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime18.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -131,9 +93,6 @@ proxy-groups:
   - 🇦🇲 AM 04 - xiaohe
   - 🇦🇲 AM 05 - xiaohe
   - 🇦🇲 AM 06 - xiaohe
-  - 🇦🇲 AM 07 - xiaohe
-  - 🇦🇲 AM 08 - xiaohe
-  - 🇦🇲 AM 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -145,8 +104,5 @@ proxy-groups:
   - 🇦🇲 AM 04 - xiaohe
   - 🇦🇲 AM 05 - xiaohe
   - 🇦🇲 AM 06 - xiaohe
-  - 🇦🇲 AM 07 - xiaohe
-  - 🇦🇲 AM 08 - xiaohe
-  - 🇦🇲 AM 09 - xiaohe
 rules:
 - MATCH,PROXIES
