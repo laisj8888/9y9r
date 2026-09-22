@@ -16,19 +16,28 @@ proxies:
   skip-cert-verify: true
 - name: 🇧🇷 BR 02 - xiaohe
   type: vless
-  server: 157.151.4.93
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  server: 188.114.97.6
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
-      Host: shuma.ccwu.cc
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 - name: 🇧🇷 BR 03 - xiaohe
+  type: vmess
+  server: 172.233.14.17
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇧🇷 BR 04 - xiaohe
   type: vless
   server: 157.151.4.93
   port: 443
@@ -42,16 +51,6 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇧🇷 BR 04 - xiaohe
-  type: vmess
-  server: 172.233.14.17
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇧🇷 BR 05 - xiaohe
   type: vmess
   server: 172.233.14.17
@@ -73,6 +72,40 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇧🇷 BR 07 - xiaohe
+  type: vmess
+  server: 172.233.14.17
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇧🇷 BR 08 - xiaohe
+  type: vless
+  server: 157.151.4.93
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇧🇷 BR 09 - xiaohe
+  type: vmess
+  server: 172.233.14.17
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇧🇷 BR 10 - xiaohe
   type: vless
   server: 35.199.90.53
   port: 443
@@ -84,7 +117,7 @@ proxies:
     public-key: 0WXz3PJQnr-KprrwiO5BlKVRdqA4ZS6U5jGHc_aeJnw
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇧🇷 BR 08 - xiaohe
+- name: 🇧🇷 BR 11 - xiaohe
   type: vmess
   server: 172.233.14.17
   port: 22324
@@ -94,19 +127,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇧🇷 BR 09 - xiaohe
-  type: vless
-  server: 34.39.174.220
-  port: 443
-  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
+- name: 🇧🇷 BR 12 - xiaohe
+  type: vmess
+  server: 172.233.14.17
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇧🇷 BR 10 - xiaohe
+- name: 🇧🇷 BR 13 - xiaohe
   type: vmess
   server: 172.233.14.17
   port: 22324
@@ -131,6 +162,9 @@ proxy-groups:
   - 🇧🇷 BR 08 - xiaohe
   - 🇧🇷 BR 09 - xiaohe
   - 🇧🇷 BR 10 - xiaohe
+  - 🇧🇷 BR 11 - xiaohe
+  - 🇧🇷 BR 12 - xiaohe
+  - 🇧🇷 BR 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -146,5 +180,8 @@ proxy-groups:
   - 🇧🇷 BR 08 - xiaohe
   - 🇧🇷 BR 09 - xiaohe
   - 🇧🇷 BR 10 - xiaohe
+  - 🇧🇷 BR 11 - xiaohe
+  - 🇧🇷 BR 12 - xiaohe
+  - 🇧🇷 BR 13 - xiaohe
 rules:
 - MATCH,PROXIES

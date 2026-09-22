@@ -5,106 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaohe
-  type: vless
-  server: rough-mouse-2a3a.424-e94.workers.dev
-  port: 8880
-  uuid: 70ca8aec-42ba-41df-a874-ec9517053dec
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: rough-mouse-2a3a.424-e94.workers.dev
-- name: 🇯🇵 日本 (Japan) 02 - xiaohe
-  type: vless
-  server: 104.16.106.213
-  port: 8880
-  uuid: ae83f4a6-7fd3-4168-9f42-1260fc601155
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shy-mud-e936.15-bb9.workers.dev
-- name: 🇯🇵 日本 (Japan) 03 - xiaohe
-  type: vless
-  server: 104.16.100.66
-  port: 8880
-  uuid: d25ba473-5b05-48bb-b048-e82844e2ae39
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: misty-recipe-be74.271.workers.dev
-- name: 🇯🇵 日本 (Japan) 04 - xiaohe
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 05 - xiaohe
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 06 - xiaohe
-  type: vless
-  server: www.baipiao.eu.org
-  port: 8880
-  uuid: 56c673ba-865a-48ec-8dc0-fd7133a7ecfd
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: curly-surf-4401.75-08c.workers.dev
-- name: 🇯🇵 日本 (Japan) 07 - xiaohe
-  type: vless
-  server: 104.21.8.201
-  port: 2096
-  uuid: 36788cf4-fcb4-49c5-a563-5f888849b1cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn-jp.skyvora.app
-  network: ws
-  ws-opts:
-    path: /vqyps6kf3
-    headers:
-      Host: cdn-jp.skyvora.app
-- name: 🇯🇵 日本 (Japan) 08 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 09 - xiaohe
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -118,52 +18,44 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: 168.138.43.75
-- name: 🇯🇵 日本 (Japan) 10 - xiaohe
-  type: vless
-  server: 18.182.141.80
+      Host: None
+- name: 🇯🇵 日本 (Japan) 02 - xiaohe
+  type: ss
+  server: 149.22.87.240
   port: 443
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: true
+- name: 🇯🇵 日本 (Japan) 03 - xiaohe
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 04 - xiaohe
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 05 - xiaohe
+  type: vless
+  server: 172.111.146.64
+  port: 80
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+  udp: true
+  tls: false
   skip-cert-verify: true
-  servername: e34bq.oa9r.zl3.hh.vavava.kdns.fr
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /vless/
     headers:
-      Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇯🇵 日本 (Japan) 11 - xiaohe
+      Host: 172.111.146.64
+- name: 🇯🇵 日本 (Japan) 06 - xiaohe
   type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: 9c7501fb-4e23-44d8-9a9e-973807ae4f35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi+
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 12 - xiaohe
-  type: vless
-  server: 172.67.130.159
-  port: 2096
-  uuid: 36788cf4-fcb4-49c5-a563-5f888849b1cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn-jp.skyvora.app
-  network: ws
-  ws-opts:
-    path: /vqyps6kf3
-    headers:
-      Host: cdn-jp.skyvora.app
-- name: 🇯🇵 日本 (Japan) 13 - xiaohe
-  type: vless
-  server: 92.113.124.228
+  server: 161.33.29.51
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
@@ -175,21 +67,70 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 14 - xiaohe
+- name: 🇯🇵 日本 (Japan) 07 - xiaohe
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 08 - xiaohe
   type: vless
-  server: 18.180.86.39
-  port: 443
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: rough-mouse-2a3a.424-e94.workers.dev
+  port: 8880
+  uuid: 70ca8aec-42ba-41df-a874-ec9517053dec
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: rough-mouse-2a3a.424-e94.workers.dev
+- name: 🇯🇵 日本 (Japan) 09 - xiaohe
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 10 - xiaohe
+  type: vless
+  server: 46.250.250.48
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: e34bq.oa9r.zl3.hh.vavava.kdns.fr
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /
     headers:
-      Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇯🇵 日本 (Japan) 15 - xiaohe
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 11 - xiaohe
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 12 - xiaohe
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 13 - xiaohe
   type: vless
   server: 162.159.254.3
   port: 443
@@ -203,150 +144,35 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 14 - xiaohe
+  type: vless
+  server: 92.113.124.228
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 15 - xiaohe
+  type: vless
+  server: 104.21.8.201
+  port: 2096
+  uuid: 36788cf4-fcb4-49c5-a563-5f888849b1cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-jp.skyvora.app
+  network: ws
+  ws-opts:
+    path: /vqyps6kf3
+    headers:
+      Host: cdn-jp.skyvora.app
 - name: 🇯🇵 日本 (Japan) 16 - xiaohe
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 17 - xiaohe
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 18 - xiaohe
-  type: vless
-  server: 104.24.152.211
-  port: 8880
-  uuid: 2acde116-5949-48d8-a1e6-60a1d2547deb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: lively-pine-093d.144-868.workers.dev
-- name: 🇯🇵 日本 (Japan) 19 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: white-hill-f907.23-b68.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: white-hill-f907.23-b68.workers.dev
-- name: 🇯🇵 日本 (Japan) 20 - xiaohe
-  type: vless
-  server: 172.64.153.11
-  port: 8880
-  uuid: 2d309706-de61-4c33-a086-3888e595b8eb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=proxyip.jp.cmliussss.net
-    headers:
-      Host: soft-scene-d370.55-7ff.workers.dev
-- name: 🇯🇵 日本 (Japan) 21 - xiaohe
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 22 - xiaohe
-  type: vless
-  server: silent-union-ac36.315-33d.workers.dev
-  port: 8880
-  uuid: c2569d72-0ba1-44e8-986f-be445edb5f3d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: silent-union-ac36.315-33d.workers.dev
-- name: 🇯🇵 日本 (Japan) 23 - xiaohe
-  type: vless
-  server: 172.67.209.127
-  port: 8880
-  uuid: 3e553ebf-db9d-4858-b608-03d6ff615a41
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: rapid-waterfall-7270.255-22b.workers.dev
-- name: 🇯🇵 日本 (Japan) 24 - xiaohe
-  type: vless
-  server: 216.23.84.115
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 25 - xiaohe
-  type: vless
-  server: 154.19.187.190
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 26 - xiaohe
-  type: vless
-  server: 91.186.218.227
-  port: 4443
-  uuid: 6688ad6a-b44a-4482-9c34-d2da7a60f52a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇯🇵 日本 (Japan) 27 - xiaohe
-  type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: 48c20f0a-c2a4-453f-8a61-ec73ea7829c5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: morning-brook-d78e.347.workers.dev
-- name: 🇯🇵 日本 (Japan) 28 - xiaohe
   type: vless
   server: 45.202.254.133
   port: 443
@@ -357,10 +183,23 @@ proxies:
   servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 29 - xiaohe
+- name: 🇯🇵 日本 (Japan) 17 - xiaohe
+  type: vless
+  server: 104.16.100.66
+  port: 8880
+  uuid: b4a18856-301d-4bb2-b729-6afcb700faf5
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: red-flower-a2bf.363.workers.dev
+- name: 🇯🇵 日本 (Japan) 18 - xiaohe
   type: vless
   server: 161.33.29.51
   port: 443
@@ -374,36 +213,23 @@ proxies:
     path: /fp=chrome
     headers:
       Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 30 - xiaohe
-  type: vless
-  server: 210.152.85.154
-  port: 19364
-  uuid: 4738dcaa-80c4-4d8b-9006-832692887bbb
+- name: 🇯🇵 日本 (Japan) 19 - xiaohe
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇯🇵 日本 (Japan) 31 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 21b93e91-5bb1-4d6d-9093-1fd09ae06903
+- name: 🇯🇵 日本 (Japan) 20 - xiaohe
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: morning-silence-7b1b.222-46c.workers.dev
-- name: 🇯🇵 日本 (Japan) 32 - xiaohe
+- name: 🇯🇵 日本 (Japan) 21 - xiaohe
   type: vless
-  server: 216.23.84.115
+  server: 168.138.52.221
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
@@ -412,80 +238,44 @@ proxies:
   servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 33 - xiaohe
-  type: vless
-  server: 172.111.146.64
-  port: 80
-  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+- name: 🇯🇵 日本 (Japan) 22 - xiaohe
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 34 - xiaohe
+- name: 🇯🇵 日本 (Japan) 23 - xiaohe
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 24 - xiaohe
   type: vless
-  server: 129.153.71.28
-  port: 28863
-  uuid: c87cdd8d-bc58-4e49-b8d9-7843098fe3be
+  server: 64.176.34.130
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇯🇵 日本 (Japan) 35 - xiaohe
-  type: vless
-  server: 210.152.85.154
-  port: 19364
-  uuid: 90899e26-6c8d-46df-954d-14a86c0a1813
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇯🇵 日本 (Japan) 36 - xiaohe
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 37 - xiaohe
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 38 - xiaohe
-  type: vless
-  server: www.ipget.net
-  port: 8880
-  uuid: bbecfa92-4f64-4eb8-82e6-388394d909fe
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: empty-poetry-07b6.477-e0d.workers.dev
-- name: 🇯🇵 日本 (Japan) 39 - xiaohe
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 25 - xiaohe
   type: vless
   server: 45.76.100.75
   port: 443
@@ -499,306 +289,9 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 40 - xiaohe
+- name: 🇯🇵 日本 (Japan) 26 - xiaohe
   type: vless
-  server: 104.16.106.213
-  port: 8880
-  uuid: b4a18856-301d-4bb2-b729-6afcb700faf5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: red-flower-a2bf.363.workers.dev
-- name: 🇯🇵 日本 (Japan) 41 - xiaohe
-  type: vless
-  server: 162.159.140.78
-  port: 8880
-  uuid: a8c27bd6-e395-4f9b-a75d-1c3bc6b1f83a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: long-boat-7113.303-08c.workers.dev
-- name: 🇯🇵 日本 (Japan) 42 - xiaohe
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 43 - xiaohe
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 44 - xiaohe
-  type: vmess
-  server: oc.imfun.fun
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 45 - xiaohe
-  type: vless
-  server: 172.67.152.71
-  port: 8880
-  uuid: d6d0ba7b-fa88-4b2c-9915-530ae4a81035
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET
-    headers:
-      Host: aged-mud-9b4c.202-2dc.workers.dev
-- name: 🇯🇵 日本 (Japan) 46 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 48c20f0a-c2a4-453f-8a61-ec73ea7829c5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: morning-brook-d78e.347.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: morning-brook-d78e.347.workers.dev
-- name: 🇯🇵 日本 (Japan) 47 - xiaohe
-  type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 48 - xiaohe
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: 281be80c-6034-4db1-b456-5a5307c6edee
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇯🇵 日本 (Japan) 49 - xiaohe
-  type: vless
-  server: www.gov.ua
-  port: 8880
-  uuid: 48c20f0a-c2a4-453f-8a61-ec73ea7829c5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: morning-brook-d78e.347.workers.dev
-- name: 🇯🇵 日本 (Japan) 50 - xiaohe
-  type: vless
-  server: 45.202.254.133
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 51 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 8ddedcc7-6c4e-4df3-a190-ac40926f6694
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: late-boat-fbd7.152-de6.workers.dev
-- name: 🇯🇵 日本 (Japan) 52 - xiaohe
-  type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: 0b17eb47-587b-4e46-86a7-e1681cbbe76c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: orange-math-9c83.371.workers.dev
-- name: 🇯🇵 日本 (Japan) 53 - xiaohe
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 54 - xiaohe
-  type: vless
-  server: www.baipiao.eu.org
-  port: 8880
-  uuid: 56c673ba-865a-48ec-8dc0-fd7133a7ecfd
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: curly-surf-4401.75-08c.workers.dev
-- name: 🇯🇵 日本 (Japan) 55 - xiaohe
-  type: vmess
-  server: 172.111.146.64
-  port: 80
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: None
-- name: 🇯🇵 日本 (Japan) 56 - xiaohe
-  type: vless
-  server: 172.64.88.168
-  port: 8880
-  uuid: 21b93e91-5bb1-4d6d-9093-1fd09ae06903
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: morning-silence-7b1b.222-46c.workers.dev
-- name: 🇯🇵 日本 (Japan) 57 - xiaohe
-  type: vless
-  server: empty-poetry-07b6.477-e0d.workers.dev
-  port: 8880
-  uuid: bbecfa92-4f64-4eb8-82e6-388394d909fe
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: empty-poetry-07b6.477-e0d.workers.dev
-- name: 🇯🇵 日本 (Japan) 58 - xiaohe
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 59 - xiaohe
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: a2336cca-3fd0-45cb-8ac5-1de6d17692b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 60 - xiaohe
-  type: vless
-  server: 104.21.15.212
-  port: 8880
-  uuid: bbecfa92-4f64-4eb8-82e6-388394d909fe
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=proxyip.jp.cmliussss.net
-    headers:
-      Host: empty-poetry-07b6.477-e0d.workers.dev
-- name: 🇯🇵 日本 (Japan) 61 - xiaohe
-  type: vless
-  server: 104.21.88.129
-  port: 8880
-  uuid: ea29d6f1-3567-4d45-b8c2-e42f162caef4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: mute-dawn-f27b.375.workers.dev
-- name: 🇯🇵 日本 (Japan) 62 - xiaohe
-  type: vless
-  server: log.bpminecraft.com
-  port: 8880
-  uuid: d25ba473-5b05-48bb-b048-e82844e2ae39
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=proxyip.jp.cmliussss.net
-    headers:
-      Host: misty-recipe-be74.271.workers.dev
-- name: 🇯🇵 日本 (Japan) 63 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: c2569d72-0ba1-44e8-986f-be445edb5f3d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: silent-union-ac36.315-33d.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: silent-union-ac36.315-33d.workers.dev
-- name: 🇯🇵 日本 (Japan) 64 - xiaohe
-  type: vless
-  server: 172.67.130.159
+  server: 104.21.8.201
   port: 2096
   uuid: 36788cf4-fcb4-49c5-a563-5f888849b1cc
   udp: true
@@ -810,94 +303,7 @@ proxies:
     path: /vqyps6kf3
     headers:
       Host: cdn-jp.skyvora.app
-- name: 🇯🇵 日本 (Japan) 65 - xiaohe
-  type: vless
-  server: 45.202.254.133
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 66 - xiaohe
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: None
-- name: 🇯🇵 日本 (Japan) 67 - xiaohe
-  type: vmess
-  server: dog-jp.kunlun01dns.com
-  port: 21014
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 68 - xiaohe
-  type: vless
-  server: 91.186.218.227
-  port: 4443
-  uuid: e3f097e5-0214-47ce-9127-7e5a5e968ffa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 69 - xiaohe
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 70 - xiaohe
-  type: vless
-  server: 172.67.156.147
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 71 - xiaohe
-  type: vless
-  server: 104.18.34.245
-  port: 8880
-  uuid: 2d309706-de61-4c33-a086-3888e595b8eb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: soft-scene-d370.55-7ff.workers.dev
-- name: 🇯🇵 日本 (Japan) 72 - xiaohe
+- name: 🇯🇵 日本 (Japan) 27 - xiaohe
   type: vmess
   server: 172.111.146.64
   port: 80
@@ -912,218 +318,30 @@ proxies:
     path: /vmess/
     headers:
       Host: ''
-- name: 🇯🇵 日本 (Japan) 73 - xiaohe
-  type: vless
-  server: log.bpminecraft.com
-  port: 8880
-  uuid: d25ba473-5b05-48bb-b048-e82844e2ae39
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: misty-recipe-be74.271.workers.dev
-- name: 🇯🇵 日本 (Japan) 74 - xiaohe
+- name: 🇯🇵 日本 (Japan) 28 - xiaohe
   type: vmess
-  server: oc.imfun.fun
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 75 - xiaohe
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 76 - xiaohe
-  type: vless
-  server: morning-brook-d78e.347.workers.dev
-  port: 8880
-  uuid: 48c20f0a-c2a4-453f-8a61-ec73ea7829c5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: morning-brook-d78e.347.workers.dev
-- name: 🇯🇵 日本 (Japan) 77 - xiaohe
-  type: vless
-  server: 161.33.29.51
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 78 - xiaohe
-  type: vmess
-  server: 172.111.146.64
-  port: 80
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 79 - xiaohe
-  type: vless
-  server: 129.153.71.28
-  port: 28863
-  uuid: 4f1f5604-a256-4432-a477-52c3dce7dded
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 80 - xiaohe
-  type: vless
-  server: codecanyon.net
-  port: 8880
-  uuid: 2d309706-de61-4c33-a086-3888e595b8eb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=proxyip.jp.cmliussss.net
-    headers:
-      Host: soft-scene-d370.55-7ff.workers.dev
-- name: 🇯🇵 日本 (Japan) 81 - xiaohe
+- name: 🇯🇵 日本 (Japan) 29 - xiaohe
   type: vless
   server: 188.114.97.6
-  port: 443
-  uuid: 2acde116-5949-48d8-a1e6-60a1d2547deb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lively-pine-093d.144-868.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: lively-pine-093d.144-868.workers.dev
-- name: 🇯🇵 日本 (Japan) 82 - xiaohe
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 83 - xiaohe
-  type: vmess
-  server: 168.110.60.104
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 84 - xiaohe
-  type: vless
-  server: 104.18.34.245
-  port: 8880
-  uuid: 2d309706-de61-4c33-a086-3888e595b8eb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=proxyip.jp.cmliussss.net
-    headers:
-      Host: soft-scene-d370.55-7ff.workers.dev
-- name: 🇯🇵 日本 (Japan) 85 - xiaohe
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 86 - xiaohe
-  type: vless
-  server: 104.21.33.59
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 87 - xiaohe
-  type: vless
-  server: 43.213.230.249
-  port: 443
+  port: 2095
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: e34bq.oa9r.zl3.hh.vavava.kdns.fr
   network: ws
   ws-opts:
     path: /?ed=2560
     headers:
-      Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇯🇵 日本 (Japan) 88 - xiaohe
-  type: vless
-  server: long-boat-7113.303-08c.workers.dev
-  port: 8880
-  uuid: a8c27bd6-e395-4f9b-a75d-1c3bc6b1f83a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: long-boat-7113.303-08c.workers.dev
-- name: 🇯🇵 日本 (Japan) 89 - xiaohe
-  type: vless
-  server: 104.16.100.66
-  port: 8880
-  uuid: b4a18856-301d-4bb2-b729-6afcb700faf5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: red-flower-a2bf.363.workers.dev
-- name: 🇯🇵 日本 (Japan) 90 - xiaohe
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇯🇵 日本 (Japan) 30 - xiaohe
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -1138,20 +356,7 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: 168.138.43.75
-- name: 🇯🇵 日本 (Japan) 91 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: a8c27bd6-e395-4f9b-a75d-1c3bc6b1f83a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: long-boat-7113.303-08c.workers.dev
-- name: 🇯🇵 日本 (Japan) 92 - xiaohe
+- name: 🇯🇵 日本 (Japan) 31 - xiaohe
   type: vless
   server: 188.114.97.6
   port: 8080
@@ -1164,249 +369,20 @@ proxies:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
       Host: silent-union-ac36.315-33d.workers.dev
-- name: 🇯🇵 日本 (Japan) 93 - xiaohe
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 94 - xiaohe
+- name: 🇯🇵 日本 (Japan) 32 - xiaohe
   type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: 3e553ebf-db9d-4858-b608-03d6ff615a41
+  server: 172.111.146.64
+  port: 80
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
+    path: /vless/
     headers:
-      Host: rapid-waterfall-7270.255-22b.workers.dev
-- name: 🇯🇵 日本 (Japan) 95 - xiaohe
-  type: vless
-  server: 13.158.39.80
-  port: 443
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇯🇵 日本 (Japan) 96 - xiaohe
-  type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: 48c20f0a-c2a4-453f-8a61-ec73ea7829c5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: morning-brook-d78e.347.workers.dev
-- name: 🇯🇵 日本 (Japan) 97 - xiaohe
-  type: vless
-  server: bitter-morning-b4e3.283.workers.dev
-  port: 8880
-  uuid: efc13f4d-141c-444c-8fbc-ffbcf2be4252
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: bitter-morning-b4e3.283.workers.dev
-- name: 🇯🇵 日本 (Japan) 98 - xiaohe
-  type: vless
-  server: 18.181.170.52
-  port: 443
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇯🇵 日本 (Japan) 99 - xiaohe
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 100 - xiaohe
-  type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: 3e553ebf-db9d-4858-b608-03d6ff615a41
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: rapid-waterfall-7270.255-22b.workers.dev
-- name: 🇯🇵 日本 (Japan) 101 - xiaohe
-  type: vless
-  server: 46.250.250.48
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 102 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 7121d0be-40f5-4eda-b3d1-1556e71ea4fa
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: shrill-recipe-0c1d.404-a1d.workers.dev
-- name: 🇯🇵 日本 (Japan) 103 - xiaohe
-  type: vless
-  server: 92.113.124.228
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 104 - xiaohe
-  type: vless
-  server: 46.250.250.48
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 105 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 63a1d550-f8da-456e-813c-398dd819e405
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: noisy-cherry-b46b.206-866.workers.dev
-- name: 🇯🇵 日本 (Japan) 106 - xiaohe
-  type: vless
-  server: 104.21.70.21
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 107 - xiaohe
-  type: vmess
-  server: 168.110.60.104
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 108 - xiaohe
-  type: vless
-  server: 13.193.215.10
-  port: 443
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇯🇵 日本 (Japan) 109 - xiaohe
-  type: vless
-  server: 168.138.52.221
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 110 - xiaohe
-  type: vmess
-  server: oc.imfun.fun
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 111 - xiaohe
-  type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 112 - xiaohe
+      Host: 172.111.146.64
+- name: 🇯🇵 日本 (Japan) 33 - xiaohe
   type: vmess
   server: 172.111.146.64
   port: 80
@@ -1421,11 +397,78 @@ proxies:
     path: /vmess/
     headers:
       Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 113 - xiaohe
+- name: 🇯🇵 日本 (Japan) 34 - xiaohe
   type: vless
-  server: curly-surf-4401.75-08c.workers.dev
+  server: 64.176.34.130
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 35 - xiaohe
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 36 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇯🇵 日本 (Japan) 37 - xiaohe
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: None
+- name: 🇯🇵 日本 (Japan) 38 - xiaohe
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 39 - xiaohe
+  type: vless
+  server: red-flower-a2bf.363.workers.dev
   port: 8880
-  uuid: 56c673ba-865a-48ec-8dc0-fd7133a7ecfd
+  uuid: b4a18856-301d-4bb2-b729-6afcb700faf5
   udp: true
   tls: false
   skip-cert-verify: true
@@ -1433,12 +476,118 @@ proxies:
   ws-opts:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: curly-surf-4401.75-08c.workers.dev
-- name: 🇯🇵 日本 (Japan) 114 - xiaohe
+      Host: red-flower-a2bf.363.workers.dev
+- name: 🇯🇵 日本 (Japan) 40 - xiaohe
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 172.111.146.64
+- name: 🇯🇵 日本 (Japan) 41 - xiaohe
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 172.111.146.64
+- name: 🇯🇵 日本 (Japan) 42 - xiaohe
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 43 - xiaohe
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: None
+- name: 🇯🇵 日本 (Japan) 44 - xiaohe
   type: vless
-  server: 172.67.179.98
+  server: 45.202.254.133
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 45 - xiaohe
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 46 - xiaohe
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 47 - xiaohe
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 48 - xiaohe
+  type: vless
+  server: 45.76.100.75
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 49 - xiaohe
+  type: vless
+  server: silent-union-ac36.315-33d.workers.dev
   port: 8880
-  uuid: 8e7ce77a-d889-4dbf-b095-1d0eca88f6dc
+  uuid: c2569d72-0ba1-44e8-986f-be445edb5f3d
   udp: true
   tls: false
   skip-cert-verify: true
@@ -1446,8 +595,447 @@ proxies:
   ws-opts:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: broad-bread-2a6d.433-b9b.workers.dev
-- name: 🇯🇵 日本 (Japan) 115 - xiaohe
+      Host: silent-union-ac36.315-33d.workers.dev
+- name: 🇯🇵 日本 (Japan) 50 - xiaohe
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 51 - xiaohe
+  type: vless
+  server: 140.83.87.85
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 52 - xiaohe
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: None
+- name: 🇯🇵 日本 (Japan) 53 - xiaohe
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 54 - xiaohe
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 55 - xiaohe
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 56 - xiaohe
+  type: vless
+  server: 161.33.29.51
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 57 - xiaohe
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 58 - xiaohe
+  type: vless
+  server: 172.67.217.240
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 59 - xiaohe
+  type: vless
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 60 - xiaohe
+  type: vless
+  server: 104.21.33.59
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 61 - xiaohe
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 62 - xiaohe
+  type: vless
+  server: 104.16.106.213
+  port: 8880
+  uuid: b4a18856-301d-4bb2-b729-6afcb700faf5
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: red-flower-a2bf.363.workers.dev
+- name: 🇯🇵 日本 (Japan) 63 - xiaohe
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 64 - xiaohe
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 65 - xiaohe
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 66 - xiaohe
+  type: vless
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 67 - xiaohe
+  type: vless
+  server: 154.19.187.190
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 68 - xiaohe
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: ''
+- name: 🇯🇵 日本 (Japan) 69 - xiaohe
+  type: vless
+  server: 161.33.29.51
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 70 - xiaohe
+  type: vless
+  server: 46.250.250.48
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 71 - xiaohe
+  type: vmess
+  server: 168.110.60.104
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 72 - xiaohe
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 73 - xiaohe
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 74 - xiaohe
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 75 - xiaohe
+  type: vless
+  server: 140.83.87.85
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 76 - xiaohe
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 77 - xiaohe
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 172.111.146.64
+- name: 🇯🇵 日本 (Japan) 78 - xiaohe
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 79 - xiaohe
+  type: vless
+  server: 45.76.100.75
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 80 - xiaohe
+  type: vless
+  server: 45.202.254.133
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 81 - xiaohe
+  type: vless
+  server: 92.113.124.228
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 82 - xiaohe
+  type: vless
+  server: 172.67.130.159
+  port: 2096
+  uuid: 36788cf4-fcb4-49c5-a563-5f888849b1cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-jp.skyvora.app
+  network: ws
+  ws-opts:
+    path: /vqyps6kf3
+    headers:
+      Host: cdn-jp.skyvora.app
+- name: 🇯🇵 日本 (Japan) 83 - xiaohe
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 172.111.146.64
+- name: 🇯🇵 日本 (Japan) 84 - xiaohe
+  type: vless
+  server: 45.202.254.133
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 85 - xiaohe
   type: vmess
   server: 172.111.146.64
   port: 80
@@ -1462,80 +1050,21 @@ proxies:
     path: /vmess/
     headers:
       Host: zoom.us
-- name: 🇯🇵 日本 (Japan) 116 - xiaohe
+- name: 🇯🇵 日本 (Japan) 86 - xiaohe
   type: vless
-  server: 137.220.221.179
+  server: 172.67.156.147
   port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 117 - xiaohe
-  type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: ae83f4a6-7fd3-4168-9f42-1260fc601155
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shy-mud-e936.15-bb9.workers.dev
-- name: 🇯🇵 日本 (Japan) 118 - xiaohe
-  type: vmess
-  server: oc.imfun.fun
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 119 - xiaohe
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: None
-- name: 🇯🇵 日本 (Japan) 120 - xiaohe
-  type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: 3e553ebf-db9d-4858-b608-03d6ff615a41
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: rapid-waterfall-7270.255-22b.workers.dev
-- name: 🇯🇵 日本 (Japan) 121 - xiaohe
-  type: vless
-  server: 35.78.169.69
-  port: 443
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: e34bq.oa9r.zl3.hh.vavava.kdns.fr
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /tyxyws
     headers:
-      Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇯🇵 日本 (Japan) 122 - xiaohe
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 87 - xiaohe
   type: vless
   server: 66.245.219.95
   port: 443
@@ -1549,111 +1078,7 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 123 - xiaohe
-  type: vless
-  server: 45.202.254.133
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 124 - xiaohe
-  type: vmess
-  server: oc.imfun.fun
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 125 - xiaohe
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 126 - xiaohe
-  type: vless
-  server: 161.33.29.51
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 127 - xiaohe
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: None
-- name: 🇯🇵 日本 (Japan) 128 - xiaohe
-  type: vless
-  server: red-flower-a2bf.363.workers.dev
-  port: 8880
-  uuid: b4a18856-301d-4bb2-b729-6afcb700faf5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: red-flower-a2bf.363.workers.dev
-- name: 🇯🇵 日本 (Japan) 129 - xiaohe
-  type: vless
-  server: 92.113.124.228
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 130 - xiaohe
-  type: vless
-  server: 83.147.12.20
-  port: 443
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇯🇵 日本 (Japan) 131 - xiaohe
+- name: 🇯🇵 日本 (Japan) 88 - xiaohe
   type: vless
   server: 140.83.87.85
   port: 443
@@ -1664,19 +1089,12 @@ proxies:
   servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 132 - xiaohe
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 133 - xiaohe
+- name: 🇯🇵 日本 (Japan) 89 - xiaohe
   type: vless
-  server: 172.67.156.147
+  server: 172.67.217.240
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -1688,50 +1106,7 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 134 - xiaohe
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: jp01.a0a.xyz
-- name: 🇯🇵 日本 (Japan) 135 - xiaohe
-  type: vless
-  server: 45.76.100.75
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 136 - xiaohe
-  type: vless
-  server: 161.33.29.51
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 137 - xiaohe
+- name: 🇯🇵 日本 (Japan) 90 - xiaohe
   type: vless
   server: 104.21.8.201
   port: 2096
@@ -1745,286 +1120,7 @@ proxies:
     path: /vqyps6kf3
     headers:
       Host: cdn-jp.skyvora.app
-- name: 🇯🇵 日本 (Japan) 138 - xiaohe
-  type: vless
-  server: www.gov.ua
-  port: 8880
-  uuid: 48c20f0a-c2a4-453f-8a61-ec73ea7829c5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: morning-brook-d78e.347.workers.dev
-- name: 🇯🇵 日本 (Japan) 139 - xiaohe
-  type: vless
-  server: 161.33.29.51
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 140 - xiaohe
-  type: vless
-  server: orange-math-9c83.371.workers.dev
-  port: 8880
-  uuid: 0b17eb47-587b-4e46-86a7-e1681cbbe76c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: orange-math-9c83.371.workers.dev
-- name: 🇯🇵 日本 (Japan) 141 - xiaohe
-  type: vless
-  server: 45.202.254.133
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 142 - xiaohe
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: jp01.a0a.xyz
-- name: 🇯🇵 日本 (Japan) 143 - xiaohe
-  type: vless
-  server: 161.33.29.51
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 144 - xiaohe
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 145 - xiaohe
-  type: vless
-  server: 91.186.218.227
-  port: 4443
-  uuid: e6059f19-eb60-4165-9bb7-271750d2629e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 146 - xiaohe
-  type: vmess
-  server: 172.111.146.64
-  port: 80
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 147 - xiaohe
-  type: vless
-  server: 104.21.15.212
-  port: 8880
-  uuid: bbecfa92-4f64-4eb8-82e6-388394d909fe
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: empty-poetry-07b6.477-e0d.workers.dev
-- name: 🇯🇵 日本 (Japan) 148 - xiaohe
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 149 - xiaohe
-  type: vless
-  server: 104.21.8.201
-  port: 2096
-  uuid: 36788cf4-fcb4-49c5-a563-5f888849b1cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn-jp.skyvora.app
-  network: ws
-  ws-opts:
-    path: /vqyps6kf3
-    headers:
-      Host: cdn-jp.skyvora.app
-- name: 🇯🇵 日本 (Japan) 150 - xiaohe
-  type: vless
-  server: 172.67.156.147
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 151 - xiaohe
-  type: vless
-  server: 128.241.25.3
-  port: 30021
-  uuid: afec813e-a5c7-432d-be48-2803c30eea4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 152 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 153 - xiaohe
-  type: vmess
-  server: 168.110.60.104
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 154 - xiaohe
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: None
-- name: 🇯🇵 日本 (Japan) 155 - xiaohe
-  type: vless
-  server: 45.202.254.133
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 156 - xiaohe
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 157 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 158 - xiaohe
-  type: vless
-  server: 161.33.29.51
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 159 - xiaohe
+- name: 🇯🇵 日本 (Japan) 91 - xiaohe
   type: vless
   server: 161.33.29.51
   port: 443
@@ -2038,33 +1134,9 @@ proxies:
     path: /fp=chrome
     headers:
       Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 160 - xiaohe
+- name: 🇯🇵 日本 (Japan) 92 - xiaohe
   type: vless
-  server: 46.250.250.48
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 161 - xiaohe
-  type: vmess
-  server: oc.imfun.fun
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 162 - xiaohe
-  type: vless
-  server: 64.176.34.130
+  server: 45.202.254.133
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
@@ -2073,10 +1145,10 @@ proxies:
   servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 163 - xiaohe
+- name: 🇯🇵 日本 (Japan) 93 - xiaohe
   type: vmess
   server: 172.111.146.64
   port: 80
@@ -2091,33 +1163,111 @@ proxies:
     path: /vmess/
     headers:
       Host: ''
-- name: 🇯🇵 日本 (Japan) 164 - xiaohe
-  type: vless
-  server: misty-recipe-be74.271.workers.dev
-  port: 8880
-  uuid: d25ba473-5b05-48bb-b048-e82844e2ae39
+- name: 🇯🇵 日本 (Japan) 94 - xiaohe
+  type: vmess
+  server: 168.110.60.104
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 95 - xiaohe
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: None
+- name: 🇯🇵 日本 (Japan) 96 - xiaohe
+  type: vless
+  server: 64.176.34.130
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 97 - xiaohe
+  type: vless
+  server: 92.113.124.228
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 98 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: c2569d72-0ba1-44e8-986f-be445edb5f3d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: silent-union-ac36.315-33d.workers.dev
   network: ws
   ws-opts:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: misty-recipe-be74.271.workers.dev
-- name: 🇯🇵 日本 (Japan) 165 - xiaohe
+      Host: silent-union-ac36.315-33d.workers.dev
+- name: 🇯🇵 日本 (Japan) 99 - xiaohe
   type: vless
-  server: curly-surf-4401.75-08c.workers.dev
-  port: 8880
-  uuid: 56c673ba-865a-48ec-8dc0-fd7133a7ecfd
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 100 - xiaohe
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
+    path: /vmess/
+    headers:
+      Host: 172.111.146.64
+- name: 🇯🇵 日本 (Japan) 101 - xiaohe
+  type: vless
+  server: 161.33.29.51
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
     path: /
     headers:
-      Host: curly-surf-4401.75-08c.workers.dev
-- name: 🇯🇵 日本 (Japan) 166 - xiaohe
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 102 - xiaohe
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -2131,41 +1281,35 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: jp01.a0a.xyz
-- name: 🇯🇵 日本 (Japan) 167 - xiaohe
+      Host: 168.138.43.75
+- name: 🇯🇵 日本 (Japan) 103 - xiaohe
   type: vless
-  server: 172.111.146.64
-  port: 80
-  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+  server: 172.67.130.159
+  port: 2096
+  uuid: 36788cf4-fcb4-49c5-a563-5f888849b1cc
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: cdn-jp.skyvora.app
   network: ws
   ws-opts:
-    path: /vless/
+    path: /vqyps6kf3
     headers:
-      Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 168 - xiaohe
+      Host: cdn-jp.skyvora.app
+- name: 🇯🇵 日本 (Japan) 104 - xiaohe
   type: vless
-  server: 104.16.106.213
-  port: 8880
-  uuid: ae83f4a6-7fd3-4168-9f42-1260fc601155
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: shy-mud-e936.15-bb9.workers.dev
-- name: 🇯🇵 日本 (Japan) 169 - xiaohe
-  type: vless
-  server: 137.220.221.179
+  server: 45.202.254.133
   port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -2275,71 +1419,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 102 - xiaohe
   - 🇯🇵 日本 (Japan) 103 - xiaohe
   - 🇯🇵 日本 (Japan) 104 - xiaohe
-  - 🇯🇵 日本 (Japan) 105 - xiaohe
-  - 🇯🇵 日本 (Japan) 106 - xiaohe
-  - 🇯🇵 日本 (Japan) 107 - xiaohe
-  - 🇯🇵 日本 (Japan) 108 - xiaohe
-  - 🇯🇵 日本 (Japan) 109 - xiaohe
-  - 🇯🇵 日本 (Japan) 110 - xiaohe
-  - 🇯🇵 日本 (Japan) 111 - xiaohe
-  - 🇯🇵 日本 (Japan) 112 - xiaohe
-  - 🇯🇵 日本 (Japan) 113 - xiaohe
-  - 🇯🇵 日本 (Japan) 114 - xiaohe
-  - 🇯🇵 日本 (Japan) 115 - xiaohe
-  - 🇯🇵 日本 (Japan) 116 - xiaohe
-  - 🇯🇵 日本 (Japan) 117 - xiaohe
-  - 🇯🇵 日本 (Japan) 118 - xiaohe
-  - 🇯🇵 日本 (Japan) 119 - xiaohe
-  - 🇯🇵 日本 (Japan) 120 - xiaohe
-  - 🇯🇵 日本 (Japan) 121 - xiaohe
-  - 🇯🇵 日本 (Japan) 122 - xiaohe
-  - 🇯🇵 日本 (Japan) 123 - xiaohe
-  - 🇯🇵 日本 (Japan) 124 - xiaohe
-  - 🇯🇵 日本 (Japan) 125 - xiaohe
-  - 🇯🇵 日本 (Japan) 126 - xiaohe
-  - 🇯🇵 日本 (Japan) 127 - xiaohe
-  - 🇯🇵 日本 (Japan) 128 - xiaohe
-  - 🇯🇵 日本 (Japan) 129 - xiaohe
-  - 🇯🇵 日本 (Japan) 130 - xiaohe
-  - 🇯🇵 日本 (Japan) 131 - xiaohe
-  - 🇯🇵 日本 (Japan) 132 - xiaohe
-  - 🇯🇵 日本 (Japan) 133 - xiaohe
-  - 🇯🇵 日本 (Japan) 134 - xiaohe
-  - 🇯🇵 日本 (Japan) 135 - xiaohe
-  - 🇯🇵 日本 (Japan) 136 - xiaohe
-  - 🇯🇵 日本 (Japan) 137 - xiaohe
-  - 🇯🇵 日本 (Japan) 138 - xiaohe
-  - 🇯🇵 日本 (Japan) 139 - xiaohe
-  - 🇯🇵 日本 (Japan) 140 - xiaohe
-  - 🇯🇵 日本 (Japan) 141 - xiaohe
-  - 🇯🇵 日本 (Japan) 142 - xiaohe
-  - 🇯🇵 日本 (Japan) 143 - xiaohe
-  - 🇯🇵 日本 (Japan) 144 - xiaohe
-  - 🇯🇵 日本 (Japan) 145 - xiaohe
-  - 🇯🇵 日本 (Japan) 146 - xiaohe
-  - 🇯🇵 日本 (Japan) 147 - xiaohe
-  - 🇯🇵 日本 (Japan) 148 - xiaohe
-  - 🇯🇵 日本 (Japan) 149 - xiaohe
-  - 🇯🇵 日本 (Japan) 150 - xiaohe
-  - 🇯🇵 日本 (Japan) 151 - xiaohe
-  - 🇯🇵 日本 (Japan) 152 - xiaohe
-  - 🇯🇵 日本 (Japan) 153 - xiaohe
-  - 🇯🇵 日本 (Japan) 154 - xiaohe
-  - 🇯🇵 日本 (Japan) 155 - xiaohe
-  - 🇯🇵 日本 (Japan) 156 - xiaohe
-  - 🇯🇵 日本 (Japan) 157 - xiaohe
-  - 🇯🇵 日本 (Japan) 158 - xiaohe
-  - 🇯🇵 日本 (Japan) 159 - xiaohe
-  - 🇯🇵 日本 (Japan) 160 - xiaohe
-  - 🇯🇵 日本 (Japan) 161 - xiaohe
-  - 🇯🇵 日本 (Japan) 162 - xiaohe
-  - 🇯🇵 日本 (Japan) 163 - xiaohe
-  - 🇯🇵 日本 (Japan) 164 - xiaohe
-  - 🇯🇵 日本 (Japan) 165 - xiaohe
-  - 🇯🇵 日本 (Japan) 166 - xiaohe
-  - 🇯🇵 日本 (Japan) 167 - xiaohe
-  - 🇯🇵 日本 (Japan) 168 - xiaohe
-  - 🇯🇵 日本 (Japan) 169 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -2449,70 +1528,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 102 - xiaohe
   - 🇯🇵 日本 (Japan) 103 - xiaohe
   - 🇯🇵 日本 (Japan) 104 - xiaohe
-  - 🇯🇵 日本 (Japan) 105 - xiaohe
-  - 🇯🇵 日本 (Japan) 106 - xiaohe
-  - 🇯🇵 日本 (Japan) 107 - xiaohe
-  - 🇯🇵 日本 (Japan) 108 - xiaohe
-  - 🇯🇵 日本 (Japan) 109 - xiaohe
-  - 🇯🇵 日本 (Japan) 110 - xiaohe
-  - 🇯🇵 日本 (Japan) 111 - xiaohe
-  - 🇯🇵 日本 (Japan) 112 - xiaohe
-  - 🇯🇵 日本 (Japan) 113 - xiaohe
-  - 🇯🇵 日本 (Japan) 114 - xiaohe
-  - 🇯🇵 日本 (Japan) 115 - xiaohe
-  - 🇯🇵 日本 (Japan) 116 - xiaohe
-  - 🇯🇵 日本 (Japan) 117 - xiaohe
-  - 🇯🇵 日本 (Japan) 118 - xiaohe
-  - 🇯🇵 日本 (Japan) 119 - xiaohe
-  - 🇯🇵 日本 (Japan) 120 - xiaohe
-  - 🇯🇵 日本 (Japan) 121 - xiaohe
-  - 🇯🇵 日本 (Japan) 122 - xiaohe
-  - 🇯🇵 日本 (Japan) 123 - xiaohe
-  - 🇯🇵 日本 (Japan) 124 - xiaohe
-  - 🇯🇵 日本 (Japan) 125 - xiaohe
-  - 🇯🇵 日本 (Japan) 126 - xiaohe
-  - 🇯🇵 日本 (Japan) 127 - xiaohe
-  - 🇯🇵 日本 (Japan) 128 - xiaohe
-  - 🇯🇵 日本 (Japan) 129 - xiaohe
-  - 🇯🇵 日本 (Japan) 130 - xiaohe
-  - 🇯🇵 日本 (Japan) 131 - xiaohe
-  - 🇯🇵 日本 (Japan) 132 - xiaohe
-  - 🇯🇵 日本 (Japan) 133 - xiaohe
-  - 🇯🇵 日本 (Japan) 134 - xiaohe
-  - 🇯🇵 日本 (Japan) 135 - xiaohe
-  - 🇯🇵 日本 (Japan) 136 - xiaohe
-  - 🇯🇵 日本 (Japan) 137 - xiaohe
-  - 🇯🇵 日本 (Japan) 138 - xiaohe
-  - 🇯🇵 日本 (Japan) 139 - xiaohe
-  - 🇯🇵 日本 (Japan) 140 - xiaohe
-  - 🇯🇵 日本 (Japan) 141 - xiaohe
-  - 🇯🇵 日本 (Japan) 142 - xiaohe
-  - 🇯🇵 日本 (Japan) 143 - xiaohe
-  - 🇯🇵 日本 (Japan) 144 - xiaohe
-  - 🇯🇵 日本 (Japan) 145 - xiaohe
-  - 🇯🇵 日本 (Japan) 146 - xiaohe
-  - 🇯🇵 日本 (Japan) 147 - xiaohe
-  - 🇯🇵 日本 (Japan) 148 - xiaohe
-  - 🇯🇵 日本 (Japan) 149 - xiaohe
-  - 🇯🇵 日本 (Japan) 150 - xiaohe
-  - 🇯🇵 日本 (Japan) 151 - xiaohe
-  - 🇯🇵 日本 (Japan) 152 - xiaohe
-  - 🇯🇵 日本 (Japan) 153 - xiaohe
-  - 🇯🇵 日本 (Japan) 154 - xiaohe
-  - 🇯🇵 日本 (Japan) 155 - xiaohe
-  - 🇯🇵 日本 (Japan) 156 - xiaohe
-  - 🇯🇵 日本 (Japan) 157 - xiaohe
-  - 🇯🇵 日本 (Japan) 158 - xiaohe
-  - 🇯🇵 日本 (Japan) 159 - xiaohe
-  - 🇯🇵 日本 (Japan) 160 - xiaohe
-  - 🇯🇵 日本 (Japan) 161 - xiaohe
-  - 🇯🇵 日本 (Japan) 162 - xiaohe
-  - 🇯🇵 日本 (Japan) 163 - xiaohe
-  - 🇯🇵 日本 (Japan) 164 - xiaohe
-  - 🇯🇵 日本 (Japan) 165 - xiaohe
-  - 🇯🇵 日本 (Japan) 166 - xiaohe
-  - 🇯🇵 日本 (Japan) 167 - xiaohe
-  - 🇯🇵 日本 (Japan) 168 - xiaohe
-  - 🇯🇵 日本 (Japan) 169 - xiaohe
 rules:
 - MATCH,PROXIES

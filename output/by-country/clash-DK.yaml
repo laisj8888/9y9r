@@ -5,41 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇰 DK 01 - xiaohe
-  type: ss
-  server: 38.180.214.110
-  port: 5600
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇩🇰 DK 02 - xiaohe
-  type: vless
-  server: 193.180.208.169
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇩🇰 DK 03 - xiaohe
-  type: vless
-  server: 193.180.208.169
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇩🇰 DK 04 - xiaohe
   type: vless
   server: 92.113.149.59
   port: 443
@@ -53,14 +18,14 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇩🇰 DK 05 - xiaohe
+- name: 🇩🇰 DK 02 - xiaohe
   type: ss
   server: 38.180.214.110
   port: 5600
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: 🇩🇰 DK 06 - xiaohe
+- name: 🇩🇰 DK 03 - xiaohe
   type: vless
   server: 193.180.208.169
   port: 8443
@@ -74,34 +39,55 @@ proxies:
     path: /fp=chrome
     headers:
       Host: shuma.ccwu.cc
+- name: 🇩🇰 DK 04 - xiaohe
+  type: vless
+  server: 193.180.208.169
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇩🇰 DK 05 - xiaohe
+  type: vless
+  server: 193.180.208.169
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇩🇰 DK 06 - xiaohe
+  type: vless
+  server: 193.180.208.169
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
 - name: 🇩🇰 DK 07 - xiaohe
-  type: vless
-  server: 193.180.208.169
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  type: ss
+  server: 38.180.214.110
+  port: 5600
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇩🇰 DK 08 - xiaohe
-  type: vless
-  server: 193.180.208.169
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,7 +100,6 @@ proxy-groups:
   - 🇩🇰 DK 05 - xiaohe
   - 🇩🇰 DK 06 - xiaohe
   - 🇩🇰 DK 07 - xiaohe
-  - 🇩🇰 DK 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -127,6 +112,5 @@ proxy-groups:
   - 🇩🇰 DK 05 - xiaohe
   - 🇩🇰 DK 06 - xiaohe
   - 🇩🇰 DK 07 - xiaohe
-  - 🇩🇰 DK 08 - xiaohe
 rules:
 - MATCH,PROXIES
