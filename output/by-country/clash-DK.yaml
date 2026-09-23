@@ -15,7 +15,7 @@ proxies:
   servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: shuma.ccwu.cc
 - name: 🇩🇰 DK 02 - xiaohe
@@ -26,54 +26,40 @@ proxies:
   password: Y6R9pAtvxxzmGC
   udp: true
 - name: 🇩🇰 DK 03 - xiaohe
+  type: vless
+  server: 185.21.11.91
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇩🇰 DK 04 - xiaohe
+  type: vless
+  server: 92.113.149.59
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇩🇰 DK 05 - xiaohe
   type: ss
   server: 38.180.214.110
   port: 5600
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: 🇩🇰 DK 04 - xiaohe
-  type: vless
-  server: 193.180.208.169
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇩🇰 DK 05 - xiaohe
-  type: vless
-  server: 193.180.208.169
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇩🇰 DK 06 - xiaohe
-  type: vless
-  server: 193.180.208.169
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,7 +70,6 @@ proxy-groups:
   - 🇩🇰 DK 03 - xiaohe
   - 🇩🇰 DK 04 - xiaohe
   - 🇩🇰 DK 05 - xiaohe
-  - 🇩🇰 DK 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -95,6 +80,5 @@ proxy-groups:
   - 🇩🇰 DK 03 - xiaohe
   - 🇩🇰 DK 04 - xiaohe
   - 🇩🇰 DK 05 - xiaohe
-  - 🇩🇰 DK 06 - xiaohe
 rules:
 - MATCH,PROXIES
