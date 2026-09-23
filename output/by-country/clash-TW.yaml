@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   type: vless
   server: 34.81.223.1
@@ -39,69 +39,54 @@ proxies:
   reality-opts:
     public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  type: vless
-  server: 34.81.223.1
-  port: 443
-  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
-  servername: www.cloudflare.com
-  client-fingerprint: ios
 - name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
-  type: vless
-  server: 34.81.223.1
-  port: 443
-  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
-  type: vless
-  server: 140.235.39.19
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
 - name: 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
-  type: vless
-  server: 34.81.223.1
-  port: 443
-  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
-  servername: www.cloudflare.com
-  client-fingerprint: safari
 - name: 🇹🇼 中国台湾 (Taiwan) 08 - xiaohe
-  type: vless
-  server: 34.81.223.1
-  port: 443
-  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
+  type: ss
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 09 - xiaohe
   type: vless
   server: 34.81.223.1
@@ -113,25 +98,8 @@ proxies:
   reality-opts:
     public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
 - name: 🇹🇼 中国台湾 (Taiwan) 10 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 11 - xiaohe
-  type: ss
-  server: 36.224.141.124
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 12 - xiaohe
   type: vless
   server: hinet1.2yly.com
   port: 24215
@@ -143,87 +111,7 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 13 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 14 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 15 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 16 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 17 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 18 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 19 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 20 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 21 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 11 - xiaohe
   type: vless
   server: 34.81.223.1
   port: 443
@@ -235,16 +123,21 @@ proxies:
     public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 22 - xiaohe
-  type: ss
-  server: 36.224.141.124
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 23 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 12 - xiaohe
   type: vless
-  server: 60.248.219.54
+  server: 34.81.223.1
+  port: 443
+  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
+  servername: www.cloudflare.com
+  client-fingerprint: edge
+- name: 🇹🇼 中国台湾 (Taiwan) 13 - xiaohe
+  type: vless
+  server: 59.125.69.24
   port: 443
   uuid: 06e177f7-240d-4687-bd85-235505801a5e
   udp: true
@@ -255,14 +148,122 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 24 - xiaohe
+      Host: 59.125.69.24
+- name: 🇹🇼 中国台湾 (Taiwan) 14 - xiaohe
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 15 - xiaohe
+  type: vless
+  server: 34.81.223.1
+  port: 443
+  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇹🇼 中国台湾 (Taiwan) 16 - xiaohe
+  type: vless
+  server: 34.81.223.1
+  port: 443
+  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇹🇼 中国台湾 (Taiwan) 17 - xiaohe
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 18 - xiaohe
+  type: vless
+  server: 34.81.223.1
+  port: 443
+  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 19 - xiaohe
   type: ss
-  server: r3mrcg001286ek2.cybervena.com
+  server: 36.224.141.124
   port: 50099
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
+- name: 🇹🇼 中国台湾 (Taiwan) 20 - xiaohe
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 21 - xiaohe
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 22 - xiaohe
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 23 - xiaohe
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 24 - xiaohe
+  type: vless
+  server: 34.81.223.1
+  port: 443
+  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
+  servername: www.cloudflare.com
+  client-fingerprint: edge
 - name: 🇹🇼 中国台湾 (Taiwan) 25 - xiaohe
   type: vless
   server: 34.81.223.1
@@ -286,31 +287,25 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 27 - xiaohe
-  type: vless
-  server: 34.81.223.1
-  port: 443
-  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
-  servername: www.cloudflare.com
-  client-fingerprint: safari
 - name: 🇹🇼 中国台湾 (Taiwan) 28 - xiaohe
-  type: vless
-  server: 59.125.69.24
-  port: 443
-  uuid: 06e177f7-240d-4687-bd85-235505801a5e
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 29 - xiaohe
   type: vmess
   server: 165.154.195.38
@@ -371,46 +366,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 35 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 36 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 37 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 38 - xiaohe
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -450,10 +405,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 32 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 33 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 34 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 35 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 36 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 37 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 38 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -493,9 +444,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 32 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 33 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 34 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 35 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 36 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 37 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 38 - xiaohe
 rules:
 - MATCH,PROXIES
