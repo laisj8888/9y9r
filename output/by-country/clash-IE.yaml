@@ -34,8 +34,8 @@ proxies:
       Host: shuma.ccwu.cc
 - name: 🇮🇪 IE 03 - xiaohe
   type: vless
-  server: 107.150.20.112
-  port: 8443
+  server: 167.160.177.68
+  port: 2096
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
@@ -74,48 +74,6 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇮🇪 IE 06 - xiaohe
-  type: vless
-  server: 107.150.20.112
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇮🇪 IE 07 - xiaohe
-  type: vless
-  server: 167.160.177.68
-  port: 2096
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇮🇪 IE 08 - xiaohe
-  type: vless
-  server: 107.150.20.112
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -126,9 +84,6 @@ proxy-groups:
   - 🇮🇪 IE 03 - xiaohe
   - 🇮🇪 IE 04 - xiaohe
   - 🇮🇪 IE 05 - xiaohe
-  - 🇮🇪 IE 06 - xiaohe
-  - 🇮🇪 IE 07 - xiaohe
-  - 🇮🇪 IE 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -139,8 +94,5 @@ proxy-groups:
   - 🇮🇪 IE 03 - xiaohe
   - 🇮🇪 IE 04 - xiaohe
   - 🇮🇪 IE 05 - xiaohe
-  - 🇮🇪 IE 06 - xiaohe
-  - 🇮🇪 IE 07 - xiaohe
-  - 🇮🇪 IE 08 - xiaohe
 rules:
 - MATCH,PROXIES

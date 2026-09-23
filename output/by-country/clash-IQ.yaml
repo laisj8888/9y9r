@@ -6,61 +6,29 @@ log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
   type: vless
-  server: 185.255.179.11
-  port: 9443
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  server: www.speedtest.net
+  port: 443
+  uuid: 513beae3-56e7-4954-a17e-930e06237b27
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hub-de-03.hanvpn.cc
+  servername: CfOI-2FX16g3-8rY2kdXmCJ.WJeSv2ILA3rXbUhpC2NSugRAchGaWK.WOrkeRs.DEV
   network: ws
   ws-opts:
-    path: /de03-ws-8e47a
+    path: /vl/3wSAeuGJbrGHwJ45DA6ircvHC6
     headers:
-      Host: hub-de-03.hanvpn.cc
-- name: 🇮🇶 IQ 02 - xiaohe
-  type: vless
-  server: 185.255.179.11
-  port: 9443
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hub-de-03.hanvpn.cc
-  network: ws
-  ws-opts:
-    path: /de03-ws-8e47a
-    headers:
-      Host: hub-de-03.hanvpn.cc
-- name: 🇮🇶 IQ 03 - xiaohe
-  type: vless
-  server: 185.255.179.11
-  port: 9443
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hub-de-03.hanvpn.cc
-  network: ws
-  ws-opts:
-    path: /de03-ws-8e47a
-    headers:
-      Host: hub-de-03.hanvpn.cc
+      Host: cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - xiaohe
-  - 🇮🇶 IQ 02 - xiaohe
-  - 🇮🇶 IQ 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - xiaohe
-  - 🇮🇶 IQ 02 - xiaohe
-  - 🇮🇶 IQ 03 - xiaohe
 rules:
 - MATCH,PROXIES

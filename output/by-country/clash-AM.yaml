@@ -56,32 +56,17 @@ proxies:
   client-fingerprint: chrome
 - name: 🇦🇲 AM 05 - xiaohe
   type: vless
-  server: 2.56.207.67
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  server: 104.254.140.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: shuma.ccwu.cc
-- name: 🇦🇲 AM 06 - xiaohe
-  type: vless
-  server: 2.56.204.183
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
+      Host: vms.lifetime54.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,7 +77,6 @@ proxy-groups:
   - 🇦🇲 AM 03 - xiaohe
   - 🇦🇲 AM 04 - xiaohe
   - 🇦🇲 AM 05 - xiaohe
-  - 🇦🇲 AM 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -103,6 +87,5 @@ proxy-groups:
   - 🇦🇲 AM 03 - xiaohe
   - 🇦🇲 AM 04 - xiaohe
   - 🇦🇲 AM 05 - xiaohe
-  - 🇦🇲 AM 06 - xiaohe
 rules:
 - MATCH,PROXIES
