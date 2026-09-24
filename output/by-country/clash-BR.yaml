@@ -5,15 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - xiaohe
-  type: vmess
-  server: 172.233.14.17
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 34.39.174.220
+  port: 443
+  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇧🇷 BR 02 - xiaohe
   type: vmess
   server: 172.233.14.17
@@ -25,15 +27,17 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇧🇷 BR 03 - xiaohe
-  type: vmess
-  server: 172.233.14.17
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 34.39.174.220
+  port: 443
+  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇧🇷 BR 04 - xiaohe
   type: vmess
   server: 172.233.14.17
@@ -105,29 +109,25 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇧🇷 BR 11 - xiaohe
-  type: vless
-  server: 34.39.174.220
-  port: 443
-  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
+  type: vmess
+  server: 172.233.14.17
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇧🇷 BR 12 - xiaohe
-  type: vless
-  server: 34.39.174.220
-  port: 443
-  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
+  type: vmess
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16314
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇧🇷 BR 13 - xiaohe
   type: vmess
   server: 172.233.14.17
@@ -139,6 +139,18 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇧🇷 BR 14 - xiaohe
+  type: vless
+  server: 35.199.90.53
+  port: 443
+  uuid: e9c2ed7f-79ab-40a8-8910-24468f5da712
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0WXz3PJQnr-KprrwiO5BlKVRdqA4ZS6U5jGHc_aeJnw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇧🇷 BR 15 - xiaohe
   type: vmess
   server: 172.233.14.17
   port: 22324
@@ -148,7 +160,37 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇧🇷 BR 15 - xiaohe
+- name: 🇧🇷 BR 16 - xiaohe
+  type: vmess
+  server: 172.233.14.17
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇧🇷 BR 17 - xiaohe
+  type: vmess
+  server: 172.233.14.17
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇧🇷 BR 18 - xiaohe
+  type: vmess
+  server: 172.233.14.17
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇧🇷 BR 19 - xiaohe
   type: vmess
   server: 172.233.14.17
   port: 22324
@@ -178,6 +220,10 @@ proxy-groups:
   - 🇧🇷 BR 13 - xiaohe
   - 🇧🇷 BR 14 - xiaohe
   - 🇧🇷 BR 15 - xiaohe
+  - 🇧🇷 BR 16 - xiaohe
+  - 🇧🇷 BR 17 - xiaohe
+  - 🇧🇷 BR 18 - xiaohe
+  - 🇧🇷 BR 19 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -198,5 +244,9 @@ proxy-groups:
   - 🇧🇷 BR 13 - xiaohe
   - 🇧🇷 BR 14 - xiaohe
   - 🇧🇷 BR 15 - xiaohe
+  - 🇧🇷 BR 16 - xiaohe
+  - 🇧🇷 BR 17 - xiaohe
+  - 🇧🇷 BR 18 - xiaohe
+  - 🇧🇷 BR 19 - xiaohe
 rules:
 - MATCH,PROXIES
