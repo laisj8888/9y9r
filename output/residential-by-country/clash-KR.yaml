@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   type: vless
-  server: small-tree-9ec0.84-971.workers.dev
-  port: 8880
-  uuid: 8546bcef-8456-41a2-82bc-d2231b42b769
+  server: 188.114.97.6
+  port: 443
+  uuid: 49a9aa25-443b-4fab-9a85-066dd5396c57
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: mute-river-6aee.421-bd7.workers.dev
   network: ws
   ws-opts:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: small-tree-9ec0.84-971.workers.dev
+      Host: mute-river-6aee.421-bd7.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
