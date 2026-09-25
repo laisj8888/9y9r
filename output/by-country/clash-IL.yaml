@@ -19,19 +19,6 @@ proxies:
       Host: platform113.halalkhor.info
 - name: 🇮🇱 IL 02 - xiaohe
   type: vless
-  server: platform118.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇮🇱 IL 03 - xiaohe
-  type: vless
   server: platform115.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
@@ -43,9 +30,22 @@ proxies:
     path: /platform115
     headers:
       Host: platform115.halalkhor.info
+- name: 🇮🇱 IL 03 - xiaohe
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
 - name: 🇮🇱 IL 04 - xiaohe
   type: vless
-  server: platform113.golnamakcert.top
+  server: platform115.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -53,24 +53,38 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform113
+    path: /platform115
     headers:
-      Host: platform113.halalkhor.info
+      Host: platform115.golnamakcert.top
 - name: 🇮🇱 IL 05 - xiaohe
   type: vless
-  server: platform117.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  server: fserver-worker-001.mapleridgeway.top
+  port: 443
+  uuid: 83b4af70-376e-427c-8c11-a025bec6b085
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: fserver-worker-001.mapleridgeway.top
   network: ws
   ws-opts:
-    path: /platform117
+    path: /cdn/99294c014f2c7791?ed=2056
     headers:
-      Host: platform117.halalkhor.info
+      Host: fserver-worker-001.mapleridgeway.top
 - name: 🇮🇱 IL 06 - xiaohe
   type: vless
+  server: platform118.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇮🇱 IL 07 - xiaohe
+  type: vless
   server: platform113.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
@@ -82,7 +96,7 @@ proxies:
     path: /platform113
     headers:
       Host: platform113.halalkhor.info
-- name: 🇮🇱 IL 07 - xiaohe
+- name: 🇮🇱 IL 08 - xiaohe
   type: vless
   server: platform117.golnamakcert.top
   port: 80
@@ -95,19 +109,6 @@ proxies:
     path: /platform117
     headers:
       Host: platform117.halalkhor.info
-- name: 🇮🇱 IL 08 - xiaohe
-  type: vless
-  server: platform113.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform113
-    headers:
-      Host: platform113.halalkhor.info
 - name: 🇮🇱 IL 09 - xiaohe
   type: vless
   server: platform118.golnamakcert.top
@@ -122,6 +123,19 @@ proxies:
     headers:
       Host: platform118.halalkhor.info
 - name: 🇮🇱 IL 10 - xiaohe
+  type: vless
+  server: platform113.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform113
+    headers:
+      Host: platform113.halalkhor.info
+- name: 🇮🇱 IL 11 - xiaohe
   type: vless
   server: platform113.golnamakcert.top
   port: 80
@@ -149,6 +163,7 @@ proxy-groups:
   - 🇮🇱 IL 08 - xiaohe
   - 🇮🇱 IL 09 - xiaohe
   - 🇮🇱 IL 10 - xiaohe
+  - 🇮🇱 IL 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -164,5 +179,6 @@ proxy-groups:
   - 🇮🇱 IL 08 - xiaohe
   - 🇮🇱 IL 09 - xiaohe
   - 🇮🇱 IL 10 - xiaohe
+  - 🇮🇱 IL 11 - xiaohe
 rules:
 - MATCH,PROXIES
