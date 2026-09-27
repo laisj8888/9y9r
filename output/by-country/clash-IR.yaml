@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - xiaohe
+  type: ss
+  server: p1tun2.greewebservices.ir
+  port: 2060
+  cipher: chacha20-ietf-poly1305
+  password: 3Q1UUZhdMJ1Xi4V_348v2g
+  udp: true
+- name: 🇮🇷 IR 02 - xiaohe
   type: vless
   server: afra4.nimbaha9.ir
   port: 2052
@@ -17,42 +24,20 @@ proxies:
     path: /eyurri
     headers:
       Host: afra4.nimbaha9.ir
-- name: 🇮🇷 IR 02 - xiaohe
-  type: vless
-  server: freeman.curtvip.ir
-  port: 20410
-  uuid: 442581ff-646e-4e99-af3e-a9d9a636a44b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: BErODvy5h6Cjw5zWfX_CZ5ODH9p1XbZwU-ZEHyVXEGI
-  servername: secureconnect-pa.mtls.clients6.google.com
-  client-fingerprint: chrome
 - name: 🇮🇷 IR 03 - xiaohe
-  type: vless
-  server: freeman.curtvip.ir
-  port: 20410
-  uuid: 442581ff-646e-4e99-af3e-a9d9a636a44b
+  type: ss
+  server: p1tun4.greewebservices.ir
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: 3Q1UUZhdMJ1Xi4V_348v2g
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: BErODvy5h6Cjw5zWfX_CZ5ODH9p1XbZwU-ZEHyVXEGI
-  servername: secureconnect-pa.mtls.clients6.google.com
-  client-fingerprint: chrome
 - name: 🇮🇷 IR 04 - xiaohe
-  type: vless
-  server: freeman.curtvip.ir
-  port: 20410
-  uuid: 442581ff-646e-4e99-af3e-a9d9a636a44b
+  type: ss
+  server: p1tun1.greewebservices.ir
+  port: 2050
+  cipher: chacha20-ietf-poly1305
+  password: 3Q1UUZhdMJ1Xi4V_348v2g
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: BErODvy5h6Cjw5zWfX_CZ5ODH9p1XbZwU-ZEHyVXEGI
-  servername: secureconnect-pa.mtls.clients6.google.com
-  client-fingerprint: chrome
 - name: 🇮🇷 IR 05 - xiaohe
   type: vless
   server: afra4.nimbaha9.ir
@@ -79,19 +64,6 @@ proxies:
     path: /eyurri
     headers:
       Host: afra4.nimbaha9.ir
-- name: 🇮🇷 IR 07 - xiaohe
-  type: vless
-  server: afra4.nimbaha9.ir
-  port: 2052
-  uuid: e0ff8a9b-dad3-4671-baf4-c8d466d1eb48
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /eyurri
-    headers:
-      Host: afra4.nimbaha9.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -103,7 +75,6 @@ proxy-groups:
   - 🇮🇷 IR 04 - xiaohe
   - 🇮🇷 IR 05 - xiaohe
   - 🇮🇷 IR 06 - xiaohe
-  - 🇮🇷 IR 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -115,6 +86,5 @@ proxy-groups:
   - 🇮🇷 IR 04 - xiaohe
   - 🇮🇷 IR 05 - xiaohe
   - 🇮🇷 IR 06 - xiaohe
-  - 🇮🇷 IR 07 - xiaohe
 rules:
 - MATCH,PROXIES
