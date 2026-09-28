@@ -5,36 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
-  type: vless
-  server: 51.170.176.145
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇪 SE 02 - xiaohe
   type: ss
   server: 172.238.244.13
   port: 17000
   cipher: aes-256-gcm
   password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
   udp: true
+- name: 🇸🇪 SE 02 - xiaohe
+  type: ss
+  server: 188.225.78.31
+  port: 2053
+  cipher: 2022-blake3-aes-256-gcm
+  password: g4h/AcJh1+jg9+yonlMK4Wq7fhbFY3NkcOzUVlZ9GjU=
+  udp: true
 - name: 🇸🇪 SE 03 - xiaohe
-  type: vless
-  server: 51.170.176.145
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇸🇪 SE 04 - xiaohe
-  type: vless
-  server: 51.170.176.145
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  type: ss
+  server: 188.225.78.31
+  port: 2053
+  cipher: 2022-blake3-aes-256-gcm
+  password: g4h/AcJh1+jg9+yonlMK4Wq7fhbFY3NkcOzUVlZ9GjU=
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇸🇪 SE 05 - xiaohe
   type: vless
   server: 103.177.249.40
@@ -65,41 +62,25 @@ proxies:
       Host: yf.962456.xyz
 - name: 🇸🇪 SE 07 - xiaohe
   type: vless
-  server: 51.170.176.145
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇪 SE 08 - xiaohe
-  type: ss
-  server: 188.225.78.31
-  port: 2053
-  cipher: 2022-blake3-aes-256-gcm
-  password: g4h/AcJh1+jg9+yonlMK4Wq7fhbFY3NkcOzUVlZ9GjU=
-  udp: true
-- name: 🇸🇪 SE 09 - xiaohe
-  type: vless
-  server: 51.170.176.145
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇪 SE 10 - xiaohe
-  type: vless
-  server: 2.27.14.218
-  port: 2096
-  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
+  server: 109.120.155.155
+  port: 444
+  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: stf7697.rumedia-cdn.com
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
   network: ws
   ws-opts:
-    path: /cdn/v3/live
+    path: /@Marisa_kristi
     headers:
-      Host: stf7697.rumedia-cdn.com
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇸🇪 SE 08 - xiaohe
+  type: ss
+  server: 51.170.191.141
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: f/NpUKMY1ik7lr86dtH+rKX7U12gqCzzzdJYv7QZXk0=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -113,8 +94,6 @@ proxy-groups:
   - 🇸🇪 SE 06 - xiaohe
   - 🇸🇪 SE 07 - xiaohe
   - 🇸🇪 SE 08 - xiaohe
-  - 🇸🇪 SE 09 - xiaohe
-  - 🇸🇪 SE 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -128,7 +107,5 @@ proxy-groups:
   - 🇸🇪 SE 06 - xiaohe
   - 🇸🇪 SE 07 - xiaohe
   - 🇸🇪 SE 08 - xiaohe
-  - 🇸🇪 SE 09 - xiaohe
-  - 🇸🇪 SE 10 - xiaohe
 rules:
 - MATCH,PROXIES

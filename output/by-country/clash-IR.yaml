@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - xiaohe
-  type: ss
-  server: p1tun2.greewebservices.ir
-  port: 2060
-  cipher: chacha20-ietf-poly1305
-  password: 3Q1UUZhdMJ1Xi4V_348v2g
+  type: vless
+  server: afra4.nimbaha9.ir
+  port: 2052
+  uuid: e0ff8a9b-dad3-4671-baf4-c8d466d1eb48
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /eyurri
+    headers:
+      Host: afra4.nimbaha9.ir
 - name: 🇮🇷 IR 02 - xiaohe
   type: vless
   server: afra4.nimbaha9.ir
@@ -25,35 +31,8 @@ proxies:
     headers:
       Host: afra4.nimbaha9.ir
 - name: 🇮🇷 IR 03 - xiaohe
-  type: ss
-  server: p1tun4.greewebservices.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: 3Q1UUZhdMJ1Xi4V_348v2g
-  udp: true
-- name: 🇮🇷 IR 04 - xiaohe
-  type: ss
-  server: p1tun1.greewebservices.ir
-  port: 2050
-  cipher: chacha20-ietf-poly1305
-  password: 3Q1UUZhdMJ1Xi4V_348v2g
-  udp: true
-- name: 🇮🇷 IR 05 - xiaohe
   type: vless
-  server: afra4.nimbaha9.ir
-  port: 2052
-  uuid: e0ff8a9b-dad3-4671-baf4-c8d466d1eb48
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /eyurri
-    headers:
-      Host: afra4.nimbaha9.ir
-- name: 🇮🇷 IR 06 - xiaohe
-  type: vless
-  server: afra4.nimbaha9.ir
+  server: 185.143.233.130
   port: 2052
   uuid: e0ff8a9b-dad3-4671-baf4-c8d466d1eb48
   udp: true
@@ -72,9 +51,6 @@ proxy-groups:
   - 🇮🇷 IR 01 - xiaohe
   - 🇮🇷 IR 02 - xiaohe
   - 🇮🇷 IR 03 - xiaohe
-  - 🇮🇷 IR 04 - xiaohe
-  - 🇮🇷 IR 05 - xiaohe
-  - 🇮🇷 IR 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,8 +59,5 @@ proxy-groups:
   - 🇮🇷 IR 01 - xiaohe
   - 🇮🇷 IR 02 - xiaohe
   - 🇮🇷 IR 03 - xiaohe
-  - 🇮🇷 IR 04 - xiaohe
-  - 🇮🇷 IR 05 - xiaohe
-  - 🇮🇷 IR 06 - xiaohe
 rules:
 - MATCH,PROXIES
