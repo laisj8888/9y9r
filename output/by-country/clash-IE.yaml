@@ -20,7 +20,7 @@ proxies:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇮🇪 IE 02 - xiaohe
   type: vless
-  server: 188.114.97.6
+  server: 45.141.234.138
   port: 443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
@@ -29,12 +29,12 @@ proxies:
   servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /fp=chrome?ed#?ed=512
+    path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇮🇪 IE 03 - xiaohe
   type: vless
-  server: 188.114.97.6
+  server: 45.141.234.138
   port: 443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
@@ -43,7 +43,7 @@ proxies:
   servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇮🇪 IE 04 - xiaohe
@@ -88,46 +88,6 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇮🇪 IE 07 - xiaohe
-  type: vless
-  server: 89.117.112.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime11.workers.dev
-- name: 🇮🇪 IE 08 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 24c2a873-4584-4c53-8679-61029682d0bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: soft-thunder-bc22.111-f59.workers.dev
-- name: 🇮🇪 IE 09 - xiaohe
-  type: vless
-  server: 45.141.234.138
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -139,9 +99,6 @@ proxy-groups:
   - 🇮🇪 IE 04 - xiaohe
   - 🇮🇪 IE 05 - xiaohe
   - 🇮🇪 IE 06 - xiaohe
-  - 🇮🇪 IE 07 - xiaohe
-  - 🇮🇪 IE 08 - xiaohe
-  - 🇮🇪 IE 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -153,8 +110,5 @@ proxy-groups:
   - 🇮🇪 IE 04 - xiaohe
   - 🇮🇪 IE 05 - xiaohe
   - 🇮🇪 IE 06 - xiaohe
-  - 🇮🇪 IE 07 - xiaohe
-  - 🇮🇪 IE 08 - xiaohe
-  - 🇮🇪 IE 09 - xiaohe
 rules:
 - MATCH,PROXIES

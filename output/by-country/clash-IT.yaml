@@ -6,17 +6,33 @@ log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - xiaohe
   type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  server: milan.adaspoloandco.com
+  port: 8443
+  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-  servername: www.apple.com
-  client-fingerprint: firefox
+  servername: milan.adaspoloandco.com
+  network: ws
+  ws-opts:
+    path: /RoBeRt
+    headers:
+      Host: milan.adaspoloandco.com
 - name: 🇮🇹 意大利 (Italy) 02 - xiaohe
+  type: vless
+  server: milan.adaspoloandco.com
+  port: 8443
+  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: milan.adaspoloandco.com
+  network: ws
+  ws-opts:
+    path: /RoBeRt
+    headers:
+      Host: milan.adaspoloandco.com
+- name: 🇮🇹 意大利 (Italy) 03 - xiaohe
   type: vless
   server: 204.216.216.23
   port: 10086
@@ -24,13 +40,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 03 - xiaohe
-  type: ss
-  server: 57.131.48.45
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
 - name: 🇮🇹 意大利 (Italy) 04 - xiaohe
   type: vless
   server: 204.216.216.23
@@ -41,90 +50,37 @@ proxies:
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 05 - xiaohe
   type: vless
-  server: 57.131.21.102
-  port: 8443
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: milan.adaspoloandco.com
-  network: ws
-  ws-opts:
-    path: /RoBeRt
-    headers:
-      Host: milan.adaspoloandco.com
 - name: 🇮🇹 意大利 (Italy) 06 - xiaohe
-  type: vless
-  server: milan.adaspoloandco.com
-  port: 8443
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
+  type: vmess
+  server: 89.41.172.85
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: milan.adaspoloandco.com
-  network: ws
-  ws-opts:
-    path: /RoBeRt
-    headers:
-      Host: milan.adaspoloandco.com
 - name: 🇮🇹 意大利 (Italy) 07 - xiaohe
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 08 - xiaohe
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 09 - xiaohe
-  type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 10 - xiaohe
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 11 - xiaohe
   type: ss
   server: 57.131.48.45
   port: 8388
   cipher: aes-256-gcm
   password: itzvpn@321
   udp: true
-- name: 🇮🇹 意大利 (Italy) 12 - xiaohe
-  type: vless
-  server: milan.adaspoloandco.com
-  port: 8443
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
+- name: 🇮🇹 意大利 (Italy) 08 - xiaohe
+  type: ss
+  server: 57.131.48.45
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: milan.adaspoloandco.com
-  network: ws
-  ws-opts:
-    path: /RoBeRt
-    headers:
-      Host: milan.adaspoloandco.com
-- name: 🇮🇹 意大利 (Italy) 13 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 09 - xiaohe
   type: vless
   server: 204.216.216.23
   port: 10086
@@ -132,18 +88,51 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 14 - xiaohe
-  type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+- name: 🇮🇹 意大利 (Italy) 10 - xiaohe
+  type: vmess
+  server: 89.41.172.85
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-  servername: www.apple.com
-  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 11 - xiaohe
+  type: vmess
+  server: 89.41.172.85
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 12 - xiaohe
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 13 - xiaohe
+  type: ss
+  server: 185.164.175.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 14 - xiaohe
+  type: vmess
+  server: 89.41.172.85
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 15 - xiaohe
   type: vless
   server: 204.216.216.23
@@ -154,21 +143,6 @@ proxies:
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 16 - xiaohe
   type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 17 - xiaohe
-  type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 18 - xiaohe
-  type: vless
   server: milan.adaspoloandco.com
   port: 8443
   uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
@@ -181,31 +155,7 @@ proxies:
     path: /RoBeRt
     headers:
       Host: milan.adaspoloandco.com
-- name: 🇮🇹 意大利 (Italy) 19 - xiaohe
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 20 - xiaohe
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 21 - xiaohe
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 22 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 17 - xiaohe
   type: vless
   server: 57.131.38.163
   port: 2053
@@ -217,21 +167,15 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 23 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 18 - xiaohe
   type: vless
-  server: milan.adaspoloandco.com
-  port: 8443
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: milan.adaspoloandco.com
-  network: ws
-  ws-opts:
-    path: /RoBeRt
-    headers:
-      Host: milan.adaspoloandco.com
-- name: 🇮🇹 意大利 (Italy) 24 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 19 - xiaohe
   type: vmess
   server: 89.41.172.85
   port: 22324
@@ -241,17 +185,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 25 - xiaohe
-  type: vmess
-  server: 89.41.172.85
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 26 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 20 - xiaohe
   type: vless
   server: 57.131.21.102
   port: 8443
@@ -265,6 +199,70 @@ proxies:
     path: /RoBeRt
     headers:
       Host: milan.adaspoloandco.com
+- name: 🇮🇹 意大利 (Italy) 21 - xiaohe
+  type: vmess
+  server: 89.41.172.85
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 22 - xiaohe
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 23 - xiaohe
+  type: vmess
+  server: 89.41.172.85
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 24 - xiaohe
+  type: vless
+  server: milan.adaspoloandco.com
+  port: 8443
+  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: milan.adaspoloandco.com
+  network: ws
+  ws-opts:
+    path: /RoBeRt
+    headers:
+      Host: milan.adaspoloandco.com
+- name: 🇮🇹 意大利 (Italy) 25 - xiaohe
+  type: vless
+  server: 57.131.21.102
+  port: 8443
+  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: milan.adaspoloandco.com
+  network: ws
+  ws-opts:
+    path: /RoBeRt
+    headers:
+      Host: milan.adaspoloandco.com
+- name: 🇮🇹 意大利 (Italy) 26 - xiaohe
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 27 - xiaohe
   type: vless
   server: 204.216.216.23
@@ -274,22 +272,18 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 28 - xiaohe
-  type: vmess
-  server: 89.41.172.85
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 29 - xiaohe
-  type: vmess
-  server: 89.41.172.85
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
   tls: false
   skip-cert-verify: true
@@ -304,26 +298,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 31 - xiaohe
-  type: vmess
-  server: 89.41.172.85
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 32 - xiaohe
-  type: vmess
-  server: 89.41.172.85
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 33 - xiaohe
   type: vless
   server: 204.216.216.23
   port: 10086
@@ -331,27 +305,41 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 34 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 32 - xiaohe
   type: vless
-  server: milan.adaspoloandco.com
-  port: 8443
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: milan.adaspoloandco.com
-  network: ws
-  ws-opts:
-    path: /RoBeRt
-    headers:
-      Host: milan.adaspoloandco.com
-- name: 🇮🇹 意大利 (Italy) 35 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 33 - xiaohe
   type: vmess
   server: 89.41.172.85
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 34 - xiaohe
+  type: vless
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇮🇹 意大利 (Italy) 35 - xiaohe
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
   tls: false
   skip-cert-verify: true
@@ -374,16 +362,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 38 - xiaohe
-  type: vmess
-  server: 89.41.172.85
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 39 - xiaohe
   type: vmess
   server: 89.41.172.85
   port: 22324
@@ -436,7 +414,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 36 - xiaohe
   - 🇮🇹 意大利 (Italy) 37 - xiaohe
   - 🇮🇹 意大利 (Italy) 38 - xiaohe
-  - 🇮🇹 意大利 (Italy) 39 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -480,6 +457,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 36 - xiaohe
   - 🇮🇹 意大利 (Italy) 37 - xiaohe
   - 🇮🇹 意大利 (Italy) 38 - xiaohe
-  - 🇮🇹 意大利 (Italy) 39 - xiaohe
 rules:
 - MATCH,PROXIES
