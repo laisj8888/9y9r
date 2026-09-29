@@ -32,6 +32,58 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
+- name: 🇧🇷 BR 03 - xiaohe
+  type: vless
+  server: 43.174.192.1
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇧🇷 BR 04 - xiaohe
+  type: vless
+  server: 43.174.192.1
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇧🇷 BR 05 - xiaohe
+  type: vmess
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16314
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇧🇷 BR 06 - xiaohe
+  type: vless
+  server: 43.174.192.1
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +91,10 @@ proxy-groups:
   - AUTO
   - 🇧🇷 BR 01 - xiaohe
   - 🇧🇷 BR 02 - xiaohe
+  - 🇧🇷 BR 03 - xiaohe
+  - 🇧🇷 BR 04 - xiaohe
+  - 🇧🇷 BR 05 - xiaohe
+  - 🇧🇷 BR 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +102,9 @@ proxy-groups:
   proxies:
   - 🇧🇷 BR 01 - xiaohe
   - 🇧🇷 BR 02 - xiaohe
+  - 🇧🇷 BR 03 - xiaohe
+  - 🇧🇷 BR 04 - xiaohe
+  - 🇧🇷 BR 05 - xiaohe
+  - 🇧🇷 BR 06 - xiaohe
 rules:
 - MATCH,PROXIES

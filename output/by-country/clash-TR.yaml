@@ -6,6 +6,56 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: vless
+  server: panel.vortexservice.ir
+  port: 2083
+  uuid: b2a508ff-99d6-4286-9e9e-e1a895cb4c6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: panel.vortexservice.ir
+  network: ws
+  ws-opts:
+    path: /?ed
+    headers:
+      Host: panel.vortexservice.ir
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  type: vless
+  server: 130.94.0.228
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  type: vless
+  server: panel.vortexservice.ir
+  port: 2082
+  uuid: b2a508ff-99d6-4286-9e9e-e1a895cb4c6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: panel.vortexservice.ir
+  network: ws
+  ws-opts:
+    path: /?ed
+    headers:
+      Host: panel.vortexservice.ir
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  type: vless
   server: 151.241.226.201
   port: 2053
   uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
@@ -16,14 +66,63 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  type: ss
-  server: 213.142.150.136
-  port: 1468
-  cipher: aes-128-gcm
-  password: _j2fKtUJpe_fwdFPt_Ilpg
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  type: vless
+  server: 130.94.0.228
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  type: vless
+  server: 130.94.0.228
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+  type: vless
+  server: 130.94.0.228
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇹🇷 土耳其 (Turkey) 09 - xiaohe
+  type: vless
+  server: 130.94.0.228
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇹🇷 土耳其 (Turkey) 10 - xiaohe
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -35,22 +134,6 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +144,11 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 09 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,5 +159,10 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 09 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 10 - xiaohe
 rules:
 - MATCH,PROXIES
