@@ -19,12 +19,19 @@ proxies:
     headers:
       Host: ul-mexico1.09vpn.com
 - name: 🇲🇽 MX 02 - xiaohe
-  type: ss
-  server: 64.177.90.30
-  port: 8388
-  cipher: aes-256-gcm
-  password: BWyPPTusFKhGgzKh
+  type: vless
+  server: ul-mexico1.09vpn.com
+  port: 8443
+  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ul-mexico1.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ul-mexico1.09vpn.com
 - name: 🇲🇽 MX 03 - xiaohe
   type: vless
   server: 34.51.29.171
@@ -51,60 +58,6 @@ proxies:
     path: /vless/
     headers:
       Host: 45.134.9.133
-- name: 🇲🇽 MX 05 - xiaohe
-  type: vless
-  server: ul-mexico1.09vpn.com
-  port: 8443
-  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ul-mexico1.09vpn.com
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ul-mexico1.09vpn.com
-- name: 🇲🇽 MX 06 - xiaohe
-  type: vless
-  server: ul-mexico1.09vpn.com
-  port: 8443
-  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ul-mexico1.09vpn.com
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ul-mexico1.09vpn.com
-- name: 🇲🇽 MX 07 - xiaohe
-  type: vless
-  server: ul-mexico1.09vpn.com
-  port: 8443
-  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ul-mexico1.09vpn.com
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ul-mexico1.09vpn.com
-- name: 🇲🇽 MX 08 - xiaohe
-  type: vless
-  server: 34.51.29.171
-  port: 443
-  uuid: 9ad81959-02c6-4679-a419-2af6a16ca07a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
-  servername: www.cloudflare.com
-  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,10 +67,6 @@ proxy-groups:
   - 🇲🇽 MX 02 - xiaohe
   - 🇲🇽 MX 03 - xiaohe
   - 🇲🇽 MX 04 - xiaohe
-  - 🇲🇽 MX 05 - xiaohe
-  - 🇲🇽 MX 06 - xiaohe
-  - 🇲🇽 MX 07 - xiaohe
-  - 🇲🇽 MX 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -127,9 +76,5 @@ proxy-groups:
   - 🇲🇽 MX 02 - xiaohe
   - 🇲🇽 MX 03 - xiaohe
   - 🇲🇽 MX 04 - xiaohe
-  - 🇲🇽 MX 05 - xiaohe
-  - 🇲🇽 MX 06 - xiaohe
-  - 🇲🇽 MX 07 - xiaohe
-  - 🇲🇽 MX 08 - xiaohe
 rules:
 - MATCH,PROXIES

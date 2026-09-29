@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 92a4cb10-228f-4239-8c63-c566b20a9167
+  server: square-mountain-1d69.356-977.workers.dev
+  port: 8880
+  uuid: 48b1d8af-1720-4462-a0ec-de493331ceb3
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,14 +16,20 @@ proxies:
   ws-opts:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: square-waterfall-c1de.199-82d.workers.dev
+      Host: square-mountain-1d69.356-977.workers.dev
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  type: ss
-  server: ce1fc2d8.krkt.hkssip.com
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
+  type: vless
+  server: 172.67.207.26
+  port: 8880
+  uuid: b7300b59-7598-4997-9714-27efd75065d0
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=proxyip.kr.cmliussss.net
+    headers:
+      Host: mute-lab-4c55.389.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
