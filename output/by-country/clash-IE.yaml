@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - xiaohe
-  type: vless
-  server: 45.141.234.138
+  type: ss
+  server: 20.123.34.66
   port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  cipher: chacha20-ietf-poly1305
+  password: r5D6YOSrT6kC76ro
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
 - name: 🇮🇪 IE 02 - xiaohe
   type: ss
   server: 20.123.34.66
@@ -71,7 +64,7 @@ proxies:
   servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇮🇪 IE 07 - xiaohe
@@ -106,9 +99,44 @@ proxies:
   servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: edgetunnel-4uw.pages.dev
+- name: 🇮🇪 IE 10 - xiaohe
+  type: vless
+  server: 45.141.234.138
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇮🇪 IE 11 - xiaohe
+  type: vless
+  server: 45.141.234.138
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇮🇪 IE 12 - xiaohe
+  type: ss
+  server: 20.123.34.66
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: r5D6YOSrT6kC76ro
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -123,6 +151,9 @@ proxy-groups:
   - 🇮🇪 IE 07 - xiaohe
   - 🇮🇪 IE 08 - xiaohe
   - 🇮🇪 IE 09 - xiaohe
+  - 🇮🇪 IE 10 - xiaohe
+  - 🇮🇪 IE 11 - xiaohe
+  - 🇮🇪 IE 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -137,5 +168,8 @@ proxy-groups:
   - 🇮🇪 IE 07 - xiaohe
   - 🇮🇪 IE 08 - xiaohe
   - 🇮🇪 IE 09 - xiaohe
+  - 🇮🇪 IE 10 - xiaohe
+  - 🇮🇪 IE 11 - xiaohe
+  - 🇮🇪 IE 12 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -11,31 +11,17 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: vUtLhCy8T6zoZv9Y6EP2G9oyWXFFUv-d
   udp: true
-- name: 🇮🇷 IR 02 - xiaohe
-  type: vless
-  server: g4.haxat.bestvbest.ir
-  port: 56126
-  uuid: ce4b2104-f1fe-4216-ad67-8c21869b9118
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: oNv1vk-DHPrbFy__k2B7Am2lTtKfW4dXM7shzi7VFyk
-  servername: play.google.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇷 IR 01 - xiaohe
-  - 🇮🇷 IR 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇷 IR 01 - xiaohe
-  - 🇮🇷 IR 02 - xiaohe
 rules:
 - MATCH,PROXIES
