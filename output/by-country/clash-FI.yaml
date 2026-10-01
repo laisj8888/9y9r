@@ -14,24 +14,30 @@ proxies:
   skip-cert-verify: true
 - name: 🇫🇮 FI 02 - xiaohe
   type: vless
-  server: 142.228.52.79
-  port: 8443
-  uuid: e3e9805a-6c8b-4edd-8ee8-621df79806eb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: B5-zPBBAI-UATY7rSvoggM1T65h9CfVw7yBluBNd-yI
-  servername: fi.aksay.pro
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 03 - xiaohe
-  type: vless
-  server: smart.avenone.ir
-  port: 1085
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  server: psf-3.weedly.top
+  port: 80
+  uuid: 6f597b2d-2df5-4f4f-a755-bdb5c10604e9
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: homelander.ir
+- name: 🇫🇮 FI 03 - xiaohe
+  type: vless
+  server: psf-3.weedly.top
+  port: 80
+  uuid: 6f597b2d-2df5-4f4f-a755-bdb5c10604e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: homelander.ir
 - name: 🇫🇮 FI 04 - xiaohe
   type: vless
   server: 95.216.27.15
@@ -46,52 +52,6 @@ proxies:
   client-fingerprint: firefox
 - name: 🇫🇮 FI 05 - xiaohe
   type: vless
-  server: porn.tyr-agentstvo.tech
-  port: 443
-  uuid: 223460d4-8f96-4652-9057-295bdedc3216
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: porn.tyr-agentstvo.tech
-  network: ws
-  ws-opts:
-    path: /websocket?ed=2560
-    headers:
-      Host: porn.tyr-agentstvo.tech
-- name: 🇫🇮 FI 06 - xiaohe
-  type: vless
-  server: 37.143.129.161
-  port: 8443
-  uuid: e3e9805a-6c8b-4edd-8ee8-621df79806eb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: B5-zPBBAI-UATY7rSvoggM1T65h9CfVw7yBluBNd-yI
-  servername: fi.aksay.pro
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 07 - xiaohe
-  type: vless
-  server: 77.42.20.51
-  port: 1085
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 08 - xiaohe
-  type: vless
-  server: 37.143.129.161
-  port: 8443
-  uuid: e3e9805a-6c8b-4edd-8ee8-621df79806eb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: B5-zPBBAI-UATY7rSvoggM1T65h9CfVw7yBluBNd-yI
-  servername: fi.aksay.pro
-  client-fingerprint: edge
-- name: 🇫🇮 FI 09 - xiaohe
-  type: vless
   server: 35.228.61.63
   port: 443
   uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
@@ -102,6 +62,30 @@ proxies:
     public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇫🇮 FI 06 - xiaohe
+  type: vless
+  server: smart.avenone.ir
+  port: 1085
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 07 - xiaohe
+  type: vless
+  server: 77.42.20.51
+  port: 1085
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 08 - xiaohe
+  type: vless
+  server: smart.avenone.ir
+  port: 1085
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -115,7 +99,6 @@ proxy-groups:
   - 🇫🇮 FI 06 - xiaohe
   - 🇫🇮 FI 07 - xiaohe
   - 🇫🇮 FI 08 - xiaohe
-  - 🇫🇮 FI 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -129,6 +112,5 @@ proxy-groups:
   - 🇫🇮 FI 06 - xiaohe
   - 🇫🇮 FI 07 - xiaohe
   - 🇫🇮 FI 08 - xiaohe
-  - 🇫🇮 FI 09 - xiaohe
 rules:
 - MATCH,PROXIES

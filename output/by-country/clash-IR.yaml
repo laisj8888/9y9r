@@ -5,12 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - xiaohe
-  type: ss
-  server: 176.120.17.22
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: vUtLhCy8T6zoZv9Y6EP2G9oyWXFFUv-d
+  type: vless
+  server: g4.haxat.bestvbest.ir
+  port: 56126
+  uuid: ce4b2104-f1fe-4216-ad67-8c21869b9118
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: oNv1vk-DHPrbFy__k2B7Am2lTtKfW4dXM7shzi7VFyk
+  servername: play.google.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
