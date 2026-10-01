@@ -6,18 +6,6 @@ log-level: info
 proxies:
 - name: 🇧🇪 BE 01 - xiaohe
   type: vless
-  server: 35.240.62.249
-  port: 443
-  uuid: 6d341f6e-7b9d-4ae3-999b-00333de7bdfb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇧🇪 BE 02 - xiaohe
-  type: vless
   server: 35.233.94.80
   port: 443
   uuid: d4d1b597-2769-465b-b7fa-c2b84393d3ee
@@ -28,6 +16,30 @@ proxies:
     public-key: OQ0MKzP5TYtlJCteckb25tD6USBH__D1z28Y8BOcdG4
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇧🇪 BE 02 - xiaohe
+  type: vless
+  server: 35.233.43.229
+  port: 443
+  uuid: e3fb56fe-bdbc-4f0e-b1ed-de2f7c85f254
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇧🇪 BE 03 - xiaohe
+  type: vless
+  server: 35.240.62.249
+  port: 443
+  uuid: 6d341f6e-7b9d-4ae3-999b-00333de7bdfb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +47,7 @@ proxy-groups:
   - AUTO
   - 🇧🇪 BE 01 - xiaohe
   - 🇧🇪 BE 02 - xiaohe
+  - 🇧🇪 BE 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +55,6 @@ proxy-groups:
   proxies:
   - 🇧🇪 BE 01 - xiaohe
   - 🇧🇪 BE 02 - xiaohe
+  - 🇧🇪 BE 03 - xiaohe
 rules:
 - MATCH,PROXIES

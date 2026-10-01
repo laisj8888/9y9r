@@ -5,55 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - xiaohe
-  type: ss
-  server: 20.123.34.66
+  type: vless
+  server: 45.141.234.138
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: r5D6YOSrT6kC76ro
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
 - name: 🇮🇪 IE 02 - xiaohe
   type: ss
-  server: 20.123.34.66
+  server: 20.166.59.119
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: r5D6YOSrT6kC76ro
+  password: gJe7umStIck5Mieg
   udp: true
 - name: 🇮🇪 IE 03 - xiaohe
-  type: vless
-  server: 45.141.234.138
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇮🇪 IE 04 - xiaohe
-  type: vless
-  server: 45.141.234.138
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇮🇪 IE 05 - xiaohe
   type: ss
-  server: 20.123.34.66
+  server: 20.166.59.119
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: r5D6YOSrT6kC76ro
+  password: gJe7umStIck5Mieg
   udp: true
-- name: 🇮🇪 IE 06 - xiaohe
+- name: 🇮🇪 IE 04 - xiaohe
   type: vless
   server: 45.141.234.138
   port: 443
@@ -67,6 +46,27 @@ proxies:
     path: /fp=chrome
     headers:
       Host: edgetunnel-4uw.pages.dev
+- name: 🇮🇪 IE 05 - xiaohe
+  type: vless
+  server: 45.141.234.138
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇮🇪 IE 06 - xiaohe
+  type: ss
+  server: 20.166.59.119
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: gJe7umStIck5Mieg
+  udp: true
 - name: 🇮🇪 IE 07 - xiaohe
   type: vless
   server: 45.141.234.138
@@ -82,12 +82,19 @@ proxies:
     headers:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇮🇪 IE 08 - xiaohe
-  type: ss
-  server: 20.123.34.66
+  type: vless
+  server: 45.141.234.138
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: r5D6YOSrT6kC76ro
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
 - name: 🇮🇪 IE 09 - xiaohe
   type: vless
   server: 45.141.234.138
@@ -99,23 +106,16 @@ proxies:
   servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇮🇪 IE 10 - xiaohe
-  type: vless
-  server: 45.141.234.138
+  type: ss
+  server: 20.166.59.119
   port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  cipher: chacha20-ietf-poly1305
+  password: gJe7umStIck5Mieg
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: edgetunnel-4uw.pages.dev
 - name: 🇮🇪 IE 11 - xiaohe
   type: vless
   server: 45.141.234.138
@@ -130,13 +130,6 @@ proxies:
     path: /fp=chrome
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇮🇪 IE 12 - xiaohe
-  type: ss
-  server: 20.123.34.66
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: r5D6YOSrT6kC76ro
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -153,7 +146,6 @@ proxy-groups:
   - 🇮🇪 IE 09 - xiaohe
   - 🇮🇪 IE 10 - xiaohe
   - 🇮🇪 IE 11 - xiaohe
-  - 🇮🇪 IE 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -170,6 +162,5 @@ proxy-groups:
   - 🇮🇪 IE 09 - xiaohe
   - 🇮🇪 IE 10 - xiaohe
   - 🇮🇪 IE 11 - xiaohe
-  - 🇮🇪 IE 12 - xiaohe
 rules:
 - MATCH,PROXIES

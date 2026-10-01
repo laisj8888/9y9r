@@ -32,6 +32,20 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
+- name: 🇺🇦 UA 03 - xiaohe
+  type: vless
+  server: 173.242.63.235
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +53,7 @@ proxy-groups:
   - AUTO
   - 🇺🇦 UA 01 - xiaohe
   - 🇺🇦 UA 02 - xiaohe
+  - 🇺🇦 UA 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +61,6 @@ proxy-groups:
   proxies:
   - 🇺🇦 UA 01 - xiaohe
   - 🇺🇦 UA 02 - xiaohe
+  - 🇺🇦 UA 03 - xiaohe
 rules:
 - MATCH,PROXIES
