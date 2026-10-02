@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
   servername: pl.srv.vbuste-bot.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
   server: 144.31.4.193
@@ -30,30 +30,6 @@ proxies:
   client-fingerprint: chrome
 - name: 🇵🇱 PL 03 - xiaohe
   type: vless
-  server: pl.srv.vbuste-bot.com
-  port: 444
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-  servername: pl.srv.vbuste-bot.com
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 04 - xiaohe
-  type: vless
-  server: pl.srv.vbuste-bot.com
-  port: 444
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-  servername: pl.srv.vbuste-bot.com
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 05 - xiaohe
-  type: vless
   server: 70.34.255.101
   port: 80
   uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
@@ -65,19 +41,7 @@ proxies:
     path: /
     headers:
       Host: 70.34.255.101
-- name: 🇵🇱 PL 06 - xiaohe
-  type: vless
-  server: eu94.vaultberry.cloud
-  port: 753
-  uuid: 38fdb074-9b55-44eb-87fd-b01bcc0f7f2b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
-  servername: eu85.vaultberry.cloud
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 07 - xiaohe
+- name: 🇵🇱 PL 04 - xiaohe
   type: vless
   server: pl.srv.vbuste-bot.com
   port: 444
@@ -89,26 +53,31 @@ proxies:
     public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
   servername: pl.srv.vbuste-bot.com
   client-fingerprint: chrome
-- name: 🇵🇱 PL 08 - xiaohe
+- name: 🇵🇱 PL 05 - xiaohe
   type: vless
-  server: 34.118.43.106
-  port: 443
-  uuid: 16e310b7-659e-45ee-a4b0-10e0289b8621
+  server: pl.srv.vbuste-bot.com
+  port: 444
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: -bjPqNKxxGTKCmH6dwsdGRTUzuatAowBWxyOPW4BiVQ
-  servername: www.cloudflare.com
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+  servername: pl.srv.vbuste-bot.com
   client-fingerprint: chrome
-- name: 🇵🇱 PL 09 - xiaohe
-  type: ss
-  server: 94.228.161.7
-  port: 4
-  cipher: chacha20-ietf-poly1305
-  password: MBiJEJ5VgZXVSj58CEEFZA
+- name: 🇵🇱 PL 06 - xiaohe
+  type: vless
+  server: pl.srv.vbuste-bot.com
+  port: 444
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
   udp: true
-- name: 🇵🇱 PL 10 - xiaohe
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+  servername: pl.srv.vbuste-bot.com
+  client-fingerprint: firefox
+- name: 🇵🇱 PL 07 - xiaohe
   type: vless
   server: pl.srv.vbuste-bot.com
   port: 444
@@ -132,9 +101,6 @@ proxy-groups:
   - 🇵🇱 PL 05 - xiaohe
   - 🇵🇱 PL 06 - xiaohe
   - 🇵🇱 PL 07 - xiaohe
-  - 🇵🇱 PL 08 - xiaohe
-  - 🇵🇱 PL 09 - xiaohe
-  - 🇵🇱 PL 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -147,8 +113,5 @@ proxy-groups:
   - 🇵🇱 PL 05 - xiaohe
   - 🇵🇱 PL 06 - xiaohe
   - 🇵🇱 PL 07 - xiaohe
-  - 🇵🇱 PL 08 - xiaohe
-  - 🇵🇱 PL 09 - xiaohe
-  - 🇵🇱 PL 10 - xiaohe
 rules:
 - MATCH,PROXIES
