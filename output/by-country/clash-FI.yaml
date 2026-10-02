@@ -30,6 +30,22 @@ proxies:
   skip-cert-verify: true
 - name: 🇫🇮 FI 04 - xiaohe
   type: vless
+  server: 77.42.20.51
+  port: 1085
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 05 - xiaohe
+  type: vless
+  server: 77.42.20.51
+  port: 1085
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 06 - xiaohe
+  type: vless
   server: 95.216.27.15
   port: 2053
   uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
@@ -40,28 +56,6 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 FI 05 - xiaohe
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: ebeb7358-9fc0-4222-a0e5-d8bc274a8856
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: looazjboijji.global.ssl.fastly.net.
-- name: 🇫🇮 FI 06 - xiaohe
-  type: vless
-  server: 77.42.20.51
-  port: 1085
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇫🇮 FI 07 - xiaohe
   type: vless
   server: 35.228.61.63
@@ -74,28 +68,6 @@ proxies:
     public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 08 - xiaohe
-  type: vless
-  server: 77.42.20.51
-  port: 1085
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 09 - xiaohe
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: ebeb7358-9fc0-4222-a0e5-d8bc274a8856
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: looazjboijji.global.ssl.fastly.net.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -108,8 +80,6 @@ proxy-groups:
   - 🇫🇮 FI 05 - xiaohe
   - 🇫🇮 FI 06 - xiaohe
   - 🇫🇮 FI 07 - xiaohe
-  - 🇫🇮 FI 08 - xiaohe
-  - 🇫🇮 FI 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -122,7 +92,5 @@ proxy-groups:
   - 🇫🇮 FI 05 - xiaohe
   - 🇫🇮 FI 06 - xiaohe
   - 🇫🇮 FI 07 - xiaohe
-  - 🇫🇮 FI 08 - xiaohe
-  - 🇫🇮 FI 09 - xiaohe
 rules:
 - MATCH,PROXIES
