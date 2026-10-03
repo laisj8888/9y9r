@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - xiaohe
   type: vmess
-  server: 89.39.161.157
+  server: aksai.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -22,7 +22,7 @@ proxies:
       Host: aksai.org
 - name: 🇧🇷 BR 02 - xiaohe
   type: vmess
-  server: 89.39.161.157
+  server: aksai.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -54,7 +54,7 @@ proxies:
       Host: aksai.org
 - name: 🇧🇷 BR 04 - xiaohe
   type: vmess
-  server: aksai.org
+  server: 89.39.161.157
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -70,7 +70,7 @@ proxies:
       Host: aksai.org
 - name: 🇧🇷 BR 05 - xiaohe
   type: vmess
-  server: aksai.org
+  server: 89.39.161.157
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -102,7 +102,7 @@ proxies:
       Host: aksai.org
 - name: 🇧🇷 BR 07 - xiaohe
   type: vmess
-  server: 89.39.161.157
+  server: aksai.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -118,7 +118,7 @@ proxies:
       Host: aksai.org
 - name: 🇧🇷 BR 08 - xiaohe
   type: vmess
-  server: aksai.org
+  server: 89.39.161.157
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -132,13 +132,6 @@ proxies:
     path: /linkvws
     headers:
       Host: aksai.org
-- name: 🇧🇷 BR 09 - xiaohe
-  type: ss
-  server: 216.128.168.190
-  port: 8388
-  cipher: aes-256-gcm
-  password: owVdNnQcdPgthSyX
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -152,7 +145,6 @@ proxy-groups:
   - 🇧🇷 BR 06 - xiaohe
   - 🇧🇷 BR 07 - xiaohe
   - 🇧🇷 BR 08 - xiaohe
-  - 🇧🇷 BR 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -166,6 +158,5 @@ proxy-groups:
   - 🇧🇷 BR 06 - xiaohe
   - 🇧🇷 BR 07 - xiaohe
   - 🇧🇷 BR 08 - xiaohe
-  - 🇧🇷 BR 09 - xiaohe
 rules:
 - MATCH,PROXIES
