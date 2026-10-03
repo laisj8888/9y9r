@@ -6,32 +6,29 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: snapp.matialz.ir
-  port: 443
-  uuid: 06278d74-9385-42e8-be1b-49c78ebc49ea
+  server: 77.42.28.120
+  port: 1280
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: snapp.matialz.ir
   network: ws
   ws-opts:
-    path: /pgcfws-d7k
+    path: /
     headers:
-      Host: snapp.matialz.ir
+      Host: is1-ssl.mzstatic.com
 - name: 🇫🇮 FI 02 - xiaohe
   type: vless
-  server: 188.114.97.6
+  server: 185.242.247.44
   port: 443
-  uuid: 06278d74-9385-42e8-be1b-49c78ebc49ea
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: snapp.matialz.ir
-  network: ws
-  ws-opts:
-    path: /pgcfws-d7k
-    headers:
-      Host: snapp.matialz.ir
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 03 - xiaohe
   type: vless
   server: 77.42.28.120
@@ -47,18 +44,44 @@ proxies:
       Host: is1-ssl.mzstatic.com
 - name: 🇫🇮 FI 04 - xiaohe
   type: vless
-  server: 77.42.28.120
-  port: 1280
-  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
+  server: v3.tgphoenix.ir
+  port: 8443
+  uuid: 6414b234-957e-4777-b39f-9a30080ace9b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: uYtexW4wx3Ql_q73x3PM2Vbc3xyKxBgEh5FUL0CmogM
+  servername: www.aparat.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 05 - xiaohe
+  type: vless
+  server: 95.163.215.8
+  port: 6002
+  uuid: 8e8ea5d2-6941-40fb-9efe-f9062b11b2b9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fin1.centermass.net
+  network: ws
+  ws-opts:
+    path: media.playback.v1.SessionGateway
+    headers:
+      Host: 95.163.215.8
+- name: 🇫🇮 FI 06 - xiaohe
+  type: vless
+  server: 146.75.119.82
+  port: 80
+  uuid: 9b5df664-8725-4f72-acaa-3d9f52e3c69a
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
     headers:
-      Host: is1-ssl.mzstatic.com
-- name: 🇫🇮 FI 05 - xiaohe
+      Host: rb24.ir
+- name: 🇫🇮 FI 07 - xiaohe
   type: vless
   server: fi.monkora.org
   port: 443
@@ -70,7 +93,7 @@ proxies:
     public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
   servername: example.org
   client-fingerprint: firefox
-- name: 🇫🇮 FI 06 - xiaohe
+- name: 🇫🇮 FI 08 - xiaohe
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -82,7 +105,20 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 FI 07 - xiaohe
+- name: 🇫🇮 FI 09 - xiaohe
+  type: vless
+  server: 77.42.28.120
+  port: 1280
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: is1-ssl.mzstatic.com
+- name: 🇫🇮 FI 10 - xiaohe
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -94,6 +130,19 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: firefox
+- name: 🇫🇮 FI 11 - xiaohe
+  type: vless
+  server: 77.42.28.120
+  port: 1280
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: is1-ssl.mzstatic.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -106,6 +155,10 @@ proxy-groups:
   - 🇫🇮 FI 05 - xiaohe
   - 🇫🇮 FI 06 - xiaohe
   - 🇫🇮 FI 07 - xiaohe
+  - 🇫🇮 FI 08 - xiaohe
+  - 🇫🇮 FI 09 - xiaohe
+  - 🇫🇮 FI 10 - xiaohe
+  - 🇫🇮 FI 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -118,5 +171,9 @@ proxy-groups:
   - 🇫🇮 FI 05 - xiaohe
   - 🇫🇮 FI 06 - xiaohe
   - 🇫🇮 FI 07 - xiaohe
+  - 🇫🇮 FI 08 - xiaohe
+  - 🇫🇮 FI 09 - xiaohe
+  - 🇫🇮 FI 10 - xiaohe
+  - 🇫🇮 FI 11 - xiaohe
 rules:
 - MATCH,PROXIES
