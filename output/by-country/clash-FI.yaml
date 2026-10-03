@@ -19,16 +19,17 @@ proxies:
       Host: is1-ssl.mzstatic.com
 - name: 🇫🇮 FI 02 - xiaohe
   type: vless
-  server: 185.242.247.44
-  port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  server: 77.42.28.120
+  port: 1280
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: is1-ssl.mzstatic.com
 - name: 🇫🇮 FI 03 - xiaohe
   type: vless
   server: 77.42.28.120
@@ -41,34 +42,21 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: is1-ssl.mzstatic.com
+      Host: 77.42.28.120
 - name: 🇫🇮 FI 04 - xiaohe
   type: vless
-  server: v3.tgphoenix.ir
-  port: 8443
-  uuid: 6414b234-957e-4777-b39f-9a30080ace9b
+  server: 77.42.28.120
+  port: 1280
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: uYtexW4wx3Ql_q73x3PM2Vbc3xyKxBgEh5FUL0CmogM
-  servername: www.aparat.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 05 - xiaohe
-  type: vless
-  server: 95.163.215.8
-  port: 6002
-  uuid: 8e8ea5d2-6941-40fb-9efe-f9062b11b2b9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fin1.centermass.net
   network: ws
   ws-opts:
-    path: media.playback.v1.SessionGateway
+    path: /
     headers:
-      Host: 95.163.215.8
-- name: 🇫🇮 FI 06 - xiaohe
+      Host: is1-ssl.mzstatic.com
+- name: 🇫🇮 FI 05 - xiaohe
   type: vless
   server: 146.75.119.82
   port: 80
@@ -81,32 +69,33 @@ proxies:
     path: ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
     headers:
       Host: rb24.ir
+- name: 🇫🇮 FI 06 - xiaohe
+  type: vless
+  server: 77.42.28.120
+  port: 1280
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: is1-ssl.mzstatic.com
 - name: 🇫🇮 FI 07 - xiaohe
   type: vless
-  server: fi.monkora.org
-  port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
   client-fingerprint: firefox
 - name: 🇫🇮 FI 08 - xiaohe
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 09 - xiaohe
-  type: vless
   server: 77.42.28.120
   port: 1280
   uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
@@ -117,32 +106,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: is1-ssl.mzstatic.com
-- name: 🇫🇮 FI 10 - xiaohe
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 11 - xiaohe
-  type: vless
-  server: 77.42.28.120
-  port: 1280
-  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: is1-ssl.mzstatic.com
+      Host: 77.42.28.120
 proxy-groups:
 - name: PROXIES
   type: select
@@ -156,9 +120,6 @@ proxy-groups:
   - 🇫🇮 FI 06 - xiaohe
   - 🇫🇮 FI 07 - xiaohe
   - 🇫🇮 FI 08 - xiaohe
-  - 🇫🇮 FI 09 - xiaohe
-  - 🇫🇮 FI 10 - xiaohe
-  - 🇫🇮 FI 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -172,8 +133,5 @@ proxy-groups:
   - 🇫🇮 FI 06 - xiaohe
   - 🇫🇮 FI 07 - xiaohe
   - 🇫🇮 FI 08 - xiaohe
-  - 🇫🇮 FI 09 - xiaohe
-  - 🇫🇮 FI 10 - xiaohe
-  - 🇫🇮 FI 11 - xiaohe
 rules:
 - MATCH,PROXIES
