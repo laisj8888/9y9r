@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇰 DK 01 - xiaohe
+- name: 🇧🇬 BG 01 - xiaohe
   type: vmess
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16305
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  server: 206.1.103.179
+  port: 58413
+  uuid: 5d456b70-0c63-488e-b245-32f694854390
   alterId: 0
   cipher: auto
   udp: true
@@ -19,12 +19,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇩🇰 DK 01 - xiaohe
+  - 🇧🇬 BG 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇰 DK 01 - xiaohe
+  - 🇧🇬 BG 01 - xiaohe
 rules:
 - MATCH,PROXIES

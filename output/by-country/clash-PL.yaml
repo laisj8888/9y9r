@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
+  server: iiproxy8.iiproxy.com
+  port: 8443
+  uuid: 806fa224-44f7-4c1b-b7a3-05bfdfdfbf87
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: iiproxy8.iiproxy.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: iiproxy8.iiproxy.com
+- name: 🇵🇱 PL 02 - xiaohe
+  type: vless
   server: 70.34.255.101
   port: 80
   uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
@@ -23,11 +37,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇱 PL 01 - xiaohe
+  - 🇵🇱 PL 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 PL 01 - xiaohe
+  - 🇵🇱 PL 02 - xiaohe
 rules:
 - MATCH,PROXIES
