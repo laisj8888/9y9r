@@ -5,40 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - xiaohe
-  type: vless
-  server: 45.12.30.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: speed.dulacloud.store
-  network: ws
-  ws-opts:
-    path: /dula?Telegram-WangCai2fp
-    headers:
-      Host: speed.dulacloud.store
-- name: 🇷🇴 RO 02 - xiaohe
   type: ss
   server: 154.46.31.106
   port: 443
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-- name: 🇷🇴 RO 03 - xiaohe
-  type: vless
-  server: 45.12.30.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+- name: 🇷🇴 RO 02 - xiaohe
+  type: ss
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: speed.dulacloud.store
-  network: ws
-  ws-opts:
-    path: /dula?Telegram-WangCai2fp
-    headers:
-      Host: speed.dulacloud.store
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,7 +25,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 RO 01 - xiaohe
   - 🇷🇴 RO 02 - xiaohe
-  - 🇷🇴 RO 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,6 +32,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 RO 01 - xiaohe
   - 🇷🇴 RO 02 - xiaohe
-  - 🇷🇴 RO 03 - xiaohe
 rules:
 - MATCH,PROXIES

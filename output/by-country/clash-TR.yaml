@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   type: vless
   server: test.keoplentuio.xyz
@@ -35,30 +35,12 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  type: vless
-  server: tutaim.azad0namah.ir
-  port: 8080
-  uuid: fdc1206a-9d2e-42b7-b615-9ccea8cf70ee
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   type: vless
   server: test.keoplentuio.xyz
   port: 2053
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  type: vmess
-  server: 206.1.103.179
-  port: 20027
-  uuid: 9b24ce06-4531-410e-886d-3ce1812d0e1c
-  alterId: 0
-  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
@@ -71,8 +53,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -82,7 +62,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -6,24 +6,24 @@ log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - xiaohe
   type: ss
+  server: 102.133.165.160
+  port: 16233
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  udp: true
+- name: 🇿🇦 ZA 02 - xiaohe
+  type: ss
   server: 102.37.156.224
   port: 443
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
-- name: 🇿🇦 ZA 02 - xiaohe
-  type: ss
-  server: 139.84.247.164
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
-  udp: true
 - name: 🇿🇦 ZA 03 - xiaohe
   type: ss
-  server: 102.133.165.160
-  port: 16233
+  server: 20.87.209.138
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  password: D3QZyKA9jtLektTN
   udp: true
 - name: 🇿🇦 ZA 04 - xiaohe
   type: ss
@@ -41,10 +41,10 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 06 - xiaohe
   type: ss
-  server: 20.87.209.138
-  port: 443
+  server: 139.84.247.164
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: D3QZyKA9jtLektTN
+  password: tfAcRikawhNoZAhu
   udp: true
 - name: 🇿🇦 ZA 07 - xiaohe
   type: ss
@@ -54,13 +54,6 @@ proxies:
   password: D3QZyKA9jtLektTN
   udp: true
 - name: 🇿🇦 ZA 08 - xiaohe
-  type: ss
-  server: 20.87.209.138
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 513eeuJ8TQzOPGRt
-  udp: true
-- name: 🇿🇦 ZA 09 - xiaohe
   type: vless
   server: 34.35.174.85
   port: 443
@@ -72,6 +65,20 @@ proxies:
     public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇿🇦 ZA 09 - xiaohe
+  type: ss
+  server: 20.87.209.138
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: D3QZyKA9jtLektTN
+  udp: true
+- name: 🇿🇦 ZA 10 - xiaohe
+  type: ss
+  server: 20.87.209.138
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: D3QZyKA9jtLektTN
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,6 +93,7 @@ proxy-groups:
   - 🇿🇦 ZA 07 - xiaohe
   - 🇿🇦 ZA 08 - xiaohe
   - 🇿🇦 ZA 09 - xiaohe
+  - 🇿🇦 ZA 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -100,5 +108,6 @@ proxy-groups:
   - 🇿🇦 ZA 07 - xiaohe
   - 🇿🇦 ZA 08 - xiaohe
   - 🇿🇦 ZA 09 - xiaohe
+  - 🇿🇦 ZA 10 - xiaohe
 rules:
 - MATCH,PROXIES
