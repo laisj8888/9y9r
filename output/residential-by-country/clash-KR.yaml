@@ -5,6 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  type: vless
+  server: 172.67.187.219
+  port: 8880
+  uuid: 4a40e7a6-9179-42c1-9bd7-eefec23a62f8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: soft-meadow-980a.458.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  type: vless
+  server: 104.21.70.21
+  port: 8080
+  uuid: 363202dd-0521-46b4-b4e2-443dfbaa2ce1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: flat-heart-b60a.401-306.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
   type: ss
   server: ce1fc2d8.krkt.hkssip.com
   port: 49642
@@ -17,11 +43,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
