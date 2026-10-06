@@ -5,30 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  type: vless
+  server: soft-meadow-980a.458.workers.dev
+  port: 8880
+  uuid: 4a40e7a6-9179-42c1-9bd7-eefec23a62f8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: soft-meadow-980a.458.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
   type: ss
   server: ce1fc2d8.krkt.hkssip.com
   port: 49642
   cipher: aes-256-gcm
   password: ac9c0a7b
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  type: vless
-  server: 172.67.174.37
-  port: 8880
-  uuid: 8cc8bedd-5103-4d22-a79c-a88f1160055a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: red-unit-60bc.165-1dd.workers.dev
 - name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
   type: vless
-  server: 172.66.140.62
+  server: 172.64.88.251
   port: 8880
-  uuid: 91c7ea79-9187-4f07-ab97-68c584186843
+  uuid: 87a5d3eb-afd4-4193-9787-c54ef7c26c8c
   udp: true
   tls: false
   skip-cert-verify: true
@@ -36,7 +36,7 @@ proxies:
   ws-opts:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: nameless-dust-1a36.207-b50.workers.dev
+      Host: patient-cake-39c7.44-e7a.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

@@ -6,44 +6,29 @@ log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
   type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: 893096ae-ed76-4440-bc34-f77c4872540f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoieE1zSFhYR2hkcHZGUHI3cSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: masterserver1-vsh.kalleh.workers.dev
-- name: 🇮🇶 IQ 02 - xiaohe
-  type: vless
-  server: www.speedtest.net
+  server: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
   port: 443
-  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
+  uuid: 3423809a-08e5-4b93-bd76-c6cdcbfd9b52
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: luCky-LAB-AC6D.CAveyi8071.WoRkeRS.DEV
+  servername: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
   network: ws
   ws-opts:
-    path: /rN50nmm9L1DeY73C?ed
+    path: /vl/1zCIGMyxlm8xzeGwdyy
     headers:
-      Host: luCky-LAB-AC6D.CAveyi8071.WoRkeRS.DEV
+      Host: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - xiaohe
-  - 🇮🇶 IQ 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - xiaohe
-  - 🇮🇶 IQ 02 - xiaohe
 rules:
 - MATCH,PROXIES

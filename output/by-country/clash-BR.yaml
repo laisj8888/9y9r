@@ -22,7 +22,7 @@ proxies:
       Host: aksai.org
 - name: 🇧🇷 BR 02 - xiaohe
   type: vmess
-  server: aksai.org
+  server: 89.39.161.157
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -38,7 +38,7 @@ proxies:
       Host: aksai.org
 - name: 🇧🇷 BR 03 - xiaohe
   type: vmess
-  server: 89.39.161.157
+  server: aksai.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -54,7 +54,7 @@ proxies:
       Host: aksai.org
 - name: 🇧🇷 BR 04 - xiaohe
   type: vmess
-  server: 89.39.161.157
+  server: aksai.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -166,7 +166,7 @@ proxies:
       Host: aksai.org
 - name: 🇧🇷 BR 11 - xiaohe
   type: vmess
-  server: aksai.org
+  server: 89.39.161.157
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -182,7 +182,7 @@ proxies:
       Host: aksai.org
 - name: 🇧🇷 BR 12 - xiaohe
   type: vmess
-  server: aksai.org
+  server: 89.39.161.157
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -197,6 +197,54 @@ proxies:
     headers:
       Host: aksai.org
 - name: 🇧🇷 BR 13 - xiaohe
+  type: vmess
+  server: aksai.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aksai.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aksai.org
+- name: 🇧🇷 BR 14 - xiaohe
+  type: vmess
+  server: aksai.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aksai.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aksai.org
+- name: 🇧🇷 BR 15 - xiaohe
+  type: vmess
+  server: aksai.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aksai.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aksai.org
+- name: 🇧🇷 BR 16 - xiaohe
   type: vmess
   server: 89.39.161.157
   port: 443
@@ -230,6 +278,9 @@ proxy-groups:
   - 🇧🇷 BR 11 - xiaohe
   - 🇧🇷 BR 12 - xiaohe
   - 🇧🇷 BR 13 - xiaohe
+  - 🇧🇷 BR 14 - xiaohe
+  - 🇧🇷 BR 15 - xiaohe
+  - 🇧🇷 BR 16 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -248,5 +299,8 @@ proxy-groups:
   - 🇧🇷 BR 11 - xiaohe
   - 🇧🇷 BR 12 - xiaohe
   - 🇧🇷 BR 13 - xiaohe
+  - 🇧🇷 BR 14 - xiaohe
+  - 🇧🇷 BR 15 - xiaohe
+  - 🇧🇷 BR 16 - xiaohe
 rules:
 - MATCH,PROXIES

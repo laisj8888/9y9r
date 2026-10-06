@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
   type: vless
-  server: sub.merky.top
+  server: 94.143.231.146
   port: 443
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
@@ -34,7 +34,7 @@ proxies:
       Host: sub.merky.top
 - name: 🇸🇪 SE 03 - xiaohe
   type: vless
-  server: 94.143.231.146
+  server: sub.merky.top
   port: 443
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
@@ -48,20 +48,6 @@ proxies:
       Host: sub.merky.top
 - name: 🇸🇪 SE 04 - xiaohe
   type: vless
-  server: 109.120.134.243
-  port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.cndyw.ggff.net
-  network: ws
-  ws-opts:
-    path: pyip=bpb.yousef.isegaro.comfp=random
-    headers:
-      Host: free.cndyw.ggff.net
-- name: 🇸🇪 SE 05 - xiaohe
-  type: vless
   server: 94.143.231.146
   port: 443
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
@@ -74,7 +60,7 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
-- name: 🇸🇪 SE 06 - xiaohe
+- name: 🇸🇪 SE 05 - xiaohe
   type: vless
   server: 94.143.231.146
   port: 443
@@ -98,7 +84,6 @@ proxy-groups:
   - 🇸🇪 SE 03 - xiaohe
   - 🇸🇪 SE 04 - xiaohe
   - 🇸🇪 SE 05 - xiaohe
-  - 🇸🇪 SE 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -109,6 +94,5 @@ proxy-groups:
   - 🇸🇪 SE 03 - xiaohe
   - 🇸🇪 SE 04 - xiaohe
   - 🇸🇪 SE 05 - xiaohe
-  - 🇸🇪 SE 06 - xiaohe
 rules:
 - MATCH,PROXIES
