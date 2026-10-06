@@ -6,18 +6,25 @@ log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - xiaohe
   type: ss
-  server: 20.166.33.115
+  server: 20.223.236.165
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: xyn9JRjicrWOWqAJ
+  password: CNL3mxdfZKiPKizL
   udp: true
 - name: 🇮🇪 IE 02 - xiaohe
-  type: ss
-  server: 20.166.33.115
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: xyn9JRjicrWOWqAJ
+  type: vless
+  server: 23.95.225.10
+  port: 8443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇮🇪 IE 03 - xiaohe
   type: vless
   server: 23.95.225.10
@@ -34,10 +41,10 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 04 - xiaohe
   type: ss
-  server: 20.166.33.115
+  server: 20.223.236.165
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: xyn9JRjicrWOWqAJ
+  password: CNL3mxdfZKiPKizL
   udp: true
 proxy-groups:
 - name: PROXIES

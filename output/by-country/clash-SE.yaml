@@ -6,21 +6,49 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
   type: vless
-  server: 199.232.11.52
+  server: 94.143.231.146
   port: 443
-  uuid: 3134d744-0fa0-48a5-ac8d-3ffee2d76814
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ssl.fastly.com
+  servername: sub.merky.top
   network: ws
   ws-opts:
-    path: /
+    path: /merky-connect/de6/
     headers:
-      Host: swedwneeji.global.ssl.fastly.net.
+      Host: sub.merky.top
 - name: 🇸🇪 SE 02 - xiaohe
   type: vless
-  server: sub.merky.top
+  server: 94.143.231.146
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
+- name: 🇸🇪 SE 03 - xiaohe
+  type: vless
+  server: 94.143.231.146
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
+- name: 🇸🇪 SE 04 - xiaohe
+  type: vless
+  server: 94.143.231.146
   port: 443
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
@@ -39,6 +67,8 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - xiaohe
   - 🇸🇪 SE 02 - xiaohe
+  - 🇸🇪 SE 03 - xiaohe
+  - 🇸🇪 SE 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +76,7 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - xiaohe
   - 🇸🇪 SE 02 - xiaohe
+  - 🇸🇪 SE 03 - xiaohe
+  - 🇸🇪 SE 04 - xiaohe
 rules:
 - MATCH,PROXIES
