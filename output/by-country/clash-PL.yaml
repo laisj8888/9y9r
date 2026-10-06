@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 70.34.252.154
+  server: 70.34.255.101
   port: 80
-  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,21 +16,20 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 70.34.252.154
+      Host: 70.34.255.101
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
-  server: iiproxy8.iiproxy.com
-  port: 8443
-  uuid: 806fa224-44f7-4c1b-b7a3-05bfdfdfbf87
+  server: 70.34.255.101
+  port: 80
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: iiproxy8.iiproxy.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: iiproxy8.iiproxy.com
+      Host: 70.34.255.101
 - name: 🇵🇱 PL 03 - xiaohe
   type: vless
   server: 70.34.252.154
@@ -46,30 +45,32 @@ proxies:
       Host: 70.34.252.154
 - name: 🇵🇱 PL 04 - xiaohe
   type: vless
-  server: 70.34.255.101
-  port: 80
-  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+  server: 149.50.105.60
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: bab-6.site
   network: ws
   ws-opts:
-    path: /
+    path: /vws/
     headers:
-      Host: 70.34.255.101
+      Host: bab-6.site
 - name: 🇵🇱 PL 05 - xiaohe
   type: vless
-  server: 70.34.252.154
-  port: 80
-  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
+  server: iiproxy8.iiproxy.com
+  port: 8443
+  uuid: 806fa224-44f7-4c1b-b7a3-05bfdfdfbf87
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: iiproxy8.iiproxy.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 70.34.252.154
+      Host: iiproxy8.iiproxy.com
 - name: 🇵🇱 PL 06 - xiaohe
   type: vless
   server: 70.34.255.101
@@ -96,6 +97,60 @@ proxies:
     path: /
     headers:
       Host: 70.34.252.154
+- name: 🇵🇱 PL 08 - xiaohe
+  type: vless
+  server: 70.34.252.154
+  port: 80
+  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 70.34.252.154
+- name: 🇵🇱 PL 09 - xiaohe
+  type: vless
+  server: 2.56.172.107
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
+  network: ws
+  ws-opts:
+    path: /glasspanel/guest000_0_5de14443985f/
+    headers:
+      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
+- name: 🇵🇱 PL 10 - xiaohe
+  type: vless
+  server: 70.34.255.101
+  port: 80
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 70.34.255.101
+- name: 🇵🇱 PL 11 - xiaohe
+  type: vless
+  server: iiproxy8.iiproxy.com
+  port: 8443
+  uuid: 806fa224-44f7-4c1b-b7a3-05bfdfdfbf87
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: iiproxy8.iiproxy.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: iiproxy8.iiproxy.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -108,6 +163,10 @@ proxy-groups:
   - 🇵🇱 PL 05 - xiaohe
   - 🇵🇱 PL 06 - xiaohe
   - 🇵🇱 PL 07 - xiaohe
+  - 🇵🇱 PL 08 - xiaohe
+  - 🇵🇱 PL 09 - xiaohe
+  - 🇵🇱 PL 10 - xiaohe
+  - 🇵🇱 PL 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -120,5 +179,9 @@ proxy-groups:
   - 🇵🇱 PL 05 - xiaohe
   - 🇵🇱 PL 06 - xiaohe
   - 🇵🇱 PL 07 - xiaohe
+  - 🇵🇱 PL 08 - xiaohe
+  - 🇵🇱 PL 09 - xiaohe
+  - 🇵🇱 PL 10 - xiaohe
+  - 🇵🇱 PL 11 - xiaohe
 rules:
 - MATCH,PROXIES

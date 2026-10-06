@@ -5,12 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - xiaohe
-  type: ss
-  server: n1.cover20.ir
-  port: 38760
-  cipher: chacha20-ietf-poly1305
-  password: ugs2X66x2PDZGH6TdLDhp/eyWI+iyoQBVCppss9PeTI=
+  type: vless
+  server: p2tun0.greewebservices.ir
+  port: 28820
+  uuid: af3a0935-2216-48a0-b371-e19d2f0692f4
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+  servername: play.google.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
