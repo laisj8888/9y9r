@@ -4,9 +4,16 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  type: ss
+  server: 211.174.113.172
+  port: 49642
+  cipher: aes-256-gcm
+  password: ac9c0a7b
+  udp: true
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   type: vless
-  server: 60.248.219.78
+  server: 59.125.69.23
   port: 443
   uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   udp: true
@@ -17,32 +24,34 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  type: vmess
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16113
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+      Host: 59.125.69.23
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  type: vless
+  server: 172.64.80.1
+  port: 8880
+  uuid: 75e19908-ecd0-4c71-99d2-4f343a52a4d9
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
-  type: vless
-  server: 103.180.20.108
-  port: 8443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
   network: ws
   ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+      Host: delicate-hall-3f93.239-23c.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  type: vless
+  server: 104.18.189.234
+  port: 8880
+  uuid: a5c7e18f-1701-46ed-8f42-00eb078d9445
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: weathered-snow-b87b.292-455.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
   type: vless
   server: 188.114.97.6
   port: 443
@@ -56,7 +65,7 @@ proxies:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
   type: vless
   server: hinet1.2yly.com
   port: 24215
@@ -68,61 +77,55 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
-  type: ss
-  server: ce1fc2d8.krkt.hkssip.com
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
-  udp: true
 - name: 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaohe
   type: vmess
   server: dog-hk.kunlun01dns.com
-  port: 21021
+  port: 21018
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 08 (家宽) - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 08 (家宽) - xiaohe
   type: vless
-  server: 104.18.46.234
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 103.180.20.108
+  port: 8443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: 103.180.20.108
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaohe
-  - 🇫🇷 法国 (France) 08 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 08 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaohe
-  - 🇫🇷 法国 (France) 08 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 08 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
