@@ -5,33 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - xiaohe
-  type: vless
-  server: 23.95.225.10
-  port: 8443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  type: ss
+  server: 20.123.11.204
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: H0gtOZkrqraldrhM
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
 - name: 🇮🇪 IE 02 - xiaohe
-  type: vless
-  server: 23.95.225.10
-  port: 8443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  type: ss
+  server: 20.123.11.204
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: H0gtOZkrqraldrhM
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
 - name: 🇮🇪 IE 03 - xiaohe
   type: vless
   server: 23.95.225.10
@@ -43,9 +29,176 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇮🇪 IE 04 - xiaohe
+  type: vless
+  server: 23.95.225.10
+  port: 8443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇮🇪 IE 05 - xiaohe
+  type: ss
+  server: 20.123.11.204
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: t1eiTbNnl7rpe1il
+  udp: true
+- name: 🇮🇪 IE 06 - xiaohe
+  type: ss
+  server: 20.123.11.204
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: vGhwxK49FIrZv7SX
+  udp: true
+- name: 🇮🇪 IE 07 - xiaohe
+  type: ss
+  server: 20.123.11.204
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: t1eiTbNnl7rpe1il
+  udp: true
+- name: 🇮🇪 IE 08 - xiaohe
+  type: ss
+  server: 20.123.11.204
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: t1eiTbNnl7rpe1il
+  udp: true
+- name: 🇮🇪 IE 09 - xiaohe
+  type: ss
+  server: 20.123.11.204
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: t1eiTbNnl7rpe1il
+  udp: true
+- name: 🇮🇪 IE 10 - xiaohe
+  type: ss
+  server: 20.123.11.204
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: H0gtOZkrqraldrhM
+  udp: true
+- name: 🇮🇪 IE 11 - xiaohe
+  type: vless
+  server: 23.95.225.10
+  port: 8443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇮🇪 IE 12 - xiaohe
+  type: ss
+  server: 20.123.11.204
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: t1eiTbNnl7rpe1il
+  udp: true
+- name: 🇮🇪 IE 13 - xiaohe
+  type: ss
+  server: 20.123.11.204
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: t1eiTbNnl7rpe1il
+  udp: true
+- name: 🇮🇪 IE 14 - xiaohe
+  type: ss
+  server: 20.123.11.204
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: H0gtOZkrqraldrhM
+  udp: true
+- name: 🇮🇪 IE 15 - xiaohe
+  type: ss
+  server: 20.123.11.204
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: vGhwxK49FIrZv7SX
+  udp: true
+- name: 🇮🇪 IE 16 - xiaohe
+  type: ss
+  server: 20.123.11.204
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: t1eiTbNnl7rpe1il
+  udp: true
+- name: 🇮🇪 IE 17 - xiaohe
+  type: ss
+  server: 20.123.11.204
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: H0gtOZkrqraldrhM
+  udp: true
+- name: 🇮🇪 IE 18 - xiaohe
+  type: vless
+  server: 8.34.70.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime09.workers.dev
+- name: 🇮🇪 IE 19 - xiaohe
+  type: ss
+  server: 20.123.11.204
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: H0gtOZkrqraldrhM
+  udp: true
+- name: 🇮🇪 IE 20 - xiaohe
+  type: ss
+  server: 20.123.11.204
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: H0gtOZkrqraldrhM
+  udp: true
+- name: 🇮🇪 IE 21 - xiaohe
+  type: ss
+  server: 20.123.11.204
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: H0gtOZkrqraldrhM
+  udp: true
+- name: 🇮🇪 IE 22 - xiaohe
+  type: vless
+  server: 23.95.225.10
+  port: 8443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇮🇪 IE 23 - xiaohe
+  type: ss
+  server: 20.123.11.204
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: vGhwxK49FIrZv7SX
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +207,26 @@ proxy-groups:
   - 🇮🇪 IE 01 - xiaohe
   - 🇮🇪 IE 02 - xiaohe
   - 🇮🇪 IE 03 - xiaohe
+  - 🇮🇪 IE 04 - xiaohe
+  - 🇮🇪 IE 05 - xiaohe
+  - 🇮🇪 IE 06 - xiaohe
+  - 🇮🇪 IE 07 - xiaohe
+  - 🇮🇪 IE 08 - xiaohe
+  - 🇮🇪 IE 09 - xiaohe
+  - 🇮🇪 IE 10 - xiaohe
+  - 🇮🇪 IE 11 - xiaohe
+  - 🇮🇪 IE 12 - xiaohe
+  - 🇮🇪 IE 13 - xiaohe
+  - 🇮🇪 IE 14 - xiaohe
+  - 🇮🇪 IE 15 - xiaohe
+  - 🇮🇪 IE 16 - xiaohe
+  - 🇮🇪 IE 17 - xiaohe
+  - 🇮🇪 IE 18 - xiaohe
+  - 🇮🇪 IE 19 - xiaohe
+  - 🇮🇪 IE 20 - xiaohe
+  - 🇮🇪 IE 21 - xiaohe
+  - 🇮🇪 IE 22 - xiaohe
+  - 🇮🇪 IE 23 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +235,25 @@ proxy-groups:
   - 🇮🇪 IE 01 - xiaohe
   - 🇮🇪 IE 02 - xiaohe
   - 🇮🇪 IE 03 - xiaohe
+  - 🇮🇪 IE 04 - xiaohe
+  - 🇮🇪 IE 05 - xiaohe
+  - 🇮🇪 IE 06 - xiaohe
+  - 🇮🇪 IE 07 - xiaohe
+  - 🇮🇪 IE 08 - xiaohe
+  - 🇮🇪 IE 09 - xiaohe
+  - 🇮🇪 IE 10 - xiaohe
+  - 🇮🇪 IE 11 - xiaohe
+  - 🇮🇪 IE 12 - xiaohe
+  - 🇮🇪 IE 13 - xiaohe
+  - 🇮🇪 IE 14 - xiaohe
+  - 🇮🇪 IE 15 - xiaohe
+  - 🇮🇪 IE 16 - xiaohe
+  - 🇮🇪 IE 17 - xiaohe
+  - 🇮🇪 IE 18 - xiaohe
+  - 🇮🇪 IE 19 - xiaohe
+  - 🇮🇪 IE 20 - xiaohe
+  - 🇮🇪 IE 21 - xiaohe
+  - 🇮🇪 IE 22 - xiaohe
+  - 🇮🇪 IE 23 - xiaohe
 rules:
 - MATCH,PROXIES
