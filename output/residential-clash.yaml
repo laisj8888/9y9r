@@ -4,7 +4,17 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  type: vmess
+  server: dog-hk.kunlun01dns.com
+  port: 21022
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   type: vless
   server: 60.248.219.54
   port: 443
@@ -17,17 +27,7 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  type: vmess
-  server: dog-hk.kunlun01dns.com
-  port: 21018
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+      Host: 60.248.219.54
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   type: vless
   server: hinet1.2yly.com
@@ -40,7 +40,33 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  type: vless
+  server: 104.17.170.132
+  port: 8880
+  uuid: 49a9aa25-443b-4fab-9a85-066dd5396c57
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: mute-river-6aee.421-bd7.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
+  type: vless
+  server: damp-surf-aacf.296-8ed.workers.dev
+  port: 8880
+  uuid: b4883d27-3151-4adf-92b1-841c0dccd1ea
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: damp-surf-aacf.296-8ed.workers.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -54,104 +80,27 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 103.180.20.108
-- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
-  type: vless
-  server: 104.16.25.46
-  port: 8880
-  uuid: f6e14309-5cff-4f5d-bce1-06a260159bbe
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: steep-bread-32f0.92-d12.workers.dev
-- name: 🇮🇩 ID 06 (家宽) - xiaohe
-  type: vless
-  server: 162.120.94.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime07.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaohe
-  type: vless
-  server: 104.17.64.70
-  port: 8880
-  uuid: f6e14309-5cff-4f5d-bce1-06a260159bbe
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: steep-bread-32f0.92-d12.workers.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 08 (家宽) - xiaohe
-  type: vmess
-  server: dog-hk.kunlun01dns.com
-  port: 21021
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - xiaohe
-  type: vmess
-  server: dog-hk.kunlun01dns.com
-  port: 21020
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 (家宽) - xiaohe
-  type: vmess
-  server: zfd-hkv1.kunlun01dns.com
-  port: 16114
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
-  - 🇮🇩 ID 06 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 08 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 10 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
-  - 🇮🇩 ID 06 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 08 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 10 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

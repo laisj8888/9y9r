@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - xiaohe
   type: ss
-  server: 102.37.156.224
+  server: 20.164.212.146
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
+  password: e6UqAb4130ycM7qM
   udp: true
 - name: 🇿🇦 ZA 02 - xiaohe
   type: ss
@@ -20,45 +20,45 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 03 - xiaohe
   type: ss
-  server: 20.164.212.146
-  port: 443
+  server: 102.133.165.160
+  port: 16233
   cipher: chacha20-ietf-poly1305
-  password: e6UqAb4130ycM7qM
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 - name: 🇿🇦 ZA 04 - xiaohe
+  type: ss
+  server: 102.37.156.224
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
+  udp: true
+- name: 🇿🇦 ZA 05 - xiaohe
   type: ss
   server: 20.164.212.146
   port: 443
   cipher: chacha20-ietf-poly1305
   password: e6UqAb4130ycM7qM
   udp: true
-- name: 🇿🇦 ZA 05 - xiaohe
+- name: 🇿🇦 ZA 06 - xiaohe
   type: ss
   server: 139.84.247.164
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: tfAcRikawhNoZAhu
   udp: true
-- name: 🇿🇦 ZA 06 - xiaohe
+- name: 🇿🇦 ZA 07 - xiaohe
   type: ss
   server: 20.164.212.146
   port: 443
   cipher: chacha20-ietf-poly1305
   password: e6UqAb4130ycM7qM
   udp: true
-- name: 🇿🇦 ZA 07 - xiaohe
-  type: ss
-  server: 102.133.165.160
-  port: 16233
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  udp: true
 - name: 🇿🇦 ZA 08 - xiaohe
   type: ss
-  server: 102.133.165.160
-  port: 16233
+  server: 20.164.212.146
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  password: e6UqAb4130ycM7qM
   udp: true
 - name: 🇿🇦 ZA 09 - xiaohe
   type: ss
@@ -69,24 +69,32 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 10 - xiaohe
   type: ss
+  server: 102.133.165.160
+  port: 16233
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  udp: true
+- name: 🇿🇦 ZA 11 - xiaohe
+  type: ss
   server: 20.164.212.146
   port: 443
   cipher: chacha20-ietf-poly1305
   password: e6UqAb4130ycM7qM
   udp: true
-- name: 🇿🇦 ZA 11 - xiaohe
-  type: vless
-  server: 102.177.189.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+- name: 🇿🇦 ZA 12 - xiaohe
+  type: ss
+  server: 20.164.212.146
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: e6UqAb4130ycM7qM
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime29.workers.dev
+- name: 🇿🇦 ZA 13 - xiaohe
+  type: ss
+  server: 20.164.212.146
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: e6UqAb4130ycM7qM
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -103,6 +111,8 @@ proxy-groups:
   - 🇿🇦 ZA 09 - xiaohe
   - 🇿🇦 ZA 10 - xiaohe
   - 🇿🇦 ZA 11 - xiaohe
+  - 🇿🇦 ZA 12 - xiaohe
+  - 🇿🇦 ZA 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -119,5 +129,7 @@ proxy-groups:
   - 🇿🇦 ZA 09 - xiaohe
   - 🇿🇦 ZA 10 - xiaohe
   - 🇿🇦 ZA 11 - xiaohe
+  - 🇿🇦 ZA 12 - xiaohe
+  - 🇿🇦 ZA 13 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇩 MD 01 - xiaohe
+- name: 🇰🇬 KG 01 - xiaohe
   type: vless
-  server: 185.153.198.86
-  port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  server: www.baipiao.eu.org
+  port: 8880
+  uuid: d593c88a-496b-4889-968c-6af644021467
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: free.cndyw.ggff.net
   network: ws
   ws-opts:
-    path: pyip=bpb.yousef.isegaro.com
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: free.cndyw.ggff.net
+      Host: white-disk-79ed.476.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇩 MD 01 - xiaohe
+  - 🇰🇬 KG 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇩 MD 01 - xiaohe
+  - 🇰🇬 KG 01 - xiaohe
 rules:
 - MATCH,PROXIES
