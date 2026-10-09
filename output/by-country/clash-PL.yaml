@@ -7,7 +7,7 @@ proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
   server: 95.85.253.241
-  port: 2083
+  port: 2087
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
@@ -16,7 +16,7 @@ proxies:
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
   server: 95.85.253.241
-  port: 2083
+  port: 2053
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
@@ -33,6 +33,24 @@ proxies:
   servername: 95.85.253.241
 - name: 🇵🇱 PL 04 - xiaohe
   type: vless
+  server: pl.flen-vpn.xyz
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 05 - xiaohe
+  type: vless
+  server: 95.85.253.241
+  port: 2087
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 95.85.253.241
+- name: 🇵🇱 PL 06 - xiaohe
+  type: vless
   server: 95.85.253.241
   port: 2053
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
@@ -40,7 +58,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 95.85.253.241
-- name: 🇵🇱 PL 05 - xiaohe
+- name: 🇵🇱 PL 07 - xiaohe
   type: vless
   server: 95.85.253.241
   port: 8443
@@ -54,28 +72,10 @@ proxies:
     path: /ws-cdn1-vless
     headers:
       Host: pl.fastmirror-labs.xyz
-- name: 🇵🇱 PL 06 - xiaohe
-  type: vless
-  server: 95.85.253.241
-  port: 2053
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 07 - xiaohe
-  type: vless
-  server: 95.85.253.241
-  port: 2087
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
 - name: 🇵🇱 PL 08 - xiaohe
   type: vless
   server: 95.85.253.241
-  port: 2087
+  port: 2083
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
@@ -93,7 +93,7 @@ proxies:
 - name: 🇵🇱 PL 10 - xiaohe
   type: vless
   server: 95.85.253.241
-  port: 2083
+  port: 2053
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
@@ -111,7 +111,7 @@ proxies:
 - name: 🇵🇱 PL 12 - xiaohe
   type: vless
   server: 95.85.253.241
-  port: 2083
+  port: 2053
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
@@ -120,7 +120,25 @@ proxies:
 - name: 🇵🇱 PL 13 - xiaohe
   type: vless
   server: 95.85.253.241
+  port: 2083
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 95.85.253.241
+- name: 🇵🇱 PL 14 - xiaohe
+  type: vless
+  server: 95.85.253.241
   port: 2087
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 95.85.253.241
+- name: 🇵🇱 PL 15 - xiaohe
+  type: vless
+  server: 95.85.253.241
+  port: 2083
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
@@ -144,6 +162,8 @@ proxy-groups:
   - 🇵🇱 PL 11 - xiaohe
   - 🇵🇱 PL 12 - xiaohe
   - 🇵🇱 PL 13 - xiaohe
+  - 🇵🇱 PL 14 - xiaohe
+  - 🇵🇱 PL 15 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -162,5 +182,7 @@ proxy-groups:
   - 🇵🇱 PL 11 - xiaohe
   - 🇵🇱 PL 12 - xiaohe
   - 🇵🇱 PL 13 - xiaohe
+  - 🇵🇱 PL 14 - xiaohe
+  - 🇵🇱 PL 15 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -12,33 +12,25 @@ proxies:
   password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
 - name: 🇷🇴 RO 02 - xiaohe
-  type: vless
-  server: 46.183.16.4
-  port: 2087
-  uuid: 69d76969-4c52-40f5-ac1d-303571634362
+  type: ss
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ro1.b0w.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 46.183.16.4
 - name: 🇷🇴 RO 03 - xiaohe
   type: vless
-  server: 46.183.16.4
-  port: 2087
-  uuid: 69d76969-4c52-40f5-ac1d-303571634362
+  server: 45.12.30.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ro1.b0w.ir
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 46.183.16.4
+      Host: vms.lifetime28.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
