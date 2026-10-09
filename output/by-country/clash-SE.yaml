@@ -20,7 +20,7 @@ proxies:
       Host: sub.merky.top
 - name: 🇸🇪 SE 02 - xiaohe
   type: vless
-  server: sub.merky.top
+  server: 94.143.231.146
   port: 443
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
@@ -60,62 +60,6 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
-- name: 🇸🇪 SE 05 - xiaohe
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 06 - xiaohe
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 07 - xiaohe
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 08 - xiaohe
-  type: vless
-  server: sub.merky.top
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -125,10 +69,6 @@ proxy-groups:
   - 🇸🇪 SE 02 - xiaohe
   - 🇸🇪 SE 03 - xiaohe
   - 🇸🇪 SE 04 - xiaohe
-  - 🇸🇪 SE 05 - xiaohe
-  - 🇸🇪 SE 06 - xiaohe
-  - 🇸🇪 SE 07 - xiaohe
-  - 🇸🇪 SE 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -138,9 +78,5 @@ proxy-groups:
   - 🇸🇪 SE 02 - xiaohe
   - 🇸🇪 SE 03 - xiaohe
   - 🇸🇪 SE 04 - xiaohe
-  - 🇸🇪 SE 05 - xiaohe
-  - 🇸🇪 SE 06 - xiaohe
-  - 🇸🇪 SE 07 - xiaohe
-  - 🇸🇪 SE 08 - xiaohe
 rules:
 - MATCH,PROXIES

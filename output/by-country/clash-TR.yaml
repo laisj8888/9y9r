@@ -5,41 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  type: ss
-  server: clients.n9ne.com.tr
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: SqJYP4gDS1I6XGkioX3RCE3BimKj8dtj
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  type: vless
-  server: 203.202.232.211
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  type: vless
-  server: 203.202.232.211
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   type: vless
   server: 203.202.232.211
   port: 443
@@ -53,40 +18,7 @@ proxies:
     path: /@Net2ray
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  type: ss
-  server: clients.n9ne.com.tr
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: SqJYP4gDS1I6XGkioX3RCE3BimKj8dtj
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  type: vless
-  server: 155.103.71.142
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chromefp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
-  type: vless
-  server: docs.n9ne.com.tr
-  port: 8444
-  uuid: e81e1114-99b5-4fea-aafc-84426e845a14
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: DhMAmplGrCBD7hwyDu7u2unWxsxMpZVKk_d7e3OZCWE
-  servername: n9ne.com.tr
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -97,8 +29,16 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 09 - xiaohe
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   type: vless
   server: 155.103.71.142
   port: 443
@@ -112,6 +52,64 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  type: vless
+  server: 203.202.232.211
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  type: vless
+  server: 155.103.71.142
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chromefp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 09 - xiaohe
+  type: vless
+  server: 91.228.186.7
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
 - name: 🇹🇷 土耳其 (Turkey) 10 - xiaohe
   type: vless
   server: 203.202.232.211
@@ -128,18 +126,18 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 11 - xiaohe
   type: vless
-  server: 31.40.204.131
+  server: 203.202.232.211
   port: 443
-  uuid: 86b6c7ba-d613-4567-962a-acfdad5c22db
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
-      Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+      Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 12 - xiaohe
   type: vless
   server: 203.202.232.211
@@ -151,61 +149,29 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp
     headers:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 13 - xiaohe
-  type: vless
-  server: docs.n9ne.com.tr
-  port: 8444
-  uuid: e81e1114-99b5-4fea-aafc-84426e845a14
+  type: vmess
+  server: 206.1.103.150
+  port: 62396
+  uuid: 5551d2e8-d3d4-42d2-95c8-fb780b4f6e6d
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: DhMAmplGrCBD7hwyDu7u2unWxsxMpZVKk_d7e3OZCWE
-  servername: n9ne.com.tr
-  client-fingerprint: qq
 - name: 🇹🇷 土耳其 (Turkey) 14 - xiaohe
-  type: vless
-  server: 203.202.232.211
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  type: vmess
+  server: 206.1.103.150
+  port: 64035
+  uuid: 5551d2e8-d3d4-42d2-95c8-fb780b4f6e6d
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 15 - xiaohe
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 16 - xiaohe
-  type: vless
-  server: 155.103.71.142
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -225,8 +191,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 12 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 13 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 14 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 15 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 16 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -246,7 +210,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 12 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 13 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 14 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 15 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 16 - xiaohe
 rules:
 - MATCH,PROXIES
