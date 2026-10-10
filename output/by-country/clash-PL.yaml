@@ -6,13 +6,13 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  server: 95.85.253.241
+  port: 2087
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
+  servername: 95.85.253.241
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
   server: 95.85.253.241
@@ -25,7 +25,7 @@ proxies:
 - name: 🇵🇱 PL 03 - xiaohe
   type: vless
   server: 95.85.253.241
-  port: 2083
+  port: 2087
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
@@ -34,7 +34,7 @@ proxies:
 - name: 🇵🇱 PL 04 - xiaohe
   type: vless
   server: 95.85.253.241
-  port: 2083
+  port: 2087
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
@@ -42,7 +42,7 @@ proxies:
   servername: 95.85.253.241
 - name: 🇵🇱 PL 05 - xiaohe
   type: vless
-  server: 2.26.225.89
+  server: pl.flen-vpn.xyz
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
@@ -51,13 +51,18 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 06 - xiaohe
   type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
+  servername: my.kempekl.online
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
 - name: 🇵🇱 PL 07 - xiaohe
   type: vless
   server: 95.85.253.241
@@ -68,6 +73,15 @@ proxies:
   skip-cert-verify: true
   servername: 95.85.253.241
 - name: 🇵🇱 PL 08 - xiaohe
+  type: vless
+  server: 95.85.253.241
+  port: 2053
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 95.85.253.241
+- name: 🇵🇱 PL 09 - xiaohe
   type: vless
   server: 95.85.253.241
   port: 8443
@@ -81,28 +95,19 @@ proxies:
     path: /ws-cdn1-vless
     headers:
       Host: pl.fastmirror-labs.xyz
-- name: 🇵🇱 PL 09 - xiaohe
+- name: 🇵🇱 PL 10 - xiaohe
   type: vless
-  server: pl.flen-vpn.xyz
+  server: 2.26.225.89
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
   tls: true
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 10 - xiaohe
-  type: vless
-  server: 95.85.253.241
-  port: 2087
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
 - name: 🇵🇱 PL 11 - xiaohe
   type: vless
   server: 95.85.253.241
-  port: 2087
+  port: 2083
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
@@ -119,13 +124,13 @@ proxies:
   servername: 95.85.253.241
 - name: 🇵🇱 PL 13 - xiaohe
   type: vless
-  server: pl.flen-vpn.xyz
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  server: 95.85.253.241
+  port: 2083
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
+  servername: 95.85.253.241
 - name: 🇵🇱 PL 14 - xiaohe
   type: vless
   server: 95.85.253.241
@@ -138,7 +143,7 @@ proxies:
 - name: 🇵🇱 PL 15 - xiaohe
   type: vless
   server: 95.85.253.241
-  port: 2087
+  port: 2083
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
@@ -146,22 +151,25 @@ proxies:
   servername: 95.85.253.241
 - name: 🇵🇱 PL 16 - xiaohe
   type: vless
-  server: 95.85.253.241
-  port: 2087
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 95.85.253.241
+  servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 17 - xiaohe
   type: vless
-  server: 95.85.253.241
-  port: 2053
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  server: pl-1-1.unturned-rust-dead.lol
+  port: 443
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 95.85.253.241
+  reality-opts:
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+  servername: pl-1-1.unturned-rust-dead.lol
+  client-fingerprint: random
 - name: 🇵🇱 PL 18 - xiaohe
   type: vless
   server: 95.85.253.241
@@ -174,13 +182,22 @@ proxies:
 - name: 🇵🇱 PL 19 - xiaohe
   type: vless
   server: 95.85.253.241
-  port: 2053
+  port: 2083
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
   skip-cert-verify: true
   servername: 95.85.253.241
 - name: 🇵🇱 PL 20 - xiaohe
+  type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 21 - xiaohe
   type: vless
   server: 91.215.43.248
   port: 443
@@ -194,19 +211,10 @@ proxies:
     path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
     headers:
       Host: my.kempekl.online
-- name: 🇵🇱 PL 21 - xiaohe
-  type: vless
-  server: 95.85.253.241
-  port: 2087
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
 - name: 🇵🇱 PL 22 - xiaohe
   type: vless
   server: 95.85.253.241
-  port: 2083
+  port: 2053
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
@@ -255,7 +263,7 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 27 - xiaohe
   type: vless
-  server: 2.26.225.89
+  server: pl.flen-vpn.xyz
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
@@ -263,6 +271,24 @@ proxies:
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 28 - xiaohe
+  type: vless
+  server: 95.85.253.241
+  port: 2083
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 95.85.253.241
+- name: 🇵🇱 PL 29 - xiaohe
+  type: vless
+  server: 95.85.253.241
+  port: 2087
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 95.85.253.241
+- name: 🇵🇱 PL 30 - xiaohe
   type: vless
   server: 91.215.43.248
   port: 443
@@ -276,7 +302,21 @@ proxies:
     path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
     headers:
       Host: my.kempekl.online
-- name: 🇵🇱 PL 29 - xiaohe
+- name: 🇵🇱 PL 31 - xiaohe
+  type: vless
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: my.kempekl.online
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
+- name: 🇵🇱 PL 32 - xiaohe
   type: vless
   server: 95.85.253.241
   port: 2087
@@ -285,16 +325,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 95.85.253.241
-- name: 🇵🇱 PL 30 - xiaohe
-  type: vless
-  server: 95.85.253.241
-  port: 2083
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 31 - xiaohe
+- name: 🇵🇱 PL 33 - xiaohe
   type: vless
   server: 2.26.225.89
   port: 8443
@@ -303,28 +334,10 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 32 - xiaohe
-  type: vless
-  server: 95.85.253.241
-  port: 2083
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 33 - xiaohe
-  type: vless
-  server: 95.85.253.241
-  port: 2083
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
 - name: 🇵🇱 PL 34 - xiaohe
   type: vless
   server: 95.85.253.241
-  port: 2053
+  port: 2083
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
@@ -353,6 +366,15 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 37 - xiaohe
   type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 38 - xiaohe
+  type: vless
   server: 95.85.253.241
   port: 2083
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
@@ -360,7 +382,25 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 95.85.253.241
-- name: 🇵🇱 PL 38 - xiaohe
+- name: 🇵🇱 PL 39 - xiaohe
+  type: vless
+  server: 95.85.253.241
+  port: 2053
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 95.85.253.241
+- name: 🇵🇱 PL 40 - xiaohe
+  type: vless
+  server: 95.85.253.241
+  port: 2053
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 95.85.253.241
+- name: 🇵🇱 PL 41 - xiaohe
   type: vless
   server: pl.flen-vpn.xyz
   port: 8443
@@ -412,6 +452,9 @@ proxy-groups:
   - 🇵🇱 PL 36 - xiaohe
   - 🇵🇱 PL 37 - xiaohe
   - 🇵🇱 PL 38 - xiaohe
+  - 🇵🇱 PL 39 - xiaohe
+  - 🇵🇱 PL 40 - xiaohe
+  - 🇵🇱 PL 41 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -455,5 +498,8 @@ proxy-groups:
   - 🇵🇱 PL 36 - xiaohe
   - 🇵🇱 PL 37 - xiaohe
   - 🇵🇱 PL 38 - xiaohe
+  - 🇵🇱 PL 39 - xiaohe
+  - 🇵🇱 PL 40 - xiaohe
+  - 🇵🇱 PL 41 - xiaohe
 rules:
 - MATCH,PROXIES
