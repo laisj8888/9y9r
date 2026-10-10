@@ -20,7 +20,7 @@ proxies:
       Host: ap2.directly.chat
 - name: 🇲🇩 MD 02 - xiaohe
   type: vless
-  server: ap2.directly.chat
+  server: 87.228.71.195
   port: 443
   uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
   udp: true
@@ -34,7 +34,7 @@ proxies:
       Host: ap2.directly.chat
 - name: 🇲🇩 MD 03 - xiaohe
   type: vless
-  server: ap2.directly.chat
+  server: 185.147.27.100
   port: 443
   uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
   udp: true
@@ -48,7 +48,7 @@ proxies:
       Host: ap2.directly.chat
 - name: 🇲🇩 MD 04 - xiaohe
   type: vless
-  server: ap2.directly.chat
+  server: 185.147.27.131
   port: 443
   uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
   udp: true
@@ -68,12 +68,26 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: ap2.directly.chat
   network: ws
   ws-opts:
     path: /md/1
     headers:
-      Host: ''
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 06 - xiaohe
+  type: vless
+  server: 185.147.27.196
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,6 +98,7 @@ proxy-groups:
   - 🇲🇩 MD 03 - xiaohe
   - 🇲🇩 MD 04 - xiaohe
   - 🇲🇩 MD 05 - xiaohe
+  - 🇲🇩 MD 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +109,6 @@ proxy-groups:
   - 🇲🇩 MD 03 - xiaohe
   - 🇲🇩 MD 04 - xiaohe
   - 🇲🇩 MD 05 - xiaohe
+  - 🇲🇩 MD 06 - xiaohe
 rules:
 - MATCH,PROXIES
