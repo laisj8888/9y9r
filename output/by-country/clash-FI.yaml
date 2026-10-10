@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
-  type: ss
-  server: 45.149.114.171
-  port: 777
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  type: vless
+  server: marz.zovip2.ir
+  port: 443
+  uuid: a95c18d0-1b39-4bc7-8521-b62b5ab3f3f7
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: marz.zovip2.ir
+  network: ws
+  ws-opts:
+    path: /gropcdn
+    headers:
+      Host: marz.zovip2.ir
 - name: 🇫🇮 FI 02 - xiaohe
   type: ss
   server: 185.103.110.68
@@ -19,53 +26,6 @@ proxies:
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
 - name: 🇫🇮 FI 03 - xiaohe
-  type: vless
-  server: 46.243.235.219
-  port: 6443
-  uuid: d1004cfe-c279-e865-d865-71964dbdf85d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: viksa.subsvdragontoo.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: viksa.subsvdragontoo.online
-- name: 🇫🇮 FI 04 - xiaohe
-  type: vless
-  server: 46.243.232.22
-  port: 8443
-  uuid: d1004cfe-c279-e865-d865-71964dbdf85d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdone.subsvdragontoo.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdone.subsvdragontoo.online
-- name: 🇫🇮 FI 05 - xiaohe
-  type: ss
-  server: 45.149.114.171
-  port: 777
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
-  udp: true
-- name: 🇫🇮 FI 06 - xiaohe
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 07 - xiaohe
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -77,49 +37,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 08 - xiaohe
-  type: vless
-  server: 46.243.232.22
-  port: 8443
-  uuid: d1004cfe-c279-e865-d865-71964dbdf85d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdone.subsvdragontoo.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdone.subsvdragontoo.online
-- name: 🇫🇮 FI 09 - xiaohe
-  type: vless
-  server: 46.243.232.22
-  port: 8443
-  uuid: d1004cfe-c279-e865-d865-71964dbdf85d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdone.subsvdragontoo.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdone.subsvdragontoo.online
-- name: 🇫🇮 FI 10 - xiaohe
-  type: ss
-  server: 185.103.110.66
-  port: 18280
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 11 - xiaohe
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 12 - xiaohe
+- name: 🇫🇮 FI 04 - xiaohe
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -131,27 +49,112 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 FI 13 - xiaohe
+- name: 🇫🇮 FI 05 - xiaohe
   type: vless
-  server: 46.243.235.219
-  port: 6443
-  uuid: d1004cfe-c279-e865-d865-71964dbdf85d
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: viksa.subsvdragontoo.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: viksa.subsvdragontoo.online
-- name: 🇫🇮 FI 14 - xiaohe
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 06 - xiaohe
   type: ss
   server: 185.103.110.66
   port: 18280
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
+- name: 🇫🇮 FI 07 - xiaohe
+  type: vless
+  server: finland02.azotvpn.xyz
+  port: 8443
+  uuid: 5a96c1fc-f167-44b9-9020-8f6867537d14
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fQ1M2sO50w5A3oM55Hfs8vmZ320I8VaKdzRqeXOMMnQ
+  servername: finland02.azotvpn.xyz
+  client-fingerprint: random
+- name: 🇫🇮 FI 08 - xiaohe
+  type: ss
+  server: 185.103.110.66
+  port: 18280
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 09 - xiaohe
+  type: ss
+  server: 45.149.114.171
+  port: 777
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  udp: true
+- name: 🇫🇮 FI 10 - xiaohe
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 11 - xiaohe
+  type: vless
+  server: marz.zovip2.ir
+  port: 443
+  uuid: a95c18d0-1b39-4bc7-8521-b62b5ab3f3f7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: marz.zovip2.ir
+  network: ws
+  ws-opts:
+    path: /gropcdn
+    headers:
+      Host: marz.zovip2.ir
+- name: 🇫🇮 FI 12 - xiaohe
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 13 - xiaohe
+  type: ss
+  server: 45.149.114.171
+  port: 777
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  udp: true
+- name: 🇫🇮 FI 14 - xiaohe
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: 31608e93-a701-4604-b8de-c55baa393937
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: speedtest.net
+  network: ws
+  ws-opts:
+    path: /?ed=2056
+    headers:
+      Host: mr_anonoijji.global.ssl.fastly.net
+- name: 🇫🇮 FI 15 - xiaohe
+  type: vless
+  server: finland02.azotvpn.xyz
+  port: 8443
+  uuid: 5a96c1fc-f167-44b9-9020-8f6867537d14
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fQ1M2sO50w5A3oM55Hfs8vmZ320I8VaKdzRqeXOMMnQ
+  servername: finland02.azotvpn.xyz
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -171,6 +174,7 @@ proxy-groups:
   - 🇫🇮 FI 12 - xiaohe
   - 🇫🇮 FI 13 - xiaohe
   - 🇫🇮 FI 14 - xiaohe
+  - 🇫🇮 FI 15 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -190,5 +194,6 @@ proxy-groups:
   - 🇫🇮 FI 12 - xiaohe
   - 🇫🇮 FI 13 - xiaohe
   - 🇫🇮 FI 14 - xiaohe
+  - 🇫🇮 FI 15 - xiaohe
 rules:
 - MATCH,PROXIES
