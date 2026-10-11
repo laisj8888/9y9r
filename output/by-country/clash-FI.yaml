@@ -5,37 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 02 - xiaohe
-  type: vless
-  server: feow.nomush.ir
-  port: 11497
-  uuid: 2c5f2d6e-d683-49f7-a12b-a95460b90a92
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: J3DhtzId04tRrOF9HmIxpv6QOGY1g6j2wJ_UtVKmimk
-  servername: dynu.com
-  client-fingerprint: qq
-- name: 🇫🇮 FI 03 - xiaohe
   type: ss
   server: 45.149.114.171
   port: 777
   cipher: chacha20-ietf-poly1305
   password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
   udp: true
-- name: 🇫🇮 FI 04 - xiaohe
+- name: 🇫🇮 FI 02 - xiaohe
+  type: ss
+  server: 45.149.114.171
+  port: 777
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  udp: true
+- name: 🇫🇮 FI 03 - xiaohe
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -47,13 +30,25 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 05 - xiaohe
+- name: 🇫🇮 FI 04 - xiaohe
   type: ss
-  server: 45.149.114.171
-  port: 777
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
+- name: 🇫🇮 FI 05 - xiaohe
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 06 - xiaohe
   type: vless
   server: 199.232.239.239
@@ -70,6 +65,32 @@ proxies:
       Host: mr_anonoijji.global.ssl.fastly.net
 - name: 🇫🇮 FI 07 - xiaohe
   type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: 31608e93-a701-4604-b8de-c55baa393937
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: speedtest.net
+  network: ws
+  ws-opts:
+    path: /?ed=2056
+    headers:
+      Host: mr_anonoijji.global.ssl.fastly.net
+- name: 🇫🇮 FI 08 - xiaohe
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 09 - xiaohe
+  type: vless
   server: 95.216.27.15
   port: 2053
   uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
@@ -80,38 +101,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 FI 08 - xiaohe
-  type: vless
-  server: feow.nomush.ir
-  port: 11497
-  uuid: 2c5f2d6e-d683-49f7-a12b-a95460b90a92
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: J3DhtzId04tRrOF9HmIxpv6QOGY1g6j2wJ_UtVKmimk
-  servername: dynu.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 09 - xiaohe
-  type: vless
-  server: 2.26.106.232
-  port: 8443
-  uuid: 5a96c1fc-f167-44b9-9020-8f6867537d14
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: fQ1M2sO50w5A3oM55Hfs8vmZ320I8VaKdzRqeXOMMnQ
-  servername: finland02.azotvpn.xyz
-  client-fingerprint: random
 - name: 🇫🇮 FI 10 - xiaohe
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 11 - xiaohe
   type: ss
   server: 185.103.110.66
   port: 18280
@@ -133,7 +123,6 @@ proxy-groups:
   - 🇫🇮 FI 08 - xiaohe
   - 🇫🇮 FI 09 - xiaohe
   - 🇫🇮 FI 10 - xiaohe
-  - 🇫🇮 FI 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -149,6 +138,5 @@ proxy-groups:
   - 🇫🇮 FI 08 - xiaohe
   - 🇫🇮 FI 09 - xiaohe
   - 🇫🇮 FI 10 - xiaohe
-  - 🇫🇮 FI 11 - xiaohe
 rules:
 - MATCH,PROXIES
