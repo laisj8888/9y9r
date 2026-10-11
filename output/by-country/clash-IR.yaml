@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - xiaohe
-  type: ss
-  server: p1tun2.greewebservices.ir
-  port: 2060
-  cipher: chacha20-ietf-poly1305
-  password: d-2PcXlLZncXvkDhqAdafg
+  type: vless
+  server: toping.zovip2.ir
+  port: 443
+  uuid: 9f9b66ba-e964-4e0e-be38-293134868a67
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: toping.zovip2.ir
+  network: ws
+  ws-opts:
+    path: /gropcdn
+    headers:
+      Host: toping.zovip2.ir
 proxy-groups:
 - name: PROXIES
   type: select
