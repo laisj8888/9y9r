@@ -19,20 +19,62 @@ proxies:
   password: YF329KNGVTUZ1qrH
   udp: true
 - name: 🇮🇪 IE 03 - xiaohe
-  type: ss
-  server: 20.123.1.55
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
+  type: vless
+  server: 23.95.225.10
+  port: 8443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇮🇪 IE 04 - xiaohe
+  type: vless
+  server: 23.95.225.10
+  port: 8443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇮🇪 IE 05 - xiaohe
   type: ss
   server: 20.123.1.55
   port: 443
   cipher: chacha20-ietf-poly1305
   password: YF329KNGVTUZ1qrH
   udp: true
-- name: 🇮🇪 IE 05 - xiaohe
+- name: 🇮🇪 IE 06 - xiaohe
+  type: ss
+  server: 20.123.1.55
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: YF329KNGVTUZ1qrH
+  udp: true
+- name: 🇮🇪 IE 07 - xiaohe
+  type: ss
+  server: 20.123.1.55
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: YF329KNGVTUZ1qrH
+  udp: true
+- name: 🇮🇪 IE 08 - xiaohe
+  type: ss
+  server: 20.123.1.55
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: YF329KNGVTUZ1qrH
+  udp: true
+- name: 🇮🇪 IE 09 - xiaohe
   type: vless
   server: 23.95.225.10
   port: 8443
@@ -46,12 +88,12 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇮🇪 IE 06 - xiaohe
+- name: 🇮🇪 IE 10 - xiaohe
   type: ss
-  server: 20.123.1.55
+  server: 20.234.97.18
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
+  password: GayYa2V7pUbJBfKu
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -64,6 +106,10 @@ proxy-groups:
   - 🇮🇪 IE 04 - xiaohe
   - 🇮🇪 IE 05 - xiaohe
   - 🇮🇪 IE 06 - xiaohe
+  - 🇮🇪 IE 07 - xiaohe
+  - 🇮🇪 IE 08 - xiaohe
+  - 🇮🇪 IE 09 - xiaohe
+  - 🇮🇪 IE 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,5 +121,9 @@ proxy-groups:
   - 🇮🇪 IE 04 - xiaohe
   - 🇮🇪 IE 05 - xiaohe
   - 🇮🇪 IE 06 - xiaohe
+  - 🇮🇪 IE 07 - xiaohe
+  - 🇮🇪 IE 08 - xiaohe
+  - 🇮🇪 IE 09 - xiaohe
+  - 🇮🇪 IE 10 - xiaohe
 rules:
 - MATCH,PROXIES
