@@ -5,16 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 VN 01 - xiaohe
-  type: vmess
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16256
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇻🇳 VN 02 - xiaohe
   type: vless
   server: 150.95.109.109
   port: 2086
@@ -22,6 +12,20 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇻🇳 VN 02 - xiaohe
+  type: vless
+  server: 103.161.178.72
+  port: 443
+  uuid: 81eed05f-e2d0-4944-9e48-caeb8d036557
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: us-lax.862400.xyz
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048fp=random
+    headers:
+      Host: us-lax.862400.xyz
 proxy-groups:
 - name: PROXIES
   type: select
