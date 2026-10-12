@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - xiaohe
   type: ss
-  server: 194.68.44.42
-  port: 64546
+  server: 154.46.31.106
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
 - name: 🇷🇴 RO 02 - xiaohe
   type: ss
@@ -19,11 +19,48 @@ proxies:
   password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
 - name: 🇷🇴 RO 03 - xiaohe
-  type: ss
-  server: 154.46.31.106
+  type: vless
+  server: autostream.top
   port: 443
+  uuid: 62610fc6-8333-41f9-9258-08915e4343ab
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: qs57RRflA_LrI4H5rFIgF0aoWM1P1dLrtd5Yi5NiRQ0
+  servername: cdnjs.com
+  client-fingerprint: chrome
+- name: 🇷🇴 RO 04 - xiaohe
+  type: vless
+  server: autostream.top
+  port: 443
+  uuid: 62610fc6-8333-41f9-9258-08915e4343ab
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: qs57RRflA_LrI4H5rFIgF0aoWM1P1dLrtd5Yi5NiRQ0
+  servername: cdnjs.com
+  client-fingerprint: firefox
+- name: 🇷🇴 RO 05 - xiaohe
+  type: vless
+  server: 8.34.70.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime09.workers.dev
+- name: 🇷🇴 RO 06 - xiaohe
+  type: ss
+  server: 194.68.44.42
+  port: 64546
   cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  password: U83u9OGpvSatIUW7LsWffr
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -33,6 +70,9 @@ proxy-groups:
   - 🇷🇴 RO 01 - xiaohe
   - 🇷🇴 RO 02 - xiaohe
   - 🇷🇴 RO 03 - xiaohe
+  - 🇷🇴 RO 04 - xiaohe
+  - 🇷🇴 RO 05 - xiaohe
+  - 🇷🇴 RO 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +81,8 @@ proxy-groups:
   - 🇷🇴 RO 01 - xiaohe
   - 🇷🇴 RO 02 - xiaohe
   - 🇷🇴 RO 03 - xiaohe
+  - 🇷🇴 RO 04 - xiaohe
+  - 🇷🇴 RO 05 - xiaohe
+  - 🇷🇴 RO 06 - xiaohe
 rules:
 - MATCH,PROXIES

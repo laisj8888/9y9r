@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - xiaohe
+  type: ss
+  server: 20.234.97.18
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: GayYa2V7pUbJBfKu
+  udp: true
+- name: 🇮🇪 IE 02 - xiaohe
+  type: ss
+  server: 20.234.97.18
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: GayYa2V7pUbJBfKu
+  udp: true
+- name: 🇮🇪 IE 03 - xiaohe
   type: vless
   server: 23.95.225.10
   port: 8443
@@ -18,83 +32,19 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇮🇪 IE 02 - xiaohe
-  type: vless
-  server: 23.95.225.10
-  port: 8443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇮🇪 IE 03 - xiaohe
-  type: ss
-  server: 20.123.1.55
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
-  udp: true
 - name: 🇮🇪 IE 04 - xiaohe
-  type: ss
-  server: 20.123.1.55
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
-  udp: true
-- name: 🇮🇪 IE 05 - xiaohe
-  type: ss
-  server: 20.123.1.55
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
-  udp: true
-- name: 🇮🇪 IE 06 - xiaohe
-  type: ss
-  server: 20.234.97.18
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: GayYa2V7pUbJBfKu
-  udp: true
-- name: 🇮🇪 IE 07 - xiaohe
-  type: ss
-  server: 20.123.1.55
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
-  udp: true
-- name: 🇮🇪 IE 08 - xiaohe
   type: vless
-  server: 23.95.225.10
-  port: 8443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 8.34.70.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ccc.010304.xyz
-- name: 🇮🇪 IE 09 - xiaohe
-  type: ss
-  server: 20.234.97.18
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: GayYa2V7pUbJBfKu
-  udp: true
-- name: 🇮🇪 IE 10 - xiaohe
-  type: ss
-  server: 20.123.1.55
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
-  udp: true
+      Host: vms.lifetime09.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -104,12 +54,6 @@ proxy-groups:
   - 🇮🇪 IE 02 - xiaohe
   - 🇮🇪 IE 03 - xiaohe
   - 🇮🇪 IE 04 - xiaohe
-  - 🇮🇪 IE 05 - xiaohe
-  - 🇮🇪 IE 06 - xiaohe
-  - 🇮🇪 IE 07 - xiaohe
-  - 🇮🇪 IE 08 - xiaohe
-  - 🇮🇪 IE 09 - xiaohe
-  - 🇮🇪 IE 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -119,11 +63,5 @@ proxy-groups:
   - 🇮🇪 IE 02 - xiaohe
   - 🇮🇪 IE 03 - xiaohe
   - 🇮🇪 IE 04 - xiaohe
-  - 🇮🇪 IE 05 - xiaohe
-  - 🇮🇪 IE 06 - xiaohe
-  - 🇮🇪 IE 07 - xiaohe
-  - 🇮🇪 IE 08 - xiaohe
-  - 🇮🇪 IE 09 - xiaohe
-  - 🇮🇪 IE 10 - xiaohe
 rules:
 - MATCH,PROXIES
