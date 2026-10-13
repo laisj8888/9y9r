@@ -15,18 +15,23 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /@Net2ray
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   type: vless
-  server: googol.wookshop.ir
-  port: 17915
-  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
+  server: 203.202.232.211
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: googol.wookshop.ir
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   type: vless
   server: 203.202.232.211
@@ -38,19 +43,26 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /@Net2ray
     headers:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   type: vless
-  server: 206.1.102.81
-  port: 17915
-  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: googol.wookshop.ir
 - name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   type: vless
   server: 203.202.232.211
   port: 443
@@ -64,15 +76,6 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  type: vless
-  server: googol.wookshop.ir
-  port: 17915
-  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: googol.wookshop.ir
 - name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
   type: vless
   server: 203.202.232.211
@@ -89,30 +92,17 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
   type: vless
-  server: test.keoplentuio.xyz
+  server: 151.241.226.201
   port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 09 - xiaohe
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 10 - xiaohe
-  type: vless
-  server: googol.wookshop.ir
-  port: 17915
-  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: googol.wookshop.ir
-- name: 🇹🇷 土耳其 (Turkey) 11 - xiaohe
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 09 - xiaohe
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -124,6 +114,24 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 10 - xiaohe
+  type: vless
+  server: 206.1.102.81
+  port: 17915
+  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: googol.wookshop.ir
+- name: 🇹🇷 土耳其 (Turkey) 11 - xiaohe
+  type: vless
+  server: googol.wookshop.ir
+  port: 17915
+  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: googol.wookshop.ir
 - name: 🇹🇷 土耳其 (Turkey) 12 - xiaohe
   type: vless
   server: test.keoplentuio.xyz
@@ -133,6 +141,70 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 13 - xiaohe
+  type: vless
+  server: 155.103.71.142
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 14 - xiaohe
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 15 - xiaohe
+  type: vless
+  server: googol.wookshop.ir
+  port: 17915
+  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: googol.wookshop.ir
+- name: 🇹🇷 土耳其 (Turkey) 16 - xiaohe
+  type: vless
+  server: 206.1.102.81
+  port: 17915
+  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: googol.wookshop.ir
+- name: 🇹🇷 土耳其 (Turkey) 17 - xiaohe
+  type: vless
+  server: googol.wookshop.ir
+  port: 17915
+  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: googol.wookshop.ir
+- name: 🇹🇷 土耳其 (Turkey) 18 - xiaohe
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 19 - xiaohe
+  type: ss
+  server: 94.184.42.18
+  port: 8880
+  cipher: chacha20-ietf-poly1305
+  password: AWVyUgWWLc4G47GNo_bx2w
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 20 - xiaohe
   type: vless
   server: 155.103.71.142
   port: 443
@@ -146,31 +218,6 @@ proxies:
     path: /ws
     headers:
       Host: a.cwvps.eu.org
-- name: 🇹🇷 土耳其 (Turkey) 14 - xiaohe
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 15 - xiaohe
-  type: vless
-  server: 206.1.102.81
-  port: 17915
-  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: googol.wookshop.ir
-- name: 🇹🇷 土耳其 (Turkey) 16 - xiaohe
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -192,6 +239,10 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 14 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 15 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 16 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 17 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 18 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 19 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 20 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -213,5 +264,9 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 14 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 15 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 16 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 17 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 18 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 19 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 20 - xiaohe
 rules:
 - MATCH,PROXIES
