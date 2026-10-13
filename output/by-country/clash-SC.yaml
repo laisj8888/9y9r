@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - xiaohe
   type: vless
-  server: 154.197.75.40
+  server: 154.197.64.2
   port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=TelegramU0001F1E8U0001F1F3
     headers:
-      Host: vms.lifetime37.workers.dev
+      Host: old-violet-a5ce.29-440.workers.dev
 - name: 🇸🇨 SC 02 - xiaohe
   type: vless
   server: 154.197.64.30
@@ -44,19 +44,6 @@ proxies:
     path: /
     headers:
       Host: proxy-34l.pages.dev
-- name: 🇸🇨 SC 04 - xiaohe
-  type: vless
-  server: 154.197.75.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: vms.lifetime37.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,7 +52,6 @@ proxy-groups:
   - 🇸🇨 SC 01 - xiaohe
   - 🇸🇨 SC 02 - xiaohe
   - 🇸🇨 SC 03 - xiaohe
-  - 🇸🇨 SC 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,6 +60,5 @@ proxy-groups:
   - 🇸🇨 SC 01 - xiaohe
   - 🇸🇨 SC 02 - xiaohe
   - 🇸🇨 SC 03 - xiaohe
-  - 🇸🇨 SC 04 - xiaohe
 rules:
 - MATCH,PROXIES
