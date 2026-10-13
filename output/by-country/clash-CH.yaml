@@ -13,37 +13,21 @@ proxies:
   udp: true
 - name: 🇨🇭 CH 02 - xiaohe
   type: vless
-  server: www.baipiao.eu.org
-  port: 8880
-  uuid: fe467f51-b2cc-4b16-b50b-a78865ed3dd9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: crimson-wind-71bc.19-5fd.workers.dev
-- name: 🇨🇭 CH 03 - xiaohe
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  server: 138.124.96.88
+  port: 41826
+  uuid: 2eb3f6a0-df6e-49b6-994c-177acdd50a97
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 CH 04 - xiaohe
+  servername: sweden.homyak.app
+- name: 🇨🇭 CH 03 - xiaohe
   type: ss
   server: 132.243.175.144
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-- name: 🇨🇭 CH 05 - xiaohe
+- name: 🇨🇭 CH 04 - xiaohe
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -55,6 +39,15 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇨🇭 CH 05 - xiaohe
+  type: vless
+  server: 138.124.96.88
+  port: 41826
+  uuid: 2eb3f6a0-df6e-49b6-994c-177acdd50a97
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sweden.homyak.app
 - name: 🇨🇭 CH 06 - xiaohe
   type: ss
   server: 132.243.175.144
@@ -62,6 +55,18 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
+- name: 🇨🇭 CH 07 - xiaohe
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,6 +78,7 @@ proxy-groups:
   - 🇨🇭 CH 04 - xiaohe
   - 🇨🇭 CH 05 - xiaohe
   - 🇨🇭 CH 06 - xiaohe
+  - 🇨🇭 CH 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -84,5 +90,6 @@ proxy-groups:
   - 🇨🇭 CH 04 - xiaohe
   - 🇨🇭 CH 05 - xiaohe
   - 🇨🇭 CH 06 - xiaohe
+  - 🇨🇭 CH 07 - xiaohe
 rules:
 - MATCH,PROXIES

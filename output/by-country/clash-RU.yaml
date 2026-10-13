@@ -6,18 +6,16 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: 91.215.43.248
-  port: 443
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: my.kempekl.online
-  network: ws
-  ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
-    headers:
-      Host: my.kempekl.online
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+  servername: ya.ru
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
   server: 91.215.43.248
@@ -34,17 +32,18 @@ proxies:
       Host: my.kempekl.online
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
-  server: 104.19.1.100
-  port: 2082
-  uuid: e11664a1-39e9-4dd8-a432-b712ec423262
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: my.kempekl.online
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
     headers:
-      Host: tianshu.kevqwkt451.workers.dev
+      Host: my.kempekl.online
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   type: vless
   server: 91.215.43.248
@@ -60,31 +59,35 @@ proxies:
     headers:
       Host: my.kempekl.online
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-  servername: ya.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  type: vless
-  server: 188.114.96.9
+  type: vmess
+  server: renderer-stream-2-114.mirra.now
   port: 443
-  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
+  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
+  servername: renderer-stream-2-114.mirra.now
   network: ws
   ws-opts:
-    path: /vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrj
+    path: /api/v1/gpu-stream/socket
     headers:
-      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
+      Host: renderer-stream-2-114.mirra.now
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  type: vless
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: my.kempekl.online
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   type: vless
   server: 45.12.75.242
@@ -99,88 +102,19 @@ proxies:
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   type: vless
-  server: www.speedtest.net
+  server: 91.215.43.248
   port: 443
-  uuid: 5d4f5139-6965-42ed-8dba-fe3ef9fed7c1
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 022XW1DMCzG0c6165Pcla6.toMBoRn69.woRKeRs.DEV
+  servername: my.kempekl.online
   network: ws
   ws-opts:
-    path: /vl/GXgLIjqfzM8AIh6QJM?ed=2560
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
     headers:
-      Host: 022xw1dmczg0c6165pcla6.tomborn69.workers.dev
+      Host: my.kempekl.online
 - name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  type: vless
-  server: 91.215.43.248
-  port: 443
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: my.kempekl.online
-  network: ws
-  ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
-    headers:
-      Host: my.kempekl.online
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  type: vless
-  server: 104.21.31.137
-  port: 443
-  uuid: 59c70620-d2f3-4255-9d6f-f4c5103d64ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 59fssIBE-SDDrRs3qW83QQZz0H1NT-o.q7qwsxItB6BYi5nMTa4naAlz.woRkErs.deV
-  network: ws
-  ws-opts:
-    path: /vl/FpYFoMlg8sRpgV7SSaOaRYa3fagqGu?ed
-    headers:
-      Host: 59fssibe-sddrrs3qw83qqzz0h1nt-o.q7qwsxitb6byi5nmta4naalz.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  type: vless
-  server: 91.215.43.248
-  port: 443
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: my.kempekl.online
-  network: ws
-  ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
-    headers:
-      Host: my.kempekl.online
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
-  type: vless
-  server: 91.215.43.248
-  port: 443
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: my.kempekl.online
-  network: ws
-  ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
-    headers:
-      Host: my.kempekl.online
-- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
-  type: vless
-  server: 162.159.156.214
-  port: 8880
-  uuid: 4f74ff26-25af-41d6-9d39-be46fe8ff1a8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: steep-resonance-1ffb.274.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
   type: vless
   server: 185.229.9.176
   port: 46018
@@ -192,7 +126,7 @@ proxies:
     public-key: een4U3X5mnY1gH2swiakXS9BJ8P4omf8Qp_s8sTp_3Y
   servername: ligastavok.ru
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 15 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
   type: vless
   server: 91.215.43.248
   port: 443
@@ -206,96 +140,34 @@ proxies:
     path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
     headers:
       Host: my.kempekl.online
-- name: 🇷🇺 俄罗斯 (Russia) 16 - xiaohe
-  type: vless
-  server: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
+  type: vmess
+  server: renderer-stream-2-114.mirra.now
   port: 443
-  uuid: 709b1cf4-a386-4cbf-bcf4-46f03c4788a8
+  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
+  servername: renderer-stream-2-114.mirra.now
   network: ws
   ws-opts:
-    path: /vl/wufVnq4Dk8cyJO59lQ3WBXW8SFN435GD?ed=2560
+    path: /api/v1/gpu-stream/socket
     headers:
-      Host: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 17 - xiaohe
+      Host: renderer-stream-2-114.mirra.now
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
   type: vless
-  server: icook.tw
-  port: 8880
-  uuid: 9adb120c-0cce-4b56-9023-ccf7f1e13536
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: spring-sunset-81e8.322.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 18 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
+  server: es3.h1cloud.net
+  port: 25136
+  uuid: 440b5558-e701-4c6f-8de2-d24dcf1ebbe6
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: all.speedtest03.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: all.speedtest03.ccwu.cc
-- name: 🇷🇺 俄罗斯 (Russia) 19 - xiaohe
-  type: vless
-  server: 91.215.43.248
-  port: 443
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: my.kempekl.online
-  network: ws
-  ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
-    headers:
-      Host: my.kempekl.online
-- name: 🇷🇺 俄罗斯 (Russia) 20 - xiaohe
-  type: vless
-  server: 104.18.0.1
-  port: 443
-  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: all.speedtest03.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: all.speedtest03.ccwu.cc
-- name: 🇷🇺 俄罗斯 (Russia) 21 - xiaohe
-  type: vless
-  server: 91.215.43.248
-  port: 443
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: my.kempekl.online
-  network: ws
-  ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
-    headers:
-      Host: my.kempekl.online
-- name: 🇷🇺 俄罗斯 (Russia) 22 - xiaohe
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
-  udp: true
+  reality-opts:
+    public-key: nkmfL3QCskKAfBUk-OiTgcWyIXGmXrZVtDEoio0Qo1w
+  servername: www.cloudflare.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -313,16 +185,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 15 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 16 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 17 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 18 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 19 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 20 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 21 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 22 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -340,15 +202,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 15 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 16 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 17 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 18 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 19 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 20 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 21 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 22 - xiaohe
 rules:
 - MATCH,PROXIES
