@@ -6,13 +6,16 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  server: 201.10.91.196
+  port: 25080
+  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
+  reality-opts:
+    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
+  servername: www.ceneo.pl
+  client-fingerprint: random
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
   server: pl.flen-vpn.xyz
@@ -33,7 +36,7 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 04 - xiaohe
   type: vless
-  server: pl.flen-vpn.xyz
+  server: 2.26.225.89
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
@@ -42,16 +45,19 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 05 - xiaohe
   type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  server: pl4.h1cloud.net
+  port: 25080
+  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
+  reality-opts:
+    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
+  servername: www.ceneo.pl
+  client-fingerprint: chrome
 - name: 🇵🇱 PL 06 - xiaohe
   type: vless
-  server: 2.26.225.89
+  server: pl.flen-vpn.xyz
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
@@ -60,7 +66,7 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 07 - xiaohe
   type: vless
-  server: pl.flen-vpn.xyz
+  server: 2.26.225.89
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
@@ -69,7 +75,7 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 08 - xiaohe
   type: vless
-  server: pl.flen-vpn.xyz
+  server: 2.26.225.89
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
@@ -87,7 +93,7 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 10 - xiaohe
   type: vless
-  server: pl.flen-vpn.xyz
+  server: 2.26.225.89
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
@@ -105,7 +111,7 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 12 - xiaohe
   type: vless
-  server: 2.26.225.89
+  server: pl.flen-vpn.xyz
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
@@ -113,6 +119,15 @@ proxies:
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 13 - xiaohe
+  type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 14 - xiaohe
   type: vless
   server: 201.10.91.196
   port: 25080
@@ -124,6 +139,15 @@ proxies:
     public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
   servername: www.ceneo.pl
   client-fingerprint: random
+- name: 🇵🇱 PL 15 - xiaohe
+  type: vless
+  server: pl.flen-vpn.xyz
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -142,6 +166,8 @@ proxy-groups:
   - 🇵🇱 PL 11 - xiaohe
   - 🇵🇱 PL 12 - xiaohe
   - 🇵🇱 PL 13 - xiaohe
+  - 🇵🇱 PL 14 - xiaohe
+  - 🇵🇱 PL 15 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -160,5 +186,7 @@ proxy-groups:
   - 🇵🇱 PL 11 - xiaohe
   - 🇵🇱 PL 12 - xiaohe
   - 🇵🇱 PL 13 - xiaohe
+  - 🇵🇱 PL 14 - xiaohe
+  - 🇵🇱 PL 15 - xiaohe
 rules:
 - MATCH,PROXIES

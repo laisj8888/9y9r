@@ -11,17 +11,33 @@ proxies:
   cipher: aes-256-gcm
   password: ac9c0a7b
   udp: true
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 6b6733fb-580b-411b-8bf8-51137c2aa037
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: restless-sky-eb31.438-aa8.workers.dev
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: restless-sky-eb31.438-aa8.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
