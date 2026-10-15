@@ -7,37 +7,32 @@ proxies:
 - name: 🇸🇨 SC 01 - xiaohe
   type: vless
   server: 45.137.43.168
+  port: 14430
+  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.137.43.168
+- name: 🇸🇨 SC 02 - xiaohe
+  type: vless
+  server: 45.137.43.168
   port: 10443
   uuid: b4cc503a-c352-4775-85ad-fc982086884a
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇨 SC 02 - xiaohe
-  type: vless
-  server: 45.137.43.168
-  port: 14430
-  uuid: b4cc503a-c352-4775-85ad-fc982086884a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.137.43.168
 - name: 🇸🇨 SC 03 - xiaohe
   type: vless
   server: 45.137.43.168
-  port: 14430
+  port: 10443
   uuid: b4cc503a-c352-4775-85ad-fc982086884a
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.137.43.168
 - name: 🇸🇨 SC 04 - xiaohe
   type: vless
   server: 45.137.43.168
@@ -88,11 +83,16 @@ proxies:
 - name: 🇸🇨 SC 08 - xiaohe
   type: vless
   server: 45.137.43.168
-  port: 10443
+  port: 14430
   uuid: b4cc503a-c352-4775-85ad-fc982086884a
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.137.43.168
 - name: 🇸🇨 SC 09 - xiaohe
   type: vless
   server: 45.137.43.168
@@ -102,6 +102,14 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇨 SC 10 - xiaohe
+  type: vless
+  server: 45.137.43.168
+  port: 10443
+  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇨 SC 11 - xiaohe
   type: vless
   server: 45.137.43.168
   port: 14430
@@ -114,6 +122,14 @@ proxies:
     path: /vless
     headers:
       Host: 45.137.43.168
+- name: 🇸🇨 SC 12 - xiaohe
+  type: vless
+  server: 45.137.43.168
+  port: 10443
+  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -129,6 +145,8 @@ proxy-groups:
   - 🇸🇨 SC 08 - xiaohe
   - 🇸🇨 SC 09 - xiaohe
   - 🇸🇨 SC 10 - xiaohe
+  - 🇸🇨 SC 11 - xiaohe
+  - 🇸🇨 SC 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -144,5 +162,7 @@ proxy-groups:
   - 🇸🇨 SC 08 - xiaohe
   - 🇸🇨 SC 09 - xiaohe
   - 🇸🇨 SC 10 - xiaohe
+  - 🇸🇨 SC 11 - xiaohe
+  - 🇸🇨 SC 12 - xiaohe
 rules:
 - MATCH,PROXIES
