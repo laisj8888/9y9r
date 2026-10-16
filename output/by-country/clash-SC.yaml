@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - xiaohe
   type: vless
-  server: 45.137.43.168
-  port: 14430
-  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  server: 154.197.75.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 45.137.43.168
+      Host: vms.lifetime37.workers.dev
 - name: 🇸🇨 SC 02 - xiaohe
   type: vless
   server: 45.137.43.168
@@ -28,14 +28,6 @@ proxies:
 - name: 🇸🇨 SC 03 - xiaohe
   type: vless
   server: 45.137.43.168
-  port: 10443
-  uuid: b4cc503a-c352-4775-85ad-fc982086884a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇨 SC 04 - xiaohe
-  type: vless
-  server: 45.137.43.168
   port: 14430
   uuid: b4cc503a-c352-4775-85ad-fc982086884a
   udp: true
@@ -46,72 +38,65 @@ proxies:
     path: /vless
     headers:
       Host: 45.137.43.168
+- name: 🇸🇨 SC 04 - xiaohe
+  type: vless
+  server: 154.211.8.227
+  port: 2087
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: proxy-34l.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: proxy-34l.pages.dev
 - name: 🇸🇨 SC 05 - xiaohe
   type: vless
   server: 45.137.43.168
-  port: 14430
+  port: 10443
   uuid: b4cc503a-c352-4775-85ad-fc982086884a
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.137.43.168
 - name: 🇸🇨 SC 06 - xiaohe
   type: vless
   server: 45.137.43.168
-  port: 10443
+  port: 14430
   uuid: b4cc503a-c352-4775-85ad-fc982086884a
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.137.43.168
 - name: 🇸🇨 SC 07 - xiaohe
   type: vless
   server: 45.137.43.168
-  port: 14430
+  port: 10443
   uuid: b4cc503a-c352-4775-85ad-fc982086884a
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.137.43.168
 - name: 🇸🇨 SC 08 - xiaohe
   type: vless
-  server: 45.137.43.168
-  port: 14430
-  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  server: 154.197.64.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 45.137.43.168
+      Host: vms.lifetime36.workers.dev
 - name: 🇸🇨 SC 09 - xiaohe
   type: vless
   server: 45.137.43.168
-  port: 10443
-  uuid: b4cc503a-c352-4775-85ad-fc982086884a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇨 SC 10 - xiaohe
-  type: vless
-  server: 45.137.43.168
-  port: 10443
-  uuid: b4cc503a-c352-4775-85ad-fc982086884a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇨 SC 11 - xiaohe
-  type: vless
-  server: 45.137.43.168
   port: 14430
   uuid: b4cc503a-c352-4775-85ad-fc982086884a
   udp: true
@@ -122,14 +107,20 @@ proxies:
     path: /vless
     headers:
       Host: 45.137.43.168
-- name: 🇸🇨 SC 12 - xiaohe
+- name: 🇸🇨 SC 10 - xiaohe
   type: vless
-  server: 45.137.43.168
-  port: 10443
-  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  server: 154.218.15.250
+  port: 2083
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: proxy-1cu.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: proxy-1cu.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -145,8 +136,6 @@ proxy-groups:
   - 🇸🇨 SC 08 - xiaohe
   - 🇸🇨 SC 09 - xiaohe
   - 🇸🇨 SC 10 - xiaohe
-  - 🇸🇨 SC 11 - xiaohe
-  - 🇸🇨 SC 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -162,7 +151,5 @@ proxy-groups:
   - 🇸🇨 SC 08 - xiaohe
   - 🇸🇨 SC 09 - xiaohe
   - 🇸🇨 SC 10 - xiaohe
-  - 🇸🇨 SC 11 - xiaohe
-  - 🇸🇨 SC 12 - xiaohe
 rules:
 - MATCH,PROXIES
