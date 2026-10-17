@@ -20,13 +20,6 @@ proxies:
   password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
 - name: 🇷🇴 RO 03 - xiaohe
-  type: ss
-  server: 194.68.44.42
-  port: 64546
-  cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
-  udp: true
-- name: 🇷🇴 RO 04 - xiaohe
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -34,19 +27,21 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇷🇴 RO 04 - xiaohe
+  type: ss
+  server: 194.68.44.42
+  port: 64546
+  cipher: chacha20-ietf-poly1305
+  password: U83u9OGpvSatIUW7LsWffr
+  udp: true
 - name: 🇷🇴 RO 05 - xiaohe
   type: vless
-  server: 45.12.30.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime28.workers.dev
 - name: 🇷🇴 RO 06 - xiaohe
   type: vless
   server: edge10.cyrionflare.com
@@ -64,26 +59,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 08 - xiaohe
-  type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- name: 🇷🇴 RO 09 - xiaohe
-  type: vless
-  server: 45.12.30.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime28.workers.dev
-- name: 🇷🇴 RO 10 - xiaohe
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -91,6 +66,21 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇷🇴 RO 09 - xiaohe
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 10 - xiaohe
+  type: ss
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  udp: true
 - name: 🇷🇴 RO 11 - xiaohe
   type: vless
   server: edge10.cyrionflare.com
@@ -100,14 +90,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 12 - xiaohe
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 13 - xiaohe
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -132,7 +114,6 @@ proxy-groups:
   - 🇷🇴 RO 10 - xiaohe
   - 🇷🇴 RO 11 - xiaohe
   - 🇷🇴 RO 12 - xiaohe
-  - 🇷🇴 RO 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -150,6 +131,5 @@ proxy-groups:
   - 🇷🇴 RO 10 - xiaohe
   - 🇷🇴 RO 11 - xiaohe
   - 🇷🇴 RO 12 - xiaohe
-  - 🇷🇴 RO 13 - xiaohe
 rules:
 - MATCH,PROXIES
