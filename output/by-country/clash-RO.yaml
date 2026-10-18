@@ -14,10 +14,10 @@ proxies:
   skip-cert-verify: true
 - name: 🇷🇴 RO 02 - xiaohe
   type: ss
-  server: 194.68.44.42
-  port: 64546
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
 - name: 🇷🇴 RO 03 - xiaohe
   type: vless
@@ -36,12 +36,18 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 05 - xiaohe
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: vless
+  server: 45.12.30.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime28.workers.dev
 - name: 🇷🇴 RO 06 - xiaohe
   type: vless
   server: edge10.cyrionflare.com
@@ -59,41 +65,40 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 08 - xiaohe
+  type: vless
+  server: roxnsk.color-shop.ir
+  port: 8080
+  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 09 - xiaohe
   type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
+  server: 154.46.31.106
   port: 443
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-- name: 🇷🇴 RO 09 - xiaohe
+- name: 🇷🇴 RO 10 - xiaohe
+  type: ss
+  server: 194.68.44.42
+  port: 64546
+  cipher: chacha20-ietf-poly1305
+  password: U83u9OGpvSatIUW7LsWffr
+  udp: true
+- name: 🇷🇴 RO 11 - xiaohe
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 10 - xiaohe
-  type: vless
-  server: roxnsk.color-shop.ir
-  port: 8080
-  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 11 - xiaohe
-  type: vless
-  server: roxnsk.color-shop.ir
-  port: 8080
-  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 12 - xiaohe
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: roxnsk.color-shop.ir
+  port: 8080
+  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
   udp: true
   tls: false
   skip-cert-verify: true
@@ -106,6 +111,14 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 14 - xiaohe
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 15 - xiaohe
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -132,6 +145,7 @@ proxy-groups:
   - 🇷🇴 RO 12 - xiaohe
   - 🇷🇴 RO 13 - xiaohe
   - 🇷🇴 RO 14 - xiaohe
+  - 🇷🇴 RO 15 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -151,5 +165,6 @@ proxy-groups:
   - 🇷🇴 RO 12 - xiaohe
   - 🇷🇴 RO 13 - xiaohe
   - 🇷🇴 RO 14 - xiaohe
+  - 🇷🇴 RO 15 - xiaohe
 rules:
 - MATCH,PROXIES
