@@ -101,6 +101,16 @@ proxies:
   servername: yahoo.com
   client-fingerprint: chrome
 - name: 🇦🇲 AM 09 - xiaohe
+  type: vmess
+  server: 57.131.168.202
+  port: 53183
+  uuid: a3f95685-6d84-4625-a0ea-8a10e7d26d89
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇦🇲 AM 10 - xiaohe
   type: vless
   server: 77.91.68.70
   port: 55983
@@ -112,6 +122,16 @@ proxies:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
   client-fingerprint: chrome
+- name: 🇦🇲 AM 11 - xiaohe
+  type: vmess
+  server: 57.131.168.202
+  port: 53183
+  uuid: a3f95685-6d84-4625-a0ea-8a10e7d26d89
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -126,6 +146,8 @@ proxy-groups:
   - 🇦🇲 AM 07 - xiaohe
   - 🇦🇲 AM 08 - xiaohe
   - 🇦🇲 AM 09 - xiaohe
+  - 🇦🇲 AM 10 - xiaohe
+  - 🇦🇲 AM 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -140,5 +162,7 @@ proxy-groups:
   - 🇦🇲 AM 07 - xiaohe
   - 🇦🇲 AM 08 - xiaohe
   - 🇦🇲 AM 09 - xiaohe
+  - 🇦🇲 AM 10 - xiaohe
+  - 🇦🇲 AM 11 - xiaohe
 rules:
 - MATCH,PROXIES
