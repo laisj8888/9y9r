@@ -5,21 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - xiaohe
-  type: vmess
-  server: eu3.998998.best
+  type: vless
+  server: 38.180.163.250
   port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: server40.9966338.xyz
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /aiaiai
+    path: /cart/docs/www/proxyip=108.160.132.132
     headers:
-      Host: server40.9966338.xyz
+      Host: lucasjow.us.ci
 - name: 🇪🇪 EE 02 - xiaohe
   type: vmess
   server: eu3.998998.best
@@ -101,19 +99,21 @@ proxies:
     headers:
       Host: server40.9966338.xyz
 - name: 🇪🇪 EE 07 - xiaohe
-  type: vless
-  server: 38.180.163.250
+  type: vmess
+  server: eu3.998998.best
   port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: a.cwvps.eu.org
+  servername: server40.9966338.xyz
   network: ws
   ws-opts:
-    path: /ws#/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    path: /aiaiai
     headers:
-      Host: a.cwvps.eu.org
+      Host: server40.9966338.xyz
 - name: 🇪🇪 EE 08 - xiaohe
   type: vmess
   server: eu3.998998.best
@@ -130,68 +130,6 @@ proxies:
     path: /aiaiai
     headers:
       Host: server40.9966338.xyz
-- name: 🇪🇪 EE 09 - xiaohe
-  type: vmess
-  server: eu3.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: server40.9966338.xyz
-  network: ws
-  ws-opts:
-    path: /aiaiai
-    headers:
-      Host: server40.9966338.xyz
-- name: 🇪🇪 EE 10 - xiaohe
-  type: vmess
-  server: eu3.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: server40.9966338.xyz
-  network: ws
-  ws-opts:
-    path: /aiaiai
-    headers:
-      Host: server40.9966338.xyz
-- name: 🇪🇪 EE 11 - xiaohe
-  type: vmess
-  server: eu3.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: server40.9966338.xyz
-  network: ws
-  ws-opts:
-    path: /aiaiai
-    headers:
-      Host: server40.9966338.xyz
-- name: 🇪🇪 EE 12 - xiaohe
-  type: vless
-  server: 38.180.163.250
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
 proxy-groups:
 - name: PROXIES
   type: select
@@ -205,10 +143,6 @@ proxy-groups:
   - 🇪🇪 EE 06 - xiaohe
   - 🇪🇪 EE 07 - xiaohe
   - 🇪🇪 EE 08 - xiaohe
-  - 🇪🇪 EE 09 - xiaohe
-  - 🇪🇪 EE 10 - xiaohe
-  - 🇪🇪 EE 11 - xiaohe
-  - 🇪🇪 EE 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -222,9 +156,5 @@ proxy-groups:
   - 🇪🇪 EE 06 - xiaohe
   - 🇪🇪 EE 07 - xiaohe
   - 🇪🇪 EE 08 - xiaohe
-  - 🇪🇪 EE 09 - xiaohe
-  - 🇪🇪 EE 10 - xiaohe
-  - 🇪🇪 EE 11 - xiaohe
-  - 🇪🇪 EE 12 - xiaohe
 rules:
 - MATCH,PROXIES
