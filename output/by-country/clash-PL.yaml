@@ -21,20 +21,21 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
+  servername: 2.26.225.89
 - name: 🇵🇱 PL 03 - xiaohe
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 04 - xiaohe
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
@@ -49,15 +50,16 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 06 - xiaohe
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 2.26.225.89
 - name: 🇵🇱 PL 07 - xiaohe
   type: vless
-  server: pl.flen-vpn.xyz
+  server: 2.26.225.89
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
@@ -67,33 +69,6 @@ proxies:
 - name: 🇵🇱 PL 08 - xiaohe
   type: vless
   server: pl.flen-vpn.xyz
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 09 - xiaohe
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 10 - xiaohe
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.225.89
-- name: 🇵🇱 PL 11 - xiaohe
-  type: vless
-  server: 2.26.225.89
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
@@ -113,9 +88,6 @@ proxy-groups:
   - 🇵🇱 PL 06 - xiaohe
   - 🇵🇱 PL 07 - xiaohe
   - 🇵🇱 PL 08 - xiaohe
-  - 🇵🇱 PL 09 - xiaohe
-  - 🇵🇱 PL 10 - xiaohe
-  - 🇵🇱 PL 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -129,8 +101,5 @@ proxy-groups:
   - 🇵🇱 PL 06 - xiaohe
   - 🇵🇱 PL 07 - xiaohe
   - 🇵🇱 PL 08 - xiaohe
-  - 🇵🇱 PL 09 - xiaohe
-  - 🇵🇱 PL 10 - xiaohe
-  - 🇵🇱 PL 11 - xiaohe
 rules:
 - MATCH,PROXIES
