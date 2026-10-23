@@ -6,16 +6,17 @@ log-level: info
 proxies:
 - name: 🇦🇲 AM 01 - xiaohe
   type: vless
-  server: 77.91.68.70
-  port: 55983
-  uuid: f667a096-5231-4cfb-8759-92bb32473139
+  server: 194.36.37.59
+  port: 10004
+  uuid: f7376394-cd54-11f1-bb6a-bff6d0326f6a
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
-  servername: yahoo.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vpnjantit
+    headers:
+      Host: 194.36.37.59
 - name: 🇦🇲 AM 02 - xiaohe
   type: vless
   server: 194.36.37.59
@@ -31,16 +32,17 @@ proxies:
       Host: 194.36.37.59
 - name: 🇦🇲 AM 03 - xiaohe
   type: vless
-  server: 77.91.68.70
-  port: 55983
-  uuid: f667a096-5231-4cfb-8759-92bb32473139
+  server: 194.36.37.59
+  port: 10004
+  uuid: f7376394-cd54-11f1-bb6a-bff6d0326f6a
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
-  servername: yahoo.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vpnjantit
+    headers:
+      Host: 194.36.37.59
 - name: 🇦🇲 AM 04 - xiaohe
   type: vless
   server: 194.36.37.59
@@ -53,7 +55,7 @@ proxies:
   ws-opts:
     path: /vpnjantit
     headers:
-      Host: 194.36.37.59
+      Host: ''
 - name: 🇦🇲 AM 05 - xiaohe
   type: vless
   server: 77.91.68.70
@@ -80,17 +82,16 @@ proxies:
   client-fingerprint: chrome
 - name: 🇦🇲 AM 07 - xiaohe
   type: vless
-  server: 194.36.37.59
-  port: 10004
-  uuid: f7376394-cd54-11f1-bb6a-bff6d0326f6a
+  server: 77.91.68.70
+  port: 55983
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vpnjantit
-    headers:
-      Host: 194.36.37.59
+  reality-opts:
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+  servername: yahoo.com
+  client-fingerprint: chrome
 - name: 🇦🇲 AM 08 - xiaohe
   type: vless
   server: 77.91.68.70
@@ -117,6 +118,18 @@ proxies:
   client-fingerprint: chrome
 - name: 🇦🇲 AM 10 - xiaohe
   type: vless
+  server: 77.91.68.70
+  port: 55983
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇦🇲 AM 11 - xiaohe
+  type: vless
   server: 194.36.37.59
   port: 10004
   uuid: f7376394-cd54-11f1-bb6a-bff6d0326f6a
@@ -127,7 +140,7 @@ proxies:
   ws-opts:
     path: /vpnjantit
     headers:
-      Host: ''
+      Host: 194.36.37.59
 proxy-groups:
 - name: PROXIES
   type: select
@@ -143,6 +156,7 @@ proxy-groups:
   - 🇦🇲 AM 08 - xiaohe
   - 🇦🇲 AM 09 - xiaohe
   - 🇦🇲 AM 10 - xiaohe
+  - 🇦🇲 AM 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -158,5 +172,6 @@ proxy-groups:
   - 🇦🇲 AM 08 - xiaohe
   - 🇦🇲 AM 09 - xiaohe
   - 🇦🇲 AM 10 - xiaohe
+  - 🇦🇲 AM 11 - xiaohe
 rules:
 - MATCH,PROXIES
