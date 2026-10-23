@@ -6,18 +6,6 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - xiaohe
   type: vless
-  server: p2real4.greewebservices.ir
-  port: 1340
-  uuid: 2582857a-632b-4c4e-9b67-96213cbaf58c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-  servername: play.googleapis.com
-  client-fingerprint: chrome
-- name: 🇧🇬 BG 02 - xiaohe
-  type: vless
   server: p2real22.greewebservices.ir
   port: 1320
   uuid: 2582857a-632b-4c4e-9b67-96213cbaf58c
@@ -27,32 +15,8 @@ proxies:
   reality-opts:
     public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
   servername: play.googleapis.com
-  client-fingerprint: chrome
-- name: 🇧🇬 BG 03 - xiaohe
-  type: vless
-  server: p2real4.greewebservices.ir
-  port: 1340
-  uuid: 2582857a-632b-4c4e-9b67-96213cbaf58c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-  servername: play.googleapis.com
   client-fingerprint: ios
-- name: 🇧🇬 BG 04 - xiaohe
-  type: vless
-  server: p2real4.greewebservices.ir
-  port: 1340
-  uuid: 2582857a-632b-4c4e-9b67-96213cbaf58c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-  servername: play.googleapis.com
-  client-fingerprint: chrome
-- name: 🇧🇬 BG 05 - xiaohe
+- name: 🇧🇬 BG 02 - xiaohe
   type: vless
   server: p2real22.greewebservices.ir
   port: 1320
@@ -71,9 +35,6 @@ proxy-groups:
   - AUTO
   - 🇧🇬 BG 01 - xiaohe
   - 🇧🇬 BG 02 - xiaohe
-  - 🇧🇬 BG 03 - xiaohe
-  - 🇧🇬 BG 04 - xiaohe
-  - 🇧🇬 BG 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -81,8 +42,5 @@ proxy-groups:
   proxies:
   - 🇧🇬 BG 01 - xiaohe
   - 🇧🇬 BG 02 - xiaohe
-  - 🇧🇬 BG 03 - xiaohe
-  - 🇧🇬 BG 04 - xiaohe
-  - 🇧🇬 BG 05 - xiaohe
 rules:
 - MATCH,PROXIES
