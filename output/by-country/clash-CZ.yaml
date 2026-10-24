@@ -19,20 +19,6 @@ proxies:
   password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
   udp: true
 - name: 🇨🇿 CZ 03 - xiaohe
-  type: vless
-  server: 172.64.80.1
-  port: 2083
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fans.liverpool.qzz.io
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: fans.liverpool.qzz.io
-- name: 🇨🇿 CZ 04 - xiaohe
   type: ss
   server: 67.159.18.34
   port: 17001
@@ -47,7 +33,6 @@ proxy-groups:
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
   - 🇨🇿 CZ 03 - xiaohe
-  - 🇨🇿 CZ 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,6 +41,5 @@ proxy-groups:
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
   - 🇨🇿 CZ 03 - xiaohe
-  - 🇨🇿 CZ 04 - xiaohe
 rules:
 - MATCH,PROXIES
