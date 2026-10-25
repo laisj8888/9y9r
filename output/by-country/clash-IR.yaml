@@ -6,61 +6,27 @@ log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - xiaohe
   type: vless
-  server: 199.232.78.159
-  port: 80
-  uuid: 3027d7e0-201d-4e78-863b-f4dbe51ab96f
+  server: p2tun0.greewebservices.ir
+  port: 28820
+  uuid: 7c4e57be-ff6f-4ef7-ba17-f839351d9af9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ws/?ed=2048/@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1/?2048
-    headers:
-      Host: rb24.ir
-- name: 🇮🇷 IR 02 - xiaohe
-  type: ss
-  server: irnamh.g44mozgh.ir
-  port: 1001
-  cipher: chacha20-ietf-poly1305
-  password: xJUiv6Q1mBPuRv1yQ8-dqFEss0Ho4FtE
-  udp: true
-- name: 🇮🇷 IR 03 - xiaohe
-  type: ss
-  server: irnamh.g44mozgh.ir
-  port: 1001
-  cipher: chacha20-ietf-poly1305
-  password: xJUiv6Q1mBPuRv1yQ8-dqFEss0Ho4FtE
-  udp: true
-- name: 🇮🇷 IR 04 - xiaohe
-  type: vless
-  server: 199.232.78.159
-  port: 80
-  uuid: 3027d7e0-201d-4e78-863b-f4dbe51ab96f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
-    headers:
-      Host: rb24.ir
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+  servername: play.google.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇷 IR 01 - xiaohe
-  - 🇮🇷 IR 02 - xiaohe
-  - 🇮🇷 IR 03 - xiaohe
-  - 🇮🇷 IR 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇷 IR 01 - xiaohe
-  - 🇮🇷 IR 02 - xiaohe
-  - 🇮🇷 IR 03 - xiaohe
-  - 🇮🇷 IR 04 - xiaohe
 rules:
 - MATCH,PROXIES
