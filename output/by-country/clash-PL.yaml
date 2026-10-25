@@ -6,29 +6,29 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 5.22.221.127
-  port: 443
-  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
+  server: pl1.h1cloud.net
+  port: 27591
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+  servername: www.samsung.com
+  client-fingerprint: chrome
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: pl1.h1cloud.net
+  port: 27591
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+  servername: www.samsung.com
+  client-fingerprint: chrome
 - name: 🇵🇱 PL 03 - xiaohe
-  type: vless
-  server: 5.22.221.127
-  port: 443
-  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 04 - xiaohe
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -36,7 +36,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 05 - xiaohe
+- name: 🇵🇱 PL 04 - xiaohe
   type: vless
   server: 5.22.221.127
   port: 443
@@ -44,11 +44,25 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇵🇱 PL 05 - xiaohe
+  type: vless
+  server: 185.86.145.142
+  port: 443
+  uuid: c8b3c1d7-4294-4f30-9e5b-e4693b64d518
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: deliverya.online
+  network: ws
+  ws-opts:
+    path: /adrws
+    headers:
+      Host: deliverya.online
 - name: 🇵🇱 PL 06 - xiaohe
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: 5.22.221.127
+  port: 443
+  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
   udp: true
   tls: false
   skip-cert-verify: true
@@ -68,6 +82,72 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇵🇱 PL 09 - xiaohe
+  type: vless
+  server: pl1.h1cloud.net
+  port: 27591
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 10 - xiaohe
+  type: vless
+  server: deliverya.online
+  port: 443
+  uuid: c8b3c1d7-4294-4f30-9e5b-e4693b64d518
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: deliverya.online
+  network: ws
+  ws-opts:
+    path: /adrws
+    headers:
+      Host: deliverya.online
+- name: 🇵🇱 PL 11 - xiaohe
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 12 - xiaohe
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 13 - xiaohe
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 14 - xiaohe
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 15 - xiaohe
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,6 +161,13 @@ proxy-groups:
   - 🇵🇱 PL 06 - xiaohe
   - 🇵🇱 PL 07 - xiaohe
   - 🇵🇱 PL 08 - xiaohe
+  - 🇵🇱 PL 09 - xiaohe
+  - 🇵🇱 PL 10 - xiaohe
+  - 🇵🇱 PL 11 - xiaohe
+  - 🇵🇱 PL 12 - xiaohe
+  - 🇵🇱 PL 13 - xiaohe
+  - 🇵🇱 PL 14 - xiaohe
+  - 🇵🇱 PL 15 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +181,12 @@ proxy-groups:
   - 🇵🇱 PL 06 - xiaohe
   - 🇵🇱 PL 07 - xiaohe
   - 🇵🇱 PL 08 - xiaohe
+  - 🇵🇱 PL 09 - xiaohe
+  - 🇵🇱 PL 10 - xiaohe
+  - 🇵🇱 PL 11 - xiaohe
+  - 🇵🇱 PL 12 - xiaohe
+  - 🇵🇱 PL 13 - xiaohe
+  - 🇵🇱 PL 14 - xiaohe
+  - 🇵🇱 PL 15 - xiaohe
 rules:
 - MATCH,PROXIES
