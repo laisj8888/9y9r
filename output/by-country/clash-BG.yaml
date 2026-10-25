@@ -54,6 +54,16 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇧🇬 BG 06 - xiaohe
+  type: vmess
+  server: 45.144.48.32
+  port: 56080
+  uuid: f4daaec7-0e1e-4c8e-97e8-cff5347c2dae
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,6 +74,7 @@ proxy-groups:
   - 🇧🇬 BG 03 - xiaohe
   - 🇧🇬 BG 04 - xiaohe
   - 🇧🇬 BG 05 - xiaohe
+  - 🇧🇬 BG 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +85,6 @@ proxy-groups:
   - 🇧🇬 BG 03 - xiaohe
   - 🇧🇬 BG 04 - xiaohe
   - 🇧🇬 BG 05 - xiaohe
+  - 🇧🇬 BG 06 - xiaohe
 rules:
 - MATCH,PROXIES
