@@ -6,46 +6,6 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tgmansion.site
-  network: ws
-  ws-opts:
-    path: /vless-tr
-    headers:
-      Host: 177.3.208.65
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-  servername: ya.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  type: vless
-  server: 46.243.142.104
-  port: 443
-  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: santehdv.site
-  network: ws
-  ws-opts:
-    path: /media/stream/E2QlYgrvniT_
-    headers:
-      Host: santehdv.site
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  type: vless
   server: santehdv.site
   port: 443
   uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
@@ -58,320 +18,107 @@ proxies:
     path: /media/stream/E2QlYgrvniT_
     headers:
       Host: santehdv.site
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tgmansion.site
-  network: ws
-  ws-opts:
-    path: /vless-tr
-    headers:
-      Host: tgmansion.site
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tgmansion.site
-  network: ws
-  ws-opts:
-    path: /vless-tr
-    headers:
-      Host: tgmansion.site
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: ss
   server: 46.17.43.227
   port: 18443
   cipher: aes-256-gcm
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
   udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  type: vless
+  server: 46.243.142.104
+  port: 443
+  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: santehdv.site
+  network: ws
+  ws-opts:
+    path: /media/stream/qUWu2oaFgxAw
+    headers:
+      Host: santehdv.site
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  type: vless
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wsru1.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 194.87.143.165
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  type: vless
+  server: pl1.h1cloud.net
+  port: 27591
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  type: vmess
+  server: 158.160.180.165
+  port: 24212
+  uuid: c58c1205-b308-416f-8503-c04557abf93d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  type: vless
+  server: santehdv.site
+  port: 443
+  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: santehdv.site
+  network: ws
+  ws-opts:
+    path: /media/stream/qUWu2oaFgxAw
+    headers:
+      Host: santehdv.site
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  type: vless
+  server: z1q3pv4g78.rucdncomp.pro
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  network: ws
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
 - name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
   type: vless
-  server: 188.225.83.133
+  server: 46.243.142.104
   port: 443
-  uuid: 4c346148-ece9-487a-bffb-ba5a399b2d71
+  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw
-  servername: xnodtwx.artemida.live
-  client-fingerprint: random
+  servername: santehdv.site
+  network: ws
+  ws-opts:
+    path: /media/stream/qUWu2oaFgxAw
+    headers:
+      Host: santehdv.site
 - name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  type: vless
-  server: 46.243.142.104
-  port: 443
-  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: santehdv.site
-  network: ws
-  ws-opts:
-    path: /media/stream/qUWu2oaFgxAw
-    headers:
-      Host: santehdv.site
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-  servername: ya.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
-  type: vless
-  server: pl1.h1cloud.net
-  port: 27591
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
-  type: vless
-  server: pl1.h1cloud.net
-  port: 27591
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
-  type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tgmansion.site
-  network: ws
-  ws-opts:
-    path: /vless-tr
-    headers:
-      Host: tgmansion.site
-- name: 🇷🇺 俄罗斯 (Russia) 15 - xiaohe
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇷🇺 俄罗斯 (Russia) 16 - xiaohe
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇷🇺 俄罗斯 (Russia) 17 - xiaohe
-  type: vless
-  server: 46.243.142.104
-  port: 443
-  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: santehdv.site
-  network: ws
-  ws-opts:
-    path: /media/stream/qUWu2oaFgxAw
-    headers:
-      Host: santehdv.site
-- name: 🇷🇺 俄罗斯 (Russia) 18 - xiaohe
-  type: vless
-  server: 46.243.142.104
-  port: 443
-  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: santehdv.site
-  network: ws
-  ws-opts:
-    path: /media/stream/qUWu2oaFgxAw
-    headers:
-      Host: santehdv.site
-- name: 🇷🇺 俄罗斯 (Russia) 19 - xiaohe
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇷🇺 俄罗斯 (Russia) 20 - xiaohe
-  type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tgmansion.site
-  network: ws
-  ws-opts:
-    path: /vless-tr
-    headers:
-      Host: 177.3.208.65
-- name: 🇷🇺 俄罗斯 (Russia) 21 - xiaohe
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇷🇺 俄罗斯 (Russia) 22 - xiaohe
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: rWIg16plgZ82V7MTNcw1UTgiYK4ooPUB95qVhKIwIDc=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 23 - xiaohe
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇷🇺 俄罗斯 (Russia) 24 - xiaohe
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 25 - xiaohe
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: rWIg16plgZ82V7MTNcw1UTgiYK4ooPUB95qVhKIwIDc=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 26 - xiaohe
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 158.160.180.165
-- name: 🇷🇺 俄罗斯 (Russia) 27 - xiaohe
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 28 - xiaohe
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 158.160.180.165
-- name: 🇷🇺 俄罗斯 (Russia) 29 - xiaohe
-  type: vless
-  server: pl1.h1cloud.net
-  port: 27591
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 30 - xiaohe
-  type: ss
-  server: 195.133.23.50
-  port: 18443
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 31 - xiaohe
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇷🇺 俄罗斯 (Russia) 32 - xiaohe
   type: vless
   server: 217.19.122.156
   port: 443
@@ -385,6 +132,97 @@ proxies:
     path: /useraction/events/b892639b7195/
     headers:
       Host: z1q3pv4g78.rucdncomp.pro
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
+  type: ss
+  server: 46.17.43.227
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
+  type: ss
+  server: 195.133.23.50
+  port: 18443
+  cipher: aes-256-gcm
+  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
+  type: vless
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
+  type: vless
+  server: pl1.h1cloud.net
+  port: 27591
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 15 - xiaohe
+  type: vmess
+  server: 158.160.180.165
+  port: 24212
+  uuid: c58c1205-b308-416f-8503-c04557abf93d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 158.160.180.165
+- name: 🇷🇺 俄罗斯 (Russia) 16 - xiaohe
+  type: vless
+  server: 217.19.122.156
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  network: ws
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: 🇷🇺 俄罗斯 (Russia) 17 - xiaohe
+  type: vless
+  server: z1q3pv4g78.rucdncomp.pro
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  network: ws
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: 🇷🇺 俄罗斯 (Russia) 18 - xiaohe
+  type: ss
+  server: 46.17.43.227
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 19 - xiaohe
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: rWIg16plgZ82V7MTNcw1UTgiYK4ooPUB95qVhKIwIDc=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -409,19 +247,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 17 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 18 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 19 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 20 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 21 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 22 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 23 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 24 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 25 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 26 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 27 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 28 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 29 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 30 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 31 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 32 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -446,18 +271,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 17 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 18 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 19 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 20 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 21 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 22 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 23 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 24 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 25 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 26 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 27 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 28 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 29 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 30 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 31 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 32 - xiaohe
 rules:
 - MATCH,PROXIES
