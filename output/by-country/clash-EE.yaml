@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇱 荷兰 (Netherlands) 01 (家宽) - xiaohe
+- name: 🇪🇪 EE 01 - xiaohe
   type: vless
-  server: 92.119.164.196
+  server: 185.178.208.167
   port: 443
-  uuid: 28a4a8fc-15ab-418b-9aaf-655a84edf521
+  uuid: d49f7cc7-0c15-4a49-9644-ef72e00d8e56
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: le.zadonat.net
+  servername: dropstyle.lol
   network: ws
   ws-opts:
-    path: /realtime/stock/ticker
+    path: /service/metrics/51dec2df3071/
     headers:
-      Host: 92.119.164.196
+      Host: dropstyle.lol
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇳🇱 荷兰 (Netherlands) 01 (家宽) - xiaohe
+  - 🇪🇪 EE 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 (Netherlands) 01 (家宽) - xiaohe
+  - 🇪🇪 EE 01 - xiaohe
 rules:
 - MATCH,PROXIES
