@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 (家宽) - xiaohe
   type: vless
-  server: trdatair.egekaradecojistik.net.tr
-  port: 35577
-  uuid: b7d3a581-74d6-4ead-9235-ce9dedf08152
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: tgmansion.site
   network: ws
   ws-opts:
-    path: /
+    path: /vless-tr
     headers:
-      Host: play.google.com
+      Host: 177.3.208.65
 proxy-groups:
 - name: PROXIES
   type: select
