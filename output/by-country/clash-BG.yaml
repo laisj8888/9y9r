@@ -39,7 +39,7 @@ proxies:
   reality-opts:
     public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
   servername: play.googleapis.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 🇧🇬 BG 04 - xiaohe
   type: vless
   server: p11real3.greewebservices.ir
@@ -52,18 +52,6 @@ proxies:
     public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
   servername: play.googleapis.com
   client-fingerprint: ios
-- name: 🇧🇬 BG 05 - xiaohe
-  type: vless
-  server: p11real3.greewebservices.ir
-  port: 2202
-  uuid: f234330e-f9df-46e3-8f60-b2af5173c147
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-  servername: play.googleapis.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,7 +61,6 @@ proxy-groups:
   - 🇧🇬 BG 02 - xiaohe
   - 🇧🇬 BG 03 - xiaohe
   - 🇧🇬 BG 04 - xiaohe
-  - 🇧🇬 BG 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,6 +70,5 @@ proxy-groups:
   - 🇧🇬 BG 02 - xiaohe
   - 🇧🇬 BG 03 - xiaohe
   - 🇧🇬 BG 04 - xiaohe
-  - 🇧🇬 BG 05 - xiaohe
 rules:
 - MATCH,PROXIES
