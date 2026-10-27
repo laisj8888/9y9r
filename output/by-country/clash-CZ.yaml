@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
-  type: ss
-  server: location15.cpanel-host16.ir
-  port: 56137
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
+  type: vless
+  server: 185.22.154.131
+  port: 8080
+  uuid: FastKey_145297
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api
+    headers:
+      Host: google.com
 proxy-groups:
 - name: PROXIES
   type: select
