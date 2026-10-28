@@ -5,6 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  type: vmess
+  server: asiatun.roshdiran1.ir
+  port: 4242
+  uuid: 558fecaf-bea9-4bca-9e18-2f28240dd2df
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  type: ss
+  server: vip.brelux.ir
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: gCs4favaVa7ErDOoQ2AMpc-QVxA4Q4Jy
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   type: vless
   server: 155.103.71.142
   port: 443
@@ -18,62 +47,74 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  type: ss
-  server: 87.236.166.100
-  port: 56137
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  type: ss
-  server: 87.236.166.217
-  port: 56134
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  type: ss
-  server: 87.236.166.220
-  port: 56137
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-  udp: true
 - name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  type: ss
-  server: location8.cpanel-host10.ir
-  port: 56134
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: 177.3.208.65
 - name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  type: ss
-  server: 87.236.166.88
-  port: 56134
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: 177.3.208.65
 - name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
-  type: ss
-  server: 87.236.166.52
-  port: 56134
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
-  type: ss
-  server: 87.236.166.88
-  port: 56134
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: tgmansion.site
 - name: 🇹🇷 土耳其 (Turkey) 09 - xiaohe
-  type: ss
-  server: 87.236.166.100
-  port: 56137
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: 177.3.208.65
 - name: 🇹🇷 土耳其 (Turkey) 10 - xiaohe
   type: vless
   server: 155.103.71.142
@@ -90,134 +131,19 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 11 - xiaohe
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 12 - xiaohe
-  type: ss
-  server: location8.cpanel-host10.ir
-  port: 56134
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 13 - xiaohe
-  type: ss
-  server: 87.236.166.166
-  port: 56137
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 14 - xiaohe
-  type: ss
-  server: 87.236.166.88
-  port: 56134
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 15 - xiaohe
-  type: ss
-  server: 87.236.166.88
-  port: 56134
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 16 - xiaohe
-  type: ss
-  server: 206.1.103.237
-  port: 19999
-  cipher: 2022-blake3-aes-256-gcm
-  password: 1/kU1gF9gGRGdF5JH2jf3GeeLsItfkkOhmMP5cnPMUI=:ojXUsKiyV41J4EsaiAZFaKCW+zhuD3Tl0Z7pWkKq6eM=
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 17 - xiaohe
-  type: ss
-  server: 87.236.166.251
-  port: 56134
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 18 - xiaohe
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 19 - xiaohe
-  type: ss
-  server: 87.236.166.178
-  port: 56137
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 20 - xiaohe
-  type: ss
-  server: 87.236.166.49
-  port: 56134
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 21 - xiaohe
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 22 - xiaohe
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 23 - xiaohe
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 24 - xiaohe
-  type: vless
-  server: helixgaming.ir
-  port: 80
-  uuid: fdaedc78-af7c-4b75-abf9-ba162321ddd9
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: tgmansion.site
   network: ws
   ws-opts:
-    path: /
+    path: /vless-tr
     headers:
-      Host: play.google.com
-- name: 🇹🇷 土耳其 (Turkey) 25 - xiaohe
+      Host: 177.3.208.65
+- name: 🇹🇷 土耳其 (Turkey) 12 - xiaohe
   type: vless
   server: 155.103.71.142
   port: 443
@@ -231,6 +157,72 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 13 - xiaohe
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: tgmansion.site
+- name: 🇹🇷 土耳其 (Turkey) 14 - xiaohe
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: 177.3.208.65
+- name: 🇹🇷 土耳其 (Turkey) 15 - xiaohe
+  type: vmess
+  server: asiatun.roshdiran1.ir
+  port: 4242
+  uuid: 558fecaf-bea9-4bca-9e18-2f28240dd2df
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 16 - xiaohe
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: tgmansion.site
+- name: 🇹🇷 土耳其 (Turkey) 17 - xiaohe
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: 177.3.208.65
 proxy-groups:
 - name: PROXIES
   type: select
@@ -253,14 +245,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 15 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 16 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 17 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 18 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 19 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 20 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 21 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 22 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 23 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 24 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 25 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -283,13 +267,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 15 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 16 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 17 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 18 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 19 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 20 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 21 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 22 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 23 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 24 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 25 - xiaohe
 rules:
 - MATCH,PROXIES
