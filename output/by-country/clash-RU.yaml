@@ -5,52 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: cZGr8nLHdf+FE5ZAw0Y/Rzsml4AyikGL481Pg7eBpsI=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-  servername: ya.ru
-  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 194.87.143.165
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   type: ss
   server: 91.206.92.238
   port: 18443
   cipher: aes-256-gcm
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
-  server: z1q3pv4g78.rucdncomp.pro
+  server: 217.19.122.156
   port: 443
   uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   udp: true
@@ -62,47 +32,7 @@ proxies:
     path: /useraction/events/b892639b7195/
     headers:
       Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  type: vless
-  server: xsru2.freeddns.org
-  port: 443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xsru2.freeddns.org
-  network: ws
-  ws-opts:
-    path: /wsru
-    headers:
-      Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: cZGr8nLHdf+FE5ZAw0Y/Rzsml4AyikGL481Pg7eBpsI=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  type: ss
-  server: 91.206.92.238
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-  servername: ya.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   type: vmess
   server: 158.160.180.165
   port: 24212
@@ -113,6 +43,66 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 158.160.180.165
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  type: vless
+  server: swz.proxyplankton.ru
+  port: 443
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: swz.proxyplankton.ru
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  type: vmess
+  server: 158.160.180.165
+  port: 24212
+  uuid: c58c1205-b308-416f-8503-c04557abf93d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  type: ss
+  server: alb.rvpn.app
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: hTTg7lwQMzpaF7KXpY3A8w
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  type: vmess
+  server: 158.160.180.165
+  port: 24212
+  uuid: c58c1205-b308-416f-8503-c04557abf93d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
+  type: vmess
+  server: 158.160.180.165
+  port: 24212
+  uuid: c58c1205-b308-416f-8503-c04557abf93d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 158.160.180.165
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
+  type: vmess
+  server: 158.160.180.165
+  port: 24212
+  uuid: c58c1205-b308-416f-8503-c04557abf93d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
   type: vmess
   server: 158.160.180.165
@@ -156,7 +146,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 158.160.180.165
+  servername: ''
 - name: 🇷🇺 俄罗斯 (Russia) 15 - xiaohe
   type: vmess
   server: 158.160.180.165
@@ -191,12 +181,16 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇷🇺 俄罗斯 (Russia) 18 - xiaohe
-  type: ss
-  server: 91.206.92.238
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  type: vmess
+  server: 158.160.180.165
+  port: 24212
+  uuid: c58c1205-b308-416f-8503-c04557abf93d
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇷🇺 俄罗斯 (Russia) 19 - xiaohe
   type: vmess
   server: 158.160.180.165
@@ -210,105 +204,58 @@ proxies:
   servername: ''
 - name: 🇷🇺 俄罗斯 (Russia) 20 - xiaohe
   type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  server: 194.55.239.89
+  port: 443
+  uuid: 073b7df7-5527-45a2-ba29-183b85c39071
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 194.87.143.165
+  servername: broadcast.liveflow.space
   network: ws
   ws-opts:
-    path: /
+    path: /live.stream.v1.Broadcast/
     headers:
-      Host: 194.87.143.165
+      Host: 194.55.239.89
 - name: 🇷🇺 俄罗斯 (Russia) 21 - xiaohe
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  type: vmess
+  server: 158.160.180.165
+  port: 24212
+  uuid: c58c1205-b308-416f-8503-c04557abf93d
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
+  servername: 158.160.180.165
 - name: 🇷🇺 俄罗斯 (Russia) 22 - xiaohe
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇷🇺 俄罗斯 (Russia) 23 - xiaohe
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇷🇺 俄罗斯 (Russia) 24 - xiaohe
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇷🇺 俄罗斯 (Russia) 25 - xiaohe
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 26 - xiaohe
   type: ss
   server: 91.206.92.238
   port: 18443
   cipher: aes-256-gcm
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 27 - xiaohe
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
+- name: 🇷🇺 俄罗斯 (Russia) 23 - xiaohe
+  type: vless
+  server: se3.h1cloud.net
+  port: 25387
+  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 158.160.180.165
-- name: 🇷🇺 俄罗斯 (Russia) 28 - xiaohe
-  type: ss
-  server: alb.rvpn.app
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: hTTg7lwQMzpaF7KXpY3A8w
+  reality-opts:
+    public-key: _nrnGiJUdyeLv2afSwe6P4j02AMayY34WFMjUJp5Kwc
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 24 - xiaohe
+  type: vless
+  server: swz.proxyplankton.ru
+  port: 443
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 29 - xiaohe
+  tls: true
+  skip-cert-verify: true
+  servername: swz.proxyplankton.ru
+- name: 🇷🇺 俄罗斯 (Russia) 25 - xiaohe
   type: vmess
   server: 158.160.180.165
   port: 24212
@@ -319,17 +266,65 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇷🇺 俄罗斯 (Russia) 30 - xiaohe
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
+- name: 🇷🇺 俄罗斯 (Russia) 26 - xiaohe
+  type: vless
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 158.160.180.165
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 27 - xiaohe
+  type: vless
+  server: xsru2.freeddns.org
+  port: 443
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xsru2.freeddns.org
+  network: ws
+  ws-opts:
+    path: /wsru
+    headers:
+      Host: xsru2.freeddns.org
+- name: 🇷🇺 俄罗斯 (Russia) 28 - xiaohe
+  type: vless
+  server: 217.19.122.156
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  network: ws
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: 🇷🇺 俄罗斯 (Russia) 29 - xiaohe
+  type: ss
+  server: 91.206.92.238
+  port: 18443
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 30 - xiaohe
+  type: vless
+  server: se3.h1cloud.net
+  port: 25387
+  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: _nrnGiJUdyeLv2afSwe6P4j02AMayY34WFMjUJp5Kwc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 31 - xiaohe
   type: vmess
   server: 158.160.180.165
@@ -342,47 +337,6 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇷🇺 俄罗斯 (Russia) 32 - xiaohe
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 33 - xiaohe
-  type: ss
-  server: msk2.rvpn.app
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: MODziWLa9qMuW-4yPa0rfw
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 34 - xiaohe
-  type: vless
-  server: 149.33.15.213
-  port: 443
-  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: swz.proxyplankton.ru
-- name: 🇷🇺 俄罗斯 (Russia) 35 - xiaohe
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇷🇺 俄罗斯 (Russia) 36 - xiaohe
   type: vmess
   server: 158.160.180.165
   port: 24212
@@ -393,29 +347,14 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 158.160.180.165
-- name: 🇷🇺 俄罗斯 (Russia) 37 - xiaohe
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
+- name: 🇷🇺 俄罗斯 (Russia) 33 - xiaohe
+  type: ss
+  server: msk2.rvpn.app
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: MODziWLa9qMuW-4yPa0rfw
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇷🇺 俄罗斯 (Russia) 38 - xiaohe
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇷🇺 俄罗斯 (Russia) 39 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 34 - xiaohe
   type: vless
   server: 217.19.122.156
   port: 443
@@ -429,6 +368,34 @@ proxies:
     path: /useraction/events/b892639b7195/
     headers:
       Host: z1q3pv4g78.rucdncomp.pro
+- name: 🇷🇺 俄罗斯 (Russia) 35 - xiaohe
+  type: vless
+  server: 147.45.175.81
+  port: 443
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xsru2.freeddns.org
+  network: ws
+  ws-opts:
+    path: /wsru
+    headers:
+      Host: xsru2.freeddns.org
+- name: 🇷🇺 俄罗斯 (Russia) 36 - xiaohe
+  type: vless
+  server: 194.55.239.89
+  port: 443
+  uuid: 073b7df7-5527-45a2-ba29-183b85c39071
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: broadcast.liveflow.space
+  network: ws
+  ws-opts:
+    path: /live.stream.v1.Broadcast/
+    headers:
+      Host: 194.55.239.89
 proxy-groups:
 - name: PROXIES
   type: select
@@ -470,9 +437,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 34 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 35 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 36 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 37 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 38 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 39 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -514,8 +478,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 34 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 35 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 36 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 37 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 38 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 39 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -6,32 +6,30 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: tgmansion.site
-  network: ws
-  ws-opts:
-    path: /vless-tr
-    headers:
-      Host: 177.3.208.65
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  server: 206.1.101.85
+  port: 42654
+  uuid: ab9e2cf5-b5f5-45d1-bddf-8ea9b6fcc48f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: tgmansion.site
+  servername: 206.1.101.85
   network: ws
   ws-opts:
-    path: /vless-tr
+    path: /
     headers:
-      Host: tgmansion.site
+      Host: 206.1.101.85
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   type: vless
   server: 155.103.71.142
@@ -43,7 +41,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
@@ -57,7 +55,7 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   type: vless
   server: 177.3.208.65
@@ -71,7 +69,7 @@ proxies:
   ws-opts:
     path: /vless-tr
     headers:
-      Host: 177.3.208.65
+      Host: tgmansion.site
 - name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   type: vless
   server: 177.3.208.65
@@ -85,8 +83,20 @@ proxies:
   ws-opts:
     path: /vless-tr
     headers:
-      Host: 177.3.208.65
+      Host: tgmansion.site
 - name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
   type: vless
   server: 177.3.208.65
   port: 443
@@ -100,38 +110,63 @@ proxies:
     path: /vless-tr
     headers:
       Host: 177.3.208.65
-- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 09 - xiaohe
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: firefox
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: 177.3.208.65
 - name: 🇹🇷 土耳其 (Turkey) 10 - xiaohe
-  type: ss
-  server: 206.1.103.237
-  port: 19999
-  cipher: 2022-blake3-aes-256-gcm
-  password: 1/kU1gF9gGRGdF5JH2jf3GeeLsItfkkOhmMP5cnPMUI=:ojXUsKiyV41J4EsaiAZFaKCW+zhuD3Tl0Z7pWkKq6eM=
+  type: vless
+  server: 206.1.101.85
+  port: 42654
+  uuid: ab9e2cf5-b5f5-45d1-bddf-8ea9b6fcc48f
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 206.1.101.85
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 206.1.101.85
 - name: 🇹🇷 土耳其 (Turkey) 11 - xiaohe
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: 177.3.208.65
+- name: 🇹🇷 土耳其 (Turkey) 12 - xiaohe
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: 177.3.208.65
+- name: 🇹🇷 土耳其 (Turkey) 13 - xiaohe
   type: vless
   server: 155.103.71.142
   port: 443
@@ -145,6 +180,18 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 14 - xiaohe
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -161,6 +208,9 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 09 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 10 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 11 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 12 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 13 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 14 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -177,5 +227,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 09 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 10 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 11 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 12 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 13 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 14 - xiaohe
 rules:
 - MATCH,PROXIES
