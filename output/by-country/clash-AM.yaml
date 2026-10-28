@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
 - name: 🇦🇲 AM 03 - xiaohe
   type: vless
   server: 77.91.68.70
@@ -88,6 +88,66 @@ proxies:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
   client-fingerprint: chrome
+- name: 🇦🇲 AM 08 - xiaohe
+  type: vless
+  server: 77.91.68.70
+  port: 55983
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇦🇲 AM 09 - xiaohe
+  type: vless
+  server: 77.91.68.70
+  port: 55983
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+  servername: yahoo.com
+  client-fingerprint: firefox
+- name: 🇦🇲 AM 10 - xiaohe
+  type: vless
+  server: 77.91.68.70
+  port: 55983
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+  servername: yahoo.com
+  client-fingerprint: random
+- name: 🇦🇲 AM 11 - xiaohe
+  type: vless
+  server: 77.91.68.70
+  port: 55983
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇦🇲 AM 12 - xiaohe
+  type: vless
+  server: 77.91.68.70
+  port: 55983
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+  servername: yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -100,6 +160,11 @@ proxy-groups:
   - 🇦🇲 AM 05 - xiaohe
   - 🇦🇲 AM 06 - xiaohe
   - 🇦🇲 AM 07 - xiaohe
+  - 🇦🇲 AM 08 - xiaohe
+  - 🇦🇲 AM 09 - xiaohe
+  - 🇦🇲 AM 10 - xiaohe
+  - 🇦🇲 AM 11 - xiaohe
+  - 🇦🇲 AM 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -112,5 +177,10 @@ proxy-groups:
   - 🇦🇲 AM 05 - xiaohe
   - 🇦🇲 AM 06 - xiaohe
   - 🇦🇲 AM 07 - xiaohe
+  - 🇦🇲 AM 08 - xiaohe
+  - 🇦🇲 AM 09 - xiaohe
+  - 🇦🇲 AM 10 - xiaohe
+  - 🇦🇲 AM 11 - xiaohe
+  - 🇦🇲 AM 12 - xiaohe
 rules:
 - MATCH,PROXIES

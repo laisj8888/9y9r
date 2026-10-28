@@ -15,10 +15,10 @@ proxies:
   reality-opts:
     public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
   servername: www.samsung.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇪🇪 EE 02 - xiaohe
   type: vless
-  server: 79.182.39.232
+  server: 79.182.39.233
   port: 25895
   uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   udp: true
@@ -27,10 +27,10 @@ proxies:
   reality-opts:
     public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
   servername: www.samsung.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇪🇪 EE 03 - xiaohe
   type: vless
-  server: ee.h1cloud.net
+  server: 79.182.39.232
   port: 25895
   uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   udp: true
@@ -52,6 +52,80 @@ proxies:
     public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
   servername: www.samsung.com
   client-fingerprint: chrome
+- name: 🇪🇪 EE 05 - xiaohe
+  type: vless
+  server: 79.182.39.232
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇪🇪 EE 06 - xiaohe
+  type: vless
+  server: 79.182.39.232
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇪🇪 EE 07 - xiaohe
+  type: vless
+  server: ee.h1cloud.net
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇪🇪 EE 08 - xiaohe
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-ee
+    headers:
+      Host: 177.3.208.65
+- name: 🇪🇪 EE 09 - xiaohe
+  type: vless
+  server: 79.182.39.237
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇪🇪 EE 10 - xiaohe
+  type: vless
+  server: ee.h1cloud.net
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+  servername: www.samsung.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +135,12 @@ proxy-groups:
   - 🇪🇪 EE 02 - xiaohe
   - 🇪🇪 EE 03 - xiaohe
   - 🇪🇪 EE 04 - xiaohe
+  - 🇪🇪 EE 05 - xiaohe
+  - 🇪🇪 EE 06 - xiaohe
+  - 🇪🇪 EE 07 - xiaohe
+  - 🇪🇪 EE 08 - xiaohe
+  - 🇪🇪 EE 09 - xiaohe
+  - 🇪🇪 EE 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,5 +150,11 @@ proxy-groups:
   - 🇪🇪 EE 02 - xiaohe
   - 🇪🇪 EE 03 - xiaohe
   - 🇪🇪 EE 04 - xiaohe
+  - 🇪🇪 EE 05 - xiaohe
+  - 🇪🇪 EE 06 - xiaohe
+  - 🇪🇪 EE 07 - xiaohe
+  - 🇪🇪 EE 08 - xiaohe
+  - 🇪🇪 EE 09 - xiaohe
+  - 🇪🇪 EE 10 - xiaohe
 rules:
 - MATCH,PROXIES

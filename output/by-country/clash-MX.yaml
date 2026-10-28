@@ -5,23 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 MX 01 - xiaohe
-  type: vless
-  server: mx001.zestapp778.com
-  port: 19167
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  type: vmess
+  server: 38.60.224.173
+  port: 32153
+  uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: mx001.zestapp778.com
 - name: 🇲🇽 MX 02 - xiaohe
-  type: vless
-  server: mx001.zestapp778.com
-  port: 19167
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  type: vmess
+  server: 38.60.224.173
+  port: 32153
+  uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: mx001.zestapp778.com
 - name: 🇲🇽 MX 03 - xiaohe
   type: vless
   server: mx001.zestapp778.com
@@ -32,6 +34,15 @@ proxies:
   skip-cert-verify: true
   servername: mx001.zestapp778.com
 - name: 🇲🇽 MX 04 - xiaohe
+  type: vless
+  server: mx001.zestapp778.com
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 05 - xiaohe
   type: vmess
   server: 38.60.224.173
   port: 32153
@@ -41,7 +52,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇲🇽 MX 05 - xiaohe
+- name: 🇲🇽 MX 06 - xiaohe
   type: vless
   server: mx001.zestapp778.com
   port: 19167
@@ -60,6 +71,7 @@ proxy-groups:
   - 🇲🇽 MX 03 - xiaohe
   - 🇲🇽 MX 04 - xiaohe
   - 🇲🇽 MX 05 - xiaohe
+  - 🇲🇽 MX 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,5 +82,6 @@ proxy-groups:
   - 🇲🇽 MX 03 - xiaohe
   - 🇲🇽 MX 04 - xiaohe
   - 🇲🇽 MX 05 - xiaohe
+  - 🇲🇽 MX 06 - xiaohe
 rules:
 - MATCH,PROXIES
