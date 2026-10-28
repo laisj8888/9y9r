@@ -4,27 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇪 PE 01 - xiaohe
-  type: vmess
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16322
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+- name: 🇮🇪 IE 01 - xiaohe
+  type: ss
+  server: dns22.m3hrzd.ir
+  port: 1347
+  cipher: chacha20-ietf-poly1305
+  password: U5Jk0BhRNKjb5wQBBOXx2wwkWZ_yWU0N
   udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇪 PE 01 - xiaohe
+  - 🇮🇪 IE 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇪 PE 01 - xiaohe
+  - 🇮🇪 IE 01 - xiaohe
 rules:
 - MATCH,PROXIES
