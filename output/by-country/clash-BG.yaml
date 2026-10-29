@@ -6,29 +6,72 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - xiaohe
   type: vless
-  server: 103.249.134.29
-  port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  server: gb.privatevip.ir
+  port: 449
+  uuid: 7c730089-1791-4828-89b2-86e7e1663063
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: gb.privatevip.ir
+- name: 🇧🇬 BG 02 - xiaohe
+  type: vless
+  server: p11real3.greewebservices.ir
+  port: 2202
+  uuid: f234330e-f9df-46e3-8f60-b2af5173c147
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free.cndyw.ggff.net
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+  servername: play.googleapis.com
+  client-fingerprint: ios
+- name: 🇧🇬 BG 03 - xiaohe
+  type: vless
+  server: gb.privatevip.ir
+  port: 449
+  uuid: 7c730089-1791-4828-89b2-86e7e1663063
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: pyip=bpb.yousef.isegaro.com
+    path: /
     headers:
-      Host: free.cndyw.ggff.net
+      Host: gb.privatevip.ir
+- name: 🇧🇬 BG 04 - xiaohe
+  type: vless
+  server: gb.privatevip.ir
+  port: 449
+  uuid: 7c730089-1791-4828-89b2-86e7e1663063
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: gb.privatevip.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇬 BG 01 - xiaohe
+  - 🇧🇬 BG 02 - xiaohe
+  - 🇧🇬 BG 03 - xiaohe
+  - 🇧🇬 BG 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇬 BG 01 - xiaohe
+  - 🇧🇬 BG 02 - xiaohe
+  - 🇧🇬 BG 03 - xiaohe
+  - 🇧🇬 BG 04 - xiaohe
 rules:
 - MATCH,PROXIES

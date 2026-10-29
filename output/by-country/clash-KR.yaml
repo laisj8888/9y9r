@@ -5,6 +5,41 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - xiaohe
+  type: ss
+  server: 141.164.45.187
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
+  type: vmess
+  server: nickgus.cc.cd
+  port: 443
+  uuid: 56eee791-99e8-4e11-9d27-539b46c14368
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /photos
+    headers:
+      Host: ''
+- name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
   type: vless
   server: 152.69.226.63
   port: 25555
@@ -17,63 +52,19 @@ proxies:
     path: /
     headers:
       Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 'null'
-- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: kr02.a0a.xyz
 - name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
   type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
   type: vmess
   server: 132.145.80.230
@@ -88,60 +79,59 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: 132.145.80.230
-- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
-  type: vmess
-  server: seoul02.zgjok.com
-  port: 443
-  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: seoul02.zgjok.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: seoul02.zgjok.com
-- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
       Host: kr02.a0a.xyz
-- name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
   type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  server: sg2-xr.zgrelay.com
+  port: 443
+  uuid: E221699D-E705-4664-9162-A75A82AA3997
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 10 - xiaohe
-  type: vmess
-  server: 146.56.112.110
-  port: 8888
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-  alterId: 0
-  cipher: auto
+  servername: sg2-xr.zgrelay.com
+  network: ws
+  ws-opts:
+    path: /700gvl-kr3
+    headers:
+      Host: sg2-xr.zgrelay.com
+- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
+  type: vless
+  server: 112.169.175.199
+  port: 31157
+  uuid: bd2fb303-b4c7-49af-a8e3-5c6f11b005dd
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
+  type: vmess
+  server: nickgus.cc.cd
+  port: 443
+  uuid: 56eee791-99e8-4e11-9d27-539b46c14368
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nickgus.cc.cd
+  network: ws
+  ws-opts:
+    path: /photos
+    headers:
+      Host: nickgus.cc.cd
+- name: 🇰🇷 韩国 (South Korea) 10 - xiaohe
+  type: vless
+  server: sg2-xr.zgrelay.com
+  port: 443
+  uuid: E221699D-E705-4664-9162-A75A82AA3997
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sg2-xr.zgrelay.com
+  network: ws
+  ws-opts:
+    path: /700gvl-kr3
+    headers:
+      Host: sg2-xr.zgrelay.com
 - name: 🇰🇷 韩国 (South Korea) 11 - xiaohe
   type: vless
   server: 152.69.226.63
@@ -156,6 +146,56 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 12 - xiaohe
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 13 - xiaohe
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 14 - xiaohe
+  type: ss
+  server: 141.164.45.187
+  port: 5498
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 15 - xiaohe
+  type: vmess
+  server: nickgus.cc.cd
+  port: 443
+  uuid: 56eee791-99e8-4e11-9d27-539b46c14368
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /photos
+    headers:
+      Host: ''
+- name: 🇰🇷 韩国 (South Korea) 16 - xiaohe
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -170,7 +210,7 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: ''
-- name: 🇰🇷 韩国 (South Korea) 13 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 17 - xiaohe
   type: vmess
   server: nickgus.cc.cd
   port: 443
@@ -186,7 +226,7 @@ proxies:
     path: /photos
     headers:
       Host: nickgus.cc.cd
-- name: 🇰🇷 韩国 (South Korea) 14 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 18 - xiaohe
   type: vless
   server: sg2-xr.zgrelay.com
   port: 443
@@ -200,14 +240,20 @@ proxies:
     path: /700gvl-kr3
     headers:
       Host: sg2-xr.zgrelay.com
-- name: 🇰🇷 韩国 (South Korea) 15 - xiaohe
-  type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
+- name: 🇰🇷 韩国 (South Korea) 19 - xiaohe
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 16 - xiaohe
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 20 - xiaohe
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -221,8 +267,79 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: 132.145.80.230
-- name: 🇰🇷 韩国 (South Korea) 17 - xiaohe
+      Host: 'null'
+- name: 🇰🇷 韩国 (South Korea) 21 - xiaohe
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 22 - xiaohe
+  type: vless
+  server: sg2-xr.zgrelay.com
+  port: 443
+  uuid: E221699D-E705-4664-9162-A75A82AA3997
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sg2-xr.zgrelay.com
+  network: ws
+  ws-opts:
+    path: /700gvl-kr3
+    headers:
+      Host: sg2-xr.zgrelay.com
+- name: 🇰🇷 韩国 (South Korea) 23 - xiaohe
+  type: vmess
+  server: nickgus.cc.cd
+  port: 443
+  uuid: 56eee791-99e8-4e11-9d27-539b46c14368
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /photos
+    headers:
+      Host: ''
+- name: 🇰🇷 韩国 (South Korea) 24 - xiaohe
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 25 - xiaohe
+  type: vmess
+  server: 146.56.112.110
+  port: 8888
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 26 - xiaohe
+  type: ss
+  server: 141.164.45.187
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 27 - xiaohe
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -234,22 +351,7 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 18 - xiaohe
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 132.145.80.230
-- name: 🇰🇷 韩国 (South Korea) 19 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 28 - xiaohe
   type: vmess
   server: seoul02.zgjok.com
   port: 443
@@ -265,56 +367,21 @@ proxies:
     path: /
     headers:
       Host: seoul02.zgjok.com
-- name: 🇰🇷 韩国 (South Korea) 20 - xiaohe
-  type: ss
-  server: 141.164.45.187
-  port: 6697
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 21 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 29 - xiaohe
   type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 22 - xiaohe
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  server: sg2-xr.zgrelay.com
+  port: 443
+  uuid: E221699D-E705-4664-9162-A75A82AA3997
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 23 - xiaohe
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 24 - xiaohe
-  type: ss
-  server: 141.164.45.187
-  port: 6679
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 25 - xiaohe
+  servername: sg2-xr.zgrelay.com
+  network: ws
+  ws-opts:
+    path: /700gvl-kr3
+    headers:
+      Host: sg2-xr.zgrelay.com
+- name: 🇰🇷 韩国 (South Korea) 30 - xiaohe
   type: vless
   server: sg2-xr.zgrelay.com
   port: 443
@@ -328,76 +395,6 @@ proxies:
     path: /700gvl-kr3
     headers:
       Host: sg2-xr.zgrelay.com
-- name: 🇰🇷 韩国 (South Korea) 26 - xiaohe
-  type: vmess
-  server: nickgus.cc.cd
-  port: 443
-  uuid: 56eee791-99e8-4e11-9d27-539b46c14368
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nickgus.cc.cd
-  network: ws
-  ws-opts:
-    path: /photos
-    headers:
-      Host: nickgus.cc.cd
-- name: 🇰🇷 韩国 (South Korea) 27 - xiaohe
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 28 - xiaohe
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 29 - xiaohe
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 30 - xiaohe
-  type: vmess
-  server: nickgus.cc.cd
-  port: 443
-  uuid: 56eee791-99e8-4e11-9d27-539b46c14368
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nickgus.cc.cd
-  network: ws
-  ws-opts:
-    path: /photos
-    headers:
-      Host: nickgus.cc.cd
 - name: 🇰🇷 韩国 (South Korea) 31 - xiaohe
   type: vmess
   server: 132.145.80.230
@@ -412,8 +409,15 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: ''
+      Host: 132.145.80.230
 - name: 🇰🇷 韩国 (South Korea) 32 - xiaohe
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 33 - xiaohe
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -427,8 +431,50 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 33 - xiaohe
+      Host: 132.145.80.230
+- name: 🇰🇷 韩国 (South Korea) 34 - xiaohe
+  type: vless
+  server: sg2-xr.zgrelay.com
+  port: 443
+  uuid: E221699D-E705-4664-9162-A75A82AA3997
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sg2-xr.zgrelay.com
+  network: ws
+  ws-opts:
+    path: /700gvl-kr3
+    headers:
+      Host: sg2-xr.zgrelay.com
+- name: 🇰🇷 韩国 (South Korea) 35 - xiaohe
+  type: vmess
+  server: seoul02.zgjok.com
+  port: 443
+  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: seoul02.zgjok.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: seoul02.zgjok.com
+- name: 🇰🇷 韩国 (South Korea) 36 - xiaohe
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 37 - xiaohe
   type: vmess
   server: nickgus.cc.cd
   port: 443
@@ -444,108 +490,56 @@ proxies:
     path: /photos
     headers:
       Host: nickgus.cc.cd
-- name: 🇰🇷 韩国 (South Korea) 34 - xiaohe
-  type: vmess
-  server: nickgus.cc.cd
-  port: 443
-  uuid: 56eee791-99e8-4e11-9d27-539b46c14368
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /photos
-    headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 35 - xiaohe
-  type: vmess
-  server: nickgus.cc.cd
-  port: 443
-  uuid: 56eee791-99e8-4e11-9d27-539b46c14368
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /photos
-    headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 36 - xiaohe
-  type: vless
-  server: sg2-xr.zgrelay.com
-  port: 443
-  uuid: E221699D-E705-4664-9162-A75A82AA3997
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sg2-xr.zgrelay.com
-  network: ws
-  ws-opts:
-    path: /700gvl-kr3
-    headers:
-      Host: sg2-xr.zgrelay.com
-- name: 🇰🇷 韩国 (South Korea) 37 - xiaohe
-  type: vless
-  server: sg2-xr.zgrelay.com
-  port: 443
-  uuid: E221699D-E705-4664-9162-A75A82AA3997
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sg2-xr.zgrelay.com
-  network: ws
-  ws-opts:
-    path: /700gvl-kr3
-    headers:
-      Host: sg2-xr.zgrelay.com
 - name: 🇰🇷 韩国 (South Korea) 38 - xiaohe
-  type: vless
-  server: sg2-xr.zgrelay.com
-  port: 443
-  uuid: E221699D-E705-4664-9162-A75A82AA3997
+  type: vmess
+  server: 146.56.112.110
+  port: 8888
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: sg2-xr.zgrelay.com
-  network: ws
-  ws-opts:
-    path: /700gvl-kr3
-    headers:
-      Host: sg2-xr.zgrelay.com
 - name: 🇰🇷 韩国 (South Korea) 39 - xiaohe
-  type: ss
-  server: 141.164.45.187
-  port: 7002
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 40 - xiaohe
-  type: ss
-  server: 141.164.45.187
-  port: 5001
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 41 - xiaohe
-  type: ss
-  server: 141.164.45.187
-  port: 9090
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 42 - xiaohe
   type: ss
   server: 141.164.45.187
   port: 7001
   cipher: aes-256-gcm
   password: RexnBgU7EV5ADxG
   udp: true
+- name: 🇰🇷 韩国 (South Korea) 40 - xiaohe
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 41 - xiaohe
+  type: vmess
+  server: seoul02.zgjok.com
+  port: 443
+  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: seoul02.zgjok.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: seoul02.zgjok.com
+- name: 🇰🇷 韩国 (South Korea) 42 - xiaohe
+  type: vmess
+  server: 146.56.112.110
+  port: 8888
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 43 - xiaohe
   type: vless
   server: 151.245.106.49
@@ -557,8 +551,24 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 44 - xiaohe
+  type: vmess
+  server: seoul02.zgjok.com
+  port: 443
+  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: seoul02.zgjok.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: seoul02.zgjok.com
+- name: 🇰🇷 韩国 (South Korea) 45 - xiaohe
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -573,7 +583,7 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: ''
-- name: 🇰🇷 韩国 (South Korea) 45 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 46 - xiaohe
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -585,57 +595,22 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 46 - xiaohe
-  type: vmess
-  server: nickgus.cc.cd
-  port: 443
-  uuid: 56eee791-99e8-4e11-9d27-539b46c14368
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /photos
-    headers:
-      Host: ''
 - name: 🇰🇷 韩国 (South Korea) 47 - xiaohe
   type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: ''
 - name: 🇰🇷 韩国 (South Korea) 48 - xiaohe
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 49 - xiaohe
-  type: ss
-  server: 141.164.45.187
-  port: 8119
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 50 - xiaohe
-  type: ss
-  server: 141.164.45.187
-  port: 9090
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 51 - xiaohe
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -650,6 +625,39 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 49 - xiaohe
+  type: ss
+  server: 141.164.45.187
+  port: 8000
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 50 - xiaohe
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 51 - xiaohe
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
 proxy-groups:
 - name: PROXIES
   type: select
