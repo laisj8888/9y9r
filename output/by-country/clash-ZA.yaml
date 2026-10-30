@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - xiaohe
   type: ss
+  server: 139.84.247.164
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: tfAcRikawhNoZAhu
+  udp: true
+- name: 🇿🇦 ZA 02 - xiaohe
+  type: ss
   server: 20.87.213.148
   port: 443
   cipher: chacha20-ietf-poly1305
   password: KpIjwx8W2MbSzezl
-  udp: true
-- name: 🇿🇦 ZA 02 - xiaohe
-  type: ss
-  server: 102.133.165.160
-  port: 16233
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 - name: 🇿🇦 ZA 03 - xiaohe
   type: ss
@@ -34,27 +34,24 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 05 - xiaohe
   type: ss
-  server: 139.84.247.164
-  port: 8388
+  server: 102.133.165.160
+  port: 16233
   cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 - name: 🇿🇦 ZA 06 - xiaohe
-  type: vmess
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16266
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇿🇦 ZA 07 - xiaohe
   type: ss
   server: 102.133.165.160
   port: 16233
   cipher: chacha20-ietf-poly1305
   password: Xsy8Ox4yOV3xLlpxtjzs3X
+  udp: true
+- name: 🇿🇦 ZA 07 - xiaohe
+  type: ss
+  server: 20.87.213.148
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: KpIjwx8W2MbSzezl
   udp: true
 proxy-groups:
 - name: PROXIES
