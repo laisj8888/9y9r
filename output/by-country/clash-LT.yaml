@@ -60,34 +60,6 @@ proxies:
     path: /fp
     headers:
       Host: ccc.010304.xyz
-- name: 🇱🇹 LT 05 - xiaohe
-  type: vless
-  server: 88.216.69.253
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇱🇹 LT 06 - xiaohe
-  type: vless
-  server: 88.216.69.253
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,8 +69,6 @@ proxy-groups:
   - 🇱🇹 LT 02 - xiaohe
   - 🇱🇹 LT 03 - xiaohe
   - 🇱🇹 LT 04 - xiaohe
-  - 🇱🇹 LT 05 - xiaohe
-  - 🇱🇹 LT 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -108,7 +78,5 @@ proxy-groups:
   - 🇱🇹 LT 02 - xiaohe
   - 🇱🇹 LT 03 - xiaohe
   - 🇱🇹 LT 04 - xiaohe
-  - 🇱🇹 LT 05 - xiaohe
-  - 🇱🇹 LT 06 - xiaohe
 rules:
 - MATCH,PROXIES
