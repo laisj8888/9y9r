@@ -6,6 +6,60 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: 177.3.208.65
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: 177.3.208.65
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: 177.3.208.65
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  type: vless
   server: 155.103.71.142
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -18,35 +72,58 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   type: vless
-  server: 206.1.101.85
-  port: 42654
-  uuid: 893845c5-8e4a-48d5-8a85-622f5b7ea950
+  server: tr.privatevip.ir
+  port: 448
+  uuid: 7c730089-1791-4828-89b2-86e7e1663063
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 206.1.101.85
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 206.1.101.85
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+      Host: tr.privatevip.ir
+- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
   type: vless
-  server: 206.1.101.85
-  port: 42654
-  uuid: 893845c5-8e4a-48d5-8a85-622f5b7ea950
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 206.1.101.85
+  servername: tgmansion.site
   network: ws
   ws-opts:
-    path: /
+    path: /vless-tr
     headers:
-      Host: 206.1.101.85
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+      Host: 177.3.208.65
+- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 09 - xiaohe
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 10 - xiaohe
   type: vless
   server: 155.103.71.142
   port: 443
@@ -60,95 +137,20 @@ proxies:
     path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  type: vmess
-  server: free.ertebatgoostar.ir
-  port: 443
-  uuid: 118b0abc-c8f6-476a-9777-bc73f6e2548b
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tgmansion.site
-  network: ws
-  ws-opts:
-    path: /vless-tr
-    headers:
-      Host: 177.3.208.65
-- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
-  type: vmess
-  server: free.ertebatgoostar.ir
-  port: 443
-  uuid: 118b0abc-c8f6-476a-9777-bc73f6e2548b
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
-  type: vless
-  server: 146.75.59.186
-  port: 443
-  uuid: 606047d0-56ec-4152-8d3b-13c5d4adef03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
-    headers:
-      Host: looabturkeyeoijji.global.ssl.fastly.net.
-- name: 🇹🇷 土耳其 (Turkey) 09 - xiaohe
-  type: vless
-  server: 146.75.59.186
-  port: 443
-  uuid: 606047d0-56ec-4152-8d3b-13c5d4adef03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: looabturkeyeoijji.global.ssl.fastly.net.
-- name: 🇹🇷 土耳其 (Turkey) 10 - xiaohe
-  type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tgmansion.site
-  network: ws
-  ws-opts:
-    path: /vless-tr
-    headers:
-      Host: 177.3.208.65
 - name: 🇹🇷 土耳其 (Turkey) 11 - xiaohe
   type: vless
-  server: tr.privatevip.ir
-  port: 448
-  uuid: 7c730089-1791-4828-89b2-86e7e1663063
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: tgmansion.site
   network: ws
   ws-opts:
-    path: /
+    path: /vless-tr
     headers:
-      Host: tr.privatevip.ir
+      Host: 177.3.208.65
 - name: 🇹🇷 土耳其 (Turkey) 12 - xiaohe
   type: vless
   server: 177.3.208.65
@@ -190,7 +192,7 @@ proxies:
   ws-opts:
     path: /vless-tr
     headers:
-      Host: 177.3.208.65
+      Host: tgmansion.site
 - name: 🇹🇷 土耳其 (Turkey) 15 - xiaohe
   type: vless
   server: 177.3.208.65
@@ -206,41 +208,20 @@ proxies:
     headers:
       Host: 177.3.208.65
 - name: 🇹🇷 土耳其 (Turkey) 16 - xiaohe
-  type: vmess
-  server: free.ertebatgoostar.ir
-  port: 443
-  uuid: 118b0abc-c8f6-476a-9777-bc73f6e2548b
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 17 - xiaohe
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 18 - xiaohe
-  type: vless
-  server: tr.privatevip.ir
-  port: 448
-  uuid: 7c730089-1791-4828-89b2-86e7e1663063
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: tgmansion.site
   network: ws
   ws-opts:
-    path: /
+    path: /vless-tr
     headers:
-      Host: tr.privatevip.ir
-- name: 🇹🇷 土耳其 (Turkey) 19 - xiaohe
+      Host: 177.3.208.65
+- name: 🇹🇷 土耳其 (Turkey) 17 - xiaohe
   type: vless
   server: 177.3.208.65
   port: 443
@@ -254,78 +235,19 @@ proxies:
     path: /vless-tr
     headers:
       Host: tgmansion.site
-- name: 🇹🇷 土耳其 (Turkey) 20 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 18 - xiaohe
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 21 - xiaohe
-  type: vmess
-  server: free.ertebatgoostar.ir
-  port: 443
-  uuid: 118b0abc-c8f6-476a-9777-bc73f6e2548b
-  alterId: 0
-  cipher: auto
+  server: tr.privatevip.ir
+  port: 448
+  uuid: 7c730089-1791-4828-89b2-86e7e1663063
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 22 - xiaohe
-  type: vmess
-  server: free.ertebatgoostar.ir
-  port: 443
-  uuid: 118b0abc-c8f6-476a-9777-bc73f6e2548b
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 23 - xiaohe
-  type: vmess
-  server: free.ertebatgoostar.ir
-  port: 443
-  uuid: 118b0abc-c8f6-476a-9777-bc73f6e2548b
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 24 - xiaohe
-  type: vmess
-  server: free.ertebatgoostar.ir
-  port: 443
-  uuid: 118b0abc-c8f6-476a-9777-bc73f6e2548b
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 25 - xiaohe
-  type: vmess
-  server: free.ertebatgoostar.ir
-  port: 443
-  uuid: 118b0abc-c8f6-476a-9777-bc73f6e2548b
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 26 - xiaohe
-  type: vmess
-  server: free.ertebatgoostar.ir
-  port: 443
-  uuid: 118b0abc-c8f6-476a-9777-bc73f6e2548b
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tr.privatevip.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -349,14 +271,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 16 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 17 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 18 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 19 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 20 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 21 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 22 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 23 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 24 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 25 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 26 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -380,13 +294,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 16 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 17 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 18 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 19 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 20 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 21 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 22 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 23 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 24 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 25 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 26 - xiaohe
 rules:
 - MATCH,PROXIES

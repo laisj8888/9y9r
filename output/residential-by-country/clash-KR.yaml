@@ -4,13 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇰 DK 01 - xiaohe
-  type: vmess
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16305
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  type: vless
+  server: 112.169.175.199
+  port: 31157
+  uuid: bd2fb303-b4c7-49af-a8e3-5c6f11b005dd
   udp: true
   tls: false
   skip-cert-verify: true
@@ -19,12 +17,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇩🇰 DK 01 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇰 DK 01 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

@@ -56,19 +56,6 @@ proxies:
     path: /
     headers:
       Host: gb.privatevip.ir
-- name: 🇧🇬 BG 05 - xiaohe
-  type: vless
-  server: gb.privatevip.ir
-  port: 449
-  uuid: 7c730089-1791-4828-89b2-86e7e1663063
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: gb.privatevip.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,7 +65,6 @@ proxy-groups:
   - 🇧🇬 BG 02 - xiaohe
   - 🇧🇬 BG 03 - xiaohe
   - 🇧🇬 BG 04 - xiaohe
-  - 🇧🇬 BG 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -88,6 +74,5 @@ proxy-groups:
   - 🇧🇬 BG 02 - xiaohe
   - 🇧🇬 BG 03 - xiaohe
   - 🇧🇬 BG 04 - xiaohe
-  - 🇧🇬 BG 05 - xiaohe
 rules:
 - MATCH,PROXIES
