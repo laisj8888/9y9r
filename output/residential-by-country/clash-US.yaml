@@ -12,29 +12,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
-  type: vmess
-  server: 93.157.138.137
-  port: 1125
-  uuid: 78c8ab17-814e-4c10-a642-f616c9be979d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

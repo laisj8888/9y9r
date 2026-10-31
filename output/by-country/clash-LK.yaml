@@ -19,7 +19,7 @@ proxies:
       Host: free.nadun.store
 - name: 🇱🇰 LK 02 - xiaohe
   type: vless
-  server: 170.114.46.6
+  server: 170.114.45.6
   port: 8080
   uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
   udp: true
@@ -55,10 +55,10 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: free.nadun.store
+      Host: Free.nadun.store
 - name: 🇱🇰 LK 05 - xiaohe
   type: vless
-  server: 170.114.45.6
+  server: support.zoom.us
   port: 8080
   uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
   udp: true
@@ -81,34 +81,8 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: free.nadun.store
-- name: 🇱🇰 LK 07 - xiaohe
-  type: vless
-  server: support.zoom.us
-  port: 8080
-  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇱🇰 LK 08 - xiaohe
-  type: vless
-  server: support.zoom.us
-  port: 8080
-  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
       Host: Free.nadun.store
-- name: 🇱🇰 LK 09 - xiaohe
+- name: 🇱🇰 LK 07 - xiaohe
   type: vless
   server: 170.114.46.6
   port: 8080
@@ -121,6 +95,32 @@ proxies:
     path: /
     headers:
       Host: free.nadun.store
+- name: 🇱🇰 LK 08 - xiaohe
+  type: vless
+  server: 170.114.46.6
+  port: 8080
+  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇱🇰 LK 09 - xiaohe
+  type: vless
+  server: support.zoom.us
+  port: 8080
+  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Free.nadun.store
 - name: 🇱🇰 LK 10 - xiaohe
   type: vless
   server: support.zoom.us
@@ -136,7 +136,7 @@ proxies:
       Host: free.nadun.store
 - name: 🇱🇰 LK 11 - xiaohe
   type: vless
-  server: support.zoom.us
+  server: 170.114.45.6
   port: 8080
   uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
   udp: true
@@ -146,7 +146,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: Free.nadun.store
+      Host: free.nadun.store
 - name: 🇱🇰 LK 12 - xiaohe
   type: vless
   server: support.zoom.us
@@ -159,59 +159,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: Free.nadun.store
-- name: 🇱🇰 LK 13 - xiaohe
-  type: vless
-  server: 170.114.45.6
-  port: 8080
-  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
       Host: free.nadun.store
-- name: 🇱🇰 LK 14 - xiaohe
-  type: vless
-  server: support.zoom.us
-  port: 8080
-  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇱🇰 LK 15 - xiaohe
-  type: vless
-  server: 170.114.46.6
-  port: 8080
-  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇱🇰 LK 16 - xiaohe
-  type: vless
-  server: support.zoom.us
-  port: 8080
-  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Free.nadun.store
 proxy-groups:
 - name: PROXIES
   type: select
@@ -229,10 +177,6 @@ proxy-groups:
   - 🇱🇰 LK 10 - xiaohe
   - 🇱🇰 LK 11 - xiaohe
   - 🇱🇰 LK 12 - xiaohe
-  - 🇱🇰 LK 13 - xiaohe
-  - 🇱🇰 LK 14 - xiaohe
-  - 🇱🇰 LK 15 - xiaohe
-  - 🇱🇰 LK 16 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -250,9 +194,5 @@ proxy-groups:
   - 🇱🇰 LK 10 - xiaohe
   - 🇱🇰 LK 11 - xiaohe
   - 🇱🇰 LK 12 - xiaohe
-  - 🇱🇰 LK 13 - xiaohe
-  - 🇱🇰 LK 14 - xiaohe
-  - 🇱🇰 LK 15 - xiaohe
-  - 🇱🇰 LK 16 - xiaohe
 rules:
 - MATCH,PROXIES
