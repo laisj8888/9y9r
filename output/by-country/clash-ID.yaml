@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 ID 01 - xiaohe
+  type: vmess
+  server: az-1.linkaa.xyz
+  port: 55386
+  uuid: 6E571484-4166-4699-8F58-B34A1823691F
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /game/resources
+    headers:
+      Host: az-1.linkaa.xyz
+- name: 🇮🇩 ID 02 - xiaohe
   type: vless
   server: 104.17.3.81
   port: 443
@@ -18,17 +33,74 @@ proxies:
     path: /id-dnva
     headers:
       Host: vff67.eu.cc
+- name: 🇮🇩 ID 03 - xiaohe
+  type: vless
+  server: 130.94.95.198
+  port: 57353
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: in001.zestapp778.com
+- name: 🇮🇩 ID 04 - xiaohe
+  type: vless
+  server: in001.zestapp778.com
+  port: 57353
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: in001.zestapp778.com
+- name: 🇮🇩 ID 05 - xiaohe
+  type: vless
+  server: 130.94.95.198
+  port: 57353
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: in001.zestapp778.com
+- name: 🇮🇩 ID 06 - xiaohe
+  type: vless
+  server: in001.zestapp778.com
+  port: 57353
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: in001.zestapp778.com
+- name: 🇮🇩 ID 07 - xiaohe
+  type: vless
+  server: 130.94.95.198
+  port: 57353
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: in001.zestapp778.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇩 ID 01 - xiaohe
+  - 🇮🇩 ID 02 - xiaohe
+  - 🇮🇩 ID 03 - xiaohe
+  - 🇮🇩 ID 04 - xiaohe
+  - 🇮🇩 ID 05 - xiaohe
+  - 🇮🇩 ID 06 - xiaohe
+  - 🇮🇩 ID 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇩 ID 01 - xiaohe
+  - 🇮🇩 ID 02 - xiaohe
+  - 🇮🇩 ID 03 - xiaohe
+  - 🇮🇩 ID 04 - xiaohe
+  - 🇮🇩 ID 05 - xiaohe
+  - 🇮🇩 ID 06 - xiaohe
+  - 🇮🇩 ID 07 - xiaohe
 rules:
 - MATCH,PROXIES
