@@ -19,19 +19,6 @@ proxies:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 02 - xiaohe
   type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 03 - xiaohe
-  type: vless
   server: 179.253.179.109
   port: 54083
   uuid: 0ef03752-c8bf-4482-8710-e563ca4808f9
@@ -39,19 +26,24 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 177.3.215.54
+- name: 🇸🇪 SE 03 - xiaohe
+  type: vless
+  server: 194.104.94.141
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se3.shtil.io
 - name: 🇸🇪 SE 04 - xiaohe
   type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  server: se3.shtil.io
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+  servername: se3.shtil.io
 - name: 🇸🇪 SE 05 - xiaohe
   type: vless
   server: 5.178.109.174
@@ -66,21 +58,18 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 06 - xiaohe
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 07 - xiaohe
   type: vless
-  server: 179.253.179.109
-  port: 54083
-  uuid: 0ef03752-c8bf-4482-8710-e563ca4808f9
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 177.3.215.54
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,7 +81,6 @@ proxy-groups:
   - 🇸🇪 SE 04 - xiaohe
   - 🇸🇪 SE 05 - xiaohe
   - 🇸🇪 SE 06 - xiaohe
-  - 🇸🇪 SE 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -104,6 +92,5 @@ proxy-groups:
   - 🇸🇪 SE 04 - xiaohe
   - 🇸🇪 SE 05 - xiaohe
   - 🇸🇪 SE 06 - xiaohe
-  - 🇸🇪 SE 07 - xiaohe
 rules:
 - MATCH,PROXIES
