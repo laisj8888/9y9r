@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇨🇭 CH 02 - xiaohe
   type: vless
   server: 208.69.78.217
@@ -39,19 +39,21 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇨🇭 CH 04 - xiaohe
   type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  server: 104.165.205.54
+  port: 2083
+  uuid: a0bce4ce-514e-4837-8753-0c458484b538
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: speedtestmark.com
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: 104.165.205.54
 - name: 🇨🇭 CH 05 - xiaohe
   type: vless
   server: 208.69.78.217
@@ -78,33 +80,17 @@ proxies:
   client-fingerprint: chrome
 - name: 🇨🇭 CH 07 - xiaohe
   type: vless
-  server: 195.141.65.98
-  port: 443
-  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 148-253-210-191.sslip.io
-  network: ws
-  ws-opts:
-    path: /test-ws
-    headers:
-      Host: 148-253-210-191.sslip.io
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 08 - xiaohe
-  type: vless
-  server: 179.61.251.244
-  port: 7443
-  uuid: d2ff6e0c-7e78-455c-a824-082e162172d3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-- name: 🇨🇭 CH 09 - xiaohe
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -116,33 +102,7 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇭 CH 10 - xiaohe
-  type: vless
-  server: 46.101.46.169
-  port: 486
-  uuid: 16bf3359-e7d8-4de6-86a0-6d65cf793b56
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇨🇭 CH 11 - xiaohe
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇨🇭 CH 12 - xiaohe
+- name: 🇨🇭 CH 09 - xiaohe
   type: vless
   server: 195.141.65.98
   port: 443
@@ -170,9 +130,6 @@ proxy-groups:
   - 🇨🇭 CH 07 - xiaohe
   - 🇨🇭 CH 08 - xiaohe
   - 🇨🇭 CH 09 - xiaohe
-  - 🇨🇭 CH 10 - xiaohe
-  - 🇨🇭 CH 11 - xiaohe
-  - 🇨🇭 CH 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -187,8 +144,5 @@ proxy-groups:
   - 🇨🇭 CH 07 - xiaohe
   - 🇨🇭 CH 08 - xiaohe
   - 🇨🇭 CH 09 - xiaohe
-  - 🇨🇭 CH 10 - xiaohe
-  - 🇨🇭 CH 11 - xiaohe
-  - 🇨🇭 CH 12 - xiaohe
 rules:
 - MATCH,PROXIES

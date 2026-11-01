@@ -5,20 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - xiaohe
-  type: vmess
-  server: az-1.linkaa.xyz
-  port: 53617
-  uuid: 6E571484-4166-4699-8F58-B34A1823691F
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 216.173.67.59
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /game/resources
+    path: /
     headers:
-      Host: az-1.linkaa.xyz
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
