@@ -6,27 +6,6 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 79.182.39.37
-  port: 27591
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 02 - xiaohe
-  type: vless
-  server: 179.253.179.109
-  port: 54083
-  uuid: 0ef03752-c8bf-4482-8710-e563ca4808f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 177.3.215.54
-- name: 🇵🇱 PL 03 - xiaohe
-  type: vless
   server: pl1.h1cloud.net
   port: 27591
   uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
@@ -36,7 +15,25 @@ proxies:
   reality-opts:
     public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
   servername: www.samsung.com
-  client-fingerprint: firefox
+  client-fingerprint: ios
+- name: 🇵🇱 PL 02 - xiaohe
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 03 - xiaohe
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 04 - xiaohe
   type: vless
   server: 2.26.6.1
@@ -57,6 +54,15 @@ proxies:
   servername: 2.26.6.1
 - name: 🇵🇱 PL 06 - xiaohe
   type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 07 - xiaohe
+  type: vless
   server: pl1.h1cloud.net
   port: 27591
   uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
@@ -67,24 +73,18 @@ proxies:
     public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
   servername: www.samsung.com
   client-fingerprint: random
-- name: 🇵🇱 PL 07 - xiaohe
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
 - name: 🇵🇱 PL 08 - xiaohe
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: 79.182.39.37
+  port: 27591
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 2.26.6.1
+  reality-opts:
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+  servername: www.samsung.com
+  client-fingerprint: firefox
 - name: 🇵🇱 PL 09 - xiaohe
   type: vless
   server: 2.26.6.1
@@ -96,16 +96,28 @@ proxies:
   servername: 2.26.6.1
 - name: 🇵🇱 PL 10 - xiaohe
   type: vless
-  server: 188.225.83.133
-  port: 443
-  uuid: 5f1c2e83-d4aa-4f10-81e9-e0ccc018974c
+  server: 79.182.39.37
+  port: 27591
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw
-  servername: xnodtwx.artemida.live
-  client-fingerprint: firefox
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 11 - xiaohe
+  type: vless
+  server: pl1.h1cloud.net
+  port: 27591
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+  servername: www.samsung.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -121,6 +133,7 @@ proxy-groups:
   - 🇵🇱 PL 08 - xiaohe
   - 🇵🇱 PL 09 - xiaohe
   - 🇵🇱 PL 10 - xiaohe
+  - 🇵🇱 PL 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -136,5 +149,6 @@ proxy-groups:
   - 🇵🇱 PL 08 - xiaohe
   - 🇵🇱 PL 09 - xiaohe
   - 🇵🇱 PL 10 - xiaohe
+  - 🇵🇱 PL 11 - xiaohe
 rules:
 - MATCH,PROXIES

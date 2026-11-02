@@ -15,50 +15,8 @@ proxies:
   reality-opts:
     public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
   servername: m.vk.com
-  client-fingerprint: edge
+  client-fingerprint: chrome
 - name: 🇱🇻 LV 02 - xiaohe
-  type: vmess
-  server: 31.56.27.50
-  port: 26782
-  uuid: ab4e24ea-92ee-43eb-aadd-62cac4b2f6fe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 31.56.27.50
-- name: 🇱🇻 LV 03 - xiaohe
-  type: vless
-  server: 31.56.27.50
-  port: 10464
-  uuid: ab4e24ea-92ee-43eb-aadd-62cac4b2f6fe
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 31.56.27.50
-- name: 🇱🇻 LV 04 - xiaohe
-  type: vmess
-  server: 31.56.27.50
-  port: 26782
-  uuid: ab4e24ea-92ee-43eb-aadd-62cac4b2f6fe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 31.56.27.50
-- name: 🇱🇻 LV 05 - xiaohe
-  type: vmess
-  server: 31.56.27.50
-  port: 26782
-  uuid: ab4e24ea-92ee-43eb-aadd-62cac4b2f6fe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 31.56.27.50
-- name: 🇱🇻 LV 06 - xiaohe
   type: vless
   server: 45.38.143.210
   port: 30584
@@ -69,29 +27,7 @@ proxies:
   reality-opts:
     public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
   servername: m.vk.com
-  client-fingerprint: chrome
-- name: 🇱🇻 LV 07 - xiaohe
-  type: vmess
-  server: 31.56.27.50
-  port: 26782
-  uuid: ab4e24ea-92ee-43eb-aadd-62cac4b2f6fe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 31.56.27.50
-- name: 🇱🇻 LV 08 - xiaohe
-  type: vmess
-  server: 31.56.27.50
-  port: 26782
-  uuid: ab4e24ea-92ee-43eb-aadd-62cac4b2f6fe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 31.56.27.50
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -99,12 +35,6 @@ proxy-groups:
   - AUTO
   - 🇱🇻 LV 01 - xiaohe
   - 🇱🇻 LV 02 - xiaohe
-  - 🇱🇻 LV 03 - xiaohe
-  - 🇱🇻 LV 04 - xiaohe
-  - 🇱🇻 LV 05 - xiaohe
-  - 🇱🇻 LV 06 - xiaohe
-  - 🇱🇻 LV 07 - xiaohe
-  - 🇱🇻 LV 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -112,11 +42,5 @@ proxy-groups:
   proxies:
   - 🇱🇻 LV 01 - xiaohe
   - 🇱🇻 LV 02 - xiaohe
-  - 🇱🇻 LV 03 - xiaohe
-  - 🇱🇻 LV 04 - xiaohe
-  - 🇱🇻 LV 05 - xiaohe
-  - 🇱🇻 LV 06 - xiaohe
-  - 🇱🇻 LV 07 - xiaohe
-  - 🇱🇻 LV 08 - xiaohe
 rules:
 - MATCH,PROXIES
