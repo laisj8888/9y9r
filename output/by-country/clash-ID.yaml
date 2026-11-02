@@ -5,22 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 ID 01 - xiaohe
-  type: vless
-  server: 104.17.3.81
-  port: 443
-  uuid: dffb7646-1656-427a-8187-9c056a6a5fd5
+  type: vmess
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16298
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: vff67.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-dnva
-    headers:
-      Host: vff67.eu.cc
 - name: 🇮🇩 ID 02 - xiaohe
   type: vless
-  server: in001.zestapp778.com
+  server: 130.94.95.198
   port: 57353
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -29,35 +25,25 @@ proxies:
   servername: in001.zestapp778.com
 - name: 🇮🇩 ID 03 - xiaohe
   type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: dffb7646-1656-427a-8187-9c056a6a5fd5
+  server: in001.zestapp778.com
+  port: 57353
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: vff67.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-dnva
-    headers:
-      Host: vff67.eu.cc
+  servername: in001.zestapp778.com
 - name: 🇮🇩 ID 04 - xiaohe
   type: vless
-  server: 104.17.3.81
-  port: 443
-  uuid: dffb7646-1656-427a-8187-9c056a6a5fd5
+  server: 130.94.95.198
+  port: 57353
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: vff67.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-dnva
-    headers:
-      Host: vff67.eu.cc
+  servername: in001.zestapp778.com
 - name: 🇮🇩 ID 05 - xiaohe
   type: vless
-  server: 130.94.95.198
+  server: in001.zestapp778.com
   port: 57353
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -84,25 +70,7 @@ proxies:
   servername: in001.zestapp778.com
 - name: 🇮🇩 ID 08 - xiaohe
   type: vless
-  server: in001.zestapp778.com
-  port: 57353
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: in001.zestapp778.com
-- name: 🇮🇩 ID 09 - xiaohe
-  type: vless
   server: 130.94.95.198
-  port: 57353
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: in001.zestapp778.com
-- name: 🇮🇩 ID 10 - xiaohe
-  type: vless
-  server: in001.zestapp778.com
   port: 57353
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -122,8 +90,6 @@ proxy-groups:
   - 🇮🇩 ID 06 - xiaohe
   - 🇮🇩 ID 07 - xiaohe
   - 🇮🇩 ID 08 - xiaohe
-  - 🇮🇩 ID 09 - xiaohe
-  - 🇮🇩 ID 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -137,7 +103,5 @@ proxy-groups:
   - 🇮🇩 ID 06 - xiaohe
   - 🇮🇩 ID 07 - xiaohe
   - 🇮🇩 ID 08 - xiaohe
-  - 🇮🇩 ID 09 - xiaohe
-  - 🇮🇩 ID 10 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -15,20 +15,8 @@ proxies:
   reality-opts:
     public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇺🇦 UA 02 - xiaohe
-  type: vless
-  server: netx.smrtai.top
-  port: 443
-  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
-  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇺🇦 UA 03 - xiaohe
+- name: 🇺🇦 UA 02 - xiaohe
   type: vless
   server: 31.222.235.81
   port: 443
@@ -40,6 +28,18 @@ proxies:
     public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇺🇦 UA 03 - xiaohe
+  type: vless
+  server: netx.smrtai.top
+  port: 443
+  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
+  servername: www.cloudflare.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select

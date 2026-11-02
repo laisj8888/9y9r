@@ -17,6 +17,13 @@ proxies:
   servername: m.vk.com
   client-fingerprint: chrome
 - name: 🇱🇻 LV 02 - xiaohe
+  type: ss
+  server: fguuouj849.gadawebi.ir
+  port: 5072
+  cipher: chacha20-ietf-poly1305
+  password: DPpk3OhbcFpFOpTnKnlGsi5kWH7BJTDv
+  udp: true
+- name: 🇱🇻 LV 03 - xiaohe
   type: vless
   server: 45.38.143.210
   port: 30584
@@ -35,6 +42,7 @@ proxy-groups:
   - AUTO
   - 🇱🇻 LV 01 - xiaohe
   - 🇱🇻 LV 02 - xiaohe
+  - 🇱🇻 LV 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +50,6 @@ proxy-groups:
   proxies:
   - 🇱🇻 LV 01 - xiaohe
   - 🇱🇻 LV 02 - xiaohe
+  - 🇱🇻 LV 03 - xiaohe
 rules:
 - MATCH,PROXIES
