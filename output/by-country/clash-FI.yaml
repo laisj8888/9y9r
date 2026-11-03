@@ -6,30 +6,29 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: ams.zovip2.ir
+  server: 196.196.204.180
   port: 443
-  uuid: 51219f47-398b-48c1-afda-743513e77a4d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ams.zovip2.ir
-  network: ws
-  ws-opts:
-    path: /api/v3/pulse
-    headers:
-      Host: ams.zovip2.ir
-- name: 🇫🇮 FI 02 - xiaohe
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: b79d736d-0f10-4169-b626-362059d18204
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
+  servername: 3f8efdt.fi1.h1clayd.click
+  client-fingerprint: edge
+- name: 🇫🇮 FI 02 - xiaohe
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 03 - xiaohe
   type: vless
   server: 45.144.234.157
@@ -44,44 +43,31 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 04 - xiaohe
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  type: ss
+  server: dns22.m3hrzd.ir
+  port: 1346
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 FI 05 - xiaohe
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  server: 95.216.27.15
+  port: 2053
+  uuid: b79d736d-0f10-4169-b626-362059d18204
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  reality-opts:
+    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 06 - xiaohe
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  type: ss
+  server: dns22.m3hrzd.ir
+  port: 1346
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 FI 07 - xiaohe
   type: vless
   server: 45.144.234.157
@@ -108,6 +94,32 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 09 - xiaohe
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 10 - xiaohe
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -121,6 +133,8 @@ proxy-groups:
   - 🇫🇮 FI 06 - xiaohe
   - 🇫🇮 FI 07 - xiaohe
   - 🇫🇮 FI 08 - xiaohe
+  - 🇫🇮 FI 09 - xiaohe
+  - 🇫🇮 FI 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -134,5 +148,7 @@ proxy-groups:
   - 🇫🇮 FI 06 - xiaohe
   - 🇫🇮 FI 07 - xiaohe
   - 🇫🇮 FI 08 - xiaohe
+  - 🇫🇮 FI 09 - xiaohe
+  - 🇫🇮 FI 10 - xiaohe
 rules:
 - MATCH,PROXIES

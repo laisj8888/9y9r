@@ -15,7 +15,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2048
     headers:
       Host: ccc.010304.xyz
 - name: 🇱🇹 LT 02 - xiaohe
@@ -29,7 +29,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp?ed
+    path: /fp
     headers:
       Host: ccc.010304.xyz
 - name: 🇱🇹 LT 03 - xiaohe
@@ -71,7 +71,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
     headers:
       Host: ccc.010304.xyz
 - name: 🇱🇹 LT 06 - xiaohe
@@ -85,7 +85,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2048
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇱🇹 LT 07 - xiaohe
@@ -141,7 +141,49 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp
+    path: /fp=chromefp=unsafe
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇱🇹 LT 11 - xiaohe
+  type: vless
+  server: 88.216.69.253
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇱🇹 LT 12 - xiaohe
+  type: vless
+  server: 88.216.69.253
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇱🇹 LT 13 - xiaohe
+  type: vless
+  server: 88.216.69.253
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp?ed
     headers:
       Host: ccc.010304.xyz
 proxy-groups:
@@ -159,6 +201,9 @@ proxy-groups:
   - 🇱🇹 LT 08 - xiaohe
   - 🇱🇹 LT 09 - xiaohe
   - 🇱🇹 LT 10 - xiaohe
+  - 🇱🇹 LT 11 - xiaohe
+  - 🇱🇹 LT 12 - xiaohe
+  - 🇱🇹 LT 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -174,5 +219,8 @@ proxy-groups:
   - 🇱🇹 LT 08 - xiaohe
   - 🇱🇹 LT 09 - xiaohe
   - 🇱🇹 LT 10 - xiaohe
+  - 🇱🇹 LT 11 - xiaohe
+  - 🇱🇹 LT 12 - xiaohe
+  - 🇱🇹 LT 13 - xiaohe
 rules:
 - MATCH,PROXIES

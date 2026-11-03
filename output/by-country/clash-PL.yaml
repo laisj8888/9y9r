@@ -51,13 +51,18 @@ proxies:
   servername: 2.26.6.1
 - name: 🇵🇱 PL 06 - xiaohe
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: 84.23.52.120
+  port: 28448
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 2.26.6.1
+  servername: pl.sparxiecn.com
+  network: ws
+  ws-opts:
+    path: /lovelive
+    headers:
+      Host: 84.23.52.120
 - name: 🇵🇱 PL 07 - xiaohe
   type: vless
   server: 2.26.6.1
@@ -87,13 +92,16 @@ proxies:
   servername: 2.26.6.1
 - name: 🇵🇱 PL 10 - xiaohe
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: 188.225.83.133
+  port: 443
+  uuid: 5f1c2e83-d4aa-4f10-81e9-e0ccc018974c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 2.26.6.1
+  reality-opts:
+    public-key: JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw
+  servername: xnodtwx.artemida.live
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,13 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaohe
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
+  type: vmess
+  server: www.ubuntuupdates.com
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.ubuntuupdates.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
 - name: 🇫🇷 法国 (France) 02 - xiaohe
+  type: vless
+  server: 152.228.162.19
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 152.228.162.19
+- name: 🇫🇷 法国 (France) 03 - xiaohe
+  type: ss
+  server: 54.36.174.134
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+  udp: true
+- name: 🇫🇷 法国 (France) 04 - xiaohe
   type: vless
   server: 152.228.162.19
   port: 80
@@ -24,7 +53,50 @@ proxies:
     path: /vless/
     headers:
       Host: 152.228.162.19
-- name: 🇫🇷 法国 (France) 03 - xiaohe
+- name: 🇫🇷 法国 (France) 05 - xiaohe
+  type: vmess
+  server: 54.37.131.126
+  port: 80
+  uuid: 059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇫🇷 法国 (France) 06 - xiaohe
+  type: vmess
+  server: www.ubuntuupdates.com
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.ubuntuupdates.com
+  network: ws
+  ws-opts:
+    path: /truth?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
+    headers:
+      Host: www.ubuntuupdates.com
+- name: 🇫🇷 法国 (France) 07 - xiaohe
+  type: vless
+  server: 161.97.66.16
+  port: 443
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 08 - xiaohe
   type: vless
   server: 54.37.136.194
   port: 2053
@@ -36,7 +108,53 @@ proxies:
     public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 04 - xiaohe
+- name: 🇫🇷 法国 (France) 09 - xiaohe
+  type: vless
+  server: ai.smrtai.top
+  port: 443
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 10 - xiaohe
+  type: vless
+  server: 138.124.70.41
+  port: 14430
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 138.124.70.41
+- name: 🇫🇷 法国 (France) 11 - xiaohe
+  type: vless
+  server: 15.236.109.186
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: w.geogame.ir
+- name: 🇫🇷 法国 (France) 12 - xiaohe
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 13 - xiaohe
   type: vmess
   server: www.ubuntuupdates.com
   port: 443
@@ -49,10 +167,240 @@ proxies:
   servername: www.ubuntuupdates.com
   network: ws
   ws-opts:
-    path: /truth
+    path: /truth?
     headers:
       Host: www.ubuntuupdates.com
-- name: 🇫🇷 法国 (France) 05 - xiaohe
+- name: 🇫🇷 法国 (France) 14 - xiaohe
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 15 - xiaohe
+  type: vless
+  server: w.geogame.ir
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: w.geogame.ir
+- name: 🇫🇷 法国 (France) 16 - xiaohe
+  type: ss
+  server: pg2.rmastore.ir
+  port: 3044
+  cipher: aes-256-gcm
+  password: c5PtLhylY5r3jJQ6XlzGiOdXeYYlhu-k
+  udp: true
+- name: 🇫🇷 法国 (France) 17 - xiaohe
+  type: vless
+  server: ai.smrtai.top
+  port: 443
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 18 - xiaohe
+  type: vless
+  server: ai.smrtai.top
+  port: 443
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 19 - xiaohe
+  type: vless
+  server: w.geogame.ir
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: w.geogame.ir
+- name: 🇫🇷 法国 (France) 20 - xiaohe
+  type: vless
+  server: 161.97.66.16
+  port: 443
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 21 - xiaohe
+  type: vless
+  server: ov-france1.09vpn.com
+  port: 80
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-france1.09vpn.com
+- name: 🇫🇷 法国 (France) 22 - xiaohe
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇫🇷 法国 (France) 23 - xiaohe
+  type: vless
+  server: 152.228.162.19
+  port: 80
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 152.228.162.19
+- name: 🇫🇷 法国 (France) 24 - xiaohe
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 25 - xiaohe
+  type: ss
+  server: 167.17.64.22
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 26 - xiaohe
+  type: ss
+  server: 172.99.189.142
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 27 - xiaohe
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 28 - xiaohe
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇫🇷 法国 (France) 29 - xiaohe
+  type: vless
+  server: ai.smrtai.top
+  port: 443
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 30 - xiaohe
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 31 - xiaohe
+  type: ss
+  server: 23.162.152.22
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 32 - xiaohe
+  type: vless
+  server: 15.236.109.186
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: w.geogame.ir
+- name: 🇫🇷 法国 (France) 33 - xiaohe
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 34 - xiaohe
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇫🇷 法国 (France) 35 - xiaohe
+  type: vless
+  server: 15.236.109.186
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: w.geogame.ir
+- name: 🇫🇷 法国 (France) 36 - xiaohe
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 37 - xiaohe
   type: vmess
   server: www.ubuntuupdates.com
   port: 443
@@ -65,10 +413,90 @@ proxies:
   servername: www.ubuntuupdates.com
   network: ws
   ws-opts:
-    path: /truth
+    path: /truth?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
     headers:
       Host: www.ubuntuupdates.com
-- name: 🇫🇷 法国 (France) 06 - xiaohe
+- name: 🇫🇷 法国 (France) 38 - xiaohe
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇫🇷 法国 (France) 39 - xiaohe
+  type: ss
+  server: 54.36.174.140
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+  udp: true
+- name: 🇫🇷 法国 (France) 40 - xiaohe
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 41 - xiaohe
+  type: vless
+  server: ai.smrtai.top
+  port: 443
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 42 - xiaohe
+  type: vmess
+  server: www.windowssearchtools.com
+  port: 443
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.windowssearchtools.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.windowssearchtools.com
+- name: 🇫🇷 法国 (France) 43 - xiaohe
+  type: vless
+  server: 138.124.70.41
+  port: 14430
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 138.124.70.41
+- name: 🇫🇷 法国 (France) 44 - xiaohe
+  type: vless
+  server: w.geogame.ir
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: w.geogame.ir
+- name: 🇫🇷 法国 (France) 45 - xiaohe
   type: vmess
   server: www.ubuntuupdates.com
   port: 443
@@ -84,21 +512,43 @@ proxies:
     path: /truth
     headers:
       Host: ''
-- name: 🇫🇷 法国 (France) 07 - xiaohe
-  type: ss
-  server: pl140.vpnbook.com
+- name: 🇫🇷 法国 (France) 46 - xiaohe
+  type: vmess
+  server: www.windowssearchtools.com
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇫🇷 法国 (France) 08 - xiaohe
-  type: ss
-  server: pl134.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
+  tls: true
+  skip-cert-verify: true
+  servername: www.windowssearchtools.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.windowssearchtools.com
+- name: 🇫🇷 法国 (France) 47 - xiaohe
+  type: vless
+  server: w.geogame.ir
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
   udp: true
-- name: 🇫🇷 法国 (France) 09 - xiaohe
+  tls: true
+  skip-cert-verify: true
+  servername: w.geogame.ir
+- name: 🇫🇷 法国 (France) 48 - xiaohe
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 49 - xiaohe
   type: vless
   server: 54.37.136.194
   port: 2053
@@ -110,7 +560,131 @@ proxies:
     public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 10 - xiaohe
+- name: 🇫🇷 法国 (France) 50 - xiaohe
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 51 - xiaohe
+  type: vless
+  server: 162.19.237.33
+  port: 443
+  uuid: db22f124-5247-4c1a-ab22-f99a43c31e12
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: b6l6d2yh4747.dop74.com
+- name: 🇫🇷 法国 (France) 52 - xiaohe
+  type: vmess
+  server: 54.37.131.126
+  port: 80
+  uuid: 059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇫🇷 法国 (France) 53 - xiaohe
+  type: vless
+  server: 161.97.66.16
+  port: 443
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 54 - xiaohe
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 55 - xiaohe
+  type: vless
+  server: 152.228.162.19
+  port: 80
+  uuid: 5ce84688-f535-46ad-a512-37b17becf6ea
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: akamaized.net
+- name: 🇫🇷 法国 (France) 56 - xiaohe
+  type: vless
+  server: 138.124.70.41
+  port: 14430
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 138.124.70.41
+- name: 🇫🇷 法国 (France) 57 - xiaohe
+  type: vmess
+  server: www.windowssearchtools.com
+  port: 443
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: ''
+- name: 🇫🇷 法国 (France) 58 - xiaohe
+  type: ss
+  server: pl134.vpnbook.com
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+  udp: true
+- name: 🇫🇷 法国 (France) 59 - xiaohe
+  type: vmess
+  server: www.ubuntuupdates.com
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.ubuntuupdates.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
+- name: 🇫🇷 法国 (France) 60 - xiaohe
   type: vless
   server: 54.37.136.194
   port: 2053
@@ -122,144 +696,7 @@ proxies:
     public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 11 - xiaohe
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 12 - xiaohe
-  type: ss
-  server: 54.36.174.134
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
-  udp: true
-- name: 🇫🇷 法国 (France) 13 - xiaohe
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 14 - xiaohe
-  type: vless
-  server: 138.124.70.41
-  port: 14430
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 15 - xiaohe
-  type: vless
-  server: ai.smrtai.top
-  port: 443
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 16 - xiaohe
-  type: vless
-  server: w.geogame.ir
-  port: 2053
-  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: w.geogame.ir
-- name: 🇫🇷 法国 (France) 17 - xiaohe
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 18 - xiaohe
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇫🇷 法国 (France) 19 - xiaohe
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 162.19.204.71
-- name: 🇫🇷 法国 (France) 20 - xiaohe
-  type: vless
-  server: 138.124.70.41
-  port: 14430
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 21 - xiaohe
-  type: vless
-  server: ai.smrtai.top
-  port: 443
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 22 - xiaohe
-  type: ss
-  server: 54.36.174.140
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
-  udp: true
-- name: 🇫🇷 法国 (France) 23 - xiaohe
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 24 - xiaohe
+- name: 🇫🇷 法国 (France) 61 - xiaohe
   type: vmess
   server: 172.67.221.77
   port: 443
@@ -275,28 +712,40 @@ proxies:
     path: /truth
     headers:
       Host: www.ubuntuupdates.com
-- name: 🇫🇷 法国 (France) 25 - xiaohe
+- name: 🇫🇷 法国 (France) 62 - xiaohe
   type: vless
-  server: 54.37.136.194
+  server: 51.77.217.70
   port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇫🇷 法国 (France) 63 - xiaohe
+  type: ss
+  server: pg2.rmastore.ir
+  port: 3044
+  cipher: aes-256-gcm
+  password: c5PtLhylY5r3jJQ6XlzGiOdXeYYlhu-k
+  udp: true
+- name: 🇫🇷 法国 (France) 64 - xiaohe
+  type: vless
+  server: 161.97.66.16
+  port: 443
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 26 - xiaohe
-  type: ss
-  server: dns24.m3hrzd.ir
-  port: 1352
-  cipher: chacha20-ietf-poly1305
-  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
-  udp: true
-- name: 🇫🇷 法国 (France) 27 - xiaohe
+- name: 🇫🇷 法国 (France) 65 - xiaohe
   type: vmess
-  server: www.ubuntuupdates.com
+  server: 172.67.221.77
   port: 443
   uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
   alterId: 0
@@ -310,464 +759,17 @@ proxies:
     path: /truth
     headers:
       Host: www.ubuntuupdates.com
-- name: 🇫🇷 法国 (France) 28 - xiaohe
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 29 - xiaohe
-  type: vless
-  server: 161.97.66.16
-  port: 443
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 30 - xiaohe
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇫🇷 法国 (France) 31 - xiaohe
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 32 - xiaohe
-  type: vless
-  server: ov-france1.09vpn.com
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 33 - xiaohe
-  type: vmess
-  server: 54.37.131.126
-  port: 80
-  uuid: 059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 34 - xiaohe
-  type: vless
-  server: ai.smrtai.top
-  port: 443
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 35 - xiaohe
-  type: vless
-  server: 161.97.66.16
-  port: 443
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 36 - xiaohe
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 152.228.162.19
-- name: 🇫🇷 法国 (France) 37 - xiaohe
-  type: vless
-  server: ai.smrtai.top
-  port: 443
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 38 - xiaohe
-  type: vless
-  server: 161.97.66.16
-  port: 443
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 39 - xiaohe
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 40 - xiaohe
-  type: vless
-  server: 161.97.66.16
-  port: 443
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 41 - xiaohe
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 152.228.162.19
-- name: 🇫🇷 法国 (France) 42 - xiaohe
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇫🇷 法国 (France) 43 - xiaohe
-  type: vless
-  server: ai.smrtai.top
-  port: 443
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 44 - xiaohe
-  type: vless
-  server: w.geogame.ir
-  port: 2053
-  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: w.geogame.ir
-- name: 🇫🇷 法国 (France) 45 - xiaohe
-  type: vless
-  server: 161.97.66.16
-  port: 443
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇫🇷 法国 (France) 46 - xiaohe
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 47 - xiaohe
-  type: vless
-  server: 161.97.66.16
-  port: 443
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 48 - xiaohe
-  type: vless
-  server: 162.19.254.104
-  port: 443
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: t5pmr.mail-node.gfw.kdns.fr
-  network: ws
-  ws-opts:
-    path: /danfeng
-    headers:
-      Host: t5pmr.mail-node.gfw.kdns.fr
-- name: 🇫🇷 法国 (France) 49 - xiaohe
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 50 - xiaohe
-  type: vmess
-  server: www.ubuntuupdates.com
-  port: 443
-  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /truth
-    headers:
-      Host: ''
-- name: 🇫🇷 法国 (France) 51 - xiaohe
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇫🇷 法国 (France) 52 - xiaohe
-  type: vless
-  server: w.geogame.ir
-  port: 2053
-  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: w.geogame.ir
-- name: 🇫🇷 法国 (France) 53 - xiaohe
-  type: vless
-  server: w.geogame.ir
-  port: 2053
-  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: w.geogame.ir
-- name: 🇫🇷 法国 (France) 54 - xiaohe
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.95.65.9
-- name: 🇫🇷 法国 (France) 55 - xiaohe
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 56 - xiaohe
-  type: vless
-  server: ai.smrtai.top
-  port: 443
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 57 - xiaohe
-  type: vmess
-  server: www.ubuntuupdates.com
-  port: 443
-  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /truth
-    headers:
-      Host: ''
-- name: 🇫🇷 法国 (France) 58 - xiaohe
-  type: vless
-  server: w.geogame.ir
-  port: 2053
-  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: w.geogame.ir
-- name: 🇫🇷 法国 (France) 59 - xiaohe
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 60 - xiaohe
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 5ce84688-f535-46ad-a512-37b17becf6ea
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: akamaized.net
-- name: 🇫🇷 法国 (France) 61 - xiaohe
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 62 - xiaohe
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 152.228.162.19
-- name: 🇫🇷 法国 (France) 63 - xiaohe
-  type: vless
-  server: 162.19.254.104
-  port: 443
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: t5pmr.mail-node.gfw.kdns.fr
-  network: ws
-  ws-opts:
-    path: /danfeng
-    headers:
-      Host: t5pmr.mail-node.gfw.kdns.fr
-- name: 🇫🇷 法国 (France) 64 - xiaohe
-  type: vless
-  server: 138.124.70.41
-  port: 14430
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 65 - xiaohe
-  type: vless
-  server: w.geogame.ir
-  port: 2053
-  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: w.geogame.ir
 - name: 🇫🇷 法国 (France) 66 - xiaohe
-  type: vless
-  server: 54.37.136.194
+  type: vmess
+  server: 162.19.237.33
   port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  uuid: db22f124-5247-4c1a-ab22-f99a43c31e12
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: 162.19.237.33
 - name: 🇫🇷 法国 (France) 67 - xiaohe
   type: vless
   server: 54.37.136.194
@@ -782,26 +784,47 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 68 - xiaohe
   type: vless
-  server: 15.236.109.186
-  port: 2053
-  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  server: ov-france1.09vpn.com
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: w.geogame.ir
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-france1.09vpn.com
 - name: 🇫🇷 法国 (France) 69 - xiaohe
   type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  server: OV-France1.09vpn.com
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-France1.09vpn.com
+- name: 🇫🇷 法国 (France) 70 - xiaohe
+  type: vmess
+  server: 188.114.97.1
+  port: 443
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 70 - xiaohe
+  servername: www.windowssearchtools.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.windowssearchtools.com
+- name: 🇫🇷 法国 (France) 71 - xiaohe
   type: vmess
   server: www.ubuntuupdates.com
   port: 443
@@ -817,34 +840,9 @@ proxies:
     path: /truth
     headers:
       Host: www.ubuntuupdates.com
-- name: 🇫🇷 法国 (France) 71 - xiaohe
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 152.228.162.19
 - name: 🇫🇷 法国 (France) 72 - xiaohe
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇫🇷 法国 (France) 73 - xiaohe
   type: vmess
-  server: 162.19.204.71
+  server: 141.95.65.9
   port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -852,7 +850,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: 141.95.65.9
+- name: 🇫🇷 法国 (France) 73 - xiaohe
+  type: ss
+  server: pl140.vpnbook.com
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+  udp: true
 - name: 🇫🇷 法国 (France) 74 - xiaohe
   type: vless
   server: 54.37.136.194
@@ -866,19 +871,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 75 - xiaohe
-  type: vless
-  server: 138.124.70.41
-  port: 14430
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 76 - xiaohe
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -888,20 +880,19 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 77 - xiaohe
-  type: vless
-  server: 161.97.66.16
-  port: 443
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  servername: 162.19.204.71
+- name: 🇫🇷 法国 (France) 76 - xiaohe
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 78 - xiaohe
+  servername: ''
+- name: 🇫🇷 法国 (France) 77 - xiaohe
   type: vmess
   server: 54.37.131.126
   port: 80
@@ -916,7 +907,43 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇫🇷 法国 (France) 78 - xiaohe
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇫🇷 法国 (France) 79 - xiaohe
+  type: vless
+  server: 152.228.162.19
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 152.228.162.19
+- name: 🇫🇷 法国 (France) 80 - xiaohe
+  type: vless
+  server: ai.smrtai.top
+  port: 443
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 81 - xiaohe
   type: vless
   server: 54.37.136.194
   port: 2053
@@ -927,8 +954,35 @@ proxies:
   reality-opts:
     public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 80 - xiaohe
+  client-fingerprint: random
+- name: 🇫🇷 法国 (France) 82 - xiaohe
+  type: vmess
+  server: 104.21.15.251
+  port: 443
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.windowssearchtools.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.windowssearchtools.com
+- name: 🇫🇷 法国 (France) 83 - xiaohe
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 84 - xiaohe
   type: vless
   server: 15.236.109.186
   port: 2053
@@ -937,7 +991,111 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: w.geogame.ir
-- name: 🇫🇷 法国 (France) 81 - xiaohe
+- name: 🇫🇷 法国 (France) 85 - xiaohe
+  type: vless
+  server: 161.97.66.16
+  port: 443
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 86 - xiaohe
+  type: vmess
+  server: 172.67.221.77
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.ubuntuupdates.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
+- name: 🇫🇷 法国 (France) 87 - xiaohe
+  type: vmess
+  server: www.ubuntuupdates.com
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.ubuntuupdates.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
+- name: 🇫🇷 法国 (France) 88 - xiaohe
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 89 - xiaohe
+  type: vmess
+  server: www.ubuntuupdates.com
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.ubuntuupdates.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
+- name: 🇫🇷 法国 (France) 90 - xiaohe
+  type: vmess
+  server: www.ubuntuupdates.com
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.ubuntuupdates.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
+- name: 🇫🇷 法国 (France) 91 - xiaohe
+  type: vmess
+  server: www.windowssearchtools.com
+  port: 443
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: ''
+- name: 🇫🇷 法国 (France) 92 - xiaohe
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -949,7 +1107,139 @@ proxies:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 82 - xiaohe
+- name: 🇫🇷 法国 (France) 93 - xiaohe
+  type: vless
+  server: 199.232.78.120
+  port: 443
+  uuid: a967d91b-27bc-4b05-9e22-27dd1336ca90
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn.akamai.steamstatic.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: frenchji.global.ssl.fastly.net.
+- name: 🇫🇷 法国 (France) 94 - xiaohe
+  type: ss
+  server: 167.17.64.175
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 95 - xiaohe
+  type: vmess
+  server: 188.114.97.1
+  port: 443
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.windowssearchtools.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.windowssearchtools.com
+- name: 🇫🇷 法国 (France) 96 - xiaohe
+  type: vless
+  server: 138.124.70.41
+  port: 14430
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 138.124.70.41
+- name: 🇫🇷 法国 (France) 97 - xiaohe
+  type: vless
+  server: ai.smrtai.top
+  port: 443
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 98 - xiaohe
+  type: vmess
+  server: 54.37.131.126
+  port: 80
+  uuid: 059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇫🇷 法国 (France) 99 - xiaohe
+  type: vless
+  server: w.geogame.ir
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: w.geogame.ir
+- name: 🇫🇷 法国 (France) 100 - xiaohe
+  type: ss
+  server: 79.137.99.183
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 101 - xiaohe
+  type: vmess
+  server: www.ubuntuupdates.com
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.ubuntuupdates.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
+- name: 🇫🇷 法国 (France) 102 - xiaohe
+  type: vmess
+  server: www.windowssearchtools.com
+  port: 443
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.windowssearchtools.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.windowssearchtools.com
+- name: 🇫🇷 法国 (France) 103 - xiaohe
+  type: ss
+  server: dns24.m3hrzd.ir
+  port: 1352
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
+  udp: true
+- name: 🇫🇷 法国 (France) 104 - xiaohe
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -960,10 +1250,152 @@ proxies:
   reality-opts:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇫🇷 法国 (France) 83 - xiaohe
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 105 - xiaohe
+  type: ss
+  server: 167.17.64.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 106 - xiaohe
+  type: vmess
+  server: www.ubuntuupdates.com
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.ubuntuupdates.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
+- name: 🇫🇷 法国 (France) 107 - xiaohe
   type: vless
-  server: OV-France1.09vpn.com
+  server: 15.236.109.186
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: w.geogame.ir
+- name: 🇫🇷 法国 (France) 108 - xiaohe
+  type: ss
+  server: dns24.m3hrzd.ir
+  port: 1352
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
+  udp: true
+- name: 🇫🇷 法国 (France) 109 - xiaohe
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 110 - xiaohe
+  type: vmess
+  server: www.windowssearchtools.com
+  port: 443
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.windowssearchtools.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.windowssearchtools.com
+- name: 🇫🇷 法国 (France) 111 - xiaohe
+  type: vmess
+  server: www.ubuntuupdates.com
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: ''
+- name: 🇫🇷 法国 (France) 112 - xiaohe
+  type: vless
+  server: 161.97.66.16
+  port: 443
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇫🇷 法国 (France) 113 - xiaohe
+  type: vmess
+  server: 104.21.15.251
+  port: 443
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.windowssearchtools.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.windowssearchtools.com
+- name: 🇫🇷 法国 (France) 114 - xiaohe
+  type: vmess
+  server: www.speedtest.net
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.ubuntuupdates.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
+- name: 🇫🇷 法国 (France) 115 - xiaohe
+  type: vmess
+  server: www.ubuntuupdates.com
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: ''
+- name: 🇫🇷 法国 (France) 116 - xiaohe
+  type: vless
+  server: 152.228.162.19
   port: 80
   uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
   udp: true
@@ -973,32 +1405,202 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: OV-France1.09vpn.com
-- name: 🇫🇷 法国 (France) 84 - xiaohe
+      Host: 152.228.162.19
+- name: 🇫🇷 法国 (France) 117 - xiaohe
+  type: vmess
+  server: 172.67.221.77
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.ubuntuupdates.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
+- name: 🇫🇷 法国 (France) 118 - xiaohe
   type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  server: ai.smrtai.top
+  port: 443
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 85 - xiaohe
+  client-fingerprint: random
+- name: 🇫🇷 法国 (France) 119 - xiaohe
   type: vless
-  server: ov-france1.09vpn.com
+  server: w.geogame.ir
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: w.geogame.ir
+- name: 🇫🇷 法国 (France) 120 - xiaohe
+  type: vmess
+  server: 54.37.131.126
   port: 80
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  uuid: 059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless/
+    path: /
     headers:
-      Host: ov-france1.09vpn.com
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇫🇷 法国 (France) 121 - xiaohe
+  type: vmess
+  server: www.ubuntuupdates.com
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: ''
+- name: 🇫🇷 法国 (France) 122 - xiaohe
+  type: vmess
+  server: www.ubuntuupdates.com
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.ubuntuupdates.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
+- name: 🇫🇷 法国 (France) 123 - xiaohe
+  type: vmess
+  server: www.windowssearchtools.com
+  port: 443
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.windowssearchtools.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.windowssearchtools.com
+- name: 🇫🇷 法国 (France) 124 - xiaohe
+  type: vmess
+  server: www.windowssearchtools.com
+  port: 443
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.windowssearchtools.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.windowssearchtools.com
+- name: 🇫🇷 法国 (France) 125 - xiaohe
+  type: ss
+  server: 38.109.228.110
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 126 - xiaohe
+  type: vmess
+  server: www.windowssearchtools.com
+  port: 443
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.windowssearchtools.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.windowssearchtools.com
+- name: 🇫🇷 法国 (France) 127 - xiaohe
+  type: vless
+  server: 138.124.70.41
+  port: 14430
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 138.124.70.41
+- name: 🇫🇷 法国 (France) 128 - xiaohe
+  type: vmess
+  server: www.speedtest.net
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.ubuntuupdates.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
+- name: 🇫🇷 法国 (France) 129 - xiaohe
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 130 - xiaohe
+  type: vmess
+  server: www.speedtest.net
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.ubuntuupdates.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1089,6 +1691,51 @@ proxy-groups:
   - 🇫🇷 法国 (France) 83 - xiaohe
   - 🇫🇷 法国 (France) 84 - xiaohe
   - 🇫🇷 法国 (France) 85 - xiaohe
+  - 🇫🇷 法国 (France) 86 - xiaohe
+  - 🇫🇷 法国 (France) 87 - xiaohe
+  - 🇫🇷 法国 (France) 88 - xiaohe
+  - 🇫🇷 法国 (France) 89 - xiaohe
+  - 🇫🇷 法国 (France) 90 - xiaohe
+  - 🇫🇷 法国 (France) 91 - xiaohe
+  - 🇫🇷 法国 (France) 92 - xiaohe
+  - 🇫🇷 法国 (France) 93 - xiaohe
+  - 🇫🇷 法国 (France) 94 - xiaohe
+  - 🇫🇷 法国 (France) 95 - xiaohe
+  - 🇫🇷 法国 (France) 96 - xiaohe
+  - 🇫🇷 法国 (France) 97 - xiaohe
+  - 🇫🇷 法国 (France) 98 - xiaohe
+  - 🇫🇷 法国 (France) 99 - xiaohe
+  - 🇫🇷 法国 (France) 100 - xiaohe
+  - 🇫🇷 法国 (France) 101 - xiaohe
+  - 🇫🇷 法国 (France) 102 - xiaohe
+  - 🇫🇷 法国 (France) 103 - xiaohe
+  - 🇫🇷 法国 (France) 104 - xiaohe
+  - 🇫🇷 法国 (France) 105 - xiaohe
+  - 🇫🇷 法国 (France) 106 - xiaohe
+  - 🇫🇷 法国 (France) 107 - xiaohe
+  - 🇫🇷 法国 (France) 108 - xiaohe
+  - 🇫🇷 法国 (France) 109 - xiaohe
+  - 🇫🇷 法国 (France) 110 - xiaohe
+  - 🇫🇷 法国 (France) 111 - xiaohe
+  - 🇫🇷 法国 (France) 112 - xiaohe
+  - 🇫🇷 法国 (France) 113 - xiaohe
+  - 🇫🇷 法国 (France) 114 - xiaohe
+  - 🇫🇷 法国 (France) 115 - xiaohe
+  - 🇫🇷 法国 (France) 116 - xiaohe
+  - 🇫🇷 法国 (France) 117 - xiaohe
+  - 🇫🇷 法国 (France) 118 - xiaohe
+  - 🇫🇷 法国 (France) 119 - xiaohe
+  - 🇫🇷 法国 (France) 120 - xiaohe
+  - 🇫🇷 法国 (France) 121 - xiaohe
+  - 🇫🇷 法国 (France) 122 - xiaohe
+  - 🇫🇷 法国 (France) 123 - xiaohe
+  - 🇫🇷 法国 (France) 124 - xiaohe
+  - 🇫🇷 法国 (France) 125 - xiaohe
+  - 🇫🇷 法国 (France) 126 - xiaohe
+  - 🇫🇷 法国 (France) 127 - xiaohe
+  - 🇫🇷 法国 (France) 128 - xiaohe
+  - 🇫🇷 法国 (France) 129 - xiaohe
+  - 🇫🇷 法国 (France) 130 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1179,5 +1826,50 @@ proxy-groups:
   - 🇫🇷 法国 (France) 83 - xiaohe
   - 🇫🇷 法国 (France) 84 - xiaohe
   - 🇫🇷 法国 (France) 85 - xiaohe
+  - 🇫🇷 法国 (France) 86 - xiaohe
+  - 🇫🇷 法国 (France) 87 - xiaohe
+  - 🇫🇷 法国 (France) 88 - xiaohe
+  - 🇫🇷 法国 (France) 89 - xiaohe
+  - 🇫🇷 法国 (France) 90 - xiaohe
+  - 🇫🇷 法国 (France) 91 - xiaohe
+  - 🇫🇷 法国 (France) 92 - xiaohe
+  - 🇫🇷 法国 (France) 93 - xiaohe
+  - 🇫🇷 法国 (France) 94 - xiaohe
+  - 🇫🇷 法国 (France) 95 - xiaohe
+  - 🇫🇷 法国 (France) 96 - xiaohe
+  - 🇫🇷 法国 (France) 97 - xiaohe
+  - 🇫🇷 法国 (France) 98 - xiaohe
+  - 🇫🇷 法国 (France) 99 - xiaohe
+  - 🇫🇷 法国 (France) 100 - xiaohe
+  - 🇫🇷 法国 (France) 101 - xiaohe
+  - 🇫🇷 法国 (France) 102 - xiaohe
+  - 🇫🇷 法国 (France) 103 - xiaohe
+  - 🇫🇷 法国 (France) 104 - xiaohe
+  - 🇫🇷 法国 (France) 105 - xiaohe
+  - 🇫🇷 法国 (France) 106 - xiaohe
+  - 🇫🇷 法国 (France) 107 - xiaohe
+  - 🇫🇷 法国 (France) 108 - xiaohe
+  - 🇫🇷 法国 (France) 109 - xiaohe
+  - 🇫🇷 法国 (France) 110 - xiaohe
+  - 🇫🇷 法国 (France) 111 - xiaohe
+  - 🇫🇷 法国 (France) 112 - xiaohe
+  - 🇫🇷 法国 (France) 113 - xiaohe
+  - 🇫🇷 法国 (France) 114 - xiaohe
+  - 🇫🇷 法国 (France) 115 - xiaohe
+  - 🇫🇷 法国 (France) 116 - xiaohe
+  - 🇫🇷 法国 (France) 117 - xiaohe
+  - 🇫🇷 法国 (France) 118 - xiaohe
+  - 🇫🇷 法国 (France) 119 - xiaohe
+  - 🇫🇷 法国 (France) 120 - xiaohe
+  - 🇫🇷 法国 (France) 121 - xiaohe
+  - 🇫🇷 法国 (France) 122 - xiaohe
+  - 🇫🇷 法国 (France) 123 - xiaohe
+  - 🇫🇷 法国 (France) 124 - xiaohe
+  - 🇫🇷 法国 (France) 125 - xiaohe
+  - 🇫🇷 法国 (France) 126 - xiaohe
+  - 🇫🇷 法国 (France) 127 - xiaohe
+  - 🇫🇷 法国 (France) 128 - xiaohe
+  - 🇫🇷 法国 (France) 129 - xiaohe
+  - 🇫🇷 法国 (France) 130 - xiaohe
 rules:
 - MATCH,PROXIES
