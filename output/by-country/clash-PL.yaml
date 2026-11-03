@@ -6,30 +6,22 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 188.225.83.133
-  port: 443
-  uuid: 5f1c2e83-d4aa-4f10-81e9-e0ccc018974c
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw
-  servername: xnodtwx.artemida.live
-  client-fingerprint: firefox
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
-  server: 145.63.143.205
-  port: 8444
-  uuid: 35c9f200-7520-4005-b78e-f8a2fb9f68f7
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pl1.meshbeat.online
-  network: ws
-  ws-opts:
-    path: /api/v1/devices/10be32b380/telemetry
-    headers:
-      Host: pl1.meshbeat.online
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 03 - xiaohe
   type: vless
   server: 2.26.6.1
@@ -68,16 +60,13 @@ proxies:
   servername: 2.26.6.1
 - name: 🇵🇱 PL 07 - xiaohe
   type: vless
-  server: 188.225.83.133
-  port: 443
-  uuid: 5f1c2e83-d4aa-4f10-81e9-e0ccc018974c
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw
-  servername: xnodtwx.artemida.live
-  client-fingerprint: firefox
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 08 - xiaohe
   type: vless
   server: 2.26.6.1
@@ -105,24 +94,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 11 - xiaohe
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 12 - xiaohe
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
 proxy-groups:
 - name: PROXIES
   type: select
@@ -138,8 +109,6 @@ proxy-groups:
   - 🇵🇱 PL 08 - xiaohe
   - 🇵🇱 PL 09 - xiaohe
   - 🇵🇱 PL 10 - xiaohe
-  - 🇵🇱 PL 11 - xiaohe
-  - 🇵🇱 PL 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -155,7 +124,5 @@ proxy-groups:
   - 🇵🇱 PL 08 - xiaohe
   - 🇵🇱 PL 09 - xiaohe
   - 🇵🇱 PL 10 - xiaohe
-  - 🇵🇱 PL 11 - xiaohe
-  - 🇵🇱 PL 12 - xiaohe
 rules:
 - MATCH,PROXIES

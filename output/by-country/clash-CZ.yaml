@@ -8,6 +8,48 @@ proxies:
   type: vless
   server: 153.76.190.31
   port: 2083
+  uuid: d65fb384-5029-4edf-bdc7-0f5960600e3d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: speedtestmark.com
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: 153.76.190.31
+- name: 🇨🇿 CZ 02 - xiaohe
+  type: vless
+  server: 153.76.190.31
+  port: 2083
+  uuid: d65fb384-5029-4edf-bdc7-0f5960600e3d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: speedtestmark.com
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: 153.76.190.31
+- name: 🇨🇿 CZ 03 - xiaohe
+  type: vless
+  server: 153.76.190.31
+  port: 2083
+  uuid: d65fb384-5029-4edf-bdc7-0f5960600e3d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: speedtestmark.com
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: 153.76.190.31
+- name: 🇨🇿 CZ 04 - xiaohe
+  type: vless
+  server: 153.76.190.31
+  port: 2083
   uuid: d6eb8a46-e6a4-4891-b22e-dfaa609c6afd
   udp: true
   tls: true
@@ -24,11 +66,17 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - xiaohe
+  - 🇨🇿 CZ 02 - xiaohe
+  - 🇨🇿 CZ 03 - xiaohe
+  - 🇨🇿 CZ 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - xiaohe
+  - 🇨🇿 CZ 02 - xiaohe
+  - 🇨🇿 CZ 03 - xiaohe
+  - 🇨🇿 CZ 04 - xiaohe
 rules:
 - MATCH,PROXIES
