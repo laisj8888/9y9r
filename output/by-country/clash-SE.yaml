@@ -5,14 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
-  type: vless
-  server: se3.shtil.io
-  port: 443
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: se3.shtil.io
 - name: 🇸🇪 SE 02 - xiaohe
   type: vless
   server: se3.shtil.io
@@ -24,32 +22,18 @@ proxies:
   servername: se3.shtil.io
 - name: 🇸🇪 SE 03 - xiaohe
   type: vless
-  server: 194.104.94.141
-  port: 443
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: se3.shtil.io
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 04 - xiaohe
-  type: vless
-  server: se3.shtil.io
-  port: 443
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: se3.shtil.io
-- name: 🇸🇪 SE 05 - xiaohe
-  type: vless
-  server: se3.shtil.io
-  port: 443
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: se3.shtil.io
-- name: 🇸🇪 SE 06 - xiaohe
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -62,7 +46,69 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 SE 05 - xiaohe
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 06 - xiaohe
+  type: vless
+  server: se3.shtil.io
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se3.shtil.io
 - name: 🇸🇪 SE 07 - xiaohe
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 08 - xiaohe
+  type: vless
+  server: se3.shtil.io
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se3.shtil.io
+- name: 🇸🇪 SE 09 - xiaohe
+  type: vless
+  server: se3.shtil.io
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se3.shtil.io
+- name: 🇸🇪 SE 10 - xiaohe
+  type: vless
+  server: se3.shtil.io
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se3.shtil.io
+- name: 🇸🇪 SE 11 - xiaohe
   type: vmess
   server: 138.199.55.230
   port: 1270
@@ -73,7 +119,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇸🇪 SE 08 - xiaohe
+- name: 🇸🇪 SE 12 - xiaohe
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -86,6 +132,53 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 SE 13 - xiaohe
+  type: vless
+  server: 194.104.94.141
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 194.104.94.141
+- name: 🇸🇪 SE 14 - xiaohe
+  type: vless
+  server: 194.104.94.141
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se3.shtil.io
+- name: 🇸🇪 SE 15 - xiaohe
+  type: vless
+  server: se3.shtil.io
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se3.shtil.io
+- name: 🇸🇪 SE 16 - xiaohe
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 17 - xiaohe
+  type: vless
+  server: 194.104.94.141
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se3.shtil.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -99,6 +192,15 @@ proxy-groups:
   - 🇸🇪 SE 06 - xiaohe
   - 🇸🇪 SE 07 - xiaohe
   - 🇸🇪 SE 08 - xiaohe
+  - 🇸🇪 SE 09 - xiaohe
+  - 🇸🇪 SE 10 - xiaohe
+  - 🇸🇪 SE 11 - xiaohe
+  - 🇸🇪 SE 12 - xiaohe
+  - 🇸🇪 SE 13 - xiaohe
+  - 🇸🇪 SE 14 - xiaohe
+  - 🇸🇪 SE 15 - xiaohe
+  - 🇸🇪 SE 16 - xiaohe
+  - 🇸🇪 SE 17 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -112,5 +214,14 @@ proxy-groups:
   - 🇸🇪 SE 06 - xiaohe
   - 🇸🇪 SE 07 - xiaohe
   - 🇸🇪 SE 08 - xiaohe
+  - 🇸🇪 SE 09 - xiaohe
+  - 🇸🇪 SE 10 - xiaohe
+  - 🇸🇪 SE 11 - xiaohe
+  - 🇸🇪 SE 12 - xiaohe
+  - 🇸🇪 SE 13 - xiaohe
+  - 🇸🇪 SE 14 - xiaohe
+  - 🇸🇪 SE 15 - xiaohe
+  - 🇸🇪 SE 16 - xiaohe
+  - 🇸🇪 SE 17 - xiaohe
 rules:
 - MATCH,PROXIES
