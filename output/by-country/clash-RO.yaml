@@ -13,11 +13,33 @@ proxies:
   udp: true
 - name: 🇷🇴 RO 02 - xiaohe
   type: ss
+  server: 154.46.31.106
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  udp: true
+- name: 🇷🇴 RO 03 - xiaohe
+  type: ss
+  server: 82.152.132.211
+  port: 8044
+  cipher: chacha20-ietf-poly1305
+  password: dCamglzrORaopqbpBlptzbt9QdiH4CSN
+  udp: true
+- name: 🇷🇴 RO 04 - xiaohe
+  type: ss
   server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
+- name: 🇷🇴 RO 05 - xiaohe
+  type: vless
+  server: bot.vudfaro.ir
+  port: 5061
+  uuid: 7df4f23f-b361-412a-883a-54dfdb5b8c8f
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -25,6 +47,9 @@ proxy-groups:
   - AUTO
   - 🇷🇴 RO 01 - xiaohe
   - 🇷🇴 RO 02 - xiaohe
+  - 🇷🇴 RO 03 - xiaohe
+  - 🇷🇴 RO 04 - xiaohe
+  - 🇷🇴 RO 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -32,5 +57,8 @@ proxy-groups:
   proxies:
   - 🇷🇴 RO 01 - xiaohe
   - 🇷🇴 RO 02 - xiaohe
+  - 🇷🇴 RO 03 - xiaohe
+  - 🇷🇴 RO 04 - xiaohe
+  - 🇷🇴 RO 05 - xiaohe
 rules:
 - MATCH,PROXIES
