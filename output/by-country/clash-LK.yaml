@@ -26,31 +26,8 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: zoom.com
+  servername: aka.ms
 - name: 🇱🇰 LK 03 - xiaohe
-  type: vless
-  server: free.vkehi.store
-  port: 443
-  uuid: e4d1298a-1f21-42e2-a53e-1b22c0645c48
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: zoom.com
-- name: 🇱🇰 LK 04 - xiaohe
-  type: vless
-  server: news.zoom.us
-  port: 2087
-  uuid: 0ef68b97-f878-4cea-b756-c56ea3632851
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.vkehi.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.vkehi.store
-- name: 🇱🇰 LK 05 - xiaohe
   type: vless
   server: 141.193.213.21
   port: 2087
@@ -64,7 +41,39 @@ proxies:
     path: /
     headers:
       Host: free.vkehi.store
+- name: 🇱🇰 LK 04 - xiaohe
+  type: vless
+  server: free.vkehi.store
+  port: 443
+  uuid: e4d1298a-1f21-42e2-a53e-1b22c0645c48
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: zoom.com
+- name: 🇱🇰 LK 05 - xiaohe
+  type: vless
+  server: free.vkehi.store
+  port: 443
+  uuid: e4d1298a-1f21-42e2-a53e-1b22c0645c48
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: zoom.com
 - name: 🇱🇰 LK 06 - xiaohe
+  type: vless
+  server: news.zoom.us
+  port: 2087
+  uuid: 0ef68b97-f878-4cea-b756-c56ea3632851
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.vkehi.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.vkehi.store
+- name: 🇱🇰 LK 07 - xiaohe
   type: vless
   server: news.zoom.us
   port: 2087
@@ -89,6 +98,7 @@ proxy-groups:
   - 🇱🇰 LK 04 - xiaohe
   - 🇱🇰 LK 05 - xiaohe
   - 🇱🇰 LK 06 - xiaohe
+  - 🇱🇰 LK 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -100,5 +110,6 @@ proxy-groups:
   - 🇱🇰 LK 04 - xiaohe
   - 🇱🇰 LK 05 - xiaohe
   - 🇱🇰 LK 06 - xiaohe
+  - 🇱🇰 LK 07 - xiaohe
 rules:
 - MATCH,PROXIES

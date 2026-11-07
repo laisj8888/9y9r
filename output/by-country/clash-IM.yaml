@@ -4,32 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇩 ID 01 - xiaohe
-  type: vmess
-  server: free2.rajaserver2.web.id
-  port: 80
-  uuid: 4d4708ef-0729-44ac-b2b0-411ce0242e89
-  alterId: 0
-  cipher: auto
+- name: 🇮🇲 IM 01 - xiaohe
+  type: vless
+  server: 185.162.229.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vmess
+    path: /
     headers:
-      Host: free2.rajaserver2.web.id
+      Host: vms.lifetime61.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇩 ID 01 - xiaohe
+  - 🇮🇲 IM 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇩 ID 01 - xiaohe
+  - 🇮🇲 IM 01 - xiaohe
 rules:
 - MATCH,PROXIES

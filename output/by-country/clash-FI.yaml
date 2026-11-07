@@ -5,17 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: b79d736d-0f10-4169-b626-362059d18204
+  type: vmess
+  server: 65.108.240.210
+  port: 39018
+  uuid: 18f60a4c-ad76-4157-8ecb-661974f02f30
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇫🇮 FI 02 - xiaohe
   type: vless
   server: 45.144.234.157
@@ -30,23 +28,16 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 03 - xiaohe
-  type: ss
-  server: 6.bmi.ir.asopardaz.ir
-  port: 35176
-  cipher: 2022-blake3-aes-256-gcm
-  password: NjcyNmVjMTU1ZWU5NDA5ZDk0ODg1NWM1MzJjZTE3NDk=:ZmU0ZDJiM2U5NjVmNDM4OWE2ZTQwNTg4N2VmNWZkMmI=
-  udp: true
-- name: 🇫🇮 FI 04 - xiaohe
   type: vmess
   server: 65.108.240.210
   port: 39018
-  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
+  uuid: 96c987c9-c2d9-4993-b9bd-c9bc36255ee1
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇫🇮 FI 05 - xiaohe
+- name: 🇫🇮 FI 04 - xiaohe
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -59,6 +50,13 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 05 - xiaohe
+  type: ss
+  server: fn1s.sublinkplas.ir
+  port: 53731
+  cipher: chacha20-ietf-poly1305
+  password: tztS0JGqX91pDVi5g8QyffaUPJlPUnWm
+  udp: true
 - name: 🇫🇮 FI 06 - xiaohe
   type: vless
   server: 45.144.234.157
@@ -73,6 +71,18 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 07 - xiaohe
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: b79d736d-0f10-4169-b626-362059d18204
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 08 - xiaohe
   type: vmess
   server: 65.108.240.210
   port: 39018
@@ -82,7 +92,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇫🇮 FI 08 - xiaohe
+- name: 🇫🇮 FI 09 - xiaohe
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -95,17 +105,20 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 09 - xiaohe
-  type: vmess
-  server: 65.108.240.210
-  port: 39018
-  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
-  alterId: 0
-  cipher: auto
+- name: 🇫🇮 FI 10 - xiaohe
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇫🇮 FI 10 - xiaohe
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 11 - xiaohe
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -133,6 +146,7 @@ proxy-groups:
   - 🇫🇮 FI 08 - xiaohe
   - 🇫🇮 FI 09 - xiaohe
   - 🇫🇮 FI 10 - xiaohe
+  - 🇫🇮 FI 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -148,5 +162,6 @@ proxy-groups:
   - 🇫🇮 FI 08 - xiaohe
   - 🇫🇮 FI 09 - xiaohe
   - 🇫🇮 FI 10 - xiaohe
+  - 🇫🇮 FI 11 - xiaohe
 rules:
 - MATCH,PROXIES
