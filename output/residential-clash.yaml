@@ -21,42 +21,66 @@ proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
   type: vmess
   server: dog-hk.kunlun01dns.com
-  port: 21018
+  port: 21019
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 03 (家宽) - xiaohe
-  type: vless
-  server: 91.215.43.80
-  port: 443
-  uuid: e9b117e4-8be9-4105-9354-a5e0663294f0
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  type: vmess
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16112
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: metrics.api.downloader-pet.xyz
-  network: ws
-  ws-opts:
-    path: /gateway/v1/ws/a901ed17102fc3090ca1ab052c672f47
-    headers:
-      Host: metrics.api.downloader-pet.xyz
 - name: 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
   type: vless
-  server: 172.64.155.209
+  server: 169.128.83.4
+  port: 57259
+  uuid: a1962f23-f8f8-412d-f2ce-3361e7b72889
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
+  type: vmess
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16113
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+  type: vmess
+  server: dog-tw.kunlun01dns.com
+  port: 21035
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 07 (家宽) - xiaohe
+  type: vless
+  server: 122.176.216.52
   port: 443
-  uuid: 64726966-0000-4000-8000-740000000000
+  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
+  servername: app-6ada5023.deploy.meerasolution.com
   network: ws
   ws-opts:
-    path: /drift
+    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
-      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
+      Host: app-6ada5023.deploy.meerasolution.com
+- name: 🇭🇰 中国香港 (Hong Kong) 08 (家宽) - xiaohe
   type: vmess
   server: dog-hk.kunlun01dns.com
   port: 21041
@@ -66,38 +90,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
-  type: vmess
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16115
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 07 (家宽) - xiaohe
-  type: vless
-  server: 169.128.83.4
-  port: 57259
-  uuid: a1962f23-f8f8-412d-f2ce-3361e7b72889
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 08 (家宽) - xiaohe
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp5.1145678.xyz
-  network: ws
-  ws-opts:
-    path: /games/season/video/TkZDG0RVE1kPREsSEQ8YEEBHSEpZUwhIFF4WRBIIFUkVRQQQRhNYEFASC0FbR1ZETQ9cXUZAQ1laV0cXFBJEXFZQB1cAA1RQAUpYElFeVhQDWV0SQwEWQlpGWRoNA1ceAhk=
-    headers:
-      Host: vp5.1145678.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -105,12 +97,12 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇩🇪 德国 (Germany) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
   - 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 07 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 08 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+  - 🇮🇳 印度 (India) 07 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 08 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -118,11 +110,11 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇩🇪 德国 (Germany) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
   - 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 07 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 08 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+  - 🇮🇳 印度 (India) 07 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 08 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
