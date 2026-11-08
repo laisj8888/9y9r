@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇳 印度 (India) 01 (家宽) - xiaohe
+- name: 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
   type: vless
-  server: 122.176.216.52
+  server: 91.215.43.80
   port: 443
-  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+  uuid: e9b117e4-8be9-4105-9354-a5e0663294f0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: app-6ada5023.deploy.meerasolution.com
+  servername: metrics.api.downloader-pet.xyz
   network: ws
   ws-opts:
-    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+    path: /gateway/v1/ws/a901ed17102fc3090ca1ab052c672f47
     headers:
-      Host: app-6ada5023.deploy.meerasolution.com
+      Host: metrics.api.downloader-pet.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇳 印度 (India) 01 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 (India) 01 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
