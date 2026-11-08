@@ -4,32 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇩 ID 01 - xiaohe
-  type: vmess
-  server: free2.rajaserver2.web.id
-  port: 80
-  uuid: 4d4708ef-0729-44ac-b2b0-411ce0242e89
-  alterId: 0
-  cipher: auto
+- name: 🇮🇱 IL 01 - xiaohe
+  type: vless
+  server: avcd.banfuna.ir
+  port: 26691
+  uuid: 6ae10376-317e-4339-9c59-6b9c1313d6cf
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: tl3.tavqila.ir
   network: ws
   ws-opts:
-    path: /vmess
+    path: /
     headers:
-      Host: free2.rajaserver2.web.id
+      Host: tl3.tavqila.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇩 ID 01 - xiaohe
+  - 🇮🇱 IL 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇩 ID 01 - xiaohe
+  - 🇮🇱 IL 01 - xiaohe
 rules:
 - MATCH,PROXIES
