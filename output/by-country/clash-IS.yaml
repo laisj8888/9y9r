@@ -18,6 +18,20 @@ proxies:
   client-fingerprint: chrome
 - name: 🇮🇸 IS 02 - xiaohe
   type: vless
+  server: 191.44.112.170
+  port: 443
+  uuid: 46d221fa-e9b4-748c-4eae-019a88e42991
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: orbylume.my.to
+  network: ws
+  ws-opts:
+    path: /tvpn-tor/is
+    headers:
+      Host: orbylume.my.to
+- name: 🇮🇸 IS 03 - xiaohe
+  type: vless
   server: 93.95.226.159
   port: 28150
   uuid: b4e69d67-9d41-417c-b465-ebf1591fb792
@@ -28,6 +42,46 @@ proxies:
     public-key: KQW_o2BlCjMC8aH5lkNkO_rmMCAUykQIQCCIIehhsAo
   servername: google.com
   client-fingerprint: chrome
+- name: 🇮🇸 IS 04 - xiaohe
+  type: vless
+  server: 93.95.226.159
+  port: 28150
+  uuid: b4e69d67-9d41-417c-b465-ebf1591fb792
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: KQW_o2BlCjMC8aH5lkNkO_rmMCAUykQIQCCIIehhsAo
+  servername: google.com
+  client-fingerprint: chrome
+- name: 🇮🇸 IS 05 - xiaohe
+  type: vless
+  server: 191.44.112.170
+  port: 443
+  uuid: 46d221fa-e9b4-748c-4eae-019a88e42991
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: orbylume.my.to
+  network: ws
+  ws-opts:
+    path: /tvpn-tor/is
+    headers:
+      Host: orbylume.my.to
+- name: 🇮🇸 IS 06 - xiaohe
+  type: vless
+  server: 191.44.112.170
+  port: 443
+  uuid: 46d221fa-e9b4-748c-4eae-019a88e42991
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: orbylume.my.to
+  network: ws
+  ws-opts:
+    path: /tvpn-tor/is
+    headers:
+      Host: orbylume.my.to
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +89,10 @@ proxy-groups:
   - AUTO
   - 🇮🇸 IS 01 - xiaohe
   - 🇮🇸 IS 02 - xiaohe
+  - 🇮🇸 IS 03 - xiaohe
+  - 🇮🇸 IS 04 - xiaohe
+  - 🇮🇸 IS 05 - xiaohe
+  - 🇮🇸 IS 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +100,9 @@ proxy-groups:
   proxies:
   - 🇮🇸 IS 01 - xiaohe
   - 🇮🇸 IS 02 - xiaohe
+  - 🇮🇸 IS 03 - xiaohe
+  - 🇮🇸 IS 04 - xiaohe
+  - 🇮🇸 IS 05 - xiaohe
+  - 🇮🇸 IS 06 - xiaohe
 rules:
 - MATCH,PROXIES
