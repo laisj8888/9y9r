@@ -16,17 +16,31 @@ proxies:
     public-key: KQW_o2BlCjMC8aH5lkNkO_rmMCAUykQIQCCIIehhsAo
   servername: google.com
   client-fingerprint: chrome
+- name: 🇮🇸 IS 02 - xiaohe
+  type: vless
+  server: 93.95.226.159
+  port: 28150
+  uuid: b4e69d67-9d41-417c-b465-ebf1591fb792
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: KQW_o2BlCjMC8aH5lkNkO_rmMCAUykQIQCCIIehhsAo
+  servername: google.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇸 IS 01 - xiaohe
+  - 🇮🇸 IS 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇸 IS 01 - xiaohe
+  - 🇮🇸 IS 02 - xiaohe
 rules:
 - MATCH,PROXIES
