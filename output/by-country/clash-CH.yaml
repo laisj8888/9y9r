@@ -13,25 +13,18 @@ proxies:
   udp: true
 - name: 🇨🇭 CH 02 - xiaohe
   type: ss
-  server: 23.166.88.189
+  server: 186.190.215.251
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇨🇭 CH 03 - xiaohe
-  type: vless
-  server: 142.91.101.39
-  port: 627
-  uuid: aff1ffd0-594c-44c9-9f79-4096fde005ea
+  type: ss
+  server: 186.190.215.251
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristifp=chrome
-    headers:
-      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
 - name: 🇨🇭 CH 04 - xiaohe
   type: ss
   server: 79.127.184.104
@@ -40,12 +33,17 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇨🇭 CH 05 - xiaohe
-  type: ss
-  server: 186.190.215.251
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 06 - xiaohe
   type: vless
   server: 208.69.78.217
@@ -59,19 +57,12 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇨🇭 CH 07 - xiaohe
-  type: vless
-  server: 185.18.250.252
-  port: 443
-  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
+  type: ss
+  server: 23.166.88.127
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edu.ruangguru.com.r3xxe.eu.cc
-  network: ws
-  ws-opts:
-    path: /nl-tw
-    headers:
-      Host: edu.ruangguru.com.r3xxe.eu.cc
 - name: 🇨🇭 CH 08 - xiaohe
   type: vless
   server: 208.69.78.217
@@ -85,20 +76,37 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇨🇭 CH 09 - xiaohe
-  type: ss
-  server: 23.166.88.127
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: firefox
 - name: 🇨🇭 CH 10 - xiaohe
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 11 - xiaohe
   type: ss
-  server: 23.166.88.127
+  server: 23.166.88.189
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇨🇭 CH 11 - xiaohe
+- name: 🇨🇭 CH 12 - xiaohe
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -110,34 +118,13 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇨🇭 CH 12 - xiaohe
-  type: vless
-  server: 142.91.101.39
-  port: 627
-  uuid: 01e7eda0-cd5a-4415-b42d-0dc4a7598cf9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
 - name: 🇨🇭 CH 13 - xiaohe
-  type: vless
-  server: 57.129.130.57
-  port: 52014
-  uuid: 47ba5dc6-8961-48a0-8b54-f57ec524627a
+  type: ss
+  server: 23.166.88.127
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
 - name: 🇨🇭 CH 14 - xiaohe
   type: vless
   server: 208.69.78.217
@@ -151,65 +138,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇨🇭 CH 15 - xiaohe
-  type: ss
-  server: 186.190.215.251
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇨🇭 CH 16 - xiaohe
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇨🇭 CH 17 - xiaohe
-  type: vless
-  server: 38.47.96.220
-  port: 11424
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇨🇭 CH 18 - xiaohe
-  type: vless
-  server: 185.18.250.245
-  port: 443
-  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edu.ruangguru.com.r3xxe.eu.cc
-  network: ws
-  ws-opts:
-    path: /nl-tw
-    headers:
-      Host: edu.ruangguru.com.r3xxe.eu.cc
-- name: 🇨🇭 CH 19 - xiaohe
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 CH 20 - xiaohe
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -241,11 +169,6 @@ proxy-groups:
   - 🇨🇭 CH 13 - xiaohe
   - 🇨🇭 CH 14 - xiaohe
   - 🇨🇭 CH 15 - xiaohe
-  - 🇨🇭 CH 16 - xiaohe
-  - 🇨🇭 CH 17 - xiaohe
-  - 🇨🇭 CH 18 - xiaohe
-  - 🇨🇭 CH 19 - xiaohe
-  - 🇨🇭 CH 20 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -266,10 +189,5 @@ proxy-groups:
   - 🇨🇭 CH 13 - xiaohe
   - 🇨🇭 CH 14 - xiaohe
   - 🇨🇭 CH 15 - xiaohe
-  - 🇨🇭 CH 16 - xiaohe
-  - 🇨🇭 CH 17 - xiaohe
-  - 🇨🇭 CH 18 - xiaohe
-  - 🇨🇭 CH 19 - xiaohe
-  - 🇨🇭 CH 20 - xiaohe
 rules:
 - MATCH,PROXIES

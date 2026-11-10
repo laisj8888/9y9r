@@ -6,13 +6,16 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: 3eebf4b1.plp1.h1cloud.net
+  port: 443
+  uuid: 16f3d526-8cf8-4af5-a86f-b023c5b52085
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 2.26.6.1
+  reality-opts:
+    public-key: Rbho8R1xROOFPv5tCWDCcePuAxbzNuviUn91jR9CdQ4
+  servername: 3eebf4b1.plp1.h1cloud.net
+  client-fingerprint: chrome
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
   server: 2.26.6.1
@@ -24,18 +27,16 @@ proxies:
   servername: 2.26.6.1
 - name: 🇵🇱 PL 03 - xiaohe
   type: vless
-  server: 151.245.112.193
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  server: 93594at.pl7.h1clayd.click
+  port: 443
+  uuid: 74610801-c200-4b13-a10b-7076f879e293
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fs.qicai99.com
+  reality-opts:
+    public-key: 9gFDg7JnLoWPWy5_53PA8Mr3OgemFuCGWer5rnctRQQ
+  servername: 93594at.pl7.h1clayd.click
+  client-fingerprint: chrome
 - name: 🇵🇱 PL 04 - xiaohe
   type: vless
   server: 2.26.6.1
