@@ -6,16 +6,13 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 3eebf4b1.plp1.h1cloud.net
-  port: 443
-  uuid: 16f3d526-8cf8-4af5-a86f-b023c5b52085
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: Rbho8R1xROOFPv5tCWDCcePuAxbzNuviUn91jR9CdQ4
-  servername: 3eebf4b1.plp1.h1cloud.net
-  client-fingerprint: chrome
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
   server: 2.26.6.1
@@ -27,25 +24,16 @@ proxies:
   servername: 2.26.6.1
 - name: 🇵🇱 PL 03 - xiaohe
   type: vless
-  server: 93594at.pl7.h1clayd.click
+  server: 201.58.139.66
   port: 443
-  uuid: 74610801-c200-4b13-a10b-7076f879e293
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 9gFDg7JnLoWPWy5_53PA8Mr3OgemFuCGWer5rnctRQQ
-  servername: 93594at.pl7.h1clayd.click
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 04 - xiaohe
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+  servername: 57aac2t.pl7.h1clayd.click
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,7 +42,6 @@ proxy-groups:
   - 🇵🇱 PL 01 - xiaohe
   - 🇵🇱 PL 02 - xiaohe
   - 🇵🇱 PL 03 - xiaohe
-  - 🇵🇱 PL 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -63,6 +50,5 @@ proxy-groups:
   - 🇵🇱 PL 01 - xiaohe
   - 🇵🇱 PL 02 - xiaohe
   - 🇵🇱 PL 03 - xiaohe
-  - 🇵🇱 PL 04 - xiaohe
 rules:
 - MATCH,PROXIES
