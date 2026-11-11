@@ -5,13 +5,113 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 MX 01 - xiaohe
+  type: vmess
+  server: 38.60.224.173
+  port: 32153
+  uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇽 MX 02 - xiaohe
+  type: vmess
+  server: 38.60.224.173
+  port: 32153
+  uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇽 MX 03 - xiaohe
+  type: vmess
+  server: 38.60.224.173
+  port: 32153
+  uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇽 MX 04 - xiaohe
+  type: vmess
+  server: 38.60.224.173
+  port: 32153
+  uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇽 MX 05 - xiaohe
+  type: vmess
+  server: 38.60.224.173
+  port: 32153
+  uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇽 MX 06 - xiaohe
+  type: vmess
+  server: 38.60.224.173
+  port: 32153
+  uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇽 MX 07 - xiaohe
+  type: vmess
+  server: 38.60.224.173
+  port: 32153
+  uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇽 MX 08 - xiaohe
   type: ss
   server: 64.177.90.30
   port: 8388
   cipher: aes-256-gcm
   password: BWyPPTusFKhGgzKh
   udp: true
-- name: 🇲🇽 MX 02 - xiaohe
+- name: 🇲🇽 MX 09 - xiaohe
+  type: vmess
+  server: 38.60.224.173
+  port: 32153
+  uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇽 MX 10 - xiaohe
+  type: vmess
+  server: 38.60.224.173
+  port: 32153
+  uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇽 MX 11 - xiaohe
+  type: vmess
+  server: 38.60.224.173
+  port: 32153
+  uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇽 MX 12 - xiaohe
   type: vmess
   server: 38.60.224.173
   port: 32153
@@ -28,6 +128,16 @@ proxy-groups:
   - AUTO
   - 🇲🇽 MX 01 - xiaohe
   - 🇲🇽 MX 02 - xiaohe
+  - 🇲🇽 MX 03 - xiaohe
+  - 🇲🇽 MX 04 - xiaohe
+  - 🇲🇽 MX 05 - xiaohe
+  - 🇲🇽 MX 06 - xiaohe
+  - 🇲🇽 MX 07 - xiaohe
+  - 🇲🇽 MX 08 - xiaohe
+  - 🇲🇽 MX 09 - xiaohe
+  - 🇲🇽 MX 10 - xiaohe
+  - 🇲🇽 MX 11 - xiaohe
+  - 🇲🇽 MX 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -35,5 +145,15 @@ proxy-groups:
   proxies:
   - 🇲🇽 MX 01 - xiaohe
   - 🇲🇽 MX 02 - xiaohe
+  - 🇲🇽 MX 03 - xiaohe
+  - 🇲🇽 MX 04 - xiaohe
+  - 🇲🇽 MX 05 - xiaohe
+  - 🇲🇽 MX 06 - xiaohe
+  - 🇲🇽 MX 07 - xiaohe
+  - 🇲🇽 MX 08 - xiaohe
+  - 🇲🇽 MX 09 - xiaohe
+  - 🇲🇽 MX 10 - xiaohe
+  - 🇲🇽 MX 11 - xiaohe
+  - 🇲🇽 MX 12 - xiaohe
 rules:
 - MATCH,PROXIES

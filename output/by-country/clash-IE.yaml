@@ -6,70 +6,56 @@ log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - xiaohe
   type: ss
-  server: 20.166.20.135
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: G2shlbeRXdE45aVA
+  server: 146.70.90.198
+  port: 17456
+  cipher: aes-128-gcm
+  password: 881cf39affc5286799a585f1acd24d11
   udp: true
 - name: 🇮🇪 IE 02 - xiaohe
-  type: ss
-  server: 20.166.20.135
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: G2shlbeRXdE45aVA
-  udp: true
-- name: 🇮🇪 IE 03 - xiaohe
-  type: ss
-  server: 20.166.20.135
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: G2shlbeRXdE45aVA
-  udp: true
-- name: 🇮🇪 IE 04 - xiaohe
   type: ss
   server: 146.70.90.198
   port: 17456
   cipher: aes-128-gcm
   password: 881cf39affc5286799a585f1acd24d11
   udp: true
+- name: 🇮🇪 IE 03 - xiaohe
+  type: ss
+  server: 18.202.232.173
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: KoJrr14BKAiBUHEoWHFsAVrNzbNVzjKN
+  udp: true
+- name: 🇮🇪 IE 04 - xiaohe
+  type: ss
+  server: 68.219.96.146
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 8ds10bQrvY4KE8Tz
+  udp: true
 - name: 🇮🇪 IE 05 - xiaohe
   type: ss
-  server: 20.166.20.135
+  server: 68.219.96.146
   port: 443
   cipher: chacha20-ietf-poly1305
   password: G2shlbeRXdE45aVA
   udp: true
 - name: 🇮🇪 IE 06 - xiaohe
   type: ss
-  server: 20.166.20.135
+  server: 68.219.96.146
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: G2shlbeRXdE45aVA
+  password: 8ds10bQrvY4KE8Tz
   udp: true
 - name: 🇮🇪 IE 07 - xiaohe
   type: ss
-  server: 146.70.90.198
-  port: 17456
-  cipher: aes-128-gcm
-  password: 881cf39affc5286799a585f1acd24d11
+  server: 68.219.96.146
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 8ds10bQrvY4KE8Tz
   udp: true
 - name: 🇮🇪 IE 08 - xiaohe
   type: ss
-  server: 20.166.20.135
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: G2shlbeRXdE45aVA
-  udp: true
-- name: 🇮🇪 IE 09 - xiaohe
-  type: ss
-  server: 20.166.20.135
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: G2shlbeRXdE45aVA
-  udp: true
-- name: 🇮🇪 IE 10 - xiaohe
-  type: ss
-  server: 20.166.20.135
+  server: 68.219.96.146
   port: 443
   cipher: chacha20-ietf-poly1305
   password: G2shlbeRXdE45aVA
@@ -87,8 +73,6 @@ proxy-groups:
   - 🇮🇪 IE 06 - xiaohe
   - 🇮🇪 IE 07 - xiaohe
   - 🇮🇪 IE 08 - xiaohe
-  - 🇮🇪 IE 09 - xiaohe
-  - 🇮🇪 IE 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -102,7 +86,5 @@ proxy-groups:
   - 🇮🇪 IE 06 - xiaohe
   - 🇮🇪 IE 07 - xiaohe
   - 🇮🇪 IE 08 - xiaohe
-  - 🇮🇪 IE 09 - xiaohe
-  - 🇮🇪 IE 10 - xiaohe
 rules:
 - MATCH,PROXIES
