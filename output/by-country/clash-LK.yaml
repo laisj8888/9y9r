@@ -34,34 +34,6 @@ proxies:
       Host: pcloud.z-tas.com
 - name: 🇱🇰 LK 03 - xiaohe
   type: vless
-  server: 170.114.45.6
-  port: 2096
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pcloud.z-tas.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pcloud.z-tas.com
-- name: 🇱🇰 LK 04 - xiaohe
-  type: vless
-  server: 170.114.46.6
-  port: 2096
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pcloud.z-tas.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pcloud.z-tas.com
-- name: 🇱🇰 LK 05 - xiaohe
-  type: vless
   server: 170.114.46.6
   port: 2096
   uuid: efd11a89-7506-44ce-95b6-6654859f155b
@@ -82,8 +54,6 @@ proxy-groups:
   - 🇱🇰 LK 01 - xiaohe
   - 🇱🇰 LK 02 - xiaohe
   - 🇱🇰 LK 03 - xiaohe
-  - 🇱🇰 LK 04 - xiaohe
-  - 🇱🇰 LK 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,7 +62,5 @@ proxy-groups:
   - 🇱🇰 LK 01 - xiaohe
   - 🇱🇰 LK 02 - xiaohe
   - 🇱🇰 LK 03 - xiaohe
-  - 🇱🇰 LK 04 - xiaohe
-  - 🇱🇰 LK 05 - xiaohe
 rules:
 - MATCH,PROXIES

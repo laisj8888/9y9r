@@ -48,7 +48,7 @@ proxies:
       Host: fs.qicai99.com
 - name: 🇬🇷 GR 04 - xiaohe
   type: vless
-  server: 85.90.197.158
+  server: 85.90.197.159
   port: 443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
@@ -57,12 +57,12 @@ proxies:
   servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: fs.qicai99.com
 - name: 🇬🇷 GR 05 - xiaohe
   type: vless
-  server: 85.90.197.159
+  server: 85.90.197.158
   port: 443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
@@ -85,38 +85,10 @@ proxies:
   servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇬🇷 GR 07 - xiaohe
-  type: vless
-  server: 85.90.197.158
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇬🇷 GR 08 - xiaohe
-  type: vless
-  server: 85.90.197.158
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
     path: /fp
     headers:
       Host: fs.qicai99.com
-- name: 🇬🇷 GR 09 - xiaohe
+- name: 🇬🇷 GR 07 - xiaohe
   type: vless
   server: 85.90.197.158
   port: 443
@@ -142,8 +114,6 @@ proxy-groups:
   - 🇬🇷 GR 05 - xiaohe
   - 🇬🇷 GR 06 - xiaohe
   - 🇬🇷 GR 07 - xiaohe
-  - 🇬🇷 GR 08 - xiaohe
-  - 🇬🇷 GR 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -156,7 +126,5 @@ proxy-groups:
   - 🇬🇷 GR 05 - xiaohe
   - 🇬🇷 GR 06 - xiaohe
   - 🇬🇷 GR 07 - xiaohe
-  - 🇬🇷 GR 08 - xiaohe
-  - 🇬🇷 GR 09 - xiaohe
 rules:
 - MATCH,PROXIES
