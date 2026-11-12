@@ -6,16 +6,18 @@ log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - xiaohe
   type: vless
-  server: 45.38.143.210
-  port: 30584
-  uuid: cebc5f19-18d9-48e6-9029-fb4b04caf393
+  server: n3.topingr.ir
+  port: 443
+  uuid: e5be613e-0b23-4c08-88fb-6b4a82055365
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
-  servername: m.vk.com
-  client-fingerprint: chrome
+  servername: oslo.zovip2.ir
+  network: ws
+  ws-opts:
+    path: /api/v3/pulse
+    headers:
+      Host: oslo.zovip2.ir
 - name: 🇱🇻 LV 02 - xiaohe
   type: vless
   server: 45.38.143.210
@@ -28,6 +30,18 @@ proxies:
     public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
   servername: m.vk.com
   client-fingerprint: edge
+- name: 🇱🇻 LV 03 - xiaohe
+  type: vless
+  server: 45.38.143.210
+  port: 30584
+  uuid: cebc5f19-18d9-48e6-9029-fb4b04caf393
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
+  servername: m.vk.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +49,7 @@ proxy-groups:
   - AUTO
   - 🇱🇻 LV 01 - xiaohe
   - 🇱🇻 LV 02 - xiaohe
+  - 🇱🇻 LV 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +57,6 @@ proxy-groups:
   proxies:
   - 🇱🇻 LV 01 - xiaohe
   - 🇱🇻 LV 02 - xiaohe
+  - 🇱🇻 LV 03 - xiaohe
 rules:
 - MATCH,PROXIES
