@@ -15,8 +15,46 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  type: vless
+  server: 185.39.204.117
+  port: 10002
+  uuid: facb802c-de2e-11f1-9a22-a3404e852f3b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tr2.vpnjantit.com
+  network: ws
+  ws-opts:
+    path: /vpnjantit
+    headers:
+      Host: 185.39.204.117
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   type: vless
   server: 146.75.59.186
   port: 443
@@ -30,19 +68,7 @@ proxies:
     path: /
     headers:
       Host: looabomrhesamijji.global.ssl.fastly.net.
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -54,7 +80,21 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  type: vless
+  server: 146.75.59.186
+  port: 443
+  uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn.akamai.steamstatic.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: looabomrhesamijji.global.ssl.fastly.net.
+- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
   type: vless
   server: 188.225.37.43
   port: 443
@@ -68,21 +108,21 @@ proxies:
     path: /api/boards/live
     headers:
       Host: torvani.cyou
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 09 - xiaohe
   type: vless
-  server: 146.75.59.186
+  server: 188.225.37.43
   port: 443
-  uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
+  uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn.akamai.steamstatic.com
+  servername: torvani.cyou
   network: ws
   ws-opts:
-    path: /
+    path: /api/boards/live
     headers:
-      Host: looabomrhesamijji.global.ssl.fastly.net.
-- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+      Host: torvani.cyou
+- name: 🇹🇷 土耳其 (Turkey) 10 - xiaohe
   type: vless
   server: torvani.cyou
   port: 443
@@ -96,7 +136,7 @@ proxies:
     path: /api/boards/live
     headers:
       Host: torvani.cyou
-- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 11 - xiaohe
   type: vless
   server: 188.225.37.43
   port: 443
@@ -123,6 +163,9 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 09 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 10 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -136,5 +179,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 09 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 10 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 11 - xiaohe
 rules:
 - MATCH,PROXIES

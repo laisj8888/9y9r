@@ -5,166 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - xiaohe
-  type: vmess
-  server: 129.154.61.196
-  port: 800
-  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
-  type: vless
-  server: 64.110.79.66
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: kr02.a0a.xyz
-- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
-  type: vless
-  server: 64.110.79.66
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=512
-    headers:
-      Host: fs.qicai99.com
-- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
-  type: vless
-  server: 168.107.36.135
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇰🇷 韩国 (South Korea) 10 - xiaohe
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 11 - xiaohe
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 12 - xiaohe
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: kr02.a0a.xyz
-- name: 🇰🇷 韩国 (South Korea) 13 - xiaohe
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -179,6 +32,140 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: 132.145.80.230
+- name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
+  type: vmess
+  server: seoul02.zgjok.com
+  port: 443
+  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: seoul02.zgjok.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: seoul02.zgjok.com
+- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
+  type: vmess
+  server: 129.154.61.196
+  port: 800
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
+  type: vmess
+  server: 129.154.61.196
+  port: 800
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
+  type: vmess
+  server: 146.56.112.110
+  port: 8888
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 10 - xiaohe
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 11 - xiaohe
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 12 - xiaohe
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 13 - xiaohe
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 14 - xiaohe
   type: vmess
   server: 132.145.80.230
@@ -193,33 +180,8 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: None
+      Host: ''
 - name: 🇰🇷 韩国 (South Korea) 15 - xiaohe
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 16 - xiaohe
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 17 - xiaohe
   type: vmess
   server: 129.154.61.196
   port: 800
@@ -229,6 +191,32 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 16 - xiaohe
+  type: vmess
+  server: 146.56.112.110
+  port: 8888
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 17 - xiaohe
+  type: vmess
+  server: seoul02.zgjok.com
+  port: 443
+  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: seoul02.zgjok.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: seoul02.zgjok.com
 - name: 🇰🇷 韩国 (South Korea) 18 - xiaohe
   type: vmess
   server: 132.145.80.230
@@ -243,8 +231,34 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: ''
+      Host: kr02.a0a.xyz
 - name: 🇰🇷 韩国 (South Korea) 19 - xiaohe
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 20 - xiaohe
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 21 - xiaohe
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -258,59 +272,8 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: 'null'
-- name: 🇰🇷 韩国 (South Korea) 20 - xiaohe
-  type: vless
-  server: 64.110.79.66
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=512
-    headers:
-      Host: fs.qicai99.com
-- name: 🇰🇷 韩国 (South Korea) 21 - xiaohe
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
+      Host: 132.145.80.230
 - name: 🇰🇷 韩国 (South Korea) 22 - xiaohe
-  type: vmess
-  server: 129.154.61.196
-  port: 800
-  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 23 - xiaohe
-  type: vless
-  server: 64.110.79.66
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇰🇷 韩国 (South Korea) 24 - xiaohe
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -325,7 +288,50 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 23 - xiaohe
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 24 - xiaohe
+  type: vmess
+  server: seoul02.zgjok.com
+  port: 443
+  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: seoul02.zgjok.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: seoul02.zgjok.com
 - name: 🇰🇷 韩国 (South Korea) 25 - xiaohe
+  type: vless
+  server: 64.110.79.66
+  port: 8443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=512
+    headers:
+      Host: fs.qicai99.com
+- name: 🇰🇷 韩国 (South Korea) 26 - xiaohe
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -339,17 +345,7 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 26 - xiaohe
-  type: vmess
-  server: 129.154.61.196
-  port: 800
-  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+      Host: kr02.a0a.xyz
 - name: 🇰🇷 韩国 (South Korea) 27 - xiaohe
   type: vmess
   server: 132.145.80.230
@@ -364,22 +360,8 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: ''
+      Host: kr02.a0a.xyz
 - name: 🇰🇷 韩国 (South Korea) 28 - xiaohe
-  type: vless
-  server: 64.110.79.66
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇰🇷 韩国 (South Korea) 29 - xiaohe
   type: vmess
   server: 140.238.2.250
   port: 443
@@ -389,21 +371,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 30 - xiaohe
-  type: vless
-  server: 64.110.79.66
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fs.qicai99.com
-- name: 🇰🇷 韩国 (South Korea) 31 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 29 - xiaohe
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -415,7 +383,20 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 32 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 30 - xiaohe
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 31 - xiaohe
   type: vless
   server: 64.110.79.66
   port: 8443
@@ -426,135 +407,9 @@ proxies:
   servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=512
+    path: /
     headers:
       Host: fs.qicai99.com
-- name: 🇰🇷 韩国 (South Korea) 33 - xiaohe
-  type: vmess
-  server: seoul02.zgjok.com
-  port: 443
-  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: seoul02.zgjok.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: seoul02.zgjok.com
-- name: 🇰🇷 韩国 (South Korea) 34 - xiaohe
-  type: vmess
-  server: seoul02.zgjok.com
-  port: 443
-  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: seoul02.zgjok.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: seoul02.zgjok.com
-- name: 🇰🇷 韩国 (South Korea) 35 - xiaohe
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 36 - xiaohe
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 37 - xiaohe
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 38 - xiaohe
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: kr02.a0a.xyz
-- name: 🇰🇷 韩国 (South Korea) 39 - xiaohe
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 40 - xiaohe
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 41 - xiaohe
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -591,16 +446,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 29 - xiaohe
   - 🇰🇷 韩国 (South Korea) 30 - xiaohe
   - 🇰🇷 韩国 (South Korea) 31 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 32 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 33 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 34 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 35 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 36 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 37 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 38 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 39 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 40 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 41 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -637,15 +482,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 29 - xiaohe
   - 🇰🇷 韩国 (South Korea) 30 - xiaohe
   - 🇰🇷 韩国 (South Korea) 31 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 32 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 33 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 34 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 35 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 36 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 37 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 38 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 39 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 40 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 41 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -17,17 +17,6 @@ proxies:
   servername: ''
 - name: 🇸🇪 SE 02 - xiaohe
   type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xmfhlpy.com
-- name: 🇸🇪 SE 03 - xiaohe
-  type: vmess
   server: 62.93.166.184
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
@@ -37,32 +26,11 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇸🇪 SE 04 - xiaohe
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 05 - xiaohe
+- name: 🇸🇪 SE 03 - xiaohe
   type: vless
-  server: 109.120.134.181
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇸🇪 SE 06 - xiaohe
-  type: vless
-  server: 5.178.109.174
+  server: 193.188.21.253
   port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
   udp: true
   tls: false
   skip-cert-verify: true
@@ -70,7 +38,37 @@ proxies:
   ws-opts:
     path: /vless
     headers:
-      Host: 5.178.109.174
+      Host: 193.188.21.253
+- name: 🇸🇪 SE 04 - xiaohe
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
+- name: 🇸🇪 SE 05 - xiaohe
+  type: vless
+  server: 84.32.217.164
+  port: 443
+  uuid: fa081e9f-7574-4e18-8928-31aa5ac923c7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: tcpswed1.figurapn.ru
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 06 - xiaohe
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇸🇪 SE 07 - xiaohe
   type: vmess
   server: 62.93.166.184
@@ -84,36 +82,24 @@ proxies:
   servername: ''
 - name: 🇸🇪 SE 08 - xiaohe
   type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  server: 62.182.193.228
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
   udp: true
 - name: 🇸🇪 SE 09 - xiaohe
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 84.32.217.164
+  port: 443
+  uuid: fa081e9f-7574-4e18-8928-31aa5ac923c7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: tcpswed1.figurapn.ru
+  client-fingerprint: firefox
 - name: 🇸🇪 SE 10 - xiaohe
-  type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 11 - xiaohe
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -126,35 +112,49 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 SE 11 - xiaohe
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇸🇪 SE 12 - xiaohe
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇸🇪 SE 13 - xiaohe
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 194.59.250.52
+  port: 18501
+  cipher: aes-128-gcm
+  password: 517403753b63fd4fac88986bf98b11e0
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇸🇪 SE 14 - xiaohe
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 199.232.78.120
+  port: 443
+  uuid: 37013a71-4866-4a50-b5e3-ae4bfc178e71
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: cdn.akamai.steamstatic.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: swissijji.global.ssl.fastly.net.
 - name: 🇸🇪 SE 15 - xiaohe
   type: vmess
   server: 62.93.166.184
@@ -179,28 +179,7 @@ proxies:
   servername: ''
 - name: 🇸🇪 SE 17 - xiaohe
   type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xmfhlpy.com
-- name: 🇸🇪 SE 18 - xiaohe
-  type: vmess
-  server: 16.171.159.75
-  port: 16751
-  uuid: 5b2e2e5f-1302-4d65-ab39-27f6f0ca5562
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇪 SE 19 - xiaohe
-  type: vmess
-  server: 138.199.55.230
+  server: 62.93.166.184
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -209,6 +188,33 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇸🇪 SE 18 - xiaohe
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 19 - xiaohe
+  type: vless
+  server: 109.120.134.181
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
 - name: 🇸🇪 SE 20 - xiaohe
   type: vless
   server: 5.178.109.174
@@ -223,43 +229,13 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 21 - xiaohe
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇸🇪 SE 22 - xiaohe
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 23 - xiaohe
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 24 - xiaohe
   type: vmess
   server: 62.93.166.184
   port: 1270
@@ -270,6 +246,30 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇸🇪 SE 23 - xiaohe
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
+- name: 🇸🇪 SE 24 - xiaohe
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 25 - xiaohe
   type: vmess
   server: 62.93.166.184
@@ -282,50 +282,13 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇸🇪 SE 26 - xiaohe
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇸🇪 SE 27 - xiaohe
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇸🇪 SE 28 - xiaohe
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇸🇪 SE 29 - xiaohe
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇸🇪 SE 30 - xiaohe
   type: vmess
   server: 138.199.55.230
   port: 1270
@@ -336,13 +299,48 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: xmfhlpy.com
-- name: 🇸🇪 SE 31 - xiaohe
+- name: 🇸🇪 SE 28 - xiaohe
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 29 - xiaohe
   type: ss
   server: 62.182.193.228
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: 2e555e46dbc421452416834962fd014f
   udp: true
+- name: 🇸🇪 SE 30 - xiaohe
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 31 - xiaohe
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇸🇪 SE 32 - xiaohe
   type: vmess
   server: 62.93.166.184
@@ -354,6 +352,93 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇸🇪 SE 33 - xiaohe
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 34 - xiaohe
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 35 - xiaohe
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 36 - xiaohe
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 37 - xiaohe
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 38 - xiaohe
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇸🇪 SE 39 - xiaohe
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 40 - xiaohe
+  type: vless
+  server: 84.32.217.164
+  port: 443
+  uuid: fa081e9f-7574-4e18-8928-31aa5ac923c7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: tcpswed1.figurapn.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -391,6 +476,14 @@ proxy-groups:
   - 🇸🇪 SE 30 - xiaohe
   - 🇸🇪 SE 31 - xiaohe
   - 🇸🇪 SE 32 - xiaohe
+  - 🇸🇪 SE 33 - xiaohe
+  - 🇸🇪 SE 34 - xiaohe
+  - 🇸🇪 SE 35 - xiaohe
+  - 🇸🇪 SE 36 - xiaohe
+  - 🇸🇪 SE 37 - xiaohe
+  - 🇸🇪 SE 38 - xiaohe
+  - 🇸🇪 SE 39 - xiaohe
+  - 🇸🇪 SE 40 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -428,5 +521,13 @@ proxy-groups:
   - 🇸🇪 SE 30 - xiaohe
   - 🇸🇪 SE 31 - xiaohe
   - 🇸🇪 SE 32 - xiaohe
+  - 🇸🇪 SE 33 - xiaohe
+  - 🇸🇪 SE 34 - xiaohe
+  - 🇸🇪 SE 35 - xiaohe
+  - 🇸🇪 SE 36 - xiaohe
+  - 🇸🇪 SE 37 - xiaohe
+  - 🇸🇪 SE 38 - xiaohe
+  - 🇸🇪 SE 39 - xiaohe
+  - 🇸🇪 SE 40 - xiaohe
 rules:
 - MATCH,PROXIES

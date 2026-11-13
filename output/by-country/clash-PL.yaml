@@ -6,16 +6,13 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 201.58.139.66
-  port: 443
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
-  servername: 57aac2t.pl7.h1clayd.click
-  client-fingerprint: chrome
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
   server: 2.26.6.1
@@ -36,57 +33,45 @@ proxies:
   servername: 2.26.6.1
 - name: 🇵🇱 PL 04 - xiaohe
   type: vless
-  server: 201.58.139.66
-  port: 443
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
-  servername: 57aac2t.pl7.h1clayd.click
-  client-fingerprint: chrome
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 05 - xiaohe
-  type: vless
-  server: 201.58.139.66
-  port: 443
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  type: ss
+  server: 51.38.131.73
+  port: 8443
+  cipher: aes-256-gcm
+  password: PJirKQcyqbAiqebq4AHetGUkZuQvmT6ffwuyPFZu0ng=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
-  servername: 57aac2t.pl7.h1clayd.click
-  client-fingerprint: chrome
 - name: 🇵🇱 PL 06 - xiaohe
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: 188.137.178.174
+  port: 8443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 2.26.6.1
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
 - name: 🇵🇱 PL 07 - xiaohe
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 08 - xiaohe
-  type: vless
-  server: 201.58.139.66
+  server: 81.90.20.203
   port: 443
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  uuid: f37d32d0-ca5a-464f-8c32-92dc33f71408
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
-  servername: 57aac2t.pl7.h1clayd.click
+    public-key: qVU44SZtoG7cKR3ZCg4Ipf5rPefL5cbrto2OpzZNoU8
+  servername: instance-103.nolimited.space
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -100,7 +85,6 @@ proxy-groups:
   - 🇵🇱 PL 05 - xiaohe
   - 🇵🇱 PL 06 - xiaohe
   - 🇵🇱 PL 07 - xiaohe
-  - 🇵🇱 PL 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -113,6 +97,5 @@ proxy-groups:
   - 🇵🇱 PL 05 - xiaohe
   - 🇵🇱 PL 06 - xiaohe
   - 🇵🇱 PL 07 - xiaohe
-  - 🇵🇱 PL 08 - xiaohe
 rules:
 - MATCH,PROXIES

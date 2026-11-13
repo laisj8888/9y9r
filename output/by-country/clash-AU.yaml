@@ -29,7 +29,7 @@ proxies:
   servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp
     headers:
       Host: fs.qicai99.com
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
@@ -43,7 +43,7 @@ proxies:
   servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /fp
+    path: /fp=chrome
     headers:
       Host: fs.qicai99.com
 - name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
@@ -57,7 +57,7 @@ proxies:
   servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp
     headers:
       Host: fs.qicai99.com
 - name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
@@ -85,7 +85,7 @@ proxies:
   servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: fs.qicai99.com
 - name: 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
@@ -116,6 +116,34 @@ proxies:
     path: /fp
     headers:
       Host: fs.qicai99.com
+- name: 🇦🇺 澳大利亚 (Australia) 09 - xiaohe
+  type: vless
+  server: 46.250.242.104
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇦🇺 澳大利亚 (Australia) 10 - xiaohe
+  type: vless
+  server: 46.250.242.104
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: fs.qicai99.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -129,6 +157,8 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 08 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 09 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -142,5 +172,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 08 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 09 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 10 - xiaohe
 rules:
 - MATCH,PROXIES

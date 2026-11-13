@@ -20,7 +20,7 @@ proxies:
   udp: true
 - name: 🇦🇱 AL 03 - xiaohe
   type: ss
-  server: dns22.m3hrzd.ir
+  server: 185.4.115.149
   port: 1348
   cipher: chacha20-ietf-poly1305
   password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
@@ -39,20 +39,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
   udp: true
-- name: 🇦🇱 AL 06 - xiaohe
-  type: ss
-  server: dns22.m3hrzd.ir
-  port: 1348
-  cipher: chacha20-ietf-poly1305
-  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
-  udp: true
-- name: 🇦🇱 AL 07 - xiaohe
-  type: ss
-  server: dns22.m3hrzd.ir
-  port: 1348
-  cipher: chacha20-ietf-poly1305
-  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,8 +49,6 @@ proxy-groups:
   - 🇦🇱 AL 03 - xiaohe
   - 🇦🇱 AL 04 - xiaohe
   - 🇦🇱 AL 05 - xiaohe
-  - 🇦🇱 AL 06 - xiaohe
-  - 🇦🇱 AL 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,7 +59,5 @@ proxy-groups:
   - 🇦🇱 AL 03 - xiaohe
   - 🇦🇱 AL 04 - xiaohe
   - 🇦🇱 AL 05 - xiaohe
-  - 🇦🇱 AL 06 - xiaohe
-  - 🇦🇱 AL 07 - xiaohe
 rules:
 - MATCH,PROXIES
