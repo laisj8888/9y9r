@@ -5,48 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - xiaohe
+  type: vmess
+  server: 154.47.19.225
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
+- name: 🇦🇹 AT 02 - xiaohe
   type: ss
   server: 82.110.60.9
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇦🇹 AT 02 - xiaohe
+- name: 🇦🇹 AT 03 - xiaohe
   type: ss
   server: 152.53.1.57
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
   udp: true
-- name: 🇦🇹 AT 03 - xiaohe
-  type: vmess
-  server: 154.47.19.225
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇦🇹 AT 04 - xiaohe
   type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇦🇹 AT 05 - xiaohe
+  type: ss
   server: 152.53.1.57
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
   udp: true
-- name: 🇦🇹 AT 05 - xiaohe
-  type: vmess
-  server: 154.47.19.225
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇦🇹 AT 06 - xiaohe
   type: vless
   server: 193.219.97.198
@@ -72,7 +68,7 @@ proxies:
   servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp
     headers:
       Host: fs.qicai99.com
 - name: 🇦🇹 AT 08 - xiaohe
@@ -86,7 +82,7 @@ proxies:
   servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /fp
+    path: '%2F'
     headers:
       Host: fs.qicai99.com
 - name: 🇦🇹 AT 09 - xiaohe
@@ -100,7 +96,7 @@ proxies:
   servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: /fp=chrome
     headers:
       Host: fs.qicai99.com
 - name: 🇦🇹 AT 10 - xiaohe
@@ -136,16 +132,23 @@ proxies:
   servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp
     headers:
       Host: fs.qicai99.com
 - name: 🇦🇹 AT 13 - xiaohe
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 193.219.97.198
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
 - name: 🇦🇹 AT 14 - xiaohe
   type: vmess
   server: 154.47.19.225
@@ -157,6 +160,81 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇦🇹 AT 15 - xiaohe
+  type: vmess
+  server: 154.47.19.225
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
+- name: 🇦🇹 AT 16 - xiaohe
+  type: vless
+  server: 193.219.97.198
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇦🇹 AT 17 - xiaohe
+  type: vless
+  server: 193.219.97.198
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇦🇹 AT 18 - xiaohe
+  type: vmess
+  server: 154.47.19.225
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
+- name: 🇦🇹 AT 19 - xiaohe
+  type: vmess
+  server: 154.47.19.225
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇦🇹 AT 20 - xiaohe
+  type: vless
+  server: 193.219.97.198
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: fs.qicai99.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -176,6 +254,12 @@ proxy-groups:
   - 🇦🇹 AT 12 - xiaohe
   - 🇦🇹 AT 13 - xiaohe
   - 🇦🇹 AT 14 - xiaohe
+  - 🇦🇹 AT 15 - xiaohe
+  - 🇦🇹 AT 16 - xiaohe
+  - 🇦🇹 AT 17 - xiaohe
+  - 🇦🇹 AT 18 - xiaohe
+  - 🇦🇹 AT 19 - xiaohe
+  - 🇦🇹 AT 20 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -195,5 +279,11 @@ proxy-groups:
   - 🇦🇹 AT 12 - xiaohe
   - 🇦🇹 AT 13 - xiaohe
   - 🇦🇹 AT 14 - xiaohe
+  - 🇦🇹 AT 15 - xiaohe
+  - 🇦🇹 AT 16 - xiaohe
+  - 🇦🇹 AT 17 - xiaohe
+  - 🇦🇹 AT 18 - xiaohe
+  - 🇦🇹 AT 19 - xiaohe
+  - 🇦🇹 AT 20 - xiaohe
 rules:
 - MATCH,PROXIES
