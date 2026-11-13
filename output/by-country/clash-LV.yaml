@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - xiaohe
   type: vless
-  server: n3.topingr.ir
+  server: n1.topingr.ir
   port: 443
-  uuid: e5be613e-0b23-4c08-88fb-6b4a82055365
+  uuid: 84be02cf-c5c5-4b33-ba26-31b5f8320033
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: oslo.zovip2.ir
+  servername: cdn2.zovip2.ir
   network: ws
   ws-opts:
     path: /api/v3/pulse
     headers:
-      Host: oslo.zovip2.ir
+      Host: cdn2.zovip2.ir
 - name: 🇱🇻 LV 02 - xiaohe
   type: vless
   server: 45.38.143.210
@@ -31,6 +31,20 @@ proxies:
   servername: m.vk.com
   client-fingerprint: edge
 - name: 🇱🇻 LV 03 - xiaohe
+  type: vless
+  server: n1.topingr.ir
+  port: 443
+  uuid: 84be02cf-c5c5-4b33-ba26-31b5f8320033
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn2.zovip2.ir
+  network: ws
+  ws-opts:
+    path: /api/v3/pulse
+    headers:
+      Host: cdn2.zovip2.ir
+- name: 🇱🇻 LV 04 - xiaohe
   type: vless
   server: 45.38.143.210
   port: 30584
@@ -50,6 +64,7 @@ proxy-groups:
   - 🇱🇻 LV 01 - xiaohe
   - 🇱🇻 LV 02 - xiaohe
   - 🇱🇻 LV 03 - xiaohe
+  - 🇱🇻 LV 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,5 +73,6 @@ proxy-groups:
   - 🇱🇻 LV 01 - xiaohe
   - 🇱🇻 LV 02 - xiaohe
   - 🇱🇻 LV 03 - xiaohe
+  - 🇱🇻 LV 04 - xiaohe
 rules:
 - MATCH,PROXIES

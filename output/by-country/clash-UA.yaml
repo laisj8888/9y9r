@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇺🇦 UA 02 - xiaohe
   type: vless
   server: netx.smrtai.top
@@ -27,39 +27,8 @@ proxies:
   reality-opts:
     public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇺🇦 UA 03 - xiaohe
-  type: vless
-  server: 31.222.235.81
-  port: 443
-  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇦 UA 04 - xiaohe
-  type: vless
-  server: netx.smrtai.top
-  port: 443
-  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇦 UA 05 - xiaohe
-  type: ss
-  server: 185.194.191.35
-  port: 1353
-  cipher: chacha20-ietf-poly1305
-  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
-  udp: true
-- name: 🇺🇦 UA 06 - xiaohe
   type: vless
   server: 31.222.235.81
   port: 443
@@ -79,9 +48,6 @@ proxy-groups:
   - 🇺🇦 UA 01 - xiaohe
   - 🇺🇦 UA 02 - xiaohe
   - 🇺🇦 UA 03 - xiaohe
-  - 🇺🇦 UA 04 - xiaohe
-  - 🇺🇦 UA 05 - xiaohe
-  - 🇺🇦 UA 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -90,8 +56,5 @@ proxy-groups:
   - 🇺🇦 UA 01 - xiaohe
   - 🇺🇦 UA 02 - xiaohe
   - 🇺🇦 UA 03 - xiaohe
-  - 🇺🇦 UA 04 - xiaohe
-  - 🇺🇦 UA 05 - xiaohe
-  - 🇺🇦 UA 06 - xiaohe
 rules:
 - MATCH,PROXIES

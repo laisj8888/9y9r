@@ -6,18 +6,28 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  server: 65.109.208.183
+  port: 443
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: free.for.member.iiproxy.com
+- name: 🇫🇮 FI 02 - xiaohe
+  type: vless
+  server: 146.103.118.189
+  port: 443
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nl2.574ck.xyz
   network: ws
   ws-opts:
-    path: /vless
+    path: /574ck-finland
     headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 02 - xiaohe
+      Host: nl2.574ck.xyz
+- name: 🇫🇮 FI 03 - xiaohe
   type: vless
   server: 65.109.208.183
   port: 443
@@ -26,38 +36,25 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: free.for.member.iiproxy.com
-- name: 🇫🇮 FI 03 - xiaohe
-  type: vmess
-  server: 65.108.240.210
-  port: 39018
-  uuid: 96c987c9-c2d9-4993-b9bd-c9bc36255ee1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇫🇮 FI 04 - xiaohe
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless#Farah_VPN-178
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 05 - xiaohe
-  type: vless
-  server: free.for.member.iiproxy.com
+  server: 65.109.208.183
   port: 443
   uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
   udp: true
   tls: true
   skip-cert-verify: true
   servername: free.for.member.iiproxy.com
+- name: 🇫🇮 FI 05 - xiaohe
+  type: vmess
+  server: 65.108.240.210
+  port: 39018
+  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇫🇮 FI 06 - xiaohe
   type: vless
   server: free.for.member.iiproxy.com
@@ -69,13 +66,18 @@ proxies:
   servername: free.for.member.iiproxy.com
 - name: 🇫🇮 FI 07 - xiaohe
   type: vless
-  server: 65.109.208.183
+  server: 146.103.118.189
   port: 443
-  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free.for.member.iiproxy.com
+  servername: nl2.574ck.xyz
+  network: ws
+  ws-opts:
+    path: /574ck-finland
+    headers:
+      Host: nl2.574ck.xyz
 - name: 🇫🇮 FI 08 - xiaohe
   type: vless
   server: 138.124.124.157
@@ -92,31 +94,39 @@ proxies:
       Host: fs.qicai99.com
 - name: 🇫🇮 FI 09 - xiaohe
   type: vless
-  server: 65.109.208.183
-  port: 443
-  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  server: 95.216.27.15
+  port: 2053
+  uuid: b79d736d-0f10-4169-b626-362059d18204
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free.for.member.iiproxy.com
+  reality-opts:
+    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 10 - xiaohe
-  type: vless
-  server: free.for.member.iiproxy.com
-  port: 443
-  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  type: vmess
+  server: 65.108.240.210
+  port: 39018
+  uuid: 77fb7a80-4724-4e33-9558-4f20c1634c5a
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: free.for.member.iiproxy.com
 - name: 🇫🇮 FI 11 - xiaohe
   type: vless
-  server: free.for.member.iiproxy.com
-  port: 443
-  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: free.for.member.iiproxy.com
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 12 - xiaohe
   type: vmess
   server: 65.108.240.210
@@ -129,7 +139,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇫🇮 FI 13 - xiaohe
   type: vless
-  server: free.for.member.iiproxy.com
+  server: 65.109.208.183
   port: 443
   uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
   udp: true
@@ -137,6 +147,29 @@ proxies:
   skip-cert-verify: true
   servername: free.for.member.iiproxy.com
 - name: 🇫🇮 FI 14 - xiaohe
+  type: vless
+  server: 65.109.208.183
+  port: 443
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.for.member.iiproxy.com
+- name: 🇫🇮 FI 15 - xiaohe
+  type: vless
+  server: 146.103.118.189
+  port: 443
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nl2.574ck.xyz
+  network: ws
+  ws-opts:
+    path: /574ck-finland
+    headers:
+      Host: nl2.574ck.xyz
+- name: 🇫🇮 FI 16 - xiaohe
   type: vless
   server: 138.124.49.108
   port: 8443
@@ -147,48 +180,27 @@ proxies:
   servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp
     headers:
       Host: fs.qicai99.com
-- name: 🇫🇮 FI 15 - xiaohe
+- name: 🇫🇮 FI 17 - xiaohe
   type: vless
-  server: 65.109.208.183
-  port: 443
-  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  server: 138.124.49.108
+  port: 8443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free.for.member.iiproxy.com
-- name: 🇫🇮 FI 16 - xiaohe
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /vless
+    path: /fp
     headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 17 - xiaohe
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless#Farah_VPN-178
-    headers:
-      Host: 45.144.234.157
+      Host: fs.qicai99.com
 - name: 🇫🇮 FI 18 - xiaohe
   type: vless
-  server: 138.124.124.157
-  port: 443
+  server: 138.124.49.108
+  port: 8443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
   tls: true
@@ -200,127 +212,6 @@ proxies:
     headers:
       Host: fs.qicai99.com
 - name: 🇫🇮 FI 19 - xiaohe
-  type: vless
-  server: 138.124.49.108
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: fs.qicai99.com
-- name: 🇫🇮 FI 20 - xiaohe
-  type: vless
-  server: 138.124.49.108
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: fs.qicai99.com
-- name: 🇫🇮 FI 21 - xiaohe
-  type: vless
-  server: 65.109.208.183
-  port: 443
-  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.for.member.iiproxy.com
-- name: 🇫🇮 FI 22 - xiaohe
-  type: vless
-  server: 65.109.208.183
-  port: 443
-  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.for.member.iiproxy.com
-- name: 🇫🇮 FI 23 - xiaohe
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: b79d736d-0f10-4169-b626-362059d18204
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 24 - xiaohe
-  type: vless
-  server: 138.124.49.108
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇫🇮 FI 25 - xiaohe
-  type: vless
-  server: free.for.member.iiproxy.com
-  port: 443
-  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.for.member.iiproxy.com
-- name: 🇫🇮 FI 26 - xiaohe
-  type: vless
-  server: 138.124.49.108
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fs.qicai99.com
-- name: 🇫🇮 FI 27 - xiaohe
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 28 - xiaohe
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 29 - xiaohe
   type: vmess
   server: 65.108.240.210
   port: 39018
@@ -330,21 +221,25 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇫🇮 FI 30 - xiaohe
+- name: 🇫🇮 FI 20 - xiaohe
   type: vless
-  server: 138.124.49.108
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  server: free.for.member.iiproxy.com
+  port: 443
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: fs.qicai99.com
-- name: 🇫🇮 FI 31 - xiaohe
+  servername: free.for.member.iiproxy.com
+- name: 🇫🇮 FI 21 - xiaohe
+  type: vless
+  server: free.for.member.iiproxy.com
+  port: 443
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.for.member.iiproxy.com
+- name: 🇫🇮 FI 22 - xiaohe
   type: vless
   server: 138.124.124.157
   port: 443
@@ -358,7 +253,42 @@ proxies:
     path: /fp=chrome
     headers:
       Host: fs.qicai99.com
-- name: 🇫🇮 FI 32 - xiaohe
+- name: 🇫🇮 FI 23 - xiaohe
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 24 - xiaohe
+  type: vless
+  server: free.for.member.iiproxy.com
+  port: 443
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.for.member.iiproxy.com
+- name: 🇫🇮 FI 25 - xiaohe
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 26 - xiaohe
   type: vless
   server: 138.124.49.108
   port: 8443
@@ -369,28 +299,106 @@ proxies:
   servername: fs.qicai99.com
   network: ws
   ws-opts:
+    path: /fp
+    headers:
+      Host: fs.qicai99.com
+- name: 🇫🇮 FI 27 - xiaohe
+  type: vless
+  server: 109.120.134.181
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
     path: /fp=chrome
     headers:
       Host: fs.qicai99.com
-- name: 🇫🇮 FI 33 - xiaohe
-  type: vmess
-  server: 65.108.240.210
-  port: 39018
-  uuid: 77fb7a80-4724-4e33-9558-4f20c1634c5a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 34 - xiaohe
+- name: 🇫🇮 FI 28 - xiaohe
   type: vless
-  server: 65.109.208.183
+  server: 146.103.118.189
+  port: 443
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nl2.574ck.xyz
+  network: ws
+  ws-opts:
+    path: /574ck-finland
+    headers:
+      Host: nl2.574ck.xyz
+- name: 🇫🇮 FI 29 - xiaohe
+  type: vless
+  server: free.for.member.iiproxy.com
   port: 443
   uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
   udp: true
   tls: true
   skip-cert-verify: true
   servername: free.for.member.iiproxy.com
+- name: 🇫🇮 FI 30 - xiaohe
+  type: vless
+  server: 146.103.118.189
+  port: 443
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nl2.574ck.xyz
+  network: ws
+  ws-opts:
+    path: /574ck-finland
+    headers:
+      Host: nl2.574ck.xyz
+- name: 🇫🇮 FI 31 - xiaohe
+  type: vless
+  server: 109.120.134.181
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fs.qicai99.com
+- name: 🇫🇮 FI 32 - xiaohe
+  type: vless
+  server: free.for.member.iiproxy.com
+  port: 443
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.for.member.iiproxy.com
+- name: 🇫🇮 FI 33 - xiaohe
+  type: vless
+  server: free.for.member.iiproxy.com
+  port: 443
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.for.member.iiproxy.com
+- name: 🇫🇮 FI 34 - xiaohe
+  type: vless
+  server: 138.124.124.157
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fs.qicai99.com
 - name: 🇫🇮 FI 35 - xiaohe
   type: vless
   server: 138.124.124.157
@@ -419,16 +427,6 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 37 - xiaohe
-  type: vmess
-  server: 65.108.240.210
-  port: 39018
-  uuid: fa15684a-81e6-4ba7-bc4b-f601c0d998e9
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 38 - xiaohe
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -439,6 +437,131 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 38 - xiaohe
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless#Farah_VPN-178
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 39 - xiaohe
+  type: vmess
+  server: 65.108.240.210
+  port: 39018
+  uuid: 96c987c9-c2d9-4993-b9bd-c9bc36255ee1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 40 - xiaohe
+  type: vless
+  server: 138.124.49.108
+  port: 8443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇫🇮 FI 41 - xiaohe
+  type: vless
+  server: 65.109.208.183
+  port: 443
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.for.member.iiproxy.com
+- name: 🇫🇮 FI 42 - xiaohe
+  type: vmess
+  server: 65.108.240.210
+  port: 39018
+  uuid: 45dc10c6-04c8-4c70-a06a-d396254a6c0b
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 43 - xiaohe
+  type: vmess
+  server: 65.108.240.210
+  port: 39018
+  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 44 - xiaohe
+  type: vless
+  server: 65.109.208.183
+  port: 443
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.for.member.iiproxy.com
+- name: 🇫🇮 FI 45 - xiaohe
+  type: vless
+  server: 138.124.49.108
+  port: 8443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇫🇮 FI 46 - xiaohe
+  type: vless
+  server: 65.109.208.183
+  port: 443
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.for.member.iiproxy.com
+- name: 🇫🇮 FI 47 - xiaohe
+  type: vless
+  server: 138.124.124.157
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇫🇮 FI 48 - xiaohe
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless#Farah_VPN-178
     headers:
       Host: 45.144.234.157
 proxy-groups:
@@ -484,6 +607,16 @@ proxy-groups:
   - 🇫🇮 FI 36 - xiaohe
   - 🇫🇮 FI 37 - xiaohe
   - 🇫🇮 FI 38 - xiaohe
+  - 🇫🇮 FI 39 - xiaohe
+  - 🇫🇮 FI 40 - xiaohe
+  - 🇫🇮 FI 41 - xiaohe
+  - 🇫🇮 FI 42 - xiaohe
+  - 🇫🇮 FI 43 - xiaohe
+  - 🇫🇮 FI 44 - xiaohe
+  - 🇫🇮 FI 45 - xiaohe
+  - 🇫🇮 FI 46 - xiaohe
+  - 🇫🇮 FI 47 - xiaohe
+  - 🇫🇮 FI 48 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -527,5 +660,15 @@ proxy-groups:
   - 🇫🇮 FI 36 - xiaohe
   - 🇫🇮 FI 37 - xiaohe
   - 🇫🇮 FI 38 - xiaohe
+  - 🇫🇮 FI 39 - xiaohe
+  - 🇫🇮 FI 40 - xiaohe
+  - 🇫🇮 FI 41 - xiaohe
+  - 🇫🇮 FI 42 - xiaohe
+  - 🇫🇮 FI 43 - xiaohe
+  - 🇫🇮 FI 44 - xiaohe
+  - 🇫🇮 FI 45 - xiaohe
+  - 🇫🇮 FI 46 - xiaohe
+  - 🇫🇮 FI 47 - xiaohe
+  - 🇫🇮 FI 48 - xiaohe
 rules:
 - MATCH,PROXIES
