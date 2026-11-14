@@ -6,6 +6,42 @@ log-level: info
 proxies:
 - name: 🇸🇰 SK 01 - xiaohe
   type: vless
+  server: 196.245.153.104
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇸🇰 SK 02 - xiaohe
+  type: vless
+  server: 196.245.153.104
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: chrome
+- name: 🇸🇰 SK 03 - xiaohe
+  type: vless
+  server: 196.245.153.113
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
+  servername: f0d7aft.nl13.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇸🇰 SK 04 - xiaohe
+  type: vless
   server: 76574ct.nl8.h1clayd.click
   port: 443
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
@@ -22,11 +58,17 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇰 SK 01 - xiaohe
+  - 🇸🇰 SK 02 - xiaohe
+  - 🇸🇰 SK 03 - xiaohe
+  - 🇸🇰 SK 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇰 SK 01 - xiaohe
+  - 🇸🇰 SK 02 - xiaohe
+  - 🇸🇰 SK 03 - xiaohe
+  - 🇸🇰 SK 04 - xiaohe
 rules:
 - MATCH,PROXIES
