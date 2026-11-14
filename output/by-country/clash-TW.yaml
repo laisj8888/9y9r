@@ -5,20 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
+  type: ss
+  server: 35.236.180.222
+  port: 14514
+  cipher: 2022-blake3-aes-128-gcm
+  password: b7I6g7l7fJhBaMInJ+zkzw==
+  udp: true
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   type: vless
-  server: 60.248.219.53
+  server: 60.248.219.78
   port: 443
   uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
+  servername: 60.248.219.78
   network: ws
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
+      Host: 60.248.219.78
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   type: vless
   server: 60.248.219.78
   port: 443
@@ -32,20 +39,6 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  type: vless
-  server: 59.125.69.22
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tse1.mm.bing.net
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: tse1.mm.bing.net
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
   type: vless
   server: 60.248.219.53
@@ -61,12 +54,19 @@ proxies:
     headers:
       Host: ty986gfazs.cainiaohub.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
-  type: ss
-  server: amasoid.ddns.net
-  port: 14514
-  cipher: 2022-blake3-aes-128-gcm
-  password: b7I6g7l7fJhBaMInJ+zkzw==
+  type: vless
+  server: 59.125.69.23
+  port: 443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
   type: vless
   server: 59.125.69.23
@@ -80,10 +80,17 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
+      Host: 59.125.69.23
 - name: 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
+  type: ss
+  server: amasoid.ddns.net
+  port: 14514
+  cipher: 2022-blake3-aes-128-gcm
+  password: b7I6g7l7fJhBaMInJ+zkzw==
+  udp: true
+- name: 🇹🇼 中国台湾 (Taiwan) 08 - xiaohe
   type: vless
-  server: 60.248.219.78
+  server: 60.248.219.53
   port: 443
   uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   udp: true
@@ -95,7 +102,7 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 08 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 09 - xiaohe
   type: vless
   server: 59.125.69.23
   port: 443
@@ -109,13 +116,6 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 09 - xiaohe
-  type: ss
-  server: 35.236.180.222
-  port: 14514
-  cipher: 2022-blake3-aes-128-gcm
-  password: b7I6g7l7fJhBaMInJ+zkzw==
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
