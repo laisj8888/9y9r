@@ -5,18 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaohe
-  type: vless
-  server: www.true.th
-  port: 80
-  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dcm4kwis2exkw.cloudfront.net
 - name: 🇹🇭 TH 02 - xiaohe
   type: vless
   server: assets.opensignal.com
@@ -32,27 +29,30 @@ proxies:
       Host: d36lt9hzl2ug3d.cloudfront.net:assets.opensignal.com
 - name: 🇹🇭 TH 03 - xiaohe
   type: vless
-  server: assets.opensignal.com
+  server: www.true.th
   port: 80
-  uuid: 0c85001b-ad48-4f43-bdc9-b2b5c626a26e
+  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /logout
+    path: /
     headers:
-      Host: d36lt9hzl2ug3d.cloudfront.net:assets.opensignal.com
+      Host: dcm4kwis2exkw.cloudfront.net
 - name: 🇹🇭 TH 04 - xiaohe
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: www.true.th
+  port: 80
+  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dcm4kwis2exkw.cloudfront.net
 - name: 🇹🇭 TH 05 - xiaohe
   type: vmess
   server: 119.46.51.45
@@ -64,15 +64,18 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇹🇭 TH 06 - xiaohe
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: www.true.th
+  port: 80
+  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dcm4kwis2exkw.cloudfront.net
 - name: 🇹🇭 TH 07 - xiaohe
   type: vless
   server: assets.opensignal.com
@@ -111,6 +114,81 @@ proxies:
       Host: dcm4kwis2exkw.cloudfront.net
 - name: 🇹🇭 TH 10 - xiaohe
   type: vless
+  server: 99.86.77.43
+  port: 80
+  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dcm4kwis2exkw.cloudfront.net
+- name: 🇹🇭 TH 11 - xiaohe
+  type: vless
+  server: 54.192.55.98
+  port: 80
+  uuid: 0c85001b-ad48-4f43-bdc9-b2b5c626a26e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /logout
+    headers:
+      Host: d36lt9hzl2ug3d.cloudfront.net:assets.opensignal.com
+- name: 🇹🇭 TH 12 - xiaohe
+  type: vless
+  server: assets.opensignal.com
+  port: 80
+  uuid: 0c85001b-ad48-4f43-bdc9-b2b5c626a26e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /logout
+    headers:
+      Host: d36lt9hzl2ug3d.cloudfront.net:assets.opensignal.com
+- name: 🇹🇭 TH 13 - xiaohe
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 14 - xiaohe
+  type: vless
+  server: www.true.th
+  port: 80
+  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dcm4kwis2exkw.cloudfront.net
+- name: 🇹🇭 TH 15 - xiaohe
+  type: vless
+  server: 99.86.77.123
+  port: 80
+  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dcm4kwis2exkw.cloudfront.net
+- name: 🇹🇭 TH 16 - xiaohe
+  type: vless
   server: www.true.th
   port: 80
   uuid: f4c5605a-8424-441e-b23d-d6384d012c28
@@ -137,6 +215,12 @@ proxy-groups:
   - 🇹🇭 TH 08 - xiaohe
   - 🇹🇭 TH 09 - xiaohe
   - 🇹🇭 TH 10 - xiaohe
+  - 🇹🇭 TH 11 - xiaohe
+  - 🇹🇭 TH 12 - xiaohe
+  - 🇹🇭 TH 13 - xiaohe
+  - 🇹🇭 TH 14 - xiaohe
+  - 🇹🇭 TH 15 - xiaohe
+  - 🇹🇭 TH 16 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -152,5 +236,11 @@ proxy-groups:
   - 🇹🇭 TH 08 - xiaohe
   - 🇹🇭 TH 09 - xiaohe
   - 🇹🇭 TH 10 - xiaohe
+  - 🇹🇭 TH 11 - xiaohe
+  - 🇹🇭 TH 12 - xiaohe
+  - 🇹🇭 TH 13 - xiaohe
+  - 🇹🇭 TH 14 - xiaohe
+  - 🇹🇭 TH 15 - xiaohe
+  - 🇹🇭 TH 16 - xiaohe
 rules:
 - MATCH,PROXIES
