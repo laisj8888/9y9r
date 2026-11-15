@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: vless
-  server: game.celvixo.ir
-  port: 2087
-  uuid: b28f8a69-7418-42f3-1567-19115647927b
+  server: 146.75.59.186
+  port: 443
+  uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: cdn.akamai.steamstatic.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: cp.xelzano.ir
+      Host: looabomrhesamijji.global.ssl.fastly.net.
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   type: vless
   server: 151.241.226.201
@@ -40,7 +41,7 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   type: vless
   server: 151.241.226.201
@@ -78,21 +79,21 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
   type: vless
-  server: 146.75.59.186
-  port: 443
-  uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
+  server: 185.39.204.117
+  port: 10002
+  uuid: facb802c-de2e-11f1-9a22-a3404e852f3b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn.akamai.steamstatic.com
+  servername: tr2.vpnjantit.com
   network: ws
   ws-opts:
-    path: /
+    path: /vpnjantit
     headers:
-      Host: looabomrhesamijji.global.ssl.fastly.net.
+      Host: 185.39.204.117
 - name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
   type: vless
   server: 146.75.59.186
@@ -107,33 +108,6 @@ proxies:
     path: /
     headers:
       Host: looabomrhesamijji.global.ssl.fastly.net.
-- name: 🇹🇷 土耳其 (Turkey) 09 - xiaohe
-  type: vless
-  server: 185.39.204.117
-  port: 10002
-  uuid: facb802c-de2e-11f1-9a22-a3404e852f3b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tr2.vpnjantit.com
-  network: ws
-  ws-opts:
-    path: /vpnjantit
-    headers:
-      Host: 185.39.204.117
-- name: 🇹🇷 土耳其 (Turkey) 10 - xiaohe
-  type: vless
-  server: game.celvixo.ir
-  port: 2087
-  uuid: abd407d8-5acf-481c-d211-1e17abc77e63
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cp.xelzano.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -147,8 +121,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 09 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -162,7 +134,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 09 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 10 - xiaohe
 rules:
 - MATCH,PROXIES
