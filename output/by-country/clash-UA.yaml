@@ -18,6 +18,18 @@ proxies:
   client-fingerprint: random
 - name: 🇺🇦 UA 02 - xiaohe
   type: vless
+  server: 31.222.235.81
+  port: 443
+  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇦 UA 03 - xiaohe
+  type: vless
   server: netx.smrtai.top
   port: 443
   uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
@@ -35,6 +47,7 @@ proxy-groups:
   - AUTO
   - 🇺🇦 UA 01 - xiaohe
   - 🇺🇦 UA 02 - xiaohe
+  - 🇺🇦 UA 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +55,6 @@ proxy-groups:
   proxies:
   - 🇺🇦 UA 01 - xiaohe
   - 🇺🇦 UA 02 - xiaohe
+  - 🇺🇦 UA 03 - xiaohe
 rules:
 - MATCH,PROXIES
