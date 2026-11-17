@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - xiaohe
   type: vmess
-  server: 103.88.232.55
+  server: 103.14.27.207
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -39,6 +39,17 @@ proxies:
   servername: ''
 - name: 🇧🇷 BR 04 - xiaohe
   type: vmess
+  server: 103.14.27.207
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 103.14.27.207
+- name: 🇧🇷 BR 05 - xiaohe
+  type: vmess
   server: 103.88.232.55
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
@@ -48,20 +59,9 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇧🇷 BR 05 - xiaohe
-  type: vmess
-  server: 103.14.27.207
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: None
 - name: 🇧🇷 BR 06 - xiaohe
   type: vmess
-  server: 103.14.27.207
+  server: 103.88.232.55
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -72,7 +72,7 @@ proxies:
   servername: None
 - name: 🇧🇷 BR 07 - xiaohe
   type: vmess
-  server: 103.14.27.207
+  server: 103.88.232.55
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -80,7 +80,18 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 103.14.27.207
+  servername: ''
+- name: 🇧🇷 BR 08 - xiaohe
+  type: vmess
+  server: 103.88.232.55
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,6 +104,7 @@ proxy-groups:
   - 🇧🇷 BR 05 - xiaohe
   - 🇧🇷 BR 06 - xiaohe
   - 🇧🇷 BR 07 - xiaohe
+  - 🇧🇷 BR 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -105,5 +117,6 @@ proxy-groups:
   - 🇧🇷 BR 05 - xiaohe
   - 🇧🇷 BR 06 - xiaohe
   - 🇧🇷 BR 07 - xiaohe
+  - 🇧🇷 BR 08 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -8,7 +8,7 @@ proxies:
   type: vmess
   server: 65.108.240.210
   port: 39018
-  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
+  uuid: fa15684a-81e6-4ba7-bc4b-f601c0d998e9
   alterId: 0
   cipher: auto
   udp: true
@@ -28,7 +28,7 @@ proxies:
   type: vmess
   server: 65.108.240.210
   port: 39018
-  uuid: 45dc10c6-04c8-4c70-a06a-d396254a6c0b
+  uuid: 77fb7a80-4724-4e33-9558-4f20c1634c5a
   alterId: 0
   cipher: auto
   udp: true
@@ -36,6 +36,30 @@ proxies:
   skip-cert-verify: true
 - name: 🇫🇮 FI 04 - xiaohe
   type: vless
+  server: 196.245.217.39
+  port: 443
+  uuid: 95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
+  servername: 345739t.de15.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 05 - xiaohe
+  type: vless
+  server: 196.196.204.137
+  port: 443
+  uuid: 26843758-24de-4f76-b5d0-624038e353c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
+  servername: 71b840t.de7.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 06 - xiaohe
+  type: vless
   server: 45.144.234.157
   port: 14430
   uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
@@ -47,24 +71,46 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 05 - xiaohe
-  type: ss
-  server: fn1s.sublinkplas.ir
-  port: 53731
-  cipher: chacha20-ietf-poly1305
-  password: j2-YonHunrTMlNMFlSY4u0UGsBaBgO4b
-  udp: true
-- name: 🇫🇮 FI 06 - xiaohe
-  type: vmess
-  server: 65.108.240.210
-  port: 39018
-  uuid: 77fb7a80-4724-4e33-9558-4f20c1634c5a
-  alterId: 0
-  cipher: auto
+- name: 🇫🇮 FI 07 - xiaohe
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇫🇮 FI 07 - xiaohe
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 08 - xiaohe
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 09 - xiaohe
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 10 - xiaohe
   type: vmess
   server: 65.108.240.210
   port: 39018
@@ -74,67 +120,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇫🇮 FI 08 - xiaohe
-  type: vless
-  server: 3ef61eg.fi7.h1clayd.click
-  port: 443
-  uuid: 2208b003-78b1-453c-b5ca-ce847ff0efd6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 5XRqrYKB46rrbaIvft_sKTGCeC4iapfBdc3Ki1FdWA4
-  servername: 3ef61eg.fi7.h1clayd.click
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 09 - xiaohe
-  type: vless
-  server: 196.240.181.132
-  port: 443
-  uuid: 2208b003-78b1-453c-b5ca-ce847ff0efd6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 5XRqrYKB46rrbaIvft_sKTGCeC4iapfBdc3Ki1FdWA4
-  servername: 3ef61eg.fi7.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 10 - xiaohe
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 FI 11 - xiaohe
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 12 - xiaohe
   type: vmess
   server: 65.108.240.210
   port: 39018
-  uuid: fa15684a-81e6-4ba7-bc4b-f601c0d998e9
+  uuid: 96c987c9-c2d9-4993-b9bd-c9bc36255ee1
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇫🇮 FI 13 - xiaohe
+- name: 🇫🇮 FI 12 - xiaohe
   type: vmess
   server: 65.108.240.210
   port: 39018
@@ -144,6 +140,20 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇫🇮 FI 13 - xiaohe
+  type: vless
+  server: 198.202.24.142
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vipfree.dr-ping.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
 - name: 🇫🇮 FI 14 - xiaohe
   type: vless
   server: 45.144.234.157
@@ -158,6 +168,16 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 15 - xiaohe
+  type: vmess
+  server: 65.108.240.210
+  port: 39018
+  uuid: 45dc10c6-04c8-4c70-a06a-d396254a6c0b
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 16 - xiaohe
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -170,53 +190,18 @@ proxies:
     path: /vless#Farah_VPN-178
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 16 - xiaohe
+- name: 🇫🇮 FI 17 - xiaohe
   type: vmess
   server: 65.108.240.210
   port: 39018
-  uuid: fa15684a-81e6-4ba7-bc4b-f601c0d998e9
+  uuid: 96c987c9-c2d9-4993-b9bd-c9bc36255ee1
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇫🇮 FI 17 - xiaohe
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 FI 18 - xiaohe
   type: vless
-  server: 3ef61eg.fi7.h1clayd.click
-  port: 443
-  uuid: 2208b003-78b1-453c-b5ca-ce847ff0efd6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 5XRqrYKB46rrbaIvft_sKTGCeC4iapfBdc3Ki1FdWA4
-  servername: 3ef61eg.fi7.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 19 - xiaohe
-  type: vmess
-  server: 65.108.240.210
-  port: 39018
-  uuid: 96c987c9-c2d9-4993-b9bd-c9bc36255ee1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 20 - xiaohe
-  type: vless
   server: 45.144.234.157
   port: 14430
   uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
@@ -228,26 +213,6 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 21 - xiaohe
-  type: vmess
-  server: 65.108.240.210
-  port: 39018
-  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 22 - xiaohe
-  type: vmess
-  server: 65.108.240.210
-  port: 39018
-  uuid: 96c987c9-c2d9-4993-b9bd-c9bc36255ee1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -271,10 +236,6 @@ proxy-groups:
   - 🇫🇮 FI 16 - xiaohe
   - 🇫🇮 FI 17 - xiaohe
   - 🇫🇮 FI 18 - xiaohe
-  - 🇫🇮 FI 19 - xiaohe
-  - 🇫🇮 FI 20 - xiaohe
-  - 🇫🇮 FI 21 - xiaohe
-  - 🇫🇮 FI 22 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -298,9 +259,5 @@ proxy-groups:
   - 🇫🇮 FI 16 - xiaohe
   - 🇫🇮 FI 17 - xiaohe
   - 🇫🇮 FI 18 - xiaohe
-  - 🇫🇮 FI 19 - xiaohe
-  - 🇫🇮 FI 20 - xiaohe
-  - 🇫🇮 FI 21 - xiaohe
-  - 🇫🇮 FI 22 - xiaohe
 rules:
 - MATCH,PROXIES
