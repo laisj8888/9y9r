@@ -5,6 +5,39 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: 0SxLXFtomY9ypO4o8rrNWEpNSZEFzsMnfhBETUd3oOw=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  type: vless
+  server: 94.139.250.226
+  port: 443
+  uuid: a30903dc-1bf0-0001-8b1b-603a3a56211c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: net-api-ctl.galioncc.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   type: vless
   server: 94.139.250.226
   port: 443
@@ -16,55 +49,6 @@ proxies:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
   servername: net-api-ctl.galioncc.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: vless
-  server: reedbed.filnex.baby
-  port: 443
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: reedbed.filnex.baby
-  network: ws
-  ws-opts:
-    path: /api/de6/stream
-    headers:
-      Host: reedbed.filnex.baby
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  type: vless
-  server: clover.filnex.baby
-  port: 443
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: clover.filnex.baby
-  network: ws
-  ws-opts:
-    path: /api/de6/stream
-    headers:
-      Host: clover.filnex.baby
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  type: vless
-  server: clover.filnex.baby
-  port: 443
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: clover.filnex.baby
-  network: ws
-  ws-opts:
-    path: /api/de6/stream
-    headers:
-      Host: clover.filnex.baby
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   type: ss
   server: 130.49.189.158
@@ -73,12 +57,19 @@ proxies:
   password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  type: vless
+  server: 185.178.208.167
+  port: 443
+  uuid: 4eebdec5-08eb-4772-a0e6-35fec4c91cb0
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uwugirl.dev
+  network: ws
+  ws-opts:
+    path: /player/collect/9c8514f9552d/
+    headers:
+      Host: speakpro.lol
 - name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   type: ss
   server: 130.49.189.158
