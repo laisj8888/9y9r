@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - xiaohe
+  type: vmess
+  server: 103.14.27.207
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇧🇷 BR 02 - xiaohe
   type: vless
   server: platform117.golnamakcert.top
   port: 80
@@ -17,7 +28,21 @@ proxies:
     path: /platform117
     headers:
       Host: platform117.halalkhor.info
-- name: 🇧🇷 BR 02 - xiaohe
+- name: 🇧🇷 BR 03 - xiaohe
+  type: vless
+  server: 43.174.195.1
+  port: 443
+  uuid: 24916ad0-847d-4522-9e17-f4347dee57fd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kv.074167.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kv.074167.xyz
+- name: 🇧🇷 BR 04 - xiaohe
   type: vmess
   server: 103.88.232.55
   port: 1270
@@ -28,31 +53,9 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇧🇷 BR 03 - xiaohe
-  type: vmess
-  server: leviko-br0153.shopingggg.ir
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇧🇷 BR 04 - xiaohe
-  type: vmess
-  server: 103.14.27.207
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 103.14.27.207
 - name: 🇧🇷 BR 05 - xiaohe
   type: vmess
-  server: 103.14.27.207
+  server: 103.88.232.55
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -96,7 +99,7 @@ proxies:
   servername: ''
 - name: 🇧🇷 BR 09 - xiaohe
   type: vmess
-  server: 103.88.232.55
+  server: 103.14.27.207
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -106,19 +109,21 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇧🇷 BR 10 - xiaohe
-  type: vmess
-  server: 103.88.232.55
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: platform102.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
 - name: 🇧🇷 BR 11 - xiaohe
   type: vmess
-  server: 103.88.232.55
+  server: 103.14.27.207
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -126,7 +131,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: 103.14.27.207
 - name: 🇧🇷 BR 12 - xiaohe
   type: vmess
   server: 103.88.232.55
@@ -162,7 +167,29 @@ proxies:
   servername: ''
 - name: 🇧🇷 BR 15 - xiaohe
   type: vmess
-  server: leviko-br0153.shopingggg.ir
+  server: 103.88.232.55
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇧🇷 BR 16 - xiaohe
+  type: vmess
+  server: 103.88.232.55
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇧🇷 BR 17 - xiaohe
+  type: vmess
+  server: 103.88.232.55
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -191,6 +218,8 @@ proxy-groups:
   - 🇧🇷 BR 13 - xiaohe
   - 🇧🇷 BR 14 - xiaohe
   - 🇧🇷 BR 15 - xiaohe
+  - 🇧🇷 BR 16 - xiaohe
+  - 🇧🇷 BR 17 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -211,5 +240,7 @@ proxy-groups:
   - 🇧🇷 BR 13 - xiaohe
   - 🇧🇷 BR 14 - xiaohe
   - 🇧🇷 BR 15 - xiaohe
+  - 🇧🇷 BR 16 - xiaohe
+  - 🇧🇷 BR 17 - xiaohe
 rules:
 - MATCH,PROXIES
