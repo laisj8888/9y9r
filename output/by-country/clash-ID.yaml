@@ -32,16 +32,6 @@ proxies:
     path: /vlessws
     headers:
       Host: natan.srpcom.cloud
-- name: 🇮🇩 ID 03 - xiaohe
-  type: vmess
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16298
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇮🇩 ID 01 - xiaohe
   - 🇮🇩 ID 02 - xiaohe
-  - 🇮🇩 ID 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -57,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇮🇩 ID 01 - xiaohe
   - 🇮🇩 ID 02 - xiaohe
-  - 🇮🇩 ID 03 - xiaohe
 rules:
 - MATCH,PROXIES

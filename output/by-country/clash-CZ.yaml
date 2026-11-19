@@ -25,34 +25,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 2Ef8X21WALqK7H6N8A78j5WYtzZ999PP8rF8DaLsb5LLyDLQpf5dGVAjdA3mj1wudigKXTt5heYU9jmaBbfxXBJJAqhPHkxe
   udp: true
-- name: 🇨🇿 CZ 04 - xiaohe
-  type: vless
-  server: 172.67.235.78
-  port: 443
-  uuid: 775c9d67-2ef3-47e8-8e23-656b68333da8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-flow-263808-gw.poryya22o.workers.dev
-  network: ws
-  ws-opts:
-    path: /1e0b190b5bbf9d36?ed=2560
-    headers:
-      Host: web-flow-263808-gw.poryya22o.workers.dev
-- name: 🇨🇿 CZ 05 - xiaohe
-  type: vless
-  server: 172.67.130.187
-  port: 2083
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fans.liverpool.qzz.io
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: fans.liverpool.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,8 +33,6 @@ proxy-groups:
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
   - 🇨🇿 CZ 03 - xiaohe
-  - 🇨🇿 CZ 04 - xiaohe
-  - 🇨🇿 CZ 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,7 +41,5 @@ proxy-groups:
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
   - 🇨🇿 CZ 03 - xiaohe
-  - 🇨🇿 CZ 04 - xiaohe
-  - 🇨🇿 CZ 05 - xiaohe
 rules:
 - MATCH,PROXIES
