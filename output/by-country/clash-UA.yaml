@@ -5,66 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇦 UA 01 - xiaohe
-  type: vless
-  server: 87.76.154.28
-  port: 57231
-  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
+  type: ss
+  server: 185.164.175.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇺🇦 UA 02 - xiaohe
-  type: vless
-  server: 87.76.154.28
-  port: 57231
-  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
+  type: ss
+  server: 185.164.175.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇺🇦 UA 03 - xiaohe
   type: vless
-  server: 31.222.235.81
-  port: 443
-  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇦 UA 04 - xiaohe
-  type: vless
-  server: 31.222.235.81
-  port: 443
-  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇦 UA 05 - xiaohe
-  type: vless
-  server: netx.smrtai.top
-  port: 443
-  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇦 UA 06 - xiaohe
-  type: vless
   server: 87.76.154.28
   port: 57231
   uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇺🇦 UA 07 - xiaohe
+- name: 🇺🇦 UA 04 - xiaohe
   type: vless
   server: netx.smrtai.top
   port: 443
@@ -76,7 +38,31 @@ proxies:
     public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇺🇦 UA 08 - xiaohe
+- name: 🇺🇦 UA 05 - xiaohe
+  type: vless
+  server: 31.222.235.81
+  port: 443
+  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇦 UA 06 - xiaohe
+  type: vless
+  server: netx.smrtai.top
+  port: 443
+  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇦 UA 07 - xiaohe
   type: vless
   server: leviko-tr8060.shopingggg.ir
   port: 57231
@@ -84,6 +70,26 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇺🇦 UA 08 - xiaohe
+  type: vless
+  server: 87.76.154.28
+  port: 57231
+  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇺🇦 UA 09 - xiaohe
+  type: vless
+  server: 31.222.235.81
+  port: 443
+  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,6 +103,7 @@ proxy-groups:
   - 🇺🇦 UA 06 - xiaohe
   - 🇺🇦 UA 07 - xiaohe
   - 🇺🇦 UA 08 - xiaohe
+  - 🇺🇦 UA 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -110,5 +117,6 @@ proxy-groups:
   - 🇺🇦 UA 06 - xiaohe
   - 🇺🇦 UA 07 - xiaohe
   - 🇺🇦 UA 08 - xiaohe
+  - 🇺🇦 UA 09 - xiaohe
 rules:
 - MATCH,PROXIES
