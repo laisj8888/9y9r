@@ -6,64 +6,19 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
   type: vless
-  server: 88.216.60.73
+  server: subgift.gcorecdn.com
   port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: firefox
+  servername: subgift.gcorecdn.com
+  network: ws
+  ws-opts:
+    path: /t.me-SubGift
+    headers:
+      Host: subgift.gcorecdn.com
 - name: 🇸🇪 SE 02 - xiaohe
-  type: vless
-  server: 88.216.60.73
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: edge
-- name: 🇸🇪 SE 03 - xiaohe
-  type: vless
-  server: 88.216.214.159
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: api-svc-mgr.galioncc.com
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 04 - xiaohe
-  type: vless
-  server: 88.216.60.73
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 05 - xiaohe
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xmfhlpy.com
-- name: 🇸🇪 SE 06 - xiaohe
   type: vmess
   server: 62.93.166.184
   port: 1270
@@ -74,6 +29,46 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: xmfhlpy.com
+- name: 🇸🇪 SE 03 - xiaohe
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
+- name: 🇸🇪 SE 04 - xiaohe
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇸🇪 SE 05 - xiaohe
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
+- name: 🇸🇪 SE 06 - xiaohe
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇸🇪 SE 07 - xiaohe
   type: vless
   server: 193.188.21.253
@@ -89,7 +84,7 @@ proxies:
       Host: 193.188.21.253
 - name: 🇸🇪 SE 08 - xiaohe
   type: vless
-  server: 88.216.60.73
+  server: 88.216.214.159
   port: 443
   uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
   udp: true
@@ -97,28 +92,9 @@ proxies:
   skip-cert-verify: true
   reality-opts:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: ns-api-gw.galioncc.com
+  servername: api-svc-mgr.galioncc.com
   client-fingerprint: chrome
 - name: 🇸🇪 SE 09 - xiaohe
-  type: vless
-  server: 88.216.60.73
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 10 - xiaohe
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇸🇪 SE 11 - xiaohe
   type: vmess
   server: 62.93.166.184
   port: 1270
@@ -129,9 +105,35 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: xmfhlpy.com
+- name: 🇸🇪 SE 10 - xiaohe
+  type: vless
+  server: 88.216.214.159
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: api-svc-mgr.galioncc.com
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 11 - xiaohe
+  type: vless
+  server: 92.223.84.254
+  port: 443
+  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: subgift.gcorecdn.com
+  network: ws
+  ws-opts:
+    path: /t.me-SubGift
+    headers:
+      Host: subgift.gcorecdn.com
 - name: 🇸🇪 SE 12 - xiaohe
   type: vless
-  server: subgift.gcorecdn.com
+  server: 92.223.84.254
   port: 443
   uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
   udp: true
@@ -145,20 +147,21 @@ proxies:
       Host: subgift.gcorecdn.com
 - name: 🇸🇪 SE 13 - xiaohe
   type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  server: 92.223.84.254
+  port: 443
+  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: subgift.gcorecdn.com
   network: ws
   ws-opts:
-    path: /vless
+    path: /t.me-SubGift
     headers:
-      Host: 193.188.21.253
+      Host: subgift.gcorecdn.com
 - name: 🇸🇪 SE 14 - xiaohe
   type: vless
-  server: 92.223.84.254
+  server: subgift.gcorecdn.com
   port: 443
   uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
   udp: true
@@ -180,35 +183,65 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xmfhlpy.com
+  servername: ''
 - name: 🇸🇪 SE 16 - xiaohe
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+  servername: ''
 - name: 🇸🇪 SE 17 - xiaohe
-  type: vless
-  server: subgift.gcorecdn.com
-  port: 443
-  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: subgift.gcorecdn.com
+  servername: xmfhlpy.com
+- name: 🇸🇪 SE 18 - xiaohe
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
+- name: 🇸🇪 SE 19 - xiaohe
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
+- name: 🇸🇪 SE 20 - xiaohe
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /t.me-SubGift
+    path: /vless
     headers:
-      Host: subgift.gcorecdn.com
-- name: 🇸🇪 SE 18 - xiaohe
+      Host: 193.188.21.253
+- name: 🇸🇪 SE 21 - xiaohe
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -221,52 +254,17 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 19 - xiaohe
-  type: vless
-  server: 88.216.214.159
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: api-svc-mgr.galioncc.com
-  client-fingerprint: firefox
-- name: 🇸🇪 SE 20 - xiaohe
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇸🇪 SE 21 - xiaohe
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇸🇪 SE 22 - xiaohe
-  type: vless
-  server: 88.216.214.159
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: api-svc-mgr.galioncc.com
-  client-fingerprint: chrome
+  servername: ''
 - name: 🇸🇪 SE 23 - xiaohe
   type: vmess
   server: 62.93.166.184
@@ -280,7 +278,7 @@ proxies:
   servername: xmfhlpy.com
 - name: 🇸🇪 SE 24 - xiaohe
   type: vless
-  server: 88.216.60.73
+  server: 88.216.214.159
   port: 443
   uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
   udp: true
@@ -288,8 +286,8 @@ proxies:
   skip-cert-verify: true
   reality-opts:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: chrome
+  servername: api-svc-mgr.galioncc.com
+  client-fingerprint: firefox
 - name: 🇸🇪 SE 25 - xiaohe
   type: vmess
   server: 138.199.55.230
@@ -300,10 +298,35 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: xmfhlpy.com
 - name: 🇸🇪 SE 26 - xiaohe
+  type: vless
+  server: 92.223.84.254
+  port: 443
+  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: subgift.gcorecdn.com
+  network: ws
+  ws-opts:
+    path: /t.me-SubGift
+    headers:
+      Host: subgift.gcorecdn.com
+- name: 🇸🇪 SE 27 - xiaohe
   type: vmess
-  server: 138.199.55.230
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 28 - xiaohe
+  type: vmess
+  server: 62.93.166.184
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -312,7 +335,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: xmfhlpy.com
-- name: 🇸🇪 SE 27 - xiaohe
+- name: 🇸🇪 SE 29 - xiaohe
   type: vless
   server: subgift.gcorecdn.com
   port: 443
@@ -326,25 +349,6 @@ proxies:
     path: /t.me-SubGift
     headers:
       Host: subgift.gcorecdn.com
-- name: 🇸🇪 SE 28 - xiaohe
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇸🇪 SE 29 - xiaohe
-  type: vless
-  server: 88.216.60.73
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: ios
 - name: 🇸🇪 SE 30 - xiaohe
   type: vmess
   server: 62.93.166.184
@@ -355,7 +359,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xmfhlpy.com
+  servername: ''
 - name: 🇸🇪 SE 31 - xiaohe
   type: vmess
   server: 62.93.166.184
@@ -388,7 +392,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: xmfhlpy.com
 - name: 🇸🇪 SE 34 - xiaohe
   type: vmess
   server: 62.93.166.184
@@ -399,20 +403,26 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xmfhlpy.com
+  servername: ''
 - name: 🇸🇪 SE 35 - xiaohe
-  type: vless
-  server: 88.216.60.73
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: chrome
+  servername: ''
 - name: 🇸🇪 SE 36 - xiaohe
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇸🇪 SE 37 - xiaohe
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -425,41 +435,7 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 37 - xiaohe
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xmfhlpy.com
 - name: 🇸🇪 SE 38 - xiaohe
-  type: vless
-  server: 88.216.60.73
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 39 - xiaohe
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇸🇪 SE 40 - xiaohe
   type: vless
   server: subgift.gcorecdn.com
   port: 443
@@ -473,6 +449,30 @@ proxies:
     path: /t.me-SubGift
     headers:
       Host: subgift.gcorecdn.com
+- name: 🇸🇪 SE 39 - xiaohe
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 40 - xiaohe
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
 - name: 🇸🇪 SE 41 - xiaohe
   type: vless
   server: 88.216.214.159
@@ -486,120 +486,6 @@ proxies:
   servername: api-svc-mgr.galioncc.com
   client-fingerprint: chrome
 - name: 🇸🇪 SE 42 - xiaohe
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xmfhlpy.com
-- name: 🇸🇪 SE 43 - xiaohe
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇸🇪 SE 44 - xiaohe
-  type: vless
-  server: 88.216.60.73
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: firefox
-- name: 🇸🇪 SE 45 - xiaohe
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇸🇪 SE 46 - xiaohe
-  type: vless
-  server: 88.216.60.73
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 47 - xiaohe
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇸🇪 SE 48 - xiaohe
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xmfhlpy.com
-- name: 🇸🇪 SE 49 - xiaohe
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xmfhlpy.com
-- name: 🇸🇪 SE 50 - xiaohe
-  type: vless
-  server: 88.216.60.73
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: firefox
-- name: 🇸🇪 SE 51 - xiaohe
-  type: vless
-  server: 88.216.60.73
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 52 - xiaohe
   type: vless
   server: subgift.gcorecdn.com
   port: 443
@@ -613,7 +499,7 @@ proxies:
     path: /t.me-SubGift
     headers:
       Host: subgift.gcorecdn.com
-- name: 🇸🇪 SE 53 - xiaohe
+- name: 🇸🇪 SE 43 - xiaohe
   type: vmess
   server: 62.93.166.184
   port: 1270
@@ -624,9 +510,9 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇸🇪 SE 54 - xiaohe
+- name: 🇸🇪 SE 44 - xiaohe
   type: vless
-  server: 92.223.84.254
+  server: subgift.gcorecdn.com
   port: 443
   uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
   udp: true
@@ -638,7 +524,21 @@ proxies:
     path: /t.me-SubGift
     headers:
       Host: subgift.gcorecdn.com
-- name: 🇸🇪 SE 55 - xiaohe
+- name: 🇸🇪 SE 45 - xiaohe
+  type: vless
+  server: subgift.gcorecdn.com
+  port: 443
+  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: subgift.gcorecdn.com
+  network: ws
+  ws-opts:
+    path: /t.me-SubGift
+    headers:
+      Host: subgift.gcorecdn.com
+- name: 🇸🇪 SE 46 - xiaohe
   type: vmess
   server: 138.199.55.230
   port: 1270
@@ -649,29 +549,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇸🇪 SE 56 - xiaohe
-  type: vless
-  server: 188.225.57.185
-  port: 443
-  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4JggwEKhrkrIjQjO8kRX6iGvHQJixIFkiDOnE7zd3xE
-  servername: flintstack.dev
-  client-fingerprint: ios
-- name: 🇸🇪 SE 57 - xiaohe
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xmfhlpy.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -723,17 +600,6 @@ proxy-groups:
   - 🇸🇪 SE 44 - xiaohe
   - 🇸🇪 SE 45 - xiaohe
   - 🇸🇪 SE 46 - xiaohe
-  - 🇸🇪 SE 47 - xiaohe
-  - 🇸🇪 SE 48 - xiaohe
-  - 🇸🇪 SE 49 - xiaohe
-  - 🇸🇪 SE 50 - xiaohe
-  - 🇸🇪 SE 51 - xiaohe
-  - 🇸🇪 SE 52 - xiaohe
-  - 🇸🇪 SE 53 - xiaohe
-  - 🇸🇪 SE 54 - xiaohe
-  - 🇸🇪 SE 55 - xiaohe
-  - 🇸🇪 SE 56 - xiaohe
-  - 🇸🇪 SE 57 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -785,16 +651,5 @@ proxy-groups:
   - 🇸🇪 SE 44 - xiaohe
   - 🇸🇪 SE 45 - xiaohe
   - 🇸🇪 SE 46 - xiaohe
-  - 🇸🇪 SE 47 - xiaohe
-  - 🇸🇪 SE 48 - xiaohe
-  - 🇸🇪 SE 49 - xiaohe
-  - 🇸🇪 SE 50 - xiaohe
-  - 🇸🇪 SE 51 - xiaohe
-  - 🇸🇪 SE 52 - xiaohe
-  - 🇸🇪 SE 53 - xiaohe
-  - 🇸🇪 SE 54 - xiaohe
-  - 🇸🇪 SE 55 - xiaohe
-  - 🇸🇪 SE 56 - xiaohe
-  - 🇸🇪 SE 57 - xiaohe
 rules:
 - MATCH,PROXIES
