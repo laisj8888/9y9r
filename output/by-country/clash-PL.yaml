@@ -15,10 +15,10 @@ proxies:
   reality-opts:
     public-key: 8OI8rEgAiWxH-cG03xgzuz7XTFHrbA1MY9HnPHcgSUA
   servername: 702e56t.pl5.h1clayd.click
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
-  server: 13.143.239.94
+  server: 143.246.41.214
   port: 443
   uuid: be146d46-ae50-4691-838c-b6c87dbaec8f
   udp: true
@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: 8OI8rEgAiWxH-cG03xgzuz7XTFHrbA1MY9HnPHcgSUA
   servername: 702e56t.pl5.h1clayd.click
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇵🇱 PL 03 - xiaohe
   type: vless
   server: 143.246.41.214
@@ -51,6 +51,18 @@ proxies:
   reality-opts:
     public-key: 8OI8rEgAiWxH-cG03xgzuz7XTFHrbA1MY9HnPHcgSUA
   servername: 702e56t.pl5.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇵🇱 PL 05 - xiaohe
+  type: vless
+  server: leviko-ee1400.shopingggg.ir
+  port: 443
+  uuid: be146d46-ae50-4691-838c-b6c87dbaec8f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 8OI8rEgAiWxH-cG03xgzuz7XTFHrbA1MY9HnPHcgSUA
+  servername: 702e56t.pl5.h1clayd.click
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -61,6 +73,7 @@ proxy-groups:
   - 🇵🇱 PL 02 - xiaohe
   - 🇵🇱 PL 03 - xiaohe
   - 🇵🇱 PL 04 - xiaohe
+  - 🇵🇱 PL 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,5 +83,6 @@ proxy-groups:
   - 🇵🇱 PL 02 - xiaohe
   - 🇵🇱 PL 03 - xiaohe
   - 🇵🇱 PL 04 - xiaohe
+  - 🇵🇱 PL 05 - xiaohe
 rules:
 - MATCH,PROXIES
