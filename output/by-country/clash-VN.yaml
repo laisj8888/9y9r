@@ -18,7 +18,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇻🇳 VN 02 - xiaohe
   type: vless
-  server: kir3.crackerbinam.org
+  server: 103.163.24.22
   port: 56026
   uuid: a1f0cbb8-c74a-4c27-b881-7b14d96aece1
   udp: true
@@ -50,7 +50,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇻🇳 VN 05 - xiaohe
   type: vless
-  server: 103.163.24.22
+  server: kir3.crackerbinam.org
   port: 56026
   uuid: a1f0cbb8-c74a-4c27-b881-7b14d96aece1
   udp: true
@@ -62,7 +62,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇻🇳 VN 06 - xiaohe
   type: vless
-  server: kir3.crackerbinam.org
+  server: Kir3.crackerbinam.org
   port: 56026
   uuid: a1f0cbb8-c74a-4c27-b881-7b14d96aece1
   udp: true
@@ -80,6 +80,18 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇻🇳 VN 08 - xiaohe
+  type: vless
+  server: 103.163.24.22
+  port: 56026
+  uuid: a1f0cbb8-c74a-4c27-b881-7b14d96aece1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: gjOKbmRb5cGDPbdz3x8xkBFL43pn3xqL-I6sALHO7ls
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,6 +104,7 @@ proxy-groups:
   - 🇻🇳 VN 05 - xiaohe
   - 🇻🇳 VN 06 - xiaohe
   - 🇻🇳 VN 07 - xiaohe
+  - 🇻🇳 VN 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -104,5 +117,6 @@ proxy-groups:
   - 🇻🇳 VN 05 - xiaohe
   - 🇻🇳 VN 06 - xiaohe
   - 🇻🇳 VN 07 - xiaohe
+  - 🇻🇳 VN 08 - xiaohe
 rules:
 - MATCH,PROXIES

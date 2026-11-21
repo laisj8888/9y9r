@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 13.143.239.94
+  server: leviko-ee1400.shopingggg.ir
   port: 443
   uuid: be146d46-ae50-4691-838c-b6c87dbaec8f
   udp: true
@@ -18,7 +18,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
-  server: 143.246.41.214
+  server: 85.192.30.88
   port: 443
   uuid: be146d46-ae50-4691-838c-b6c87dbaec8f
   udp: true
@@ -30,7 +30,7 @@ proxies:
   client-fingerprint: firefox
 - name: 🇵🇱 PL 03 - xiaohe
   type: vless
-  server: 143.246.41.214
+  server: 13.143.239.94
   port: 443
   uuid: be146d46-ae50-4691-838c-b6c87dbaec8f
   udp: true
@@ -39,7 +39,7 @@ proxies:
   reality-opts:
     public-key: 8OI8rEgAiWxH-cG03xgzuz7XTFHrbA1MY9HnPHcgSUA
   servername: 702e56t.pl5.h1clayd.click
-  client-fingerprint: edge
+  client-fingerprint: chrome
 - name: 🇵🇱 PL 04 - xiaohe
   type: vless
   server: 13.143.239.94
@@ -54,7 +54,7 @@ proxies:
   client-fingerprint: firefox
 - name: 🇵🇱 PL 05 - xiaohe
   type: vless
-  server: leviko-ee1400.shopingggg.ir
+  server: 143.246.41.214
   port: 443
   uuid: be146d46-ae50-4691-838c-b6c87dbaec8f
   udp: true
@@ -63,7 +63,19 @@ proxies:
   reality-opts:
     public-key: 8OI8rEgAiWxH-cG03xgzuz7XTFHrbA1MY9HnPHcgSUA
   servername: 702e56t.pl5.h1clayd.click
-  client-fingerprint: chrome
+  client-fingerprint: edge
+- name: 🇵🇱 PL 06 - xiaohe
+  type: vless
+  server: 143.246.41.214
+  port: 443
+  uuid: be146d46-ae50-4691-838c-b6c87dbaec8f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 8OI8rEgAiWxH-cG03xgzuz7XTFHrbA1MY9HnPHcgSUA
+  servername: 702e56t.pl5.h1clayd.click
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,6 +86,7 @@ proxy-groups:
   - 🇵🇱 PL 03 - xiaohe
   - 🇵🇱 PL 04 - xiaohe
   - 🇵🇱 PL 05 - xiaohe
+  - 🇵🇱 PL 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -84,5 +97,6 @@ proxy-groups:
   - 🇵🇱 PL 03 - xiaohe
   - 🇵🇱 PL 04 - xiaohe
   - 🇵🇱 PL 05 - xiaohe
+  - 🇵🇱 PL 06 - xiaohe
 rules:
 - MATCH,PROXIES
