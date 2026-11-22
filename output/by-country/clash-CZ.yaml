@@ -25,6 +25,30 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 2Ef8X21WALqK7H6N8A78j5WYtzZ999PP8rF8DaLsb5LLyDLQpf5dGVAjdA3mj1wudigKXTt5heYU9jmaBbfxXBJJAqhPHkxe
   udp: true
+- name: 🇨🇿 CZ 04 - xiaohe
+  type: vless
+  server: 188.114.98.5
+  port: 443
+  uuid: c3647117-baf4-4072-a872-fc762fc24ec9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-edge-2fba99-gw.eng-ops-7084b7.workers.dev
+  network: ws
+  ws-opts:
+    path: /9ea36182644d0f1f?ed=2560
+    headers:
+      Host: cdn-edge-2fba99-gw.eng-ops-7084b7.workers.dev
+- name: 🇨🇿 CZ 05 - xiaohe
+  type: vmess
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16280
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +57,8 @@ proxy-groups:
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
   - 🇨🇿 CZ 03 - xiaohe
+  - 🇨🇿 CZ 04 - xiaohe
+  - 🇨🇿 CZ 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +67,7 @@ proxy-groups:
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
   - 🇨🇿 CZ 03 - xiaohe
+  - 🇨🇿 CZ 04 - xiaohe
+  - 🇨🇿 CZ 05 - xiaohe
 rules:
 - MATCH,PROXIES

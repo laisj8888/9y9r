@@ -6,22 +6,6 @@ log-level: info
 proxies:
 - name: 🇺🇦 UA 01 - xiaohe
   type: vless
-  server: 87.76.154.28
-  port: 57231
-  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇦 UA 02 - xiaohe
-  type: vless
-  server: 87.76.154.28
-  port: 57231
-  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇦 UA 03 - xiaohe
-  type: vless
   server: netx.smrtai.top
   port: 443
   uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
@@ -32,7 +16,7 @@ proxies:
     public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇺🇦 UA 04 - xiaohe
+- name: 🇺🇦 UA 02 - xiaohe
   type: vless
   server: netx.smrtai.top
   port: 443
@@ -44,7 +28,7 @@ proxies:
     public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇺🇦 UA 05 - xiaohe
+- name: 🇺🇦 UA 03 - xiaohe
   type: vless
   server: 31.222.235.81
   port: 443
@@ -56,14 +40,6 @@ proxies:
     public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇺🇦 UA 06 - xiaohe
-  type: vless
-  server: 87.76.154.28
-  port: 57231
-  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,9 +48,6 @@ proxy-groups:
   - 🇺🇦 UA 01 - xiaohe
   - 🇺🇦 UA 02 - xiaohe
   - 🇺🇦 UA 03 - xiaohe
-  - 🇺🇦 UA 04 - xiaohe
-  - 🇺🇦 UA 05 - xiaohe
-  - 🇺🇦 UA 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,8 +56,5 @@ proxy-groups:
   - 🇺🇦 UA 01 - xiaohe
   - 🇺🇦 UA 02 - xiaohe
   - 🇺🇦 UA 03 - xiaohe
-  - 🇺🇦 UA 04 - xiaohe
-  - 🇺🇦 UA 05 - xiaohe
-  - 🇺🇦 UA 06 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -14,7 +14,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless#Farah_VPN-178
+    path: /vless
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 02 - xiaohe
@@ -53,10 +53,24 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /vless#Farah_VPN-178
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 05 - xiaohe
+  type: vless
+  server: axe.mastopen14.ir
+  port: 443
+  uuid: 5c98c351-0720-40f5-900b-aaa5884819a9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mojito1703.mastopen14.ir
+  network: ws
+  ws-opts:
+    path: /f13eb798-4cc9-41b0-a955-88a2fb289821
+    headers:
+      Host: mojito1703.mastopen14.ir
+- name: 🇫🇮 FI 06 - xiaohe
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -79,6 +93,7 @@ proxy-groups:
   - 🇫🇮 FI 03 - xiaohe
   - 🇫🇮 FI 04 - xiaohe
   - 🇫🇮 FI 05 - xiaohe
+  - 🇫🇮 FI 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -89,5 +104,6 @@ proxy-groups:
   - 🇫🇮 FI 03 - xiaohe
   - 🇫🇮 FI 04 - xiaohe
   - 🇫🇮 FI 05 - xiaohe
+  - 🇫🇮 FI 06 - xiaohe
 rules:
 - MATCH,PROXIES

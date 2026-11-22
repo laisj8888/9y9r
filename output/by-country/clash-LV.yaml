@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - xiaohe
-  type: vless
-  server: 45.38.143.210
-  port: 30584
-  uuid: cebc5f19-18d9-48e6-9029-fb4b04caf393
+  type: ss
+  server: 31.56.179.162
+  port: 40369
+  cipher: 2022-blake3-aes-256-gcm
+  password: lWi2Ck/hdsr2YRMTz95ZskWbGqJMM4a059omw26B1P8=:0EEYe0cqOpomvxdV1214tHallVSWctEACDmE6yRWM0g=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
-  servername: m.vk.com
-  client-fingerprint: chrome
 - name: 🇱🇻 LV 02 - xiaohe
   type: vless
   server: 45.38.143.210
@@ -39,7 +34,7 @@ proxies:
   reality-opts:
     public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
   servername: m.vk.com
-  client-fingerprint: edge
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
