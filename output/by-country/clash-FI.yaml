@@ -32,6 +32,18 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 03 - xiaohe
   type: vless
+  server: 196.196.204.137
+  port: 443
+  uuid: 26843758-24de-4f76-b5d0-624038e353c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
+  servername: 71b840t.de7.h1clayd.click
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 04 - xiaohe
+  type: vless
   server: 45.144.234.157
   port: 14430
   uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
@@ -43,7 +55,7 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 04 - xiaohe
+- name: 🇫🇮 FI 05 - xiaohe
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -53,23 +65,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless#Farah_VPN-178
+    path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 05 - xiaohe
-  type: vless
-  server: axe.mastopen14.ir
-  port: 443
-  uuid: 5c98c351-0720-40f5-900b-aaa5884819a9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mojito1703.mastopen14.ir
-  network: ws
-  ws-opts:
-    path: /f13eb798-4cc9-41b0-a955-88a2fb289821
-    headers:
-      Host: mojito1703.mastopen14.ir
 - name: 🇫🇮 FI 06 - xiaohe
   type: vless
   server: 45.144.234.157
@@ -83,6 +81,19 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 07 - xiaohe
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless#Farah_VPN-178
+    headers:
+      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -94,6 +105,7 @@ proxy-groups:
   - 🇫🇮 FI 04 - xiaohe
   - 🇫🇮 FI 05 - xiaohe
   - 🇫🇮 FI 06 - xiaohe
+  - 🇫🇮 FI 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -105,5 +117,6 @@ proxy-groups:
   - 🇫🇮 FI 04 - xiaohe
   - 🇫🇮 FI 05 - xiaohe
   - 🇫🇮 FI 06 - xiaohe
+  - 🇫🇮 FI 07 - xiaohe
 rules:
 - MATCH,PROXIES
