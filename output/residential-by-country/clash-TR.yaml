@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 01 (家宽) - xiaohe
   type: vmess
-  server: 161.120.223.62
-  port: 8443
-  uuid: 17136e7d-6678-403f-af08-29ca2438031f
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16272
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
   udp: true
@@ -19,12 +19,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

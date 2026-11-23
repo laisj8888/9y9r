@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - xiaohe
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -19,7 +32,7 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: 'null'
-- name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
   type: vless
   server: 152.69.226.63
   port: 25555
@@ -32,7 +45,22 @@ proxies:
     path: /
     headers:
       Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 132.145.80.230
+- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
   type: vmess
   server: 140.238.2.250
   port: 443
@@ -42,33 +70,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
+  type: vmess
+  server: 129.154.61.196
+  port: 800
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -83,39 +95,31 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: ''
-- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
   type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
   alterId: 0
   cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /cctv13.m3u8
     headers:
-      Host: 152.69.226.63
+      Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 10 - xiaohe
   type: vmess
   server: 132.145.80.230
@@ -132,6 +136,16 @@ proxies:
     headers:
       Host: 132.145.80.230
 - name: 🇰🇷 韩国 (South Korea) 11 - xiaohe
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 12 - xiaohe
   type: vless
   server: 152.69.226.63
   port: 25555
@@ -144,56 +158,48 @@ proxies:
     path: /
     headers:
       Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 12 - xiaohe
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: kr02.a0a.xyz
 - name: 🇰🇷 韩国 (South Korea) 13 - xiaohe
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /cctv13.m3u8
+    path: /
     headers:
-      Host: ''
+      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 14 - xiaohe
-  type: vmess
-  server: 129.154.61.196
-  port: 800
-  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 168.107.36.135
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇰🇷 韩国 (South Korea) 15 - xiaohe
   type: vmess
-  server: 129.154.61.196
-  port: 800
-  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: None
 - name: 🇰🇷 韩国 (South Korea) 16 - xiaohe
   type: vmess
   server: 132.145.80.230
@@ -208,21 +214,8 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: 'null'
+      Host: kr02.a0a.xyz
 - name: 🇰🇷 韩国 (South Korea) 17 - xiaohe
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 18 - xiaohe
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -237,6 +230,19 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 18 - xiaohe
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 19 - xiaohe
   type: vmess
   server: 132.145.80.230
@@ -279,7 +285,7 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: 132.145.80.230
+      Host: ''
 - name: 🇰🇷 韩国 (South Korea) 22 - xiaohe
   type: vmess
   server: 132.145.80.230
@@ -294,22 +300,20 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: None
+      Host: 'null'
 - name: 🇰🇷 韩国 (South Korea) 23 - xiaohe
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /cctv13.m3u8
+    path: /
     headers:
-      Host: ''
+      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 24 - xiaohe
   type: vless
   server: 152.69.226.63
@@ -323,6 +327,35 @@ proxies:
     path: /
     headers:
       Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 25 - xiaohe
+  type: vless
+  server: 168.107.36.135
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇰🇷 韩国 (South Korea) 26 - xiaohe
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: kr02.a0a.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -352,6 +385,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 22 - xiaohe
   - 🇰🇷 韩国 (South Korea) 23 - xiaohe
   - 🇰🇷 韩国 (South Korea) 24 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 25 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 26 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -381,5 +416,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 22 - xiaohe
   - 🇰🇷 韩国 (South Korea) 23 - xiaohe
   - 🇰🇷 韩国 (South Korea) 24 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 25 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 26 - xiaohe
 rules:
 - MATCH,PROXIES
