@@ -6,107 +6,29 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 144.31.4.18
+  server: ipfast.kingmna.com
   port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  uuid: a47483a6-8c1d-4ad8-815d-9f1a00b2e3c7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: marginbirch.cleanfoodshop.org
+  servername: community.fastly.steamstatic.com
   network: ws
   ws-opts:
-    path: /media/ws/
+    path: /?Telegram---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24/
     headers:
-      Host: 144.31.4.18
-- name: 🇵🇱 PL 02 - xiaohe
-  type: vless
-  server: 144.31.5.94
-  port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: alphafooter.newbuzideas.org
-  network: ws
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: 144.31.5.94
-- name: 🇵🇱 PL 03 - xiaohe
-  type: vless
-  server: 144.31.4.18
-  port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: marginbirch.cleanfoodshop.org
-  network: ws
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: 144.31.4.18
-- name: 🇵🇱 PL 04 - xiaohe
-  type: vless
-  server: aiclouding.hchdhsbs12gd.ir
-  port: 7005
-  uuid: efc77ebb-405e-4e42-9774-72e1b06fe037
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4
-  servername: play.googleapis.com
-  client-fingerprint: ios
-- name: 🇵🇱 PL 05 - xiaohe
-  type: vless
-  server: 144.31.4.18
-  port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: marginbirch.cleanfoodshop.org
-  network: ws
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: 144.31.4.18
-- name: 🇵🇱 PL 06 - xiaohe
-  type: vless
-  server: 144.31.3.89
-  port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: clearingmatch.melodramaonline.net
-  network: ws
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: 144.31.3.89
+      Host: polandboijji.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 PL 01 - xiaohe
-  - 🇵🇱 PL 02 - xiaohe
-  - 🇵🇱 PL 03 - xiaohe
-  - 🇵🇱 PL 04 - xiaohe
-  - 🇵🇱 PL 05 - xiaohe
-  - 🇵🇱 PL 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 PL 01 - xiaohe
-  - 🇵🇱 PL 02 - xiaohe
-  - 🇵🇱 PL 03 - xiaohe
-  - 🇵🇱 PL 04 - xiaohe
-  - 🇵🇱 PL 05 - xiaohe
-  - 🇵🇱 PL 06 - xiaohe
 rules:
 - MATCH,PROXIES
