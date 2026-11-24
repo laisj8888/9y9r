@@ -6,43 +6,27 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 144.31.1.172
+  server: af48d6t.pl10.h1clayd.shop
   port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: harbortarget.newbuzideas.org
-  network: ws
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: 144.31.1.172
-- name: 🇵🇱 PL 02 - xiaohe
-  type: vless
-  server: aiclouding.hchdhsbs12gd.ir
-  port: 7005
-  uuid: efc77ebb-405e-4e42-9774-72e1b06fe037
+  uuid: d92038b6-b470-4267-9c69-2c649bf3f4a4
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4
-  servername: play.googleapis.com
-  client-fingerprint: ios
+    public-key: yELja29OBDJ2V0qacVXg_5NDN7uNk1YQVMgGKN9Kc2g
+  servername: af48d6t.pl10.h1clayd.shop
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 PL 01 - xiaohe
-  - 🇵🇱 PL 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 PL 01 - xiaohe
-  - 🇵🇱 PL 02 - xiaohe
 rules:
 - MATCH,PROXIES
