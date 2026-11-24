@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - xiaohe
   type: vmess
-  server: 103.88.232.55
+  server: 103.14.27.207
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -28,7 +28,7 @@ proxies:
   servername: ''
 - name: 🇧🇷 BR 03 - xiaohe
   type: vmess
-  server: 103.14.27.207
+  server: 103.88.232.55
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -36,7 +36,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 103.14.27.207
+  servername: 103.88.232.55
 - name: 🇧🇷 BR 04 - xiaohe
   type: vmess
   server: 103.88.232.55
@@ -69,10 +69,10 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: None
 - name: 🇧🇷 BR 07 - xiaohe
   type: vmess
-  server: 103.88.232.55
+  server: 103.14.27.207
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -80,7 +80,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: None
+  servername: ''
 - name: 🇧🇷 BR 08 - xiaohe
   type: vmess
   server: 103.14.27.207
@@ -91,23 +91,21 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: 103.14.27.207
 - name: 🇧🇷 BR 09 - xiaohe
-  type: vless
-  server: platform102.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
-- name: 🇧🇷 BR 10 - xiaohe
   type: vmess
   server: 103.14.27.207
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇧🇷 BR 10 - xiaohe
+  type: vmess
+  server: 103.88.232.55
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -126,51 +124,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-- name: 🇧🇷 BR 12 - xiaohe
-  type: vmess
-  server: 103.88.232.55
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇧🇷 BR 13 - xiaohe
-  type: vmess
-  server: 103.14.27.207
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇧🇷 BR 14 - xiaohe
-  type: vmess
-  server: 103.14.27.207
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇧🇷 BR 15 - xiaohe
-  type: vmess
-  server: 103.88.232.55
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 103.88.232.55
+  servername: None
 proxy-groups:
 - name: PROXIES
   type: select
@@ -187,10 +141,6 @@ proxy-groups:
   - 🇧🇷 BR 09 - xiaohe
   - 🇧🇷 BR 10 - xiaohe
   - 🇧🇷 BR 11 - xiaohe
-  - 🇧🇷 BR 12 - xiaohe
-  - 🇧🇷 BR 13 - xiaohe
-  - 🇧🇷 BR 14 - xiaohe
-  - 🇧🇷 BR 15 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -207,9 +157,5 @@ proxy-groups:
   - 🇧🇷 BR 09 - xiaohe
   - 🇧🇷 BR 10 - xiaohe
   - 🇧🇷 BR 11 - xiaohe
-  - 🇧🇷 BR 12 - xiaohe
-  - 🇧🇷 BR 13 - xiaohe
-  - 🇧🇷 BR 14 - xiaohe
-  - 🇧🇷 BR 15 - xiaohe
 rules:
 - MATCH,PROXIES
