@@ -31,18 +31,6 @@ proxies:
   reality-opts:
     public-key: gjOKbmRb5cGDPbdz3x8xkBFL43pn3xqL-I6sALHO7ls
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇻🇳 VN 04 - xiaohe
-  type: vless
-  server: Kir3.crackerbinam.org
-  port: 56026
-  uuid: a1f0cbb8-c74a-4c27-b881-7b14d96aece1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: gjOKbmRb5cGDPbdz3x8xkBFL43pn3xqL-I6sALHO7ls
-  servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -52,7 +40,6 @@ proxy-groups:
   - 🇻🇳 VN 01 - xiaohe
   - 🇻🇳 VN 02 - xiaohe
   - 🇻🇳 VN 03 - xiaohe
-  - 🇻🇳 VN 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +48,5 @@ proxy-groups:
   - 🇻🇳 VN 01 - xiaohe
   - 🇻🇳 VN 02 - xiaohe
   - 🇻🇳 VN 03 - xiaohe
-  - 🇻🇳 VN 04 - xiaohe
 rules:
 - MATCH,PROXIES
