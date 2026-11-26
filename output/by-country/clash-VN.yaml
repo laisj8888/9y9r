@@ -5,10 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 VN 01 - xiaohe
-  type: vless
-  server: 150.95.109.109
-  port: 2086
-  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+  type: vmess
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16256
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
@@ -21,6 +23,14 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇻🇳 VN 03 - xiaohe
+  type: vless
+  server: 150.95.109.109
+  port: 2086
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇻🇳 VN 04 - xiaohe
   type: vless
   server: 103.163.24.22
   port: 56026
@@ -40,6 +50,7 @@ proxy-groups:
   - 🇻🇳 VN 01 - xiaohe
   - 🇻🇳 VN 02 - xiaohe
   - 🇻🇳 VN 03 - xiaohe
+  - 🇻🇳 VN 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +59,6 @@ proxy-groups:
   - 🇻🇳 VN 01 - xiaohe
   - 🇻🇳 VN 02 - xiaohe
   - 🇻🇳 VN 03 - xiaohe
+  - 🇻🇳 VN 04 - xiaohe
 rules:
 - MATCH,PROXIES

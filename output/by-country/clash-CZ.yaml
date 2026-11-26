@@ -5,19 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
-  type: vless
-  server: 193.124.56.100
-  port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  type: vmess
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16280
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: accessfooter.cleanfoodshop.org
-  network: ws
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: accessfooter.cleanfoodshop.org
 proxy-groups:
 - name: PROXIES
   type: select

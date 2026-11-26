@@ -19,17 +19,12 @@ proxies:
       Host: 178.172.227.228
 - name: 🇧🇾 BY 02 - xiaohe
   type: vless
-  server: 178.172.227.228
-  port: 14430
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  server: 178.172.227.124
+  port: 10443
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.172.227.228
 - name: 🇧🇾 BY 03 - xiaohe
   type: vless
   server: 178.172.227.124
@@ -79,20 +74,30 @@ proxies:
       Host: 178.172.227.228
 - name: 🇧🇾 BY 07 - xiaohe
   type: vless
-  server: 178.172.227.124
-  port: 10443
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  server: 178.172.227.228
+  port: 14430
+  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.228
 - name: 🇧🇾 BY 08 - xiaohe
   type: vless
-  server: 178.172.227.124
-  port: 10443
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  server: 178.172.227.228
+  port: 14430
+  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.228
 - name: 🇧🇾 BY 09 - xiaohe
   type: vless
   server: 178.172.227.228
@@ -109,11 +114,16 @@ proxies:
 - name: 🇧🇾 BY 10 - xiaohe
   type: vless
   server: 178.172.227.124
-  port: 10443
+  port: 14430
   uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.124
 - name: 🇧🇾 BY 11 - xiaohe
   type: vless
   server: 178.172.227.124
@@ -130,30 +140,12 @@ proxies:
 - name: 🇧🇾 BY 12 - xiaohe
   type: vless
   server: 178.172.227.124
-  port: 14430
+  port: 10443
   uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.172.227.124
 - name: 🇧🇾 BY 13 - xiaohe
-  type: vless
-  server: 178.172.227.228
-  port: 14430
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.172.227.228
-- name: 🇧🇾 BY 14 - xiaohe
   type: vless
   server: 178.172.227.124
   port: 14430
@@ -166,6 +158,27 @@ proxies:
     path: /vless
     headers:
       Host: 178.172.227.124
+- name: 🇧🇾 BY 14 - xiaohe
+  type: vless
+  server: 178.172.227.124
+  port: 10443
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇧🇾 BY 15 - xiaohe
+  type: vless
+  server: 178.172.227.228
+  port: 14430
+  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.228
 proxy-groups:
 - name: PROXIES
   type: select
@@ -185,6 +198,7 @@ proxy-groups:
   - 🇧🇾 BY 12 - xiaohe
   - 🇧🇾 BY 13 - xiaohe
   - 🇧🇾 BY 14 - xiaohe
+  - 🇧🇾 BY 15 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -204,5 +218,6 @@ proxy-groups:
   - 🇧🇾 BY 12 - xiaohe
   - 🇧🇾 BY 13 - xiaohe
   - 🇧🇾 BY 14 - xiaohe
+  - 🇧🇾 BY 15 - xiaohe
 rules:
 - MATCH,PROXIES
