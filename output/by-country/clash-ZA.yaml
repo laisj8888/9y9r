@@ -12,19 +12,52 @@ proxies:
   password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 - name: 🇿🇦 ZA 02 - xiaohe
+  type: vmess
+  server: 16.28.28.15
+  port: 443
+  uuid: 8ce18eab-fcc0-4757-b552-dbda5047ea11
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 16.28.28.15
+  network: ws
+  ws-opts:
+    path: /7788/about
+    headers:
+      Host: 16.28.28.15
+- name: 🇿🇦 ZA 03 - xiaohe
   type: ss
   server: 102.37.156.224
   port: 443
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
-- name: 🇿🇦 ZA 03 - xiaohe
+- name: 🇿🇦 ZA 04 - xiaohe
   type: ss
   server: 102.133.165.160
   port: 16233
   cipher: chacha20-ietf-poly1305
   password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
+- name: 🇿🇦 ZA 05 - xiaohe
+  type: ss
+  server: 102.37.97.69
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: dx5z2bzpn0tTpYzv
+  udp: true
+- name: 🇿🇦 ZA 06 - xiaohe
+  type: vmess
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16266
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +66,9 @@ proxy-groups:
   - 🇿🇦 ZA 01 - xiaohe
   - 🇿🇦 ZA 02 - xiaohe
   - 🇿🇦 ZA 03 - xiaohe
+  - 🇿🇦 ZA 04 - xiaohe
+  - 🇿🇦 ZA 05 - xiaohe
+  - 🇿🇦 ZA 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +77,8 @@ proxy-groups:
   - 🇿🇦 ZA 01 - xiaohe
   - 🇿🇦 ZA 02 - xiaohe
   - 🇿🇦 ZA 03 - xiaohe
+  - 🇿🇦 ZA 04 - xiaohe
+  - 🇿🇦 ZA 05 - xiaohe
+  - 🇿🇦 ZA 06 - xiaohe
 rules:
 - MATCH,PROXIES

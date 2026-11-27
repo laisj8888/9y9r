@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
+- name: 🇵🇪 PE 01 - xiaohe
   type: vmess
-  server: dog-tw.kunlun01dns.com
-  port: 21036
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16322
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
   udp: true
@@ -19,12 +19,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
+  - 🇵🇪 PE 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
+  - 🇵🇪 PE 01 - xiaohe
 rules:
 - MATCH,PROXIES
