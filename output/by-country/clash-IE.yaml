@@ -20,6 +20,13 @@ proxies:
   udp: true
 - name: 🇮🇪 IE 03 - xiaohe
   type: ss
+  server: 146.70.90.195
+  port: 17453
+  cipher: aes-128-gcm
+  password: cVCf+5/dBI353UY4YcN3nS05znsJYtLF
+  udp: true
+- name: 🇮🇪 IE 04 - xiaohe
+  type: ss
   server: 20.166.121.63
   port: 443
   cipher: chacha20-ietf-poly1305
@@ -33,6 +40,7 @@ proxy-groups:
   - 🇮🇪 IE 01 - xiaohe
   - 🇮🇪 IE 02 - xiaohe
   - 🇮🇪 IE 03 - xiaohe
+  - 🇮🇪 IE 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +49,6 @@ proxy-groups:
   - 🇮🇪 IE 01 - xiaohe
   - 🇮🇪 IE 02 - xiaohe
   - 🇮🇪 IE 03 - xiaohe
+  - 🇮🇪 IE 04 - xiaohe
 rules:
 - MATCH,PROXIES

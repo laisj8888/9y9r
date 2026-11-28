@@ -6,16 +6,18 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - xiaohe
   type: vless
-  server: 5d0319t.nl7.h1clayd.click
+  server: 153.56.171.216
   port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  uuid: 92e8d9dc-8e3b-4f81-a278-d18c6bf1b962
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: chrome
+  servername: app-base-njw3ky.pages.dev
+  network: ws
+  ws-opts:
+    path: /ws?ip=153.56.171.216:443
+    headers:
+      Host: app-base-njw3ky.pages.dev
 - name: 🇪🇪 EE 02 - xiaohe
   type: vless
   server: 5d0319t.nl7.h1clayd.click
@@ -27,7 +29,7 @@ proxies:
   reality-opts:
     public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
   servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: ios
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

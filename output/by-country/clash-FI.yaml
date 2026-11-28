@@ -6,16 +6,18 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: 196.196.204.137
+  server: 77.232.140.7
   port: 443
-  uuid: 26843758-24de-4f76-b5d0-624038e353c4
+  uuid: 50414e45-4c5f-5a45-5553-5a447647929f
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
-  servername: 71b840t.de7.h1clayd.click
-  client-fingerprint: chrome
+  servername: bbz1x6eau6gs.88bahpu62r.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/5a447647929f
+    headers:
+      Host: bbz1x6eau6gs.88bahpu62r.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

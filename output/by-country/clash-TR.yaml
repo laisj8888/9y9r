@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  type: vless
-  server: still-bar-5702.vpnetwork3567.workers.dev
-  port: 443
-  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  type: ss
+  server: tr.subscriptionservice.ir
+  port: 2089
+  cipher: chacha20-ietf-poly1305
+  password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: still-bar-5702.vpnetwork3567.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: still-bar-5702.vpnetwork3567.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
